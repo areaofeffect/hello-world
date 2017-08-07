@@ -15,10 +15,6 @@
 
 <br/>
 
-![Imgur](http://i.imgur.com/NuVuHRl.jpg)
-
-<br/>
-
 
 #### TLDR;
 
@@ -40,9 +36,14 @@ We’ll dive into:
 
 
 <br/>
+<br/>
 
+![Imgur](http://i.imgur.com/NuVuHRl.jpg)
 
-#### DESCRIPTION
+<br/>
+<br/>
+
+#### COURSE DESCRIPTION
 
 Hello World is traditionally the very first program people write when they are new to a programming language.  It’s used to test programming syntax, implementation and sanity. Did it work?
 
