@@ -15,7 +15,7 @@
 
 <br/>
 
-[alt text](http://imgur.com/NuVuHRl "hahaha")
+[Imgur](http://i.imgur.com/NuVuHRl.jpg)
 
 <br/>
 
