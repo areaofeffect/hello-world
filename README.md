@@ -15,7 +15,7 @@
 
 <br/>
 
-[Imgur](http://i.imgur.com/NuVuHRl.jpg)
+![Imgur](http://i.imgur.com/NuVuHRl.jpg)
 
 <br/>
 
