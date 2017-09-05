@@ -59,9 +59,7 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 
 #### GRADING
 
-- Class participation and attendance: 30%
-- Exercises and Homework: 50%
-- Final Project: 20%
+- Pass / Fail!
 
 <br/>
 
