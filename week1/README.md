@@ -61,13 +61,7 @@ the problems code enables us to solve.
 - Join our #slack channel.
 
 ---
-# Break
-
----
-# Lesson
-
----
-# Outline
+# From Silicon to Singularity
 
 - How computers work. Powers of two.
 - Layers of abstraction and computer architecture.
@@ -81,6 +75,7 @@ the problems code enables us to solve.
 - What's next?
 
 ---
+
 # Silicon
 
 Grace Jones. What does she have to do with code? In the 80s there was an entire Bond film about the destruction all of Silicon Valley. Why Silicon?
@@ -99,7 +94,7 @@ It is an interesting time now because we are about to hit a physical wall where 
 
 > Moore's law has died at the age of 51 after an extended illness.
 
-https://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/
+[Moores law is really dead this time.](https://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/)
 
 ---
 # Kernel
@@ -110,7 +105,8 @@ Linux now supports more different types of devices and processors than any other
 
 This is largely due to the development of it's kernel.
 
-Beautiful Code, Chapter 16
+*Beautiful Code, Chapter 16*
+
 1. Small objects loosely coupled
 2. Iterative dev process
 3. Extremely collaborative
@@ -123,7 +119,8 @@ The thing about algorithms is that they are really, really beautiful.
 
 And, they solve really hard problems in computer science. Which makes computational tasks run better, which makes things more beautiful, which makes our lives better.
 
-If you are interested, try exploring the many ways to sort something. 'Can we do better?' - a question that computer scientists ask themselves. [talk about Google interview, stanford class online]
+If you are interested, try exploring the many ways to sort something. 'Can we do better?' - a question that computer scientists ask themselves.
+
 [http://sortvis.org/algorithms/timsort.html](http://sortvis.org/algorithms/timsort.html)
 
 Or just explore their jaw-dropping beauty.
@@ -250,7 +247,7 @@ gcc -ansi -o hello-world hello-world.c
 ---
 
 # Hello Swift
-https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html
+[Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 
 ---
 
@@ -260,10 +257,3 @@ https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift
   - Xcode Tools (Mac), Bash Tools (Windows)
 - Modify one of the Hello World apps we made in class.
 - Watch the Humane Representation of Thought
-
----
-
-# Activities
-- Introduce our Partners
-- Write instructions for your partners drawing, activity or talent. Use this to
-teach someone else that skill.
