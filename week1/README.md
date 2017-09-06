@@ -8,24 +8,16 @@
 ---
 # Introductions
 
-<!-- should be about an hour -->
-
 ---
 # Area of Effect
 - Carrie Kengle
 - Bruno Kruse
 - areaofeffect.io
 
-<!--
-  bk: rube goldberg, bullseyes playground (wireframes), vr lab
-  ck: mitsubishi, nike walls, robots
--->
-
 ---
 # Introduce yourselves
 
 <!--
-Gauge the class.
 
 Do you want to code?
 If so, why or why not?
@@ -89,8 +81,53 @@ the problems code enables us to solve.
 - What's next?
 
 ---
+# Silicon
 
-fill out outline slides here.
+Grace Jones. What does she have to do with code? In the 80s there was an entire Bond film about the destruction all of Silicon Valley. Why Silicon?
+
+  The element silicon is used extensively as a semiconductor in solid-state devices in the computer and microelectronics industries. For this, hyperpure silicon is needed. The silicon is selectively doped with tiny amounts of boron, gallium, phosphorus or arsenic to control its electrical properties.
+  
+Grace Jones saves the day. 
+
+(note: the goals are money and power, but it's more in hindsight. it's about human evolution)
+
+Moore's law is the observation that the number of transistors in a dense integrated circuit doubles approximately every two years. 
+
+Silicon together with Moore's law is the driving force behind everything that's happened with computers since the microcontroller. 
+
+It is an interesting time now because we are about to hit a physical wall where the 
+
+> Moore's law has died at the age of 51 after an extended illness.
+
+https://arstechnica.com/information-technology/2016/02/moores-law-really-is-dead-this-time/
+
+---
+# Kernel
+
+Many times when evaluating a toolchain, you end up with Linux. And why is that?
+
+Linux now supports more different types of devices and processors than any other operating system ever has in the history of computing. It runs on everything from mobile phones, to laptops and cloud servers, to raspberry pi.
+
+This is largely due to the development of it's kernel.
+
+Beautiful Code, Chapter 16
+1. Small objects loosely coupled
+2. Iterative dev process
+3. Extremely collaborative
+ 
+---
+
+# Algorithms
+
+The thing about algorithms is that they are really, really beautiful.
+
+And, they solve really hard problems in computer science. Which makes computational tasks run better, which makes things more beautiful, which makes our lives better.
+
+If you are interested, try exploring the many ways to sort something. 'Can we do better?' - a question that computer scientists ask themselves. [talk about Google interview, stanford class online]
+[http://sortvis.org/algorithms/timsort.html](http://sortvis.org/algorithms/timsort.html)
+
+Or just explore their jaw-dropping beauty.
+[https://bost.ocks.org/mike/algorithms/](https://bost.ocks.org/mike/algorithms/)
 
 ---
 # Workshop
@@ -217,14 +254,12 @@ https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift
 
 ---
 
-# Assignments
+# Assignments Week 1
 - Download and setup your development environment. Come to next class with:
   - Text Editor, Browser (Chrome)
   - Xcode Tools (Mac), Bash Tools (Windows)
 - Modify one of the Hello World apps we made in class.
-- Comment the following code snippet; take a guess at what it does.
 - Watch the Humane Representation of Thought
-- Fill out the Poydar Questionnaire
 
 ---
 
