@@ -9,7 +9,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 2. [Office Hours/ Slack info](#resources)
 3. [Overview of Computation: From Silicon to Singularity](#singularity)
 4. [Week 1: Assignments](#assignments)
-5. [Hello World workshop](#workshop)
+5. [Software to download](#downloads)
 
 
 <br/>
@@ -17,7 +17,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 ---
 
 > How do we speak to machines?
-> 
+>
 > Code usually means a system for transferring information amongst people and machines, and now objects. Code is communication.
 
 ---
@@ -101,16 +101,16 @@ Grace Jones. What does she have to do with code? In the 80s there was an entire 
 ![Jones](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/silicon/silicon_mayday.jpg?token=AADEj3GUVHAM_LqUioLQBQGiZ0lboj4Uks5ZuUqxwA%3D%3D)
 
   The element silicon is used extensively as a semiconductor in solid-state devices in the computer and microelectronics industries. For this, hyperpure silicon is needed. The silicon is selectively doped with tiny amounts of boron, gallium, phosphorus or arsenic to control its electrical properties.
-  
-Grace Jones saves the day. 
+
+Grace Jones saves the day.
 
 (note: the goals are money and power, but it's more in hindsight. it's about human evolution)
 
-Moore's law is the observation that the number of transistors in a dense integrated circuit doubles approximately every two years. 
+Moore's law is the observation that the number of transistors in a dense integrated circuit doubles approximately every two years.
 
-Silicon together with Moore's law is the driving force behind everything that's happened with computers since the microcontroller. 
+Silicon together with Moore's law is the driving force behind everything that's happened with computers since the microcontroller.
 
-It is an interesting time now because we are about to hit a physical wall where the 
+It is an interesting time now because we are about to hit a physical wall where the
 
 > Moore's law has died at the age of 51 after an extended illness.
 
@@ -131,7 +131,7 @@ This is largely due to the development of it's kernel.
 1. Small objects loosely coupled
 2. Iterative dev process
 3. Extremely collaborative
- 
+
 ---
 
 # Algorithms
@@ -158,7 +158,6 @@ Or just explore their jaw-dropping beauty.
 ![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/art/Figure-3.png?token=AADEjw21l1eyJJthaB8y_IDJBZku5yLTks5ZuVTvwA%3D%3D)
 
 ---
-<a name="workshop"></a>
 # Workshop
 
 ---
@@ -172,6 +171,8 @@ Goals:
 - Detect errors
 
 ---
+<a name="downloads"></a>
+
 # Editors
 
 - [Sublime Text 3](https://www.sublimetext.com/3)
@@ -319,6 +320,6 @@ Swift is the newest language developed by apple. It now supports emoji variable 
 	* [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
 	* note: The XCode download is quite large and may take a moment.
 
-2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet. 
+2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
 3. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
