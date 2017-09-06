@@ -1,14 +1,33 @@
-# Notes
+# Week 1: Notes
 
+Notes from our week one class. These notes are generated into the slides we use for class.
+
+<br/>
+
+#### TLDR;
+1. [Slides from Week 1](#slides)
+2. [Resources / Slack info](#resources)
+2. [Overview of Computation: From Silicon to Singularity](#singularity)
+3. [Week 1: Assignments](#assignments)
+4. [Hello World workshop](#workshop)
+
+
+<br/>
+
+---
+
+> How do we speak to machines?
+> 
 > Code usually means a system for transferring information amongst people and machines, and now objects. Code is communication.
 
 ---
-> How to speak to machines.
 
----
+<br/>
+
 # Introductions
 
 ---
+
 # Area of Effect
 - Carrie Kengle
 - Bruno Kruse
@@ -17,19 +36,16 @@
 ---
 # Introduce yourselves
 
-<!--
-
-Do you want to code?
-If so, why or why not?
-Do you believe in the singularity?
-
--->
+- Do you want to code?
+- If so, why or why not?
+- Do you believe in the singularity?
 
 ---
 # Resources and Office Hours
+<a name="resources"></a>
+
 - Office Hours
   - Quick questions, project help, code review
-  - In person: Tuesdays 6-7:30 (after class)
   - Web / Skype / Hangout: Schedule with us in advance
 - Slack
 - Posting Assignments
@@ -62,6 +78,7 @@ the problems code enables us to solve.
 
 ---
 # From Silicon to Singularity
+<a name="singularity"></a>
 
 - How computers work. Powers of two.
 - Layers of abstraction and computer architecture.
@@ -128,6 +145,7 @@ Or just explore their jaw-dropping beauty.
 
 ---
 # Workshop
+<a name="workshop"></a>
 
 ---
 # Software Tools
@@ -252,6 +270,8 @@ gcc -ansi -o hello-world hello-world.c
 ---
 
 # Assignments Week 1
+<a name="assignments"></a>
+
 - Download and setup your development environment. Come to next class with:
   - Text Editor, Browser (Chrome)
   - Xcode Tools (Mac), Bash Tools (Windows)
