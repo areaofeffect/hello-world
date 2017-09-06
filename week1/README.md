@@ -171,10 +171,14 @@ Goals:
 *View -> Developer -> JavaScript Console*
 *CMD + OPTION + J*
 
+![Developer Console](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%203.40.07%20PM.png?token=AADEj5_ovR9SJMgVx9d6RdO6fojXiSyVks5ZuU1TwA%3D%3D)
+
 ### 2. type your code
 ```javascript
 alert (', world.')
 ```
+
+![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEjw3dFlpjyvS_VrZgSC7M53N4n4ljks5ZuU2UwA%3D%3D)
 
 ---
 
@@ -182,6 +186,8 @@ alert (', world.')
 ```bash
 xcode-select --install
 ```
+
+![](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png?token=AADEj7kadfpwWUC4FGn15Oz_3Avc61Seks5ZuU1ywA%3D%3D)
 
 ---
 # Editors
