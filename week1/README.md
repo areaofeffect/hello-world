@@ -181,12 +181,16 @@ alert (', world.')
 ![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEj-maEUBMFj9VCeCqeEUYN4GSVQ_uks5ZuU4AwA%3D%3D)
 
 ---
-
+<a name="commandline"></a>
 # Install OSX Command Line Tools
+### 1. Open your terminal
+
+### 2. Type the following
 ```bash
 xcode-select --install
 ```
 
+The following will pop up. Click OK to install.
 ![](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png?token=AADEj7kadfpwWUC4FGn15Oz_3Avc61Seks5ZuU1ywA%3D%3D)
 
 ---
@@ -284,8 +288,14 @@ gcc -ansi -o hello-world hello-world.c
 <a name="assignments"></a>
 # Assignments Week 1
 
-- Download and setup your development environment. Come to next class with:
-  - Text Editor, Browser (Chrome)
-  - Xcode Tools (Mac), Bash Tools (Windows)
-- Modify one of the Hello World apps we made in class.
-- Watch the Humane Representation of Thought
+0. Join our slack. We will help you through questions and guide installing any of the software below.
+
+1. Download and setup your computer for coding. Come to next prepared class with:
+  - Install a Text Editor of your choice (Atom or Sublime)
+  - Install a development Browser (Chrome)
+  - [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
+  - note: The XCode download is quite large and may take a moment.
+
+2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet. 
+
+3. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
