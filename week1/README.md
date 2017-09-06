@@ -164,6 +164,33 @@ Goals:
 - Detect errors
 
 ---
+# Editors
+
+- [Sublime Text 3](https://www.sublimetext.com/3)
+- [Atom](https://atom.io/)
+
+- Mac, [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+- Windows, Visual Studio
+
+---
+# Scripting
+- [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Python
+- JavaScript
+
+---
+# Useful markdown
+
+```markdown
+# h2
+## h2
+> quotes
+<code></code>
+```
+
+
+---
+
 
 # Hello JavaScript
 
@@ -181,44 +208,7 @@ alert (', world.')
 ![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEj-maEUBMFj9VCeCqeEUYN4GSVQ_uks5ZuU4AwA%3D%3D)
 
 ---
-<a name="commandline"></a>
-# Install OSX Command Line Tools
-### 1. Open your terminal
 
-### 2. Type the following
-```bash
-xcode-select --install
-```
-
-The following will pop up. Click OK to install.
-![](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png?token=AADEj7kadfpwWUC4FGn15Oz_3Avc61Seks5ZuU1ywA%3D%3D)
-
----
-# Editors
-
-- [Sublime Text 3](https://www.sublimetext.com/3)
-- [Atom](https://atom.io/)
-
-- Mac, [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
-- Windows, Visual Studio
-
----
-# Scripting
-- [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- Python
-- JavaScript
-
----
-# useful markdown
-
-```markdown
-# h2
-## h2
-> quotes
-<code></code>
-```
-
----
 # Terminal Tips
 
 ### shortcuts
@@ -243,6 +233,7 @@ ifconfig
 
 ---
 # Hello Python
+You already have python on your computer!
 
 ### 1. write
 ```python
@@ -253,6 +244,21 @@ print('Hello', person)
 ```bash
 python hello-world.py
 ```
+
+---
+<a name="commandline"></a>
+# Install OSX Command Line Tools
+Unlike JavaScript and Python, your machine doesn't have a way to build C applications. We'll try a quick demo.
+
+### 1. Open your terminal
+
+### 2. Type the following
+```bash
+xcode-select --install
+```
+
+The following will pop up. Click OK to install.
+![](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png?token=AADEj7kadfpwWUC4FGn15Oz_3Avc61Seks5ZuU1ywA%3D%3D)
 
 ---
 # Hello C
@@ -282,6 +288,8 @@ gcc -ansi -o hello-world hello-world.c
 ---
 
 # Hello Swift
+Swift is the newest language developed by apple. It now supports emoji variable names!
+
 [Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 
 
