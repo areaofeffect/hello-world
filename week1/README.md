@@ -150,6 +150,14 @@ Or just explore their jaw-dropping beauty.
 [https://bost.ocks.org/mike/algorithms/](https://bost.ocks.org/mike/algorithms/)
 
 ---
+# Sol Lewitt
+
+> According to the principle of his work, LeWitt's wall drawings are usually executed by people other than the artist himself. Writing about making wall drawings, LeWitt himself observed in 1971 that "each person draws a line differently and each person understands words differently".
+
+
+![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/art/Figure-3.png?token=AADEjw21l1eyJJthaB8y_IDJBZku5yLTks5ZuVTvwA%3D%3D)
+
+---
 <a name="workshop"></a>
 # Workshop
 
