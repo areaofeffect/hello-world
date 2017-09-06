@@ -6,10 +6,10 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 #### TLDR;
 1. [Slides from Week 1](#slides)
-2. [Resources / Slack info](#resources)
-2. [Overview of Computation: From Silicon to Singularity](#singularity)
-3. [Week 1: Assignments](#assignments)
-4. [Hello World workshop](#workshop)
+2. [Office Hours/ Slack info](#resources)
+3. [Overview of Computation: From Silicon to Singularity](#singularity)
+4. [Week 1: Assignments](#assignments)
+5. [Hello World workshop](#workshop)
 
 
 <br/>
@@ -97,6 +97,9 @@ the problems code enables us to solve.
 
 Grace Jones. What does she have to do with code? In the 80s there was an entire Bond film about the destruction all of Silicon Valley. Why Silicon?
 
+
+![Jones](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/silicon/silicon_mayday.jpg?token=AADEj3GUVHAM_LqUioLQBQGiZ0lboj4Uks5ZuUqxwA%3D%3D)
+
   The element silicon is used extensively as a semiconductor in solid-state devices in the computer and microelectronics industries. For this, hyperpure silicon is needed. The silicon is selectively doped with tiny amounts of boron, gallium, phosphorus or arsenic to control its electrical properties.
   
 Grace Jones saves the day. 
@@ -115,10 +118,11 @@ It is an interesting time now because we are about to hit a physical wall where 
 
 ---
 # Kernel
-
 Many times when evaluating a toolchain, you end up with Linux. And why is that?
 
 Linux now supports more different types of devices and processors than any other operating system ever has in the history of computing. It runs on everything from mobile phones, to laptops and cloud servers, to raspberry pi.
+
+![Kernel Map](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/kernel/1280px-Kernel_Layout.svg_.png?token=AADEj1jaj1k1T3e4s7G3l5OxQuiPXdUeks5ZuUr6wA%3D%3D)
 
 This is largely due to the development of it's kernel.
 
@@ -131,6 +135,8 @@ This is largely due to the development of it's kernel.
 ---
 
 # Algorithms
+
+![Sol](https://github.com/areaofeffect/hello-world/blob/master/week1/images/art/_BoJVgMv1-8Y.jpg)
 
 The thing about algorithms is that they are really, really beautiful.
 
