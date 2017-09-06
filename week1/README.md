@@ -178,7 +178,7 @@ Goals:
 alert (', world.')
 ```
 
-![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEjw3dFlpjyvS_VrZgSC7M53N4n4ljks5ZuU2UwA%3D%3D)
+![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEj-maEUBMFj9VCeCqeEUYN4GSVQ_uks5ZuU4AwA%3D%3D)
 
 ---
 
