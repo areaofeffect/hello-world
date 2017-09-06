@@ -284,17 +284,24 @@ gcc -ansi -o hello-world hello-world.c
 # Hello Swift
 [Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 
+
+---
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 ---
 <a name="assignments"></a>
 # Assignments Week 1
 
-0. Join our slack. We will help you through questions and guide installing any of the software below.
-
-1. Download and setup your computer for coding. Come to next prepared class with:
-  - Install a Text Editor of your choice (Atom or Sublime)
-  - Install a development Browser (Chrome)
-  - [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
-  - note: The XCode download is quite large and may take a moment.
+1. Join our slack. We will help you through questions and guide installing any of the software below.
+2. Download and setup your computer for coding. Come to next prepared class with:
+	* Install a Text Editor of your choice (Atom or Sublime)
+	* Install a development Browser (Chrome)
+	* [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
+	* note: The XCode download is quite large and may take a moment.
 
 2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet. 
 
