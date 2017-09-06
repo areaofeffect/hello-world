@@ -136,7 +136,7 @@ This is largely due to the development of it's kernel.
 
 # Algorithms
 
-![Sol](https://github.com/areaofeffect/hello-world/blob/master/week1/images/art/_BoJVgMv1-8Y.jpg)
+![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/algorithms/tiedie.png?token=AADEj9_Ke9ABTA5qyzx2WnmF09oGrmrfks5ZuUyFwA%3D%3D)
 
 The thing about algorithms is that they are really, really beautiful.
 
@@ -162,6 +162,19 @@ Goals:
 - Execute intro JS and Python
 - Learn process and workflow
 - Detect errors
+
+---
+
+# Hello JavaScript
+
+### 1. open the developer console
+*View -> Developer -> JavaScript Console*
+*CMD + OPTION + J*
+
+### 2. type your code
+```javascript
+alert (', world.')
+```
 
 ---
 
@@ -216,18 +229,6 @@ history
 
 ```bash
 ifconfig
-```
-
----
-# Hello JavaScript
-
-### 1. open the developer console
-*View -> Developer -> JavaScript Console*
-*CMD + OPTION + J*
-
-### 2. type your code
-```javascript
-alert (', world.')
 ```
 
 ---
