@@ -18,13 +18,13 @@
 
 #### TLDR;
 
-Hello World is a class about learning to code and communicating with machines. By the end of this class you should have the skills to speak the language of (almost) any machine using fundamentals from Python, JavaScript and  C. 
+Hello World is a class about learning to code and communicating with machines. By the end of this class you should have the skills to speak the language of (almost) any machine using fundamentals from Python, JavaScript and  C.
 
 
 
 We’ll dive into:
 
-- Build a foundation and understanding of basic software principles. 
+- Build a foundation and understanding of basic software principles.
 
 - Using code as a tool for art or design
 
@@ -47,19 +47,12 @@ We’ll dive into:
 
 Hello World is traditionally the very first program people write when they are new to a programming language.  It’s used to test programming syntax, implementation and sanity. Did it work?
 
-The goal of this class is to provide you with a primer into understanding the world of computer hardware, software and designing with code.  We'll start with a foundation in programming and build programs of increasing complexity as the course progresses. 
+The goal of this class is to provide you with a primer into understanding the world of computer hardware, software and designing with code.  We'll start with a foundation in programming and build programs of increasing complexity as the course progresses.
 
-This class will provide you with the tools you need to read and understand source code, critically think about software applications and write your very own programs. 
+This class will provide you with the tools you need to read and understand source code, critically think about software applications and write your very own programs.
 
 How do we use code as a tool to solve day-to-day problems? How does a processor work and what is a for loop? How is software created and distributed?
 
-
-<br/>
-
-
-#### GRADING
-
-- Pass / Fail!
 
 <br/>
 
@@ -74,14 +67,12 @@ Mozilla, w3, Adafruit, Instructables, Stack Overflow, Hack A Day, Sparkfun
 
 #### SOFTWARE
 
-Arduino: https://create.arduino.cc/
 
-JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
-
-Terminal (Comes with your computer!)
-
-Your browser of choice (Chrome / Safari / Firefox)
-
+- [Sublime Text 3](https://www.sublimetext.com/3)
+- [Atom](https://atom.io/)
+- [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+- Chrome Browser
+- Terminal (Comes with your computer!)
 
 <br/>
 
@@ -92,7 +83,6 @@ Your browser of choice (Chrome / Safari / Firefox)
 An brief history of computing, computers and why we code.
 
 - What is code? (Hint: Communicating with machines)
-- Zero Index
 - Workng with code (JavaScript, C / Arduino, Python)
 - Understanding machines and where code lives (Personal Computers, Embedded Computers, Cloud Servers)
 - Writing our first program.
@@ -212,4 +202,3 @@ Topics: Information security, Wifi, Networks, Sysadmin, Servers, Amazon, Devops
 - Final presentations at New Lab
 
 - Project review and guest critic
-
