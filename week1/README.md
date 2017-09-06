@@ -29,8 +29,8 @@ Notes from our week one class. These notes are generated into the slides we use 
 ---
 
 # Area of Effect
-- Carrie Kengle
-- Bruno Kruse
+- Carrie Kengle @kandizzy
+- Bruno Kruse @brunokuse
 - areaofeffect.io
 
 ---
@@ -41,8 +41,8 @@ Notes from our week one class. These notes are generated into the slides we use 
 - Do you believe in the singularity?
 
 ---
-# Resources and Office Hours
 <a name="resources"></a>
+# Resources and Office Hours
 
 - Office Hours
   - Quick questions, project help, code review
@@ -77,8 +77,8 @@ the problems code enables us to solve.
 - Join our #slack channel.
 
 ---
-# From Silicon to Singularity
 <a name="singularity"></a>
+# From Silicon to Singularity
 
 - How computers work. Powers of two.
 - Layers of abstraction and computer architecture.
@@ -144,8 +144,8 @@ Or just explore their jaw-dropping beauty.
 [https://bost.ocks.org/mike/algorithms/](https://bost.ocks.org/mike/algorithms/)
 
 ---
-# Workshop
 <a name="workshop"></a>
+# Workshop
 
 ---
 # Software Tools
@@ -268,9 +268,8 @@ gcc -ansi -o hello-world hello-world.c
 [Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 
 ---
-
-# Assignments Week 1
 <a name="assignments"></a>
+# Assignments Week 1
 
 - Download and setup your development environment. Come to next class with:
   - Text Editor, Browser (Chrome)
