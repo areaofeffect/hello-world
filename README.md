@@ -118,6 +118,7 @@ An brief history of computing, computers and why we code.
 - application structure and flow
 
 <br/>
+
 ##### Week 4: Loops
 
 - Repetitive actions, applying some logic or change to many items with one function.
