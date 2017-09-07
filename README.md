@@ -78,7 +78,7 @@ Mozilla, w3, Adafruit, Instructables, Stack Overflow, Hack A Day, Sparkfun
 
 #### SCHEDULE
 
-##### Week 1: Hello World
+##### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/master/week1)
 
 An brief history of computing, computers and why we code.
 
