@@ -1,4 +1,4 @@
-# Hello World
+# Code Literacy: Hello World
 
 
 ##### FALL 2017
@@ -132,7 +132,7 @@ An brief history of computing, computers and why we code.
 
 - Scope (this)
 
-- Classes: Organzing code into reusable blocks ( OOP )
+- Classes: Organizing code into reusable blocks ( OOP )
 
 - Modules and Libraries: Importing existing utilities to use in your program
 
@@ -151,7 +151,11 @@ An brief history of computing, computers and why we code.
 
 ​<br/>
 
-##### Week 7: Datastreams
+##### Week 7: Data Visualizations and Datastreams
+
+* How do we structure and organize data in a useful / readable way?
+
+* We'll start by collecting our own datasets and visualizing with code.
 
 * API'S, JSON files, Cloud services, Local databases
 
