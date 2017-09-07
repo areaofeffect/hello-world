@@ -53,15 +53,15 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 ---
 # Class Methods
-- The idea of the class is to immerse you in programming and learn a new language or method by the time we are done.
-- We'll and code as as an additional tool to our design process, solving complex and specific problems in our projects.
+- This class is designed to immerse you in programming and learn a new language or method by the end of our journey.
+- We'll add code as as a tool to our design process, solving complex and specific problems in our projects.
 - We'll show you what tools and systems are available. It's up to you to
-choose what you need. We'll help you a long the way.
+choose what you need for your projects. We'll guide you along the way.
 - If you already know programming, thats great! We'll continue to reinforce
-these skills and learn new ones even faster. Try Swift!
+these skills and learn new ones even faster.
 - Design wise, we'll measure our successes by not only the code we write, but
 the problems code enables us to solve.
-- We'll learn how to evaluate what's good Copy Pasta v.s bad Copy Pasta. We want you to own your successes and failures.
+- We'll learn how to evaluate what's good Copy Pasta (paste) v.s bad Copy Pasta. We want you to own your successes and failures. :)
 
 ---
 # Poydar Method
