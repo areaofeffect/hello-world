@@ -9,7 +9,7 @@
 
 ##### TIME: Tuesdays 2:00pm - 4:50pm
 
-##### WEBSITE: helloworld.areaofeffect.io
+##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/#1)
 
 
 
