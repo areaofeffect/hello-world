@@ -5,7 +5,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 <br/>
 
 #### TLDR;
-1. [Slides from Week 1](#slides)
+1. [Slides from Week 1](helloworld.areaofeffect.io)
 2. [Office Hours/ Slack info](#resources)
 3. [Overview of Computation: From Silicon to Singularity](#singularity)
 4. [Week 1: Assignments](#assignments)
