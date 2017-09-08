@@ -322,6 +322,6 @@ Swift is the newest language developed by apple. It now supports emoji variable 
 
 3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
-4. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
+4. Pick any of the hello world examples from above and modify to say a different message. We will discuss the differences between the languages next class.
 
-5. Modify one of the hello world examples from above. Try to start recognizing some of the errors you may get. The idea is to get confortable in a development environment before next class.
+5. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
