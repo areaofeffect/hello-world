@@ -211,7 +211,7 @@ Goals:
 
 ### 2. type your code
 ```javascript
-alert (', world.')
+alert ('hello, world.')
 ```
 
 ![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEj-maEUBMFj9VCeCqeEUYN4GSVQ_uks5ZuU4AwA%3D%3D)
@@ -320,6 +320,8 @@ Swift is the newest language developed by apple. It now supports emoji variable 
 	* [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
 	* note: The XCode download is quite large and may take a moment.
 
-2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
+3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
-3. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
+4. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class. (Talk is around ~45 min)
+
+5. Modify one of the hello world examples from above. Try to start recognizing some of the errors you may get. The idea is to get confortable in a development environment before next class.
