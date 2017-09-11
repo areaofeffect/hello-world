@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 2</title>
+    <meta charset="utf-8">
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Roboto';
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p { line-height: 2.0em; color: #FFF}
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# Code Literacy: Week 2
+Fall 2017
+
+---
+class: inverse, left, middle
+
+# Week 1 Review
+
+.center[![Center-aligned image](./images/grace_singularity.jpg)]
+
+From Silicon to Singularity
+---
+
+class: inverse, left, middle
+
+- Overview of how computers actually work.
+- CTD:: Does code belong with design?
+
+---
+class: inverse, left, middle, large
+
+# The Humane Representation of Thought.
+by Bret Victor
+- Code and variables are representations of thought.
+- New ways of sensing the world.
+- New ways of representing ideas.
+
+---
+
+class: inverse, left, middle, large
+
+# Variables
+
+> In computer programming, a variable or scalar is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
+
+---
+
+iPhone text message emoji video here
+
+---
+
+class: inverse, left, middle, large
+
+# Data Types
+
+> a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data.
+
+---
+
+class: inverse
+
+### Every variable you create will be of a certain data type.
+
+#### Let's explore some [primitive data types](https://en.wikipedia.org/wiki/List_of_data_structures#Data_types)
+*types that are built in to the programming language*
+
+- Boolean
+- String
+- Number
+
+#### And some [composite types](https://en.wikipedia.org/wiki/Composite_data_type)
+
+- Arrays
+- Objects.
+
+---
+class: inverse
+# Booleans
+
+JavaScript example
+```
+	var myBool = true
+```
+Python example
+```
+	myBool = True
+```
+C example
+```
+	boolean myBool = true
+```
+---
+
+class: inverse
+# Characters and Strings
+- Examples
+- Delimiters
+- Concatenation
+
+---
+
+class: inverse
+# Characters and Strings
+## Examples
+
+JavaScript example
+```
+	var myString = "Hello World"
+```
+Python example
+```
+	myString = "Hello World"
+```
+C example
+```
+	char myCharacter = 'A'; // this is just a single character
+	char *myString = "Hello world"; //string literal, cannot be changed
+	char myString[] = "Hello world"; //newly allocated memory
+```
+---
+class: inverse
+# Characters and Strings
+## Delimiters
+
+A common delimiter is a comma (,) or pipe (|).
+
+
+> A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[1] An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
+
+[Wikipedia Definition](https://en.wikipedia.org/wiki/Delimiter)
+
+Understanding and using delimiters in strings will be important once we get to conversion a little later in class.
+
+---
+class: inverse
+# Characters and Strings
+## Concatentation
+
+Joining character strings end to end.
+
+JavaScript example
+```
+	var myString = "Hello" + " World"
+```
+Python example
+```
+	myString = "".join(["Hello ", "World"])
+```
+C example. There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
+
+[CTD::: we'll talk about arduino and strings later :)]
+
+---
+
+class: inverse
+# Numbers
+- Integers
+- Floats
+- and More!
+
+The two main types of numbers you'll decide between in most cases are *integers* or *floating point decimals*. Floats are used when more preceision is required.
+
+Some things, like pi, cannot be expressed as an integer.
+
+In Javascript, though things are rapidly changing, there is one type of [number](https://en.wikipedia.org/wiki/IEEE_754-1985#Double-precision_64_bit). Later in class during we will discuss builtin function `parseInt` and `parseFloat`.
+
+---
+
+class: inverse
+# Numbers
+## Integers
+
+-1, 0, 1, 2
+
+JavaScript example
+```
+var myInt = 1
+```
+Python example
+```
+myInt = 1
+```
+C example
+```
+int myInt = 1
+```
+---
+
+class: inverse
+# Numbers
+## Floats
+-0.1, 0.0, 0.1, 0.2, 3.14
+
+JavaScript example
+```
+var myFloat = 3.14
+```
+Python example
+```
+myFloat = 3.14
+```
+C example
+```
+float myFloat = 3.14
+```
+---
+
+class: inverse
+# Numbers
+## And More!
+- NaN
+- Binary and Hexadecimal
+- Bases
+
+---
+
+class: inverse
+# Numbers
+## NaN
+Not a Number, If, for example, you attempt to divide by zero.
+- [bk: willy nillying
+
+---
+class: inverse
+# Numbers
+## Binary and Hexadecimal
+Binary representations of number use only ones and zeros. Hexadecimal can represent 8 binary characters with 2 consecutive hexadecimal digits and therefore save space.
+
+- [The Martian](http://www.businessinsider.com/the-martian-hexidecimal-language-2015-9)
+- [The Martian hexidecimal reference getting nerdy](https://scifi.stackexchange.com/questions/107675/why-does-mark-use-hexadecimal-to-communicate)
+
+[bk: get the martian movie to show the scene]
+
+---
+
+class: inverse
+# Numbers
+## Bases
+> In mathematical numeral systems, the radix or base is the number of unique digits, including zero, used to represent numbers in a positional numeral system. For example, for the decimal system (the most common system in use today) the radix is ten, because it uses the ten digits from 0 through 9.
+
+Wikipedia definition of [Radix or base](https://en.wikipedia.org/wiki/Radix)
+
+[Number bases introduction](http://www.purplemath.com/modules/numbbase.htm)
+
+Binary = base 2
+
+Decimal = base 10
+
+Hexadecimal = base 16
+---
+
+class: inverse
+# Arrays
+
+JavaScript example
+```
+	var myArray = ["item1", "item2", "item3"];
+```
+Python example, (there is an array module in python, but we will use list)
+````
+	myList = ["item1", "item2", "item3"]
+```
+C example
+```
+	char myArray [ 3 ] = {"item1", "item2", "item3"}
+  ```
+---
+
+class: inverse
+# Objects
+
+Objects are collections of properties
+
+JavaScript example
+```
+	var myObj = {};
+```
+Python example, (dictionary)
+```
+	myDict = {}
+```
+C example
+```
+	struct example here
+```
+[ck: json callback with bio examples]
+
+
+---
+
+class: inverse
+# More on Data Types
+- Conversion from one Data Type to Another
+- Strict Typing, Strong or Weak, Static or Dynamic
+
+---
+
+class: inverse
+# More on Data Types
+## Conversion from one Data Type to Another
+Converting one data type to another. Why would you need this?
+
+[ bk: examples of all these]
+
+String -> Number
+
+Number -> String
+
+String -> Bool
+"true", "false"
+
+Number -> Bool
+0, 1
+
+String -> Array
+[ example or string that's delimited ]
+[bk: example
+"January 5th, 1978"
+data[1]
+data[0]
+]
+---
+
+class: inverse
+# More on Data Types
+## Strict Typing, Strong or Weak, Static or Dynamic
+
+
+Which language out of our three do you think is strictly typed?
+
+If you guessed C, you are correct! Each time we delcared a variable we had to preceed it with it's type. This tells the compiler that you cannot interact with this variable outside of it's type.
+
+Strong and weak typing are phrases that loosely correlate to Static and Dynamic. Static means the typing happens at the compile phase, and dynamic means it happens at runtime.
+
+---
+
+class: inverse
+
+# Assignments
+1. Think of a way to represent a number, string, array and object in a dynamic medium. Bring in your example for next class.
+
+2. Create your own interactive story. Modify the 'Red Riding Hood' example in class with your own story. Remember to use and examples of:
+  - a number
+  - a string (at least 3)
+
+  and if you're feeling like a big bad wolf...
+  - an array
+  - an object
+
+3. Use the canvas example to draw something new.
+
+4. Reading or Video
+  - Codemy tutorial
+  - Canvas
+
+---
+class: inverse, left, middle, large
+
+# Thanks!
+
+- carrie@areaofeffect.io
+- bruno@areaofeffect.io
+- [code-literacy slack](https://join.slack.com/t/code-literacy/shared_invite/MjM1OTk2MzQ2MzcxLTE1MDQ1NjYzMDYtMTExOWE4OWM0ZQ)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        });
+
+    </script>
+  </body>
+</html>
