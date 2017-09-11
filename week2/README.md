@@ -154,12 +154,36 @@ C example
 
 List of items, all of the same data type.
 
+JavaScript example
+
+	var myArray = ["item1", "item2", "item3"];
+	
+Python example, (there is an array module in python, but we will use list)
+
+	myList = ["item1", "item2", "item3"]
+	
+C example
+
+	char myArray [ 3 ] = {"item1", "item2", "item3"}
+
 
 [Code Academy's excellent explanation](https://www.codecademy.com/courses/web-beginner-en-8a35h/0/1)
 
 ## Objects
 
 Objects are collections of properties
+
+JavaScript example
+
+	var myObj = {};
+	
+Python example, (dictionary)
+
+	myDict = {}
+	
+C example
+
+	struct example here
 
 # Further considerations
 
@@ -175,9 +199,13 @@ String -> Bool
 Number -> Bool
 
 
-## Strict Typing
+## Strict Typing, Strong or Weak, Static or Dynamic
 
-Some languages have this, some do not.
+Which language out of our three do you think is strictly typed? 
+
+If you guessed C, you are correct! Each time we delcared a variable we had to preceed it with it's type. This tells the compiler that you cannot interact with this variable outside of it's type.
+
+Strong and weak typing are phrases that loosely correlate to Static and Dynamic. Static means the typing happens at the compile phase, and dynamic means it happens at runtime.
 
 # Madlib code example
 
