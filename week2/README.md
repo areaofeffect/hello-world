@@ -46,6 +46,7 @@ Last week's questions about single quote vs double quotes applies here to the C 
 
 A common delimiter is a comma (,) or pipe (|). 
 
+
 > A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[1] An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
 
 [Wikipedia Definition](https://en.wikipedia.org/wiki/Delimiter)
