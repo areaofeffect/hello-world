@@ -389,7 +389,6 @@ struct tesla s;
 ```
 <!-- [ck: json callback with bio examples] -->
 
-
 ---
 
 class: inverse, large
@@ -397,83 +396,142 @@ class: inverse, large
 - Conversion from one Data Type to Another
 - Strict Typing, Strong or Weak, Static or Dynamic
 
-.center[![Center-aligned image](./images/convert.jpg)]
-
 ---
 
 class: inverse
 More on Data Types
 # Conversion from one Data Type to Another
 Converting one data type to another. Why would you need this?
+.center[![Center-aligned image](./images/convert.jpg)]
 
 <!-- [ bk: examples of all these] -->
 
 ---
 class: inverse
 More on Data Types
-# Conversion from one Data Type to Another
-*String -> Number*
+Conversion from one Data Type to Another
+# String -> Number
+
+JavaScript example
 ```
 var myString = "1";
 var myNum = parseInt(myString)
 ```
+
+Python example
+```
+myString = "1";
+myNum = int(myString)
+```
+
+C example
+
+There is no built in method in C for this conversion. Arduino's [String](https://www.arduino.cc/en/Reference/StringObject) class has a toInt() function.
+
 ---
 class: inverse
-## Conversion from one Data Type to Another
-## Number -> String
+More on Data Types
+Conversion from one Data Type to Another
+# Number -> String
+
+JavaScript example
 ```
 var myNum = 1;
 var myString = myNum.toString();
 ```
+
+Python example
+
+```
+myNum = 1;
+myString = str(myNum)
+```
+
+C example
+
+There is no built in method in C for this conversion. Arduino can use `itoa()` from the stdlib C library.
+```
+int myNum = 1;
+char buffer[10];
+itoa(myNum,buffer,10); // base 10
+```
 ---
 class: inverse
-## Conversion from one Data Type to Another
-## String -> Bool
+More on Data Types
+Conversion from one Data Type to Another
+# String -> Bool
+
+JavaScript example
 ```
 var myString = "true";
 var myBool = (myString == "true")
 ```
+
+Python example
+```
+myString = "True";
+myBool = (myString == "True")
+```
 ---
 class: inverse
-## Conversion from one Data Type to Another
-## Number -> Bool
+More on Data Types
+Conversion from one Data Type to Another
+# Number -> Bool
 0, 1
 
 ---
 class: inverse
-## Conversion from one Data Type to Another
-## String -> Array
+More on Data Types
+Conversion from one Data Type to Another
+# String -> Array
 <!-- [ example or string that's delimited ]
 [bk: example -->
+
+Javascript example
 ```
 var myString = "January 5th, 1978";
 var myArray = myString.split(",");
 ```
+
+Python example
+
+```
+myString = "January 5th, 1978"
+myArray = myString.split(",")
+```
 ---
 class: inverse
-## Conversion from one Data Type to Another
-## Array -> String
+More on Data Types
+Conversion from one Data Type to Another
+# Array -> String
 <!-- [ example or string that's delimited ]
 [bk: example -->
+
+JavaScript example
 ```
 var myArray = ["January 5th", "1978"];
 var myString = myArray.join(",");
 
 ```
 
+Python example
+```
+myList = ["1", "2", "3"]
+myString = "".join(myList)
+```
 ---
 
 class: inverse
-# More on Data Types
-## Strict Typing, Strong or Weak, Static or Dynamic
+More on Data Types
+# Strict Typing, Strong or Weak, Static or Dynamic
 
 Which language out of our three do you think is strictly typed?
 
 ---
 
 class: inverse
-# More on Data Types
-## Strict Typing, Strong or Weak, Static or Dynamic
+More on Data Types
+# Strict Typing, Strong or Weak, Static or Dynamic
 
 If you guessed C, you are correct!
 
