@@ -345,16 +345,16 @@ Objects are collections of properties
 
 JavaScript example
 ```
-	var myObj = {type: "electric", model: "S", color: "red"};
+	var myObj = {fuel_type: "electric", model: "S", color: "red"};
 ```
 Python example, (dictionary)
 ```
-	myDict = {type: "electric", model: "S", color: "red"}
+	myDict = {fuel_type: "electric", model: "S", color: "red"}
 ```
 C example
 ```
 typedef struct {
-  char *type;
+  char *fuel_type;
   char *model;
   char *color;
 } tesla;
@@ -371,6 +371,8 @@ class: inverse
 - Conversion from one Data Type to Another
 - Strict Typing, Strong or Weak, Static or Dynamic
 
+.center[![Center-aligned image](./images/convert.jpg)]
+
 ---
 
 class: inverse
@@ -378,25 +380,36 @@ class: inverse
 ## Conversion from one Data Type to Another
 Converting one data type to another. Why would you need this?
 
-[ bk: examples of all these]
+<!-- [ bk: examples of all these] -->
 
 String -> Number
-
+```
+var myString = "1";
+var myNum = parseInt(myString)
+```
 Number -> String
+```
+var myNum = 1;
+var myNum = myNum.toString();
+```
 
 String -> Bool
-"true", "false"
+```
+var myString = "true";
+var myBool = (myString == 'true')
+```
 
 Number -> Bool
 0, 1
 
 String -> Array
-[ example or string that's delimited ]
-[bk: example
-"January 5th, 1978"
-data[1]
-data[0]
-]
+<!-- [ example or string that's delimited ]
+[bk: example -->
+```
+var myString = "January 5th, 1978";
+var myArray = myString.split(",");
+```
+
 ---
 
 class: inverse

@@ -186,16 +186,16 @@ Objects are collections of properties
 
 JavaScript example
 
-	var myObj = {type: "electric", model: "S", color: "red"};
+	var myObj = {fuel_type: "electric", model: "S", color: "red"};
 
 Python example, (dictionary)
 
-	myDict = {type: "electric", model: "S", color: "red"}
+	myDict = {fuel_type: "electric", model: "S", color: "red"}
 
 C example
 
 	typedef struct {
-	  char *type;
+	  char *fuel_type;
 	  char *model;
 	  char *color;
 	} tesla;
