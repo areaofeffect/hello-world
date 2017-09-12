@@ -167,15 +167,15 @@ List of items, all of the same data type.
 
 JavaScript example
 
-	var myArray = ["item1", "item2", "item3"];
+	var myArray = ["Water", "Apple", "Banana"];
 
 Python example, (there is an array module in python, but we will use list)
 
-	myList = ["item1", "item2", "item3"]
+	myList = ["Water", "Apple", "Banana"]
 
 C example
 
-	char myArray [ 3 ] = {"item1", "item2", "item3"}
+	char myArray [ 3 ] = {"Water", "Apple", "Banana"}
 
 
 [Code Academy's excellent explanation](https://www.codecademy.com/courses/web-beginner-en-8a35h/0/1)
@@ -186,15 +186,21 @@ Objects are collections of properties
 
 JavaScript example
 
-	var myObj = {};
+	var myObj = {type: "electric", model: "S", color: "red"};
 
 Python example, (dictionary)
 
-	myDict = {}
+	myDict = {type: "electric", model: "S", color: "red"}
 
 C example
 
-	struct example here
+	typedef struct {
+	  char *type;
+	  char *model;
+	  char *color;
+	} tesla;
+	
+	struct tesla s;
 
 [ck: json callback with bio examples]
 
