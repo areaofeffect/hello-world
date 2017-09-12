@@ -100,7 +100,7 @@ class: inverse, left, middle
 From Silicon to Singularity
 ---
 
-class: inverse, left, middle
+class: inverse, left, middle, large
 
 - Overview of how computers actually work.
 - CTD:: Does code belong with design?
@@ -136,7 +136,7 @@ class: inverse, left, middle, large
 
 ---
 
-class: inverse
+class: inverse, large
 
 ### Every variable you create will be of a certain data type.
 
@@ -175,7 +175,7 @@ C example
 ```
 ---
 
-class: inverse
+class: inverse, large
 # Characters and Strings
 - Examples
 - Delimiters
@@ -204,7 +204,7 @@ C example
 	char myString[] = "Hello world"; //newly allocated memory
 ```
 ---
-class: inverse
+class: inverse, medium
 Characters and Strings
 # Delimiters
 
@@ -232,9 +232,11 @@ Python example
 ```
 	myString = "".join(["Hello ", "World"])
 ```
-C example. There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
+C example 
 
-[CTD::: we'll talk about arduino and strings later :)]
+There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
+
+[CTD:: we'll talk about more arduino and strings later :)]
 
 ---
 
@@ -303,21 +305,19 @@ Numbers
 
 ---
 
-class: inverse
+class: inverse, large
 Numbers
 # NaN
 Not a Number, If, for example, you attempt to divide by zero.
 
 ---
-class: inverse
+class: inverse, large
 Numbers
 # Binary and Hexadecimal
 Binary representations of number use only ones and zeros. Hexadecimal can represent 8 binary characters with 2 consecutive hexadecimal digits and therefore save space.
 
 - [The Martian](http://www.businessinsider.com/the-martian-hexidecimal-language-2015-9)
 - [The Martian hexidecimal reference getting nerdy](https://scifi.stackexchange.com/questions/107675/why-does-mark-use-hexadecimal-to-communicate)
-
-[bk: get the martian movie to show the scene]
 
 ---
 
@@ -382,7 +382,7 @@ struct tesla s;
 
 ---
 
-class: inverse
+class: inverse, large
 # More on Data Types
 - Conversion from one Data Type to Another
 - Strict Typing, Strong or Weak, Static or Dynamic
