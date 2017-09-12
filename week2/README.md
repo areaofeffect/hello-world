@@ -3,33 +3,39 @@
 # Review and Discussion of Week 1
 From Silicon to Singularity
 - Overview of how computers actually work.
-- CTD:: Does code belong with design?
 
-Humane representation of thought.
+
+### The Humane Representation of Thought.
+by Bret Victor
+- Code and variables are representations of thought.
 - New ways of sensing the world.
 - New ways of representing ideas.
-- Code and Variables as representations of thought.
-- CTD:: Code is communication.
+- [Dyanmic mediums](https://twitter.com/Dynamicland1).
+- [Sketch Synth](https://vimeo.com/42053193).
 
-Review of variables
-- Quick review of students sharing their hello world changes.
-- iPhone text message, emoji replacement example
-- ck (make content, simulator?)
+
+### Variables
+
+> a variable is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
+
 
 # Data Types
 
-From the wikipedia definition states: a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data.
+> a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data.
+ 
+### Every variable you create will be of a certain data type.
 
-- Compiling (c, c++)
-- Interpreting (python, javascript, html)
+#### Let's explore some [primitive data types](https://en.wikipedia.org/wiki/List_of_data_structures#Data_types)
+*types that are built in to the programming language*
 
-[CTD:: Connecting the dots, let's show where this lives in the stack from week 1]
+- Boolean
+- String
+- Number
 
-You choose a data type for your variables according to what you want to do with them. Which operations you want to perform.
+#### And some [composite types](https://en.wikipedia.org/wiki/Composite_data_type)
 
-For this class we will focus some [primitive data types](https://en.wikipedia.org/wiki/List_of_data_structures#Data_types), these are types that are built in to the programming language. They can change from language to language, but the following are fairly standard across the board.
-
-And we will learn about some composite types, like arrays.
+- Arrays
+- Objects
 
 ## Booleans
 A var of this type can only have 1 of 2 possible values. True or False, yes or no, on or off.
@@ -59,6 +65,7 @@ Python example
 	myString = "Hello World"
 
 C example
+
 ```
 	char myCharacter = 'A'; // this is just a single character
 	char *myString = "Hello world"; //string literal, cannot be changed
@@ -209,25 +216,117 @@ C example
 ## Conversion from one Data Type to Another
 Converting one data type to another. Why would you need this?
 
-[ bk: examples of all these]
+class: inverse
+More on Data Types
+# Conversion from one Data Type to Another
+Converting one data type to another. Why would you need this?
 
-String -> Number
+Conversion from one Data Type to Another
+### String -> Number
 
-Number -> String
+Python example
 
-String -> Bool
-"true", "false"
+```
+myString = "1";
+myNum = int(myString)
+```
 
-Number -> Bool
-0, 1
+JavaScript example
 
-String -> Array
-[ example or string that's delimited ]
-[bk: example
-"January 5th, 1978"
-data[1]
-data[0]
-]
+```
+var myString = "1";
+var myNum = parseInt(myString)
+```
+
+C example
+
+There is no built in method in C for this conversion. Arduino's [String](https://www.arduino.cc/en/Reference/StringObject) class has a toInt() function.
+
+
+### Number -> String
+
+Python example
+
+```
+myNum = 1;
+myString = str(myNum)
+```
+
+JavaScript example
+```
+var myNum = 1;
+var myString = myNum.toString();
+```
+
+
+### Number -> String
+
+C example
+
+There is no built in method in C for this conversion. Arduino can use `itoa()` from the stdlib C library.
+```
+int myNum = 1;
+char buffer[10];
+itoa(myNum,buffer,10); // base 10
+```
+
+### String -> Bool
+
+Python example
+
+```
+myString = "True";
+myBool = (myString == "True")
+```
+
+JavaScript example
+
+```
+var myString = "true";
+var myBool = (myString == "true")
+```
+
+C example
+
+We would recommend not using the strings "True" or "true", but perhaps use 0 and 1 and use other conversions.
+
+
+### String -> Array
+<!-- [ example or string that's delimited ]
+[bk: example -->
+
+Python example
+
+
+```
+myString = "January 5th, 1978"
+myArray = myString.split(",")
+```
+
+Javascript example
+
+
+```
+var myString = "January 5th, 1978";
+var myArray = myString.split(",");
+```
+
+
+### Array -> String
+
+Python example
+```
+myList = ["1", "2", "3"]
+myString = "".join(myList)
+```
+
+JavaScript example
+
+```javascript
+var myArray = ["January 5th", "1978"];
+var myString = myArray.join(",");
+
+```
 
 
 ## Strict Typing, Strong or Weak, Static or Dynamic
@@ -237,6 +336,33 @@ Which language out of our three do you think is strictly typed?
 If you guessed C, you are correct! Each time we delcared a variable we had to preceed it with it's type. This tells the compiler that you cannot interact with this variable outside of it's type.
 
 Strong and weak typing are phrases that loosely correlate to Static and Dynamic. Static means the typing happens at the compile phase, and dynamic means it happens at runtime.
+
+
+
+## Readability
+
+### Naming conventions
+Increasing the readability of your code will make working with others easier.
+
+Decide on using camelCase or snake-case
+- var myName = "firstname lastname"
+
+Remeber that variables can't start with a number.
+
+### Comments
+
+Comment to help others understand what your code does.
+Python example
+
+```
+# comment here
+```
+
+JavaScript example
+
+```
+// comment here
+```
 
 # Madlib code example
 
@@ -249,37 +375,39 @@ steps to initializing a variable
 3. assignment operator (=, and a note on ==)
 4. the value
 
-## Readability
-- easier to get help and work with others
-- var myName = "firstname lastname"
-- naming conventions, camelCase, snake-case
-- can't start with a number
-
-## Comments
-
-- Comment to help others understand what your code does.
-
-```
-//, #, /** **/ ,<!-- -->
-```
-
 ## Assignments
 
-1. Think of a way to represent a number, string, array and object in a dynamic medium. Bring in your example for next class.
+### Assignment 1
+Pick four objects in everyday life and represent them as a data type.
 
-2. Create your own interactive story. Modify the 'Red Riding Hood' example in class with your own story. Remember to use and examples of:
-- a number
-- a string (at least 3)
+### Assignment 2
 
-and if you're feeling like a big bad wolf...
-- an array
-- an object
+Create an object and verify it using https://jsonlint.com/
 
-3. Use the canvas example to draw something new.
+Example:
 
-4. Reading or Video
-- Codemy tutorial
-- Canvas
+```
+{
+  "name": "Tony",
+  "location": "zoo",
+  "genus": "Tiger",
+  "species": "Cat",
+  "count": 3,
+  "furry": false
+}
+```
+
+### Assignment 3
+Create your own story algorithm. You can modify an example from class (story maker) or create your own. Remember to comment your code and use examples of:
+	- user inputs
+	- variables (int or float, string, boolean)
+	- concatenation
+
+## Thought Experiment
+
+This should be a fun 20 to 30 minute idea session. This can be free form, and you do not need to build a working version of your idea.
+
+Think of a way to represent a number, string, array optgroup object in a dynamic medium.  Bring in your example for next class.
 
 # Resources
 
