@@ -127,6 +127,7 @@ by Bret Victor
 - New ways of sensing the world.
 - New ways of representing ideas.
 - [Dyanmic mediums](https://twitter.com/Dynamicland1).
+- [Sketch Synth](https://vimeo.com/42053193).
 
 ---
 
@@ -175,17 +176,22 @@ class: inverse
 class: inverse
 # Boolean
 
-JavaScript example
-```
-	var myBool = true
-```
 Python example
 ```
-	myBool = True
+myBool = True
+print myBool
 ```
+
+JavaScript example
+
+```javascript
+var myBool = true;
+console.log(myBool);
+```
+
 C example
 ```
-	boolean myBool = true
+boolean myBool = true;
 ```
 ---
 
@@ -202,20 +208,23 @@ class: inverse, large
 class: inverse
 Characters and Strings
 # Examples
+Python example
+```
+myString = "Hello World"
+print myString
+```
 
 JavaScript example
 ```
-	var myString = "Hello World"
+var myString = "Hello World";
+console.log(myString);
 ```
-Python example
-```
-	myString = "Hello World"
-```
+
 C example
 ```
-	char myCharacter = 'A'; // this is just a single character
-	char *myString = "Hello world"; //string literal, cannot be changed
-	char myString[] = "Hello world"; //newly allocated memory
+char myCharacter = 'A'; // this is just a single character
+char *myString = "Hello world"; //string literal, cannot be changed
+char myString[] = "Hello world"; //newly allocated memory
 ```
 ---
 class: inverse, medium, center
@@ -225,8 +234,6 @@ Characters and Strings
 .center.center-50[![Left-aligned image](./images/beaverdam.jpg)]
 
 A common delimiter is a comma (,) or pipe (|).
-
-
 
 ---
 class: inverse, medium
@@ -246,19 +253,31 @@ Characters and Strings
 
 Joining character strings end to end.
 
+Python example
+```python
+word1 = "hello "
+word2 = "world"
+print (word1 + word2)
+
+```
+<!-- myString = "".join(["Hello ", "World"]) -->
+
 JavaScript example
 ```
-	var myString = "Hello" + " World"
+var myString = "Hello" + " World";
+console.log(myString);
 ```
-Python example
-```
-	myString = "".join(["Hello ", "World"])
-```
+
+---
+class: inverse, large
+Characters and Strings
+# Concatentation
+
 C example
 
 There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
 
-[CTD:: we'll talk about more arduino and strings later :)]
+We'll talk about more Arduino and strings later :)
 
 ---
 
@@ -285,36 +304,44 @@ In Javascript, though things are rapidly changing, there is one type of [number]
 class: inverse
 Numbers
 # Integers -1, 0, 1, 2
+Python example
+```python
+myInt = 1
+print myInt
+```
 
 JavaScript example
+
 ```
-var myInt = 1
+var myInt = 1;
+console.log(myInt);
 ```
-Python example
-```
-myInt = 1
-```
+
+
+
 C example
 ```
-int myInt = 1
+int myInt = 1;
 ```
 ---
 
 class: inverse
 Numbers
 # Floats -0.1, 0.0, 0.1, 0.2, 3.14
-
-JavaScript example
-```
-var myFloat = 3.14
-```
 Python example
 ```
 myFloat = 3.14
+print myFloat
 ```
+JavaScript example
+```
+var myFloat = 3.14;
+console.log(myFloat);
+```
+
 C example
 ```
-float myFloat = 3.14
+float myFloat = 3.14;
 ```
 ---
 
@@ -371,17 +398,24 @@ Hexadecimal = base 16
 class: inverse
 # Arrays
 
-JavaScript example
-```
-var myArray = ["Water", "Apple", "Banana"];
-```
+
+
 Python example, (there is an array module in python, but we will use list)
 ````
 myList = ["Water", "Apple", "Banana"]
+print myList
+print myList[0] #this will print Water
 ```
+JavaScript example
+```javascript
+var myArray = ["Water", "Apple", "Banana"];
+console.log(myArray);
+console.log(myArray[0]); //this will log Water
+```
+
 C example
 ```
-char myArray [ 3 ] = {"Water", "Apple", "Banana"}
+char myArray[3] = {"Water", "Apple", "Banana"};
 ```
 ---
 
@@ -390,14 +424,27 @@ class: inverse
 
 Objects are collections of properties
 
-JavaScript example
-```
-	var myObj = {fuel_type: "electric", model: "S", color: "red"};
-```
+
+
 Python example, (dictionary)
 ```
-	myDict = {fuel_type: "electric", model: "S", color: "red"}
+myDict = {fuel_type: "electric", model: "S", color: "red"}
+print myDict
+print myDict["fuel_type"]
 ```
+JavaScript example
+```javascript
+var myObj = {fuel_type: "electric", model: "S", color: "red"};
+console.log(myObj);
+console.log(myObj.model);
+```
+---
+
+class: inverse
+# Objects
+
+Objects are collections of properties
+
 C example
 ```
 typedef struct {
@@ -433,16 +480,16 @@ More on Data Types
 Conversion from one Data Type to Another
 # String -> Number
 
-JavaScript example
-```
-var myString = "1";
-var myNum = parseInt(myString)
-```
-
 Python example
 ```
 myString = "1";
 myNum = int(myString)
+```
+
+JavaScript example
+```javascript
+var myString = "1";
+var myNum = parseInt(myString)
 ```
 
 C example
@@ -455,18 +502,25 @@ More on Data Types
 Conversion from one Data Type to Another
 # Number -> String
 
-JavaScript example
-```
-var myNum = 1;
-var myString = myNum.toString();
-```
-
 Python example
 
 ```
 myNum = 1;
 myString = str(myNum)
 ```
+
+JavaScript example
+```javascript
+var myNum = 1;
+var myString = myNum.toString();
+```
+
+---
+class: inverse
+More on Data Types
+Conversion from one Data Type to Another
+# Number -> String
+
 
 C example
 
@@ -482,16 +536,16 @@ More on Data Types
 Conversion from one Data Type to Another
 # String -> Bool
 
-JavaScript example
-```
-var myString = "true";
-var myBool = (myString == "true")
-```
-
 Python example
 ```
 myString = "True";
 myBool = (myString == "True")
+```
+
+JavaScript example
+```javascript
+var myString = "true";
+var myBool = (myString == "true")
 ```
 
 C example
@@ -506,18 +560,20 @@ Conversion from one Data Type to Another
 <!-- [ example or string that's delimited ]
 [bk: example -->
 
-Javascript example
-```
-var myString = "January 5th, 1978";
-var myArray = myString.split(",");
-```
-
 Python example
 
 ```
 myString = "January 5th, 1978"
 myArray = myString.split(",")
 ```
+
+Javascript example
+```javascript
+var myString = "January 5th, 1978";
+var myArray = myString.split(",");
+```
+
+
 
 ---
 class: inverse
@@ -526,18 +582,17 @@ Conversion from one Data Type to Another
 # Array -> String
 <!-- [ example or string that's delimited ]
 [bk: example -->
-
-JavaScript example
-```
-var myArray = ["January 5th", "1978"];
-var myString = myArray.join(",");
-
-```
-
 Python example
 ```
 myList = ["1", "2", "3"]
 myString = "".join(myList)
+```
+
+JavaScript example
+```javascript
+var myArray = ["January 5th", "1978"];
+var myString = myArray.join(",");
+
 ```
 
 ---
@@ -585,30 +640,35 @@ Protocols
 # Comments
 
 Comment to help others understand what your code does.
+Python example
+```
+# comment here
+```
 
 JavaScript example
 ```
 // comment here
 
 ```
-Python example
-```
-# comment here
-```
+
 
 ---
-class: inverse
+class: inverse,large
 
-# Assignments
-1. Create your own story algorithm. You can modify an example from class (story maker) or create your own. Remember to comment your code and use examples of:
+# Assignment 1
+Create your own story algorithm. You can modify an example from class (story maker) or create your own. Remember to comment your code and use examples of:
 	- user inputs
 	- variables (int or float, string, boolean)
 	- concatenation
 
-2. Create an object and verify it using https://jsonlint.com/
+---
+class: inverse
+# Assignment 2
+
+Create an object and verify it using https://jsonlint.com/
 
   Example:
-
+```
   {
   	"name": "Tony",
   	"location": "zoo",
@@ -617,6 +677,7 @@ class: inverse
   	"count": 3,
   	"furry": false
   }
+```
 
 ---
 class: inverse
