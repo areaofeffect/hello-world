@@ -128,7 +128,7 @@ class: inverse
 #### And some [composite types](https://en.wikipedia.org/wiki/Composite_data_type)
 
 - Arrays
-- Objects.
+- Objects
 
 ---
 class: inverse
@@ -326,16 +326,16 @@ class: inverse
 
 JavaScript example
 ```
-	var myArray = ["Water", "Apple", "Banana"];
+var myArray = ["Water", "Apple", "Banana"];
 ```
 Python example, (there is an array module in python, but we will use list)
 ````
-	myList = ["Water", "Apple", "Banana"]
+myList = ["Water", "Apple", "Banana"]
 ```
 C example
 ```
-	char myArray [ 3 ] = {"Water", "Apple", "Banana"}
-  ```
+char myArray [ 3 ] = {"Water", "Apple", "Banana"}
+```
 ---
 
 class: inverse
@@ -387,16 +387,17 @@ String -> Number
 var myString = "1";
 var myNum = parseInt(myString)
 ```
+
 Number -> String
 ```
 var myNum = 1;
-var myNum = myNum.toString();
+var myString = myNum.toString();
 ```
 
 String -> Bool
 ```
 var myString = "true";
-var myBool = (myString == 'true')
+var myBool = (myString == "true")
 ```
 
 Number -> Bool
@@ -408,6 +409,15 @@ String -> Array
 ```
 var myString = "January 5th, 1978";
 var myArray = myString.split(",");
+```
+
+Array -> String
+<!-- [ example or string that's delimited ]
+[bk: example -->
+```
+var myArray = ["January 5th", "1978"];
+var myString = myArray.join(",");
+
 ```
 
 ---
