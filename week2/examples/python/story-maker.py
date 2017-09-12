@@ -21,16 +21,5 @@ story = "The dear " + adjective1 + " grandma has come to " + color1 + " Riding H
 "One beautiful autumn afternoon little " + color1 + " Riding Hood is sent by " + famousPerson2 + " " \
 "to take some goodies back to " + yourName + "."
 
-# here we replace the variables with the values
-# entered by the user
-story.replace("adjective1", adjective1)
-story.replace("color1", color1.capitalize())
-story.replace("location1", location1)
-story.replace("object1", object1)
-story.replace("famousPerson1", famousPerson1)
-story.replace("famousPerson2", famousPerson2)
-story.replace("yourName", yourName)
-story.replace("adjective2", adjective2)
-
 # finally we print the story
 print (story)
