@@ -14,8 +14,9 @@ yourName = raw_input("What's your name?: ")
 adjective2 = raw_input("Enter one more adjective: ")
 
 # this is the story. it is made up of strings and variables.
-# the \ at the end of each line let's use know our string is long
-# and we want to continue on the next line. play close attention to the syntax!
+# the \ at the end of each line let's the computer know our string is a long one
+# (a whole paragraph!) and we want to continue more code on the next line. 
+# play close attention to the syntax!
 
 story = "The dear " + adjective1 + " grandma has come to " + color1 + " Riding Hood's " + location1 + ", " \
 "carrying a " + object1 + " for her grandchild which she has made by " + famousPerson1 + ". " \
