@@ -1,5 +1,7 @@
 # Week 2
 
+[Week 2 slides](http://hello-world.areaofeffect.io/week2/slides/#1)
+
 # Review and Discussion of Week 1
 From Silicon to Singularity
 - Overview of how computers actually work.
