@@ -93,7 +93,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### Week 2: The first building blocks of talking to machines.
+##### [Week 2: The first building blocks of talking to machines.](https://github.com/areaofeffect/hello-world/blob/master/week2/README.md)
 
 * Variables and Data Types
   * strings, objects, arrays, integers, structs
