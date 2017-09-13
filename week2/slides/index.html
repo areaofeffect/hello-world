@@ -240,7 +240,7 @@ class: inverse, medium
 Characters and Strings
 # Delimiters
 
-> A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[1] An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
+> A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
 
 [Wikipedia Definition](https://en.wikipedia.org/wiki/Delimiter)
 
@@ -293,12 +293,12 @@ class: inverse
 
 class: inverse
 # Numbers
-The two main types of numbers you'll decide between in most cases are *integers* or *floating point decimals*. Floats are used when more preceision is required.
+The two main types of numbers you'll decide between in most cases are *integers* or *floating point decimals*. Floats are used when more precision is required.
 
 Some things, like pi, cannot be expressed as an integer.
 .center[![Center-aligned image](./images/pi.png)]
 
-In Javascript, though things are rapidly changing, there is one type of [number](https://en.wikipedia.org/wiki/IEEE_754-1985#Double-precision_64_bit). Later in class during we will discuss builtin function `parseInt` and `parseFloat`.
+In Javascript, though things are rapidly changing, there is one type of [number](https://en.wikipedia.org/wiki/IEEE_754-1985#Double-precision_64_bit). Later in class during we will discuss built-in functions `parseInt` and `parseFloat`.
 ---
 
 class: inverse
@@ -627,15 +627,25 @@ class: inverse,middle
 class: inverse
 Protocols
 # Naming conventions
-Increasing the readability of your code will make working with others easier.
-
-Decide on using camelCase or snake-case
+Increasing the readability of your code will make working with others easier. Remember not to use any [reserved words](https://en.wikipedia.org/wiki/Reserved_word) for your language as the variable name. A common style is camelCase
 - var myName = "firstname lastname"
 
-Remeber that variables can't start with a number.
+Python rules
+- Remember that variables can't start with a number
+- Start with an underscore ( _ ) or letter
+- Use only letters, numbers or underscores for the rest of the variable name
+- Remember python is case-sensitive
+
+JavaScript rules
+- Same as Python
+- Variable names may also contain dollar signs ( $ )
+
+C rules
+- Same as python
+
 
 ---
-class: inverse
+class: inverse,small
 Protocols
 # Comments
 
@@ -648,6 +658,12 @@ Python example
 JavaScript example
 ```
 // comment here
+
+```
+
+C example
+```
+/* comment here */
 
 ```
 ---
@@ -693,7 +709,7 @@ class: inverse
 
  This should be a fun 20 to 30 minute idea session. This can be free form, and you do not need to build a working version of your idea.
 
- Think of a way to represent a number, string, array or an object in a dynamic medium.  Bring in your example for next class.
+ Think of a way to represent a number, string, array or an object in a dynamic medium.  Bring in or share your example in the next class.
 
 
 ---
