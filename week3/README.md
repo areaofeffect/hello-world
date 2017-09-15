@@ -31,7 +31,7 @@ There are a few different categories of operators, some we've already used. Some
 
 
 
-### Assignment operators
+## Assignment operators
 we've already used =
 	
 JavaScript example
@@ -77,7 +77,7 @@ substraction -
 <= less than or equal to
 
 ## Logical operators, NOT, AND, OR
-&& (Logicak AND)
+&& (Logical AND)
 
 ! (Logical NOT)
 
