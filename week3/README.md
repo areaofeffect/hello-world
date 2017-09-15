@@ -105,4 +105,8 @@ Start letting your program make logical decisions.
 
 # Resources
 
+[Python  operators](https://www.programiz.com/python-programming/operators)
+
+[JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
+
 
