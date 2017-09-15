@@ -47,26 +47,42 @@ C example
 	boolean myBool = true
 
 ## Arithmetic operators
-we've used 
+
 addition +
+
 substraction -
 
-there is also 
-* multiplication
+
+ 
+\* multiplication
+
 / division
+
 ++ increment by 1
+
 -- decrement by 1
+
 	
 ## Comparison operators
 == equal to
+
 !- not equal to
-> greater than
+
+\> greater than
+
 < less than
+
+\>= great than or equal to
+
+<= less than or equal to
 
 ## Logical operators, NOT, AND, OR
 && (Logicak AND)
+
 ! (Logical NOT)
+
 || (Logical OR)
+
  
 	
 # Conditional Statements
