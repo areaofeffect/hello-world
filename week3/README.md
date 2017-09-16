@@ -4,13 +4,18 @@
 
 # Review and Discussion of Week 2
 Variables and Data Types
+
 - Booleans, Strings, Numbers, Arrays, and Objects
+
 - Assignment
+
 - Conversion
+
 - Protocols
 
 
-### Data Typing the real world.
+
+### Data typing the real world.
 - Review Assignment 1
 
 
@@ -156,25 +161,87 @@ C example
 
 	boolean isGreater = (x > y) // true
 
-## Logical operators, NOT, AND, OR
-&& (Logical AND)
+## Logical operators
 
-! (Logical NOT)
+With logical operators you can combine one or more comparisons to make more complex decisions.
 
-|| (Logical OR)
+We know that Booleans were one of our primitive data types in computer science. Now we are going to learn about Boolean logic. We will use it in our programs, but it is interesting to note that the this same logic is a core component of a computer's CPU.
 
+Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), and computer memory, all the way up through complete microprocessors, which may contain more than 100 million gates. 
 
 [CTD: logic gates, elementary ]
 
- 
+https://en.wikipedia.org/wiki/Logic_gate
+
+### Logical AND ( && )
+
+Python example
+	
+	
+	(x < y and myString is "hello") # True
+		
+JavaScript example
+
+	var isGreater = (x > y && myString == "world") // false
+
+C example
+	
+	int x = 0;
+	int y = 10;
+	boolean bothAreNonZero = (a && b); // false
+
+
+### Logical NOT ( ! )
+
+Python example
+	
+	x = 1
+	y = 2
+	!(x > y) # False
+		
+JavaScript example
+
+	var isGreater = !(x > y) // true
+
+C example
+
+	int x = 0;
+	int y = 10;
+	boolean bothAreNonZero = !(a && b); // true
+
+
+### Logical OR ( || )
+
+Python example
+	
+	x = 1
+	y = 2
+	(x > y || x > 0) # True
+		
+JavaScript example
+
+	var isGreater = (x > y || y > 2) // false
+
+C example
+
+	boolean oneIsNonZero = (x || y) // true
+
+
+
 # Additional Operators
+Just like there were more data types than we covered in class last week, there are also more operators. Here are a few types to explore on your own.
+
 Bitwise
+
 Compound Assignment
+
 Ternary conditional
+
 	
 # Conditional Statements
 
-The mighty if!
+## If
+Now that we've reviewed the operators that evaluate our variables into meaningful logic, we are ready to make deicisions. Enter the mighty if statement!
 
 Python example
 	
@@ -195,7 +262,31 @@ C example
 		printf("isGreater is true");
 	}
 
-Start examples of using all of our newly learned operations
+## Else
+In the case that the conditional expression in your if statement is not true, you may want to do something else.
+
+Python example
+	
+	if (x < y):
+		print "x is less than y"
+	else:
+		print "y is less than x"
+		
+JavaScript example
+
+	if (x > y) {
+		console.log( "x is greater than y")
+	} else {
+		console.log( "y is greater than x")
+	}
+
+C example
+
+	if (x > y) {
+		printf( "x is greater than y")
+	} else {
+		printf( "y is greater than x")
+	}
 
 
 # Functions
@@ -231,5 +322,11 @@ List of this weeks assignments
 [Python  operators](https://www.programiz.com/python-programming/operators)
 
 [JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
+
+[Logic gates](https://vimeo.com/106364318)
+
+[JavaScript Logical Operators](https://javascript.info/logical-operators)
+
+
 
 
