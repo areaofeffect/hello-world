@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 3</title>
+    <meta charset="utf-8">
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Roboto';
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p { line-height: 2.0em; color: #FFF}
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 1.3em; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-75 img {
+        width: 75%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-50 img {
+        width: 50%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-40 img {
+        width: 40%; /* Keep our Images fitting in the slides */
+      }
+      .center-35 img {
+        width: 35%; /* Keep our Images fitting in the slides */
+      }
+      .center-30 img {
+        width: 30%; /* Keep our Images fitting in the slides */
+      }
+      .center-25 img {
+        width: 25%; /* Keep our Images fitting in the slides */
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# Code Literacy: Week 3
+Fall 2017
+
+---
+class: inverse, left
+
+# Review and Discussion of Week 2
+Variables and Data Types
+
+- Creating variables and assigning values
+
+- Booleans, Strings, Numbers, Arrays, and Objects
+
+- Conversion
+
+- Protocols
+
+---
+class: inverse, left
+
+#Data typing the real world.
+
+.center[![Center-aligned image](./images/assignment1.jpg)]
+
+---
+class: inverse, left
+# Review of Objects
+
+---
+class: inverse, left
+# Stories and Thought experiment
+
+.center[![Center-aligned image](./images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)]
+
+
+---
+class: inverse, left
+# Operators
+
+> an operator is a character that represents an action
+
+There are a few different categories of operators, some we've already used. Some we will explore today.
+
+---
+class: inverse, left
+# Assignment operators
+Simply assigning a value to a variable.
+
+Python example
+```python
+  myBool = True
+  myBool = False
+```
+    
+JavaScript example
+```javascript
+  var myBool = true
+  myBool = false
+```
+
+C example
+```
+  boolean myBool = true
+  myBool = false
+```
+
+---
+class: inverse, left
+# Arithmetic operators
+
+### addition ( + )
+
+### substraction ( - ) 
+
+### multiplication ( \* )
+
+### division ( / )
+
+---
+class: inverse, left
+Arithmetic operators
+# increment ( ++ )
+
+Python example
+```python 
+  count = 0
+  count += 1
+ ```
+
+JavaScript example
+```javascript
+  var count = 0;
+  count++;
+```
+
+C example
+```
+  int count = 0;
+  count++;
+```
+
+---
+class: inverse, left
+Arithmetic operators
+# decrement ( -- )
+
+Python example
+```python 
+  count = 1
+  count -= 1
+ ```
+
+JavaScript example
+```javascript
+  var count = 1;
+  count--;
+```
+
+C example
+```
+  int count = 1;
+  count--;
+```
+
+---
+class: inverse, left
+# Arithmetic operators
+*a note about placement*
+
+For JavaScript and C, you can place this operator before your variable like this, `++count`. Depending on how you use your variable you may get different results.
+
+```
+  count = 3
+  x = 0
+  x = ++count; // x==4, count==4
+    x = count++; // x==3, count==4
+```
+
+---
+class: inverse, left
+# Comparison operators
+
+Comparison operators yield Boolean values.
+
+**==** equal to
+
+**!-** not equal to
+
+**\>** greater than
+
+**<** less than
+
+**\>=** great than or equal to
+
+**<=** less than or equal to
+
+---
+class: inverse, left
+## Comparison Operations on data types
+### Strings
+Python example
+```python 
+  myString = "hello"
+  isEqual = (hello is myString) # False
+  isEqual = ("hello" is myString) # False
+  isNotEqual = (hello is not myString) # True
+```
+
+JavaScript example
+```javascript
+  var isEqual = ("hello" == myString) // true
+```
+C example
+
+The operators `!=` and `==` only compare the memory addresses and not the actual String contents so you have to `strcmp`
+
+
+---
+class: inverse, left
+## Comparison Operations on data types
+
+### Numbers
+
+Python example
+```python  
+  x = 1
+  y = 2
+  (x < y) # False
+```    
+JavaScript example
+```javascript
+  var isGreater = (x > y) // false
+```
+C example
+```
+  boolean isGreater = (x > y) // true
+```
+
+---
+class: inverse, left
+# Logical operators
+
+With logical operators you can combine one or more comparisons to make more complex decisions.
+
+We know that Booleans were one of our primitive data types in computer science. Now we are going to learn about Boolean logic. We will use it in our programs, but it is interesting to note that the this same logic is a core component of a computer's CPU.
+
+Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), and computer memory, all the way up through complete microprocessors, which may contain more than 100 million gates.
+
+---
+class: inverse, left
+# Logical AND ( && )
+
+Python example
+```python
+  (x < y and myString is "hello") # True
+```
+
+JavaScript example
+```javascript
+  var isGreater = (x > y && myString == "world") // false
+```
+
+C example
+```  
+  int x = 0;
+  int y = 10;
+  boolean bothAreNonZero = (a && b); // false
+```
+
+
+---
+class: inverse, left
+# Logical NOT ( ! )
+
+Python example
+```python  
+  x = 1
+  y = 2
+  !(x > y) # False
+```
+
+JavaScript example
+```javascript
+  var isGreater = !(x > y) // true
+```
+
+C example
+```
+  int x = 0;
+  int y = 10;
+  boolean bothAreNonZero = !(a && b); // true
+```
+
+---
+class: inverse, left
+# Logical OR ( || )
+
+Python example
+```python  
+  x = 1
+  y = 2
+  (x > y || x > 0) # True
+```
+
+JavaScript example
+```javascript
+  var isGreater = (x > y || y > 2) // false
+```
+
+C example
+```
+  boolean oneIsNonZero = (x || y) // true
+```
+
+---
+class: inverse, left
+# Additional Operators
+Just like there were more data types than we covered in class last week, there are also more operators. Here are a few types to explore on your own.
+
+Bitwise
+
+Compound Assignment
+
+Ternary conditional
+
+---
+class: inverse, left
+# Conditional Statements
+## If
+Now that we've reviewed the operators that evaluate our variables into meaningful logic, we are ready to make deicisions. Enter the mighty if statement!
+
+Python example
+```python 
+  if (x < y):
+    print "x is less than y"
+```
+
+JavaScript example
+```javascript
+  var isGreater = (x > y) // false
+  if (isGreater) {
+    console.log( "x is greater than y")
+  }
+```
+
+C example
+```
+  boolean isGreater = (x > y) // true
+  if (isGreater) {
+    printf("isGreater is true");
+```
+
+---
+class: inverse, left
+# Conditional Statements
+## Else
+In the case that the conditional expression in your if statement is not true, you may want to do something else.
+
+Python example
+```python  
+  if (x < y):
+    print "x is less than y"
+  else:
+    print "y is less than x"
+```
+
+JavaScript example
+```javascript
+  if (x > y) {
+    console.log( "x is greater than y")
+  } else {
+    console.log( "y is greater than x")
+  }
+```
+
+C example
+```
+  if (x > y) {
+    printf( "x is greater than y")
+  } else {
+    printf( "y is greater than x")
+  }
+```
+
+---
+class: inverse, left
+# Functions
+
+Start letting your program make logical decisions.
+
+## Declaration
+
+Python example
+```python  
+  def myFunction():
+    # statements here
+``` 
+
+JavaScript example
+```javascript
+  function myFunction() {
+    // statements here
+  }
+```
+
+C example
+```
+  boolean findValue (x,y) {
+    isGreater = (x > y); // true
+    return isGreater;
+  }
+```
+
+---
+class: inverse, left
+# Functions
+## Return
+
+---
+class: inverse, left
+# Functions
+## Parameters
+
+Parameters are a type of variable that belong to the function.
+
+---
+class: inverse, left
+# Assignments
+
+---
+class: inverse, left, middle, large
+
+# Thanks!
+
+- carrie@areaofeffect.io
+- bruno@areaofeffect.io
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true,
+          ratio: '16:9'
+        });
+
+    </script>
+  </body>
+</html>

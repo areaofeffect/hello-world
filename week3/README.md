@@ -5,9 +5,9 @@
 # Review and Discussion of Week 2
 Variables and Data Types
 
-- Booleans, Strings, Numbers, Arrays, and Objects
+- Creating variables and assigning values
 
-- Assignment
+- Booleans, Strings, Numbers, Arrays, and Objects
 
 - Conversion
 
@@ -97,17 +97,17 @@ For JavaScript and C, you can place this operator before your variable like this
 
 Python example
 	
-	count = 0
+	count = 1
 	count -= 1
 		
 JavaScript example
 
-	var count = 0;
+	var count = 1;
 	count--;
 
 C example
 
-	int count = 0;
+	int count = 1;
 	count--;
 
 	
@@ -127,9 +127,9 @@ Comparison operators yield Boolean values.
 
 **<=** less than or equal to
 
-## Data Types matter in Comparison Operations
+### Comparison Operations on data types
 
-## Strings
+#### Strings
 Python example
 	
 	myString = "hello"
@@ -145,7 +145,7 @@ C example
 
 The operators `!=` and `==` only compare the memory addresses and not the actual String contents so you have to `strcmp`
 
-## Numbers
+#### Numbers
 
 Python example
 	
@@ -293,6 +293,10 @@ C example
 
 Start letting your program make logical decisions.
 
+Functions are procedures or routines.
+
+## Declaration
+
 Python example
 	
 	def myFunction():
@@ -311,6 +315,12 @@ C example
 		return isGreater;
 	}
 
+## Return
+
+## Parameters
+
+Parameters are a type of variable that belong to the function.
+
 
 # Assignments
 
@@ -325,7 +335,11 @@ List of this weeks assignments
 
 [Logic gates](https://vimeo.com/106364318)
 
+[Logic gate symbols](https://www.allaboutcircuits.com/technical-articles/universal-logic-gates/)
+
 [JavaScript Logical Operators](https://javascript.info/logical-operators)
+
+[Function Declaration vs Expression in JavaScript](https://www.sitepoint.com/function-expressions-vs-declarations/)
 
 
 
