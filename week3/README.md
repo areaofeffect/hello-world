@@ -16,7 +16,7 @@ Variables and Data Types
 
 
 ### Data typing the real world.
-- Review Assignment 1
+![Matrix](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/assignment1.jpg?raw=true)
 
 
 ### Review of Objects
@@ -39,14 +39,19 @@ Saving one object per minute would give you 60 temperatures to plot overtime to 
 
 ### Stories and Thought experiment
 
-- review of last 2 assignments
+![Hypercell](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg?raw=true)
+
+[https://www.youtube.com/watch?v=dg7SaaH-GYw](https://www.youtube.com/watch?v=dg7SaaH-GYw)
+
 
 
 # Operators
 
-> an operator is a character that represents an action
 
-There are a few different categories of operators, some we've already used. Some we will explore today.
+_an operator is a character that represents an action_
+
+Like data types, there are many different types of operators. We've already used the assignment operator, let's explore a few more.
+
 
 
 ## Assignment operators
@@ -78,7 +83,6 @@ C example
 ### multiplication ( \* )
 
 ### division ( / )
-
 
 ### increment ( ++ )
 
@@ -407,6 +411,7 @@ isGreater(1,0) #True
 ```
 
 # A Forest
+![AForest](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/forest.jpg?raw=true)
 
 # Assignments
 
