@@ -160,6 +160,9 @@ JavaScript example
 C example
 
 	boolean isGreater = (x > y) // true
+	
+#### Order of operations
+Some operators are given a higher precedence.
 
 ## Logical operators
 
@@ -340,6 +343,10 @@ List of this weeks assignments
 [JavaScript Logical Operators](https://javascript.info/logical-operators)
 
 [Function Declaration vs Expression in JavaScript](https://www.sitepoint.com/function-expressions-vs-declarations/)
+
+[Order of operations](https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-order-of-operations/v/introduction-to-order-of-operations)
+
+
 
 
 
