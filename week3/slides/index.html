@@ -150,24 +150,24 @@ Like data types, there are many different types of operators. We've already used
 ---
 class: inverse, left
 # Assignment operators
-_Simply assigning a value to a variable_
+_Let's think of the light in a room. What is it's current state? What happens to the assignment when that state changes?_
 
 Python example
 ```python
-myBool = True
-myBool = False
+isOn = True
+isoOn = False
 ```
     
 JavaScript example
 ```javascript
-var myBool = true
-myBool = false
+var isOn = true
+isOn = false
 ```
 
 C example
 ```c
-boolean myBool = true
-myBool = false
+boolean isOn = true
+isOn = false
 ```
 
 ---
@@ -182,7 +182,33 @@ class: inverse, left
 
 ### division ( / )
 
-### modulo (%)
+### modulo ( % )
+
+---
+class: inverse, left
+# Order of operations
+Some operators are given a higher precedence.
+
+PEMDAS
+ _Please Excuse My Dear Aunt Sally_
+
+Parentheses
+
+Exponents
+
+Multiplication
+
+Division
+
+Addition
+
+Subtraction
+
+```
+6 * (5 + 3) = 48
+6 * 5 + 3 = 33
+
+```
 
 ---
 class: inverse, left
@@ -191,20 +217,20 @@ Arithmetic operators
 
 Python example
 ```python 
-count = 0
-count += 1
+studentsInClass = 0
+studentsInClass += 1 # studentsInClass will be 1
  ```
 
 JavaScript example
 ```javascript
-var count = 0;
-count++;
+var studentsInClass = 1;
+studentsInClass++; // studentsInClass will be 2
 ```
 
 C example
 ```
-int count = 0;
-count++;
+int studentsInClass = 2;
+studentsInClass++; // studentsInClass will be 2
 ```
 
 ---
@@ -214,20 +240,20 @@ Arithmetic operators
 
 Python example
 ```python 
-count = 1
-count -= 1
+studentsInClass = 1
+studentsInClass -= 1
  ```
 
 JavaScript example
 ```javascript
-var count = 1;
-count--;
+var studentsInClass = 1;
+studentsInClass--;
 ```
 
 C example
-```
-int count = 1;
-count--;
+```c
+int studentsInClass = 1;
+studentsInClass--;
 ```
 
 ---
@@ -251,17 +277,17 @@ class: inverse, left
 
 _Comparison operators yield Boolean values_
 
-**==**    | equal to
+### **==**  ...    equal to
 
-**!-**    | not equal to
+### **!=**  ...    not equal to
 
-**\>**    | greater than
+### **\>**  ...   greater than
 
-**<**     | less than
+### **<**   ...    less than
 
-**\>=**   | great than or equal to
+### **\>=** ...   great than or equal to
 
-**<=**    | less than or equal to
+### **<=**  ...   less than or equal to
 
 ---
 class: inverse, left
@@ -269,15 +295,15 @@ Comparison Operations on data types
 # Strings
 Python example
 ```python 
-myString = "hello"
-isEqual = (hello is myString) # False
-isEqual = ("hello" is myString) # False
-isNotEqual = (hello is not myString) # True
+teachers = ["bruno", "carrie"]
+haveSameName = (teachers[0] is teachers[1]) # False
 ```
 
 JavaScript example
 ```javascript
-var isEqual = ("hello" == myString) // true
+var teachers = ["bruno", "carrie"]
+var slackHandle = ["brun.no", "carrie"]
+var nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
 ```
 C example
 
@@ -294,39 +320,18 @@ Python example
 ```python  
 x = 1
 y = 2
-(x < y) # False
+print (x < y) # False
 ```    
+
 JavaScript example
 ```javascript
-var isGreater = (x > y) // false
+var isGreater = (x > y); // false
 ```
+
 C example
+
 ```c
-boolean isGreater = (x > y) // true
-```
-
----
-class: inverse, left
-# Order of operations
-Some operators are given a higher precedence.
-PEMDAS
-
-Parentheses
-
-Exponents
-
-Multiplication
-
-Division
-
-Addition
-
-Subtraction
-
-```
-6 * (5 + 3) = 48
-6 * 5 + 3 = 33
-
+boolean isGreater = (x > y); // true
 ```
 
 ---
@@ -473,6 +478,10 @@ if (x > y) {
   console.log( "y is greater than x")
 }
 ```
+---
+class: inverse, left
+Conditional Statements
+## Else
 
 C example
 ```

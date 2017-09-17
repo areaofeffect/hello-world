@@ -55,24 +55,23 @@ Like data types, there are many different types of operators. We've already used
 
 
 ## Assignment operators
-we've already used =
-
+Let's think of the light in a room. What is it's current state? What happens to the assignment when that state changes?
 
 Python example
 
-	myBool = True
-	myBool = False
+	isOn = True
+	isoOn = False
 		
 JavaScript example
 
-	var myBool = true
-	myBool = false
+	var isOn = true
+	isOn = false
 
 
 C example
 
-	boolean myBool = true
-	myBool = false
+	boolean isOn = true
+	isOn = false
 
 ## Arithmetic operators
 
@@ -84,22 +83,58 @@ C example
 
 ### division ( / )
 
+### modulo ( % )
+
+#### Order of operations
+Some operators are given a higher precedence.
+
+PEMDAS
+
+Parentheses
+
+Exponents
+
+Multiplication
+
+Division
+
+Addition
+
+Subtraction
+
 ### increment ( ++ )
 
 Python example
 	
-	count = 0
-	count += 1
+	studentsInClass = 0
+	studentsInClass += 1 # studentsInClass will be 1
 		
 JavaScript example
 
-	var count = 0;
-	count++;
+	var studentsInClass = 1;
+	studentsInClass++; // studentsInClass will be 2
 
 C example
 
-	int count = 0;
-	count++;
+	int studentsInClass = 2;
+	studentsInClass++; // studentsInClass will be 3
+	
+### decrement ( -- )
+
+Python example
+	
+	studentsInClass = 1
+	studentsInClass -= 1
+		
+JavaScript example
+
+	var studentsInClass = 1;
+	studentsInClass--;
+
+C example
+
+	int studentsInClass = 1;
+	studentsInClass--;
 	
 *a note about placement*
 
@@ -109,24 +144,6 @@ For JavaScript and C, you can place this operator before your variable like this
 	x = 0
 	x = ++count; // x==4, count==4
   	x = count++; // x==3, count==4
-  	
-
-### decrement ( -- )
-
-Python example
-	
-	count = 1
-	count -= 1
-		
-JavaScript example
-
-	var count = 1;
-	count--;
-
-C example
-
-	int count = 1;
-	count--;
 
 	
 ## Comparison operators
@@ -150,14 +167,14 @@ Comparison operators yield Boolean values.
 #### Strings
 Python example
 	
-	myString = "hello"
-	isEqual = (hello is myString) # False
-	isEqual = ("hello" is myString) # False
-	isNotEqual = (hello is not myString) # True
+	teachers = ["bruno", "carrie"]
+	haveSameName = (teachers[0] is teachers[1]) # False
 		
 JavaScript example
 
-	var isEqual = ("hello" == myString) // true
+	var teachers = ["bruno", "carrie"]
+	var slackHandle = ["brun.no", "carrie"]
+	var nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
 
 C example
 
@@ -179,21 +196,6 @@ C example
 
 	boolean isGreater = (x > y) // true
 	
-#### Order of operations
-Some operators are given a higher precedence.
-PEMDAS
-
-Parentheses
-
-Exponents
-
-Multiplication
-
-Division
-
-Addition
-
-Subtraction
 
 
 ## Logical operators
