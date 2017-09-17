@@ -305,12 +305,30 @@ C example
 		printf( "y is greater than x")
 	}
 
+## Elif
+Python can only have one else. But it can have many `elif`
+
+Python example
+	
+	import math
+	x = 'nan'
+	y = 1
+	if (x < y):
+		print "x is less than y"
+	elif math.isnan(float(x)):
+		print "x is NaN"
+	else:
+		print "y is less than x"
+		
+
 
 # Functions
 
-Start letting your program make logical decisions.
 
-Functions are procedures or routines.
+> In programming, a named section of a program that performs a specific task. In this sense, a function is a type of procedure or routine. Some programming languages make a distinction between a function, which returns a value, and a procedure, which performs some operation but does not return a value.
+Most programming languages come with a prewritten set of functions that are kept in a library. You can also write your own functions to perform specialized tasks.
+
+http://www.webopedia.com/TERM/F/function.html
 
 ## Declaration
 
@@ -327,17 +345,54 @@ JavaScript example
 
 C example
 
-	boolean findValue (x,y) {
-		isGreater = (x > y); // true
-		return isGreater;
+	boolean myFunction () {
+		// statements here
 	}
 
-## Return
+## Definition
 
-## Parameters
+Python example
 
-Parameters are a type of variable that belong to the function.
+```  
+def isGreater(x, y):
+  return (x > y)
 
+```
+
+JavaScript example
+
+```
+function isGreater(x, y) {
+  return (x > y);
+}
+```
+
+C example
+
+```
+boolean isGreater (int x, int y) {
+  boolean returnVal = (x > y); // true
+  return returnVal;
+}
+```
+
+## Parameters and Arguments
+
+In the last slide `x` and `y` are parameters of the function. 
+
+The values you pass in for `x` and `y` are known as arguments.
+
+Python example
+
+```  
+def isGreater(x, y):
+  return (x > y)
+
+isGreater(0,1) #False
+isGreater(1,0) #True
+```
+
+# A Forest
 
 # Assignments
 
