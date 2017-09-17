@@ -163,6 +163,20 @@ C example
 	
 #### Order of operations
 Some operators are given a higher precedence.
+PEMDAS
+
+Parentheses
+
+Exponents
+
+Multiplication
+
+Division
+
+Addition
+
+Subtraction
+
 
 ## Logical operators
 
