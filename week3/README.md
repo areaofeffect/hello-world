@@ -19,9 +19,23 @@ Variables and Data Types
 - Review Assignment 1
 
 
-### Objects
+### Review of Objects
 
-- A review of objects
+- Time Series Data
+
+Useful for data analysis like visualizations, pattern recognition, signal processing, and even things like machine learning.
+
+Let's take for example analyzing the temperature of this room over time and then visualizing that data. Each discrete timestamp could be represented by an object.
+
+```
+{
+	timestamp: "2017-09-17T12:00:00.000Z",
+	temp: 71
+}
+```
+
+Saving one object per minute would give you 60 temperatures to plot overtime to analyze the temp changes. Some companies are using data like this to make heating buildings more efficient.
+
 
 ### Stories and Thought experiment
 
@@ -414,6 +428,8 @@ List of this weeks assignments
 [Function Declaration vs Expression in JavaScript](https://www.sitepoint.com/function-expressions-vs-declarations/)
 
 [Order of operations](https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-order-of-operations/v/introduction-to-order-of-operations)
+
+[Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
 
 
 
