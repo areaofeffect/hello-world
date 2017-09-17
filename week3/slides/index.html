@@ -137,20 +137,20 @@ Simply assigning a value to a variable.
 
 Python example
 ```python
-  myBool = True
-  myBool = False
+myBool = True
+myBool = False
 ```
     
 JavaScript example
 ```javascript
-  var myBool = true
-  myBool = false
+var myBool = true
+myBool = false
 ```
 
 C example
 ```
-  boolean myBool = true
-  myBool = false
+boolean myBool = true
+myBool = false
 ```
 
 ---
@@ -172,20 +172,20 @@ Arithmetic operators
 
 Python example
 ```python 
-  count = 0
-  count += 1
+count = 0
+count += 1
  ```
 
 JavaScript example
 ```javascript
-  var count = 0;
-  count++;
+var count = 0;
+count++;
 ```
 
 C example
 ```
-  int count = 0;
-  count++;
+int count = 0;
+count++;
 ```
 
 ---
@@ -195,20 +195,20 @@ Arithmetic operators
 
 Python example
 ```python 
-  count = 1
-  count -= 1
+count = 1
+count -= 1
  ```
 
 JavaScript example
 ```javascript
-  var count = 1;
-  count--;
+var count = 1;
+count--;
 ```
 
 C example
 ```
-  int count = 1;
-  count--;
+int count = 1;
+count--;
 ```
 
 ---
@@ -219,10 +219,10 @@ class: inverse, left
 For JavaScript and C, you can place this operator before your variable like this, `++count`. Depending on how you use your variable you may get different results.
 
 ```
-  count = 3
-  x = 0
-  x = ++count; // x==4, count==4
-    x = count++; // x==3, count==4
+count = 3
+x = 0
+x = ++count; // x==4, count==4
+  x = count++; // x==3, count==4
 ```
 
 ---
@@ -249,15 +249,15 @@ class: inverse, left
 ### Strings
 Python example
 ```python 
-  myString = "hello"
-  isEqual = (hello is myString) # False
-  isEqual = ("hello" is myString) # False
-  isNotEqual = (hello is not myString) # True
+myString = "hello"
+isEqual = (hello is myString) # False
+isEqual = ("hello" is myString) # False
+isNotEqual = (hello is not myString) # True
 ```
 
 JavaScript example
 ```javascript
-  var isEqual = ("hello" == myString) // true
+var isEqual = ("hello" == myString) // true
 ```
 C example
 
@@ -272,17 +272,17 @@ class: inverse, left
 
 Python example
 ```python  
-  x = 1
-  y = 2
-  (x < y) # False
+x = 1
+y = 2
+(x < y) # False
 ```    
 JavaScript example
 ```javascript
-  var isGreater = (x > y) // false
+var isGreater = (x > y) // false
 ```
 C example
 ```
-  boolean isGreater = (x > y) // true
+boolean isGreater = (x > y) // true
 ```
 
 ---
@@ -301,19 +301,19 @@ class: inverse, left
 
 Python example
 ```python
-  (x < y and myString is "hello") # True
+(x < y and myString is "hello") # True
 ```
 
 JavaScript example
 ```javascript
-  var isGreater = (x > y && myString == "world") // false
+var isGreater = (x > y && myString == "world") // false
 ```
 
 C example
 ```  
-  int x = 0;
-  int y = 10;
-  boolean bothAreNonZero = (a && b); // false
+int x = 0;
+int y = 10;
+boolean bothAreNonZero = (a && b); // false
 ```
 
 
@@ -323,21 +323,21 @@ class: inverse, left
 
 Python example
 ```python  
-  x = 1
-  y = 2
-  !(x > y) # False
+x = 1
+y = 2
+!(x > y) # False
 ```
 
 JavaScript example
 ```javascript
-  var isGreater = !(x > y) // true
+var isGreater = !(x > y) // true
 ```
 
 C example
 ```
-  int x = 0;
-  int y = 10;
-  boolean bothAreNonZero = !(a && b); // true
+int x = 0;
+int y = 10;
+boolean bothAreNonZero = !(a && b); // true
 ```
 
 ---
@@ -346,19 +346,19 @@ class: inverse, left
 
 Python example
 ```python  
-  x = 1
-  y = 2
-  (x > y || x > 0) # True
+x = 1
+y = 2
+(x > y || x > 0) # True
 ```
 
 JavaScript example
 ```javascript
-  var isGreater = (x > y || y > 2) // false
+var isGreater = (x > y || y > 2) // false
 ```
 
 C example
 ```
-  boolean oneIsNonZero = (x || y) // true
+boolean oneIsNonZero = (x || y) // true
 ```
 
 ---
@@ -380,23 +380,23 @@ Now that we've reviewed the operators that evaluate our variables into meaningfu
 
 Python example
 ```python 
-  if (x < y):
-    print "x is less than y"
+if (x < y):
+  print "x is less than y"
 ```
 
 JavaScript example
 ```javascript
-  var isGreater = (x > y) // false
-  if (isGreater) {
-    console.log( "x is greater than y")
-  }
+var isGreater = (x > y) // false
+if (isGreater) {
+  console.log( "x is greater than y")
+}
 ```
 
 C example
 ```
-  boolean isGreater = (x > y) // true
-  if (isGreater) {
-    printf("isGreater is true");
+boolean isGreater = (x > y) // true
+if (isGreater) {
+printf("isGreater is true");
 ```
 
 ---
@@ -407,28 +407,28 @@ In the case that the conditional expression in your if statement is not true, yo
 
 Python example
 ```python  
-  if (x < y):
-    print "x is less than y"
-  else:
-    print "y is less than x"
+if (x < y):
+  print "x is less than y"
+else:
+  print "y is less than x"
 ```
 
 JavaScript example
 ```javascript
-  if (x > y) {
-    console.log( "x is greater than y")
-  } else {
-    console.log( "y is greater than x")
-  }
+if (x > y) {
+  console.log( "x is greater than y")
+} else {
+  console.log( "y is greater than x")
+}
 ```
 
 C example
 ```
-  if (x > y) {
-    printf( "x is greater than y")
-  } else {
-    printf( "y is greater than x")
-  }
+if (x > y) {
+  printf( "x is greater than y")
+} else {
+  printf( "y is greater than x")
+}
 ```
 
 ---
@@ -441,23 +441,24 @@ Start letting your program make logical decisions.
 
 Python example
 ```python  
-  def myFunction():
-    # statements here
+## Parameters
+
+Parameters are a type of variable that belong to the function.
 ``` 
 
 JavaScript example
 ```javascript
-  function myFunction() {
-    // statements here
-  }
+function myFunction() {
+  // statements here
+}
 ```
 
 C example
 ```
-  boolean findValue (x,y) {
-    isGreater = (x > y); // true
-    return isGreater;
-  }
+boolean findValue (x,y) {
+  isGreater = (x > y); // true
+  return isGreater;
+}
 ```
 
 ---
