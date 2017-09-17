@@ -94,7 +94,7 @@ Fall 2017
 class: inverse, left
 
 # Review and Discussion of Week 2
-Variables and Data Types
+_Variables and Data Types_
 
 - Creating variables and assigning values
 
@@ -115,7 +115,7 @@ class: inverse, left
 class: inverse, left
 # Review of Objects
 
-- Time Series Data
+_Time Series Data_
 
 Useful for data analysis like visualizations, pattern recognition, signal processing, and even things like machine learning.
 
@@ -134,21 +134,23 @@ Saving one object per minute would give you 60 temperatures to plot overtime to 
 class: inverse, left
 # Stories and Thought experiment
 
-.center[![Center-aligned image](./images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)]
+.center.center-75[![Center-aligned image](./images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)]
 
 
 ---
 class: inverse, left
 # Operators
 
-> an operator is a character that represents an action
+_an operator is a character that represents an action_
 
-There are a few different categories of operators, some we've already used. Some we will explore today.
+Like data types, there are many different types of operators. We've already used the assignment operator, let's explore a few more.
+
+.center.center-50[![Center-aligned image](./images/operator.jpg)]
 
 ---
 class: inverse, left
 # Assignment operators
-Simply assigning a value to a variable.
+_Simply assigning a value to a variable_
 
 Python example
 ```python
@@ -163,7 +165,7 @@ myBool = false
 ```
 
 C example
-```
+```c
 boolean myBool = true
 myBool = false
 ```
@@ -228,40 +230,41 @@ count--;
 
 ---
 class: inverse, left
-# Arithmetic operators
-*a note about placement*
+Arithmetic operators
+# increment, decrement and placement
+_a note about placement_
 
 For JavaScript and C, you can place this operator before your variable like this, `++count`. Depending on how you use your variable you may get different results.
 
-```
-count = 3
-x = 0
+```javascript
+var count = 3;
+x = 0;
 x = ++count; // x==4, count==4
-  x = count++; // x==3, count==4
+x = count++; // x==3, count==4
 ```
 
 ---
 class: inverse, left
 # Comparison operators
 
-Comparison operators yield Boolean values.
+_Comparison operators yield Boolean values_
 
-**==** equal to
+**==**    | equal to
 
-**!-** not equal to
+**!-**    | not equal to
 
-**\>** greater than
+**\>**    | greater than
 
-**<** less than
+**<**     | less than
 
-**\>=** great than or equal to
+**\>=**   | great than or equal to
 
-**<=** less than or equal to
+**<=**    | less than or equal to
 
 ---
 class: inverse, left
-## Comparison Operations on data types
-### Strings
+Comparison Operations on data types
+# Strings
 Python example
 ```python 
 myString = "hello"
@@ -281,9 +284,9 @@ The operators `!=` and `==` only compare the memory addresses and not the actual
 
 ---
 class: inverse, left
-## Comparison Operations on data types
+Comparison Operations on data types
 
-### Numbers
+# Numbers
 
 Python example
 ```python  
@@ -296,7 +299,7 @@ JavaScript example
 var isGreater = (x > y) // false
 ```
 C example
-```
+```c
 boolean isGreater = (x > y) // true
 ```
 
@@ -317,6 +320,13 @@ Division
 Addition
 
 Subtraction
+
+```
+6 * (5 + 3) = 48
+6 * 5 + 3 = 33
+
+```
+
 
 
 ---
@@ -344,7 +354,7 @@ var isGreater = (x > y && myString == "world") // false
 ```
 
 C example
-```  
+```c
 int x = 0;
 int y = 10;
 boolean bothAreNonZero = (a && b); // false
@@ -368,7 +378,7 @@ var isGreater = !(x > y) // true
 ```
 
 C example
-```
+```c
 int x = 0;
 int y = 10;
 boolean bothAreNonZero = !(a && b); // true
@@ -391,7 +401,7 @@ var isGreater = (x > y || y > 2) // false
 ```
 
 C example
-```
+```c
 boolean oneIsNonZero = (x || y) // true
 ```
 
@@ -400,7 +410,7 @@ class: inverse, left
 # Additional Operators
 Just like there were more data types than we covered in class last week, there are also more operators. Here are a few types to explore on your own.
 
-Bitwise
+Bitwise [Python](https://wiki.python.org/moin/BitwiseOperators) | [JavaScript](https://www.w3resource.com/javascript/operators/bitwise-operator.php) | [C](https://www.tutorialspoint.com/cprogramming/c_bitwise_operators.htm)
 
 Compound Assignment
 
