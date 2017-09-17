@@ -266,11 +266,13 @@ C example
 # Additional Operators
 Just like there were more data types than we covered in class last week, there are also more operators. Here are a few types to explore on your own.
 
-Bitwise
+Bitwise Operators
 
-Compound Assignment
+[Python](https://wiki.python.org/moin/BitwiseOperators) | [JavaScript](https://www.w3resource.com/javascript/operators/bitwise-operator.php) | [C](https://www.tutorialspoint.com/cprogramming/c_bitwise_operators.htm)
 
-Ternary conditional
+[Compound Assignment](https://docs.microsoft.com/en-us/scripting/javascript/reference/compound-assignment-operators-javascript)
+
+[Ternary conditional](https://en.wikipedia.org/wiki/%3F:)
 
 	
 # Conditional Statements
