@@ -354,7 +354,7 @@ Let's set up some parameters to work with while we review how to use these opera
 
 Later in class we will journey into the deep deep forest, our path will follow the decisions we make. Our options are based on the places we've been. We'll need the machine to make logical decisions to help us on our way.
 
-We will be concerned with `yourLocation` and  `yourItems`. 
+We will be concerned with `yourLocation`, `yourItems` and `yourFriends`. 
 
 ### Let's look at some pseudo code.
 
@@ -404,42 +404,37 @@ class: inverse, left
 
 Python example
 ```python  
-x = 1
-y = 2
-not(x > y) # False
+not(neededFriend in yourFriends)
 ```
 
 JavaScript example
 ```javascript
-var isGreater = !(x > y) // true
+var hasFriend = !(yourFriends.includes(neededFriend))
 ```
 
 C example
-```c
-int x = 0;
-int y = 10;
-boolean bothAreNonZero = !(a && b); // true
-```
+
+_In C we would just want to confirm that the neededFriend was not in the your friends array. This is subset of the functionality in the previous example. Unlike Python, `!` is a valid operator in C._
 
 ---
 class: inverse, left
 # Logical OR ( || )
 
+_If we wanted to make the game easier, we could require only one of the two conditions to be true._
+
 Python example
 ```python  
-x = 1
-y = 2
-(x > y or x > 0) # True
+(yourLocation is theLocation or neededItem in yourItems)
 ```
 
 JavaScript example
 ```javascript
-var isGreater = (x > y || y > 2) // false
+var levelUp = (yourLocation == theLocation || yourItems.includes(neededItem))
 ```
 
 C example
 ```c
-boolean oneIsNonZero = (x || y) // true
+boolean levelUp = (correctLocation || correctItem);
 ```
 
 ---
