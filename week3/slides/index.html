@@ -352,7 +352,7 @@ class: inverse, left
 
 Let's set up some parameters to work with while we review how to use this operators to make more complex decisions.
 
-We're building a game. We have to guide the character through based on their current level and the decisions they make.
+Later in class we will journey into the deep deep forest, our path will follow the decisions we make. Our options are based on the places we've been. We'll need the machine to make logical decisions to help us on our way.
 
 ---
 class: inverse, left
@@ -360,19 +360,37 @@ class: inverse, left
 
 Python example
 ```python
-(x < y and myString is "hello") # True
+(yourLocation is theLocation and neededItem in yourItems)
 ```
 
 JavaScript example
 ```javascript
-var isGreater = (x > y && myString == "world") // false
+var levelUp = (yourLocation == theLocation && yourItems.includes(neededItem))
 ```
 
-C example
+---
+class: inverse, left
+# Logical AND ( && )
+
+_In C the this operator evaluates whether both inputs are non-zero, we need a lot more code._
+
 ```c
-int x = 0;
-int y = 10;
-boolean bothAreNonZero = (a && b); // false
+char * yourItems [] = { "item1", "item2", "item3" };
+char * neededItem = "item1";
+int len = sizeof(yourItems)/sizeof(yourItems[0]);
+int i;
+int correctItem = 0;
+
+for(i = 0; i < len; ++i)
+{
+    if(!strcmp(yourItems[i], neededItem))
+    {
+        int correctItem = 1;
+    }
+}
+
+int correctLocation = (yourLocation == theLocation); // compare 2 strings
+boolean levelUp = (correctLocation && correctItem); // find a string in an array
 ```
 
 
@@ -384,7 +402,7 @@ Python example
 ```python  
 x = 1
 y = 2
-!(x > y) # False
+not(x > y) # False
 ```
 
 JavaScript example
@@ -407,7 +425,7 @@ Python example
 ```python  
 x = 1
 y = 2
-(x > y || x > 0) # True
+(x > y or x > 0) # True
 ```
 
 JavaScript example
