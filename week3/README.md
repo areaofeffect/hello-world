@@ -234,7 +234,7 @@ Python example
 	
 	x = 1
 	y = 2
-	!(x > y) # False
+	not(x > y) # False
 		
 JavaScript example
 
@@ -421,6 +421,19 @@ isGreater(1,0) #True
 
 List of this weeks assignments
 
+[https://www.codecademy.com/courses/html-javascript-css/0/1](https://www.codecademy.com/courses/html-javascript-css/0/1)
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
+[https://www.w3schools.com/html/](https://www.w3schools.com/html/)
+
+Design - draw it out
+
+Implementation - code it
+
+Testing - how do you make sure it works
+
+Polish - graphics, copy
 
 # Resources
 
