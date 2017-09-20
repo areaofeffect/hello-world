@@ -109,13 +109,15 @@ An brief history of computing, computers and why we code.
 ​
 <br/>
 
-##### Week 3: Logic
+##### [Week 3: Logic](https://github.com/areaofeffect/hello-world/blob/master/week3/README.md)
 
-- Functions and Conditionals
+- Operators
 
-- if statements, and, or, switch, not
+- Conditionals
 
-- application structure and flow
+- Functions
+
+- Application structure and flow
 
 <br/>
 
