@@ -419,22 +419,46 @@ isGreater(1,0) #True
 
 # Assignments
 
-List of this weeks assignments
 
-[https://www.codecademy.com/courses/html-javascript-css/0/1](https://www.codecademy.com/courses/html-javascript-css/0/1)
+### Create a logic game!
 
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+Design and build a game of your own using different types of operators:
 
-[https://www.w3schools.com/html/](https://www.w3schools.com/html/)
+- [arithmetic](http://hello-world.areaofeffect.io/week3/slides/#8) ```=``` ```+``` ```/``` ```-``` ```%```
 
-Design - draw it out
+- [comparison](http://hello-world.areaofeffect.io/week3/slides/#13) ```!=``` ```==``` ```>``` ```<``` ```>=``` ```<=```
 
-Implementation - code it
+- [logical](http://hello-world.areaofeffect.io/week3/slides/#16) ```and``` ```(&&)``` , ```or``` ```(||)``` , ```not``` ```(!)```
 
-Testing - how do you make sure it works
+- [conditional statements](http://hello-world.areaofeffect.io/week3/slides/#23) ```if``` ```elif``` ```else```
 
-Polish - graphics, copy
+- [functions](http://hello-world.areaofeffect.io/week3/slides/#29)
 
+Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/master/week3/examples) game from class.
+
+To start, it will help to break down your game as variables, datatypes and objects. Use a flow-chart and plan your game before writing any code. You can work in groups of 2, pair coding. Next week we will be play-testing our games in class.
+
+<br/>
+
+### Due next week (9 / 26):
+- Create a flow-chart of your game logic and how you imagine it working as code.
+- A prototype of your game in python demonstrating conditionals and logic from your design.
+
+
+
+<br/>
+
+
+#### Advanced assignment (a 2nd path, optional):
+- Convert your game logic into a JavaScript web app
+- Use our slides, notes and most importantly the internet (stackoverflow, repl.it, w3schools etc...) as reference on how to set this up.
+- Add graphics, finess your copy. Make it fun :)
+
+Here are some JavaScript resources for getting started, if you choose this path!:
+
+- [Codemy Tutorials](https://www.codecademy.com/courses/html-javascript-css/0/1)
+- [Mozilla Javascript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+- [W3 schools HTML](https://www.w3schools.com/html/)
 # Resources
 
 [Python  operators](https://www.programiz.com/python-programming/operators)
