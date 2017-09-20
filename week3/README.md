@@ -60,7 +60,7 @@ Let's think of the light in a room. What is it's current state? What happens to 
 Python example
 
 	isOn = True
-	isoOn = False
+	isOn = False
 		
 JavaScript example
 
