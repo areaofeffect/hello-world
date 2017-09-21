@@ -417,7 +417,7 @@ isGreater(1,0) #True
 # A Forest
 ![AForest](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/forest.jpg?raw=true)
 
-# Assignments
+# Assignment
 
 
 ### Create a logic game!
