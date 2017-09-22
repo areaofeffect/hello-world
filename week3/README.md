@@ -52,8 +52,6 @@ _an operator is a character that represents an action_
 
 Like data types, there are many different types of operators. We've already used the assignment operator, let's explore a few more.
 
-![Smooth Operator](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/operator.jpg)
-
 
 ## Assignment operators
 Let's think of the light in a room. What is it's current state? What happens to the assignment when that state changes?
