@@ -16,7 +16,7 @@ Variables and Data Types
 
 
 ### Data typing the real world.
-![Matrix](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/assignment1.jpg?raw=true)
+![Matrix](http://vignette2.wikia.nocookie.net/matrix/images/d/df/Thematrixincode99.jpg/revision/latest?cb=20140425045724)
 
 
 ### Review of Objects
