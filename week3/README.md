@@ -458,7 +458,8 @@ Here are some JavaScript resources for getting started, if you choose this path!
 
 - [Codemy Tutorials](https://www.codecademy.com/courses/html-javascript-css/0/1)
 - [Mozilla Javascript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
-- [W3 schools HTML](https://www.w3schools.com/html/)
+- [W3 schools HTML](https://www.w3schools.com/html/)
+
 # Resources
 
 [Python  operators](https://www.programiz.com/python-programming/operators)
