@@ -39,7 +39,7 @@ Saving one object per minute would give you 60 temperatures to plot overtime to 
 
 ### Stories and Thought experiment
 
-![Hypercell](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg?raw=true)
+![Hypercell](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)
 
 [https://www.youtube.com/watch?v=dg7SaaH-GYw](https://www.youtube.com/watch?v=dg7SaaH-GYw)
 
@@ -52,6 +52,7 @@ _an operator is a character that represents an action_
 
 Like data types, there are many different types of operators. We've already used the assignment operator, let's explore a few more.
 
+![Smooth Operator](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/operator.jpg)
 
 
 ## Assignment operators
@@ -344,6 +345,8 @@ Python example
 		
 
 
+![image](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/if_else_statement.jpg)
+
 # Functions
 
 
@@ -415,7 +418,7 @@ isGreater(1,0) #True
 ```
 
 # A Forest
-![AForest](https://github.com/areaofeffect/hello-world/blob/week3/week3/slides/images/forest.jpg?raw=true)
+![AForest](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/forest.jpg)
 
 # Assignment
 
