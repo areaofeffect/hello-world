@@ -165,6 +165,15 @@ for x in range(1,10):	# a for loop that counts from 1 to 10
 ---
 
 # draw()
+A draw loop is a type of loop that occurs *every frame* of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
+
+In Arduino programming this is simply called loop().
+
+>After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+
+
+- [Arduino Loop](https://www.arduino.cc/en/Reference/Loop)
+- [p5 Loop](https://p5js.org/examples/structure-loop.html)
 
 ---
 
@@ -195,12 +204,7 @@ The most common application of recursion is in mathematics and computer science,
 # Assignment
 
 - create an arwork or study in the style of orbital view
-- repetition
-
-
-Take photos throughout the week.
-You are collecting a dataset, next week we will be creating data visualizations.
-http://www.chartjs.org/
+- Take photos throughout the week. You are collecting a dataset, next week we will be creating data visualizations.
 
 
 ## resources
@@ -212,3 +216,4 @@ http://www.chartjs.org/
 - [Invent With Python - Tic Tac Toe](https://inventwithpython.com/chapter10.html)
 - [Tic Tac Toe AI with Javascript](https://mostafa-samir.github.io/Tic-Tac-Toe-AI/)
 - [Using Python - Programs](http://usingpython.com/programs/)
+- [ChartJS](http://www.chartjs.org/)
