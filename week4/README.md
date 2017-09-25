@@ -1,33 +1,44 @@
 # Week 4
 
-<br/>
+---
 
 ## Last week in Code Literacy...
-- Let's play our games!
-- Week 3 review
-- Operators
-- Conditionals
-- Functions
+- Week 3 Assignment: Lets playtest our games!
+- Review:
+	- Operators
+	- Conditionals
+	- Functions
 
-</br>
+---
 
 # LOOPS
-
-> from Bees and Bombs: [https://beesandbombs.tumblr.com/](https://beesandbombs.tumblr.com/)
-
-<br/>
-
 You can use loops to run sections of code over and over again.
-
 There are many types of loops but we will focus on `for` and `while` for learning.
 
 
-<br/>
+---
 
-## for loops
+Some inspiration from Bees and Bombs: [https://beesandbombs.tumblr.com/](https://beesandbombs.tumblr.com/)
 
-#####python
-try it out: [repl link](https://repl.it/L70G/0)
+
+---
+
+# for loops
+
+---
+
+##python (example 1)
+- a simple counting example
+- try it out: [repl link](https://repl.it/LaMW)
+
+```python
+for x in range(1,10):
+	print(x)
+```
+
+##python (example 2)
+- example: looping through an array
+- try it out: [repl link](https://repl.it/L70G/0)
 
 ```python
 # declare an array
@@ -38,9 +49,9 @@ for fruit in fruits:
   print fruit
 ```
 
-<br/>
+---
 
-#####javascript
+##javascript - for
 
 - try it out: [repl link](https://repl.it/L70V/0)
 - [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
@@ -56,17 +67,17 @@ for (x = 0; x < fruits.length; x++) {
 }
 ```
 
-<br/>
+---
 
-#####p5
+##p5 - for
 The code inside the draw() function runs continuously from top to bottom until the program is stopped.
 
 - [https://p5js.org/examples/structure-loop.html](https://p5js.org/examples/structure-loop.html)
 - [http://learningprocessing.com/examples/chp06/example-06-06-forloop](http://learningprocessing.com/examples/chp06/example-06-06-forloop)
 
-<br/>
+---
 
-#####c
+##c - for
 there's a repl: [for that too!](https://repl.it/L709/0)
 
 ```c
@@ -80,10 +91,13 @@ int main() {
 }
 ```
 
-<br/>
+---
 
-## while loops
-#####python
+# while loops
+
+---
+
+##python - while
 [repl link](https://repl.it/L71v/0)
 
 ```python
@@ -91,9 +105,9 @@ while x < 10:      # do this ten times
   increaseCount() # call a function we defined above
 ```
 
-<br/>
+---
 
-#####javascript
+##javascript - while
 - [repl link](https://repl.it/L72P/1)
 - [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
@@ -104,9 +118,9 @@ while (i < 10) {
 }
 ```
 
-<br/>
+---
 
-#####c
+##c - while
 - try in a repl: [repl link](https://repl.it/L73B/0)
 - [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
 
@@ -128,31 +142,57 @@ int main () {
 }
 ```
 
-<br/>
+---
 
-## "break" and "continue" statements
+# "break" and "continue" statements
 
 - `break` is used to exit a `for` or a `while` loop
 
 <br/>
 
-## draw()
+Below is a python example that will break and exit the loop once the count is greator than five.
 
-<br/>
+- try it out: [repl link](https://repl.it/LaMW)
 
-## recursion
+```python
+for x in range(1,10):	# a for loop that counts from 1 to 10
+	if (x > 5): 		# a conditional, are we less than 5
+	  break 			# exit the loop once our count is higher than 5
+	else:
+		print(x)
+```
 
-<br/>
+---
 
-## sublime text
+# draw()
 
-<br/>
+---
 
-## variables and scope
+# recursion
+The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
 
-<br/>
+- Factorials
+- Fractals
+- Inception
 
-## Assignment
+---
+
+# sublime text
+- Convert tabs to spaces
+- Remember to choose your language for syntax highlighting
+- [Common Shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
+- [Plugins and package control](https://packagecontrol.io/)
+
+---
+
+# variables and scope
+- Local variables
+- Global variables
+
+
+---
+
+# Assignment
 
 - create an arwork or study in the style of orbital view
 - repetition
