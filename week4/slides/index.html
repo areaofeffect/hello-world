@@ -180,17 +180,19 @@ for (int x = 1; x <= 10; x++ ) {
 ---
 class: inverse, left, large
 # why use loops?
-- draw loops
+
+.left.center-40[![image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/fry.png)]
+
 - repetition / paterns
 - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
 - draw() and loop()
 - looping through an array
 
 ---
-class: inverse, left
-# for loop, array
+class: inverse, left, large
+# for loop, array - Python
 
-Python example
+- try it out: [repl link](https://repl.it/L70G/0)
 ```python
 fruits = [ "mango", "banana", "apple" ]
 for fruit in fruits:
@@ -199,27 +201,30 @@ for fruit in fruits:
 
 ---
 class: inverse, left
-# for loop, array
+
+# for loop, array - JavaScript
 
 - try it out: [repl link](https://repl.it/L70V/0)
 - [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
-JavaScript example
+<br/>
+
 ```javascript
-// declare an array
 var fruits = [ "mango", "strawberry", "kiwi" ];
 
 // loop through items in arary
-// note: .length is a property of array datatype that results to 3
+// note: .length is a property that results to 3
 for (x = 0; x < fruits.length; x++) {
   console.log(fruits[x]); // print each string
 }
 ```
 ---
 class: inverse, left
-# for loop, array
+# for loop, array - C example
 
-C example
+- repl: [for that too!](https://repl.it/L709/0)
+
+<br/>
 
 ```c
 char * fruits [] = { "mango", "banana", "apple"" };
@@ -232,38 +237,37 @@ for(i = 0; i < len; ++i)
 ```
 
 ---
-class: inverse, left
+class: inverse, left, large, middle
 # while loops
 
-Python example
+---
+class: inverse, left, large
+# while loops - Python
 
-[repl link](https://repl.it/L71v/0)
+- Check out the: [repl link](https://repl.it/L71v/0)
 
 ```python
 while x < 10:      # do this ten times
-  increaseCount() # call a function we defined above
+  increaseCount() # call a function
 ```
 
 ---
-class: inverse, left
-# while loops
-
-JavaScript example
+class: inverse, left large
+# while loops - JavaScript
 
 - [repl link](https://repl.it/L72P/1)
 - [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
-```
+```javascript
 while (i < 10) {
     text += "The number is " + i;
     i++;
 }
+```
 
 ---
 class: inverse, left
-# while loops
-
-C example
+# while loops - C example
 
 - try in a repl: [repl link](https://repl.it/L73B/0)
 - [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
@@ -287,11 +291,14 @@ int main () {
 ```
 ---
 class: inverse, left
-# "break" and "continue" statements
+# "break", "return" and "continue" statements
 
-Below is a python example that will break and exit the loop once the count is greator than five.
+Below is a python example that will `break` and exit the loop once the count is greator than five.
 
 - try it out: [repl link](https://repl.it/LaMW)
+- `return` will exit the app
+
+<br/>
 
 ```python
 for x in range(1,10): # a for loop that counts from 1 to 10
@@ -300,6 +307,15 @@ for x in range(1,10): # a for loop that counts from 1 to 10
   else:
     print(x)
 ```
+---
+class: inverse, center
+# recursion
+.center.center-25[![image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/RecursiveTree.jpg)]
+
+> Factorials, Fractals, Inception
+
+The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
+
 
 ---
 class: inverse, left
@@ -316,26 +332,17 @@ In Arduino programming this is simply called loop().
 - [p5 Loop](https://p5js.org/examples/structure-loop.html)
 
 
----
-class: inverse, left
-# recursion
-
-The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
-
-- Factorials
-- Fractals
-- Inception
 
 
 ---
-class: inverse, left
-# intro to scope
+class: inverse, left, large
+# variables and scope
 
 - Local variables
 - Global variables
 
 ---
-class: inverse, left
+class: inverse, left, large
 # Review of Syntax
 
 Helpful hints in
@@ -347,15 +354,28 @@ Helpful hints in
 
 ---
 class: inverse, left
-# Assignment
+# Week 4 Assignment - Due 10 / 3
 
-- create an arwork or study in the style of orbital view
-- Take photos throughout the week. You are collecting a dataset, next week we will be creating data visualizations.
+- Part 1. Create an arwork or study in the style of orbital view using loops and repetition
+<br/>
 
+  - You can use JavaScript, p5 or python. Some inspitations:
+    - [https://www.pinterest.com/search/?q=vera+molnar](https://www.pinterest.com/search/?q=vera+molnar)
+    - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
+    - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+    - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
 
+</br>
+
+- Part 2. Collect a dataset. Take photos using your phone throughout the week.
+
+  - Give context to your data, maybe you take a photo everytime you smile.
+  - Be sure to turn the location feature on your phone.
+  - Next week we will be creating data visualizations.
+
+<br/>
 
 And remember...
-
 
 ---
 class: inverse, left
