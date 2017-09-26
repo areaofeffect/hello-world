@@ -91,7 +91,7 @@ class: inverse, left, middle
 Fall 2017
 
 ---
-class: inverse, left
+class: inverse, left, large
 
 # Review and Discussion of Week 3
 _Operators, Conditionals, Functions_
@@ -114,11 +114,19 @@ _Week 3 Assignment: Lets playtest our games!_
 .center[![Center-aligned image](./images/forest.jpg)]
 
 ---
-class: inverse, left
+class: inverse, left, large
 # Review of Functions
 
-_Some review of functions here_
+```python
+def sayMessage(myMessage):
+	print(myMessage)
 
+sayMessage(myMessage)
+sayMessage("goodbye")
+```
+
+<br/>
+> [Week3 Examples](https://github.com/areaofeffect/hello-world/blob/week4/week3/examples/functions.py)
 
 ---
 class: inverse, left
@@ -129,41 +137,54 @@ _a loop is a sequence of instruction s that is continually repeated until a cert
 You can use loops to run sections of code over and over again.
 There are many types of loops but we will focus on `for` and `while` for learning.
 
-.center.center-50[![Center-aligned image](./images/loop-gif3.gif)]
+.center.center-40[![Center-aligned image](./images/loop-gif3.gif)]
 
 ---
-class: inverse, left
-# for loops
-_a simple counting example_
+class: inverse, left, large
+# for loops - Python
+
 - try it out: [repl link](https://repl.it/LaMW)
 
-Python example
 ```python
 for x in range(1,10):
   print(x)
 ```
 
 ---
-class: inverse, left
-# for loops
+class: inverse, left, large
+# for loops - JavaScript
 
-JavaScript example
+- try it out: [repl link](https://repl.it/L70V/0)
+- [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
+
+<br/>
+
 ```javascript
-for (var x = 1; x <= 10; x++) { 
+for (var x = 1; x <= 10; x++) {
   console.log(x);
 }
 ```
 
 ---
-class: inverse, left
-# for loops
+class: inverse, left, large
 
-C example
+# for loops - C example
+
+- there's a repl: [for that too!](https://repl.it/L709/0)
+
 ```c
 for (int x = 1; x <= 10; x++ ) {
    Serial.println(x);
 }
 ```
+---
+class: inverse, left, large
+# why use loops?
+- draw loops
+- repetition / paterns
+- [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+- draw() and loop()
+- looping through an array
 
 ---
 class: inverse, left
@@ -249,7 +270,7 @@ C example
 
 ```c
 #include <stdio.h>
- 
+
 int main () {
 
    /* local variable definition */
@@ -260,7 +281,7 @@ int main () {
       printf("value of a: %d\n", a);
       a++;
    }
- 
+
    return 0;
 }
 ```
