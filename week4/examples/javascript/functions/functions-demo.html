@@ -1,0 +1,163 @@
+<html>
+<head>
+
+	<style>
+
+		body {}
+
+		#statusbar {
+			height: 75px;
+			text-align: center;
+		}
+
+		#container {
+			border: 1px solid gray;
+			width: 800px;
+			height: 600px;
+		}
+
+		#controls {
+			height: 125px;
+
+			width: 800px;
+			text-align: center;
+		}
+
+		#controls button {
+			width: 150px;
+			height: 50px;
+		}
+
+		#storyText {
+			height: 50px;
+
+			font-size: 1.2em;
+			line-height: 1.4em;
+		}
+
+		#gamewindow {
+			width: 800px;
+			height: 400px;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			display:table-cell;
+			vertical-align: middle;
+			text-align: center;
+
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+
+	<h2 id="myTitle">Functions</h2>
+	<div id="myResult"></div>
+
+	<div id="container">
+		<div id="statusBar">
+			<h2 id="locationText">Location<h2>
+		</div>
+		
+		<!-- game window with our images -->
+		<div id="gamewindow">
+			<img id="currentImg" src="forest.png" alt="a forest">
+		</div>
+		
+		<div id="controls">
+			<div id="storyText"></div>
+
+			<!-- Different buttons depending on which room -->
+			<button onClick="rollDice()" value="option1">function one</button>
+			<button onClick="theFox()" value="option2">function two</button>
+			<button onClick="forestClearing()" value="option3">function three</button>
+
+
+		</div>
+	</div>
+
+	<script>
+
+		var player = {
+			"name" : "anon",
+			"location" : "A Forest Clearing",
+			"coins": 0,
+			"score": 0
+		}
+
+		var gameText = {
+			"forestClearing" : "You stand in a forest clearing. There is a path to the left and another to the right.",
+			"theFox" : "Who steps through my woods?"
+		}
+
+		gameImage = document.getElementById("currentImg"); 			// image
+		locationText = document.getElementById("locationText");		// text
+		storyText = document.getElementById("storyText");			// text
+
+		//declare and define the function rollDice
+		function chooseDiceRange(minNum, maxNum) {
+		    // calculate a random number between minNum and maxNum
+		    var result = Math.floor(Math.random() * (maxNum - minNum + 1) + minNum);
+		    // return the value
+		    return result;
+		}
+
+		function rollDice() {
+			console.log("function one.");
+			
+			// call the function rollDice and assign it's result to the variable myRoll
+		    var myRoll = chooseDiceRange(1, 20);
+		    console.log("You rolled ", myRoll);
+
+		    // update game variables
+			gameImage.src = "dice.png"
+
+			//update ui
+			locationText.innerHTML = "The Dice Game";
+		    storyText.innerHTML = "You roll some dice: " + myRoll;
+
+
+		}
+
+		function theFox() {
+			console.log("function two.");
+
+			// update game variables
+			gameImage.src = "fox.png"
+			
+			// update UI
+			locationText.innerHTML = "The Curious Fox";			// update the title
+			storyText.innerHTML = gameText["theFox"];				// update the game text
+
+
+		}
+
+		function forestClearing() { 
+			// debug
+			console.log("function three");
+
+			// update game variables
+			player["location"] = "A Forest Clearing";	// update the player object with our new location
+														// chosen by the player
+			// update UI
+			gameImage.src = "forest.png"; 							// update the image
+			locationText.innerHTML = "A Forest Clearing"			// update the title
+			storyText.innerHTML = gameText["forestClearing"];		// update the game text
+		}
+
+		function main() {
+			console.log("main");
+			forestClearing();
+		}
+
+		main();
+
+	</script>
+
+</body>
+</html>

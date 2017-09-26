@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 4</title>
+    <meta charset="utf-8">
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Roboto';
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p { line-height: 2.0em; color: #FFF}
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 1.3em; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-75 img {
+        width: 75%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-50 img {
+        width: 50%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-40 img {
+        width: 40%; /* Keep our Images fitting in the slides */
+      }
+      .center-35 img {
+        width: 35%; /* Keep our Images fitting in the slides */
+      }
+      .center-30 img {
+        width: 30%; /* Keep our Images fitting in the slides */
+      }
+      .center-25 img {
+        width: 25%; /* Keep our Images fitting in the slides */
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# Code Literacy: Week 4
+Fall 2017
+
+---
+class: inverse, left, large
+
+# Review and Discussion of Week 3
+_Operators, Conditionals, Functions_
+
+- Assignment, Comparison, and Logical Operators
+
+- Compound Operators
+
+- If, Else, Elif Conditional statemtents
+
+- Function declaration, definition, parameters and arguments
+
+---
+class: inverse, left
+
+#Deep Deep Forest
+
+_Week 3 Assignment: Lets playtest our games!_
+
+.center[![Center-aligned image](./images/forest.jpg)]
+
+---
+class: inverse, left, large
+# Review of Functions
+
+```python
+def sayMessage(myMessage):
+	print(myMessage)
+
+sayMessage(myMessage)
+sayMessage("goodbye")
+```
+
+<br/>
+> [Week3 Examples](https://github.com/areaofeffect/hello-world/blob/week4/week3/examples/functions.py)
+
+---
+class: inverse, left
+# Loops
+
+_a loop is a sequence of instruction s that is continually repeated until a certain condition is reached._
+
+You can use loops to run sections of code over and over again.
+There are many types of loops but we will focus on `for` and `while` for learning.
+
+.center.center-40[![Center-aligned image](./images/loop-gif3.gif)]
+
+---
+class: inverse, left, large
+# for loops - Python
+
+- try it out: [repl link](https://repl.it/LaMW)
+
+```python
+for x in range(1,10):
+  print(x)
+```
+
+---
+class: inverse, left, large
+# for loops - JavaScript
+
+- try it out: [repl link](https://repl.it/L70V/0)
+- [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
+
+<br/>
+
+```javascript
+for (var x = 1; x <= 10; x++) {
+  console.log(x);
+}
+```
+
+---
+class: inverse, left, large
+
+# for loops - C example
+
+- there's a repl: [for that too!](https://repl.it/L709/0)
+
+```c
+for (int x = 1; x <= 10; x++ ) {
+   Serial.println(x);
+}
+```
+---
+class: inverse, left, large
+# why use loops?
+
+.left.center-40[![image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/fry.png)]
+
+- repetition / paterns
+- [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+- draw() and loop()
+- looping through an array
+
+---
+class: inverse, left, large
+# for loop, array - Python
+
+- try it out: [repl link](https://repl.it/L70G/0)
+```python
+fruits = [ "mango", "banana", "apple" ]
+for fruit in fruits:
+  print fruit
+```
+
+---
+class: inverse, left
+
+# for loop, array - JavaScript
+
+- try it out: [repl link](https://repl.it/L70V/0)
+- [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
+
+<br/>
+
+```javascript
+var fruits = [ "mango", "strawberry", "kiwi" ];
+
+// loop through items in arary
+// note: .length is a property that results to 3
+for (x = 0; x < fruits.length; x++) {
+  console.log(fruits[x]); // print each string
+}
+```
+---
+class: inverse, left
+# for loop, array - C example
+
+- repl: [for that too!](https://repl.it/L709/0)
+
+<br/>
+
+```c
+char * fruits [] = { "mango", "banana", "apple" };
+int len = sizeof(fruits)/sizeof(fruits[0]);
+int i;
+for(i = 0; i < len; ++i)
+{
+  Serial.println(fruits[i])
+}
+```
+
+---
+class: inverse, left, large, middle
+# while loops
+
+---
+class: inverse, left, large
+# while loops - Python
+
+- Check out the: [repl link](https://repl.it/L71v/0)
+
+```python
+while x < 10:      # do this ten times
+  increaseCount() # call a function
+```
+
+---
+class: inverse, left large
+# while loops - JavaScript
+
+- [repl link](https://repl.it/L72P/1)
+- [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
+
+```javascript
+while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}
+```
+
+---
+class: inverse, left
+# while loops - C example
+
+- try in a repl: [repl link](https://repl.it/L73B/0)
+- [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
+
+```c
+#include <stdio.h>
+
+int main () {
+
+   /* local variable definition */
+   int a = 0;
+
+   /* while loop execution */
+   while( a <= 10 ) {
+      printf("value of a: %d\n", a);
+      a++;
+   }
+
+   return 0;
+}
+```
+---
+class: inverse, left
+# "break", "return" and "continue" statements
+
+Below is a python example that will `break` and exit the loop once the count is greator than five.
+
+- try it out: [repl link](https://repl.it/LaMW)
+- `return` will exit the app
+
+<br/>
+
+```python
+for x in range(1,10): # a for loop that counts from 1 to 10
+  if (x > 5):     # a conditional, are we less than 5
+    break       # exit the loop once our count is higher than 5
+  else:
+    print(x)
+```
+---
+class: inverse, center
+# recursion
+.center.center-25[![image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/RecursiveTree.jpg)]
+
+> Factorials, Fractals, Inception
+
+The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
+
+
+---
+class: inverse, left
+# draw()
+
+A draw loop is a type of loop that occurs *every frame* of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
+
+In Arduino programming this is simply called loop().
+
+>After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+
+
+- [Arduino Loop](https://www.arduino.cc/en/Reference/Loop)
+- [p5 Loop](https://p5js.org/examples/structure-loop.html)
+
+
+
+
+---
+class: inverse, left, large
+# variables and scope
+
+- Local variables
+- Global variables
+
+---
+class: inverse, left, large
+# Review of Syntax
+
+Helpful hints in
+- Convert tabs to spaces
+- Remember to choose your language for syntax highlighting
+- [Common Shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
+- [Plugins and package control](https://packagecontrol.io/)
+
+---
+class: inverse, left, large
+# Turtle Time!
+.center.center-40[![Center-aligned image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/star.png)]
+
+- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
+- [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
+- [Try it out on a repl](https://repl.it/DoYJ/1)
+- [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
+
+---
+class: inverse, left
+# Week 4 Assignment - Due 10 / 3
+
+- Part 1. Create a generative artwork or study using loops and repetition.
+<br/>
+
+  - You can use JavaScript, p5 or python. Some inspitations:
+    - [https://www.pinterest.com/search/?q=vera+molnar](https://www.pinterest.com/search/?q=vera+molnar)
+    - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
+    - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+    - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
+
+</br>
+
+- Part 2. Collect a dataset. Take photos using your phone throughout the week.
+
+  - Give context to your data, maybe you take a photo everytime you smile.
+  - Be sure to turn the location feature on your phone.
+  - Next week we will be creating data visualizations.
+
+<br/>
+
+And remember...
+
+---
+class: inverse, center
+# You are not alone
+
+
+.center.center-50[![Center-aligned image](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/images/noidea.jpg)]
+
+---
+class: inverse, left, middle, large
+
+# Thanks!
+
+- carrie@areaofeffect.io
+- bruno@areaofeffect.io
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true,
+          ratio: '16:9'
+        });
+
+    </script>
+  </body>
+</html>
