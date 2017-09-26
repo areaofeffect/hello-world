@@ -217,3 +217,5 @@ The most common application of recursion is in mathematics and computer science,
 - [Tic Tac Toe AI with Javascript](https://mostafa-samir.github.io/Tic-Tac-Toe-AI/)
 - [Using Python - Programs](http://usingpython.com/programs/)
 - [ChartJS](http://www.chartjs.org/)
+- [JavaScript For Loops](https://www.w3schools.com/js/js_loop_for.asp)
+- 
