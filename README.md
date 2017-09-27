@@ -121,7 +121,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### [Week 4: Loops]((https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
+##### [Week 4: Loops](https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
 
 - Repetitive actions, applying some logic or change to many items with one function.
 
