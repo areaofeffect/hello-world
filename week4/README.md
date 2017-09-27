@@ -2,7 +2,7 @@
 
 [Week 4 slides](http://hello-world.areaofeffect.io/week4/slides/#1)
 
----
+
 
 ## Review and Discussion of Week 3
 _Operators, Conditionals, Functions_
@@ -18,7 +18,7 @@ _Operators, Conditionals, Functions_
 
 
 
-## Deep Deep Forest
+### Deep Deep Forest
 
 _Week 3 Assignment: Lets playtest our games!_
 
@@ -26,7 +26,7 @@ _Week 3 Assignment: Lets playtest our games!_
 
 
 
-## Review of Functions
+### Review of Functions
 
 	def sayMessage(myMessage):
 		print(myMessage)
@@ -36,7 +36,7 @@ _Week 3 Assignment: Lets playtest our games!_
 	
 [Week3 Examples](https://github.com/areaofeffect/hello-world/blob/week4/week3/examples/functions.py)
 
-## LOOPS
+# LOOPS
 
 _a loop is a sequence of instruction s that is continually repeated until a certain condition is reached._
 
@@ -206,11 +206,11 @@ The most common application of recursion is in mathematics and computer science,
 - Inception
 
 
-## variables and scope
+# variables and scope
 - Local variables
 - Global variables
 
-## A review of syntax
+# A review of syntax
 Helpful hints in
 
 - Convert tabs to spaces
@@ -219,7 +219,7 @@ Helpful hints in
 - [Plugins and package control](https://packagecontrol.io/)
 
 
-## Turtle Time!
+# Turtle Time!
 ![turtle](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/star.png)
 
 - [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
@@ -227,7 +227,7 @@ Helpful hints in
 - [Try it out on a repl](https://repl.it/DoYJ/1)
 - [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
 
-## Assignment
+# Assignment
 
 - Part 1. Create a generative artwork or study using loops and repetition.
 
