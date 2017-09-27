@@ -1,168 +1,189 @@
 # Week 4
 
----
-
-## Last week in Code Literacy...
-- Week 3 Assignment: Lets playtest our games!
-- Review:
-	- Operators
-	- Conditionals
-	- Functions
+[Week 4 slides](http://hello-world.areaofeffect.io/week4/slides/#1)
 
 ---
 
-# LOOPS
+## Review and Discussion of Week 3
+_Operators, Conditionals, Functions_
+
+
+- Assignment, Comparison, and Logical Operators
+
+- Compound Operators
+
+- If, Else, Elif Conditional statemtents
+
+- Function declaration, definition, parameters and arguments
+
+
+
+## Deep Deep Forest
+
+_Week 3 Assignment: Lets playtest our games!_
+
+![Forest](https://github.com/areaofeffect/hello-world/blob/master/week4/slides/images/forest.jpg?raw=true)
+
+
+
+## Review of Functions
+
+	def sayMessage(myMessage):
+		print(myMessage)
+	
+	sayMessage(myMessage)
+	sayMessage("goodbye")
+	
+[Week3 Examples](https://github.com/areaofeffect/hello-world/blob/week4/week3/examples/functions.py)
+
+## LOOPS
+
+_a loop is a sequence of instruction s that is continually repeated until a certain condition is reached._
+
 You can use loops to run sections of code over and over again.
 There are many types of loops but we will focus on `for` and `while` for learning.
 
-
----
+![loops](./images/loop-gif3.gif)
 
 Some inspiration from Bees and Bombs: [https://beesandbombs.tumblr.com/](https://beesandbombs.tumblr.com/)
 
+Python example 1
 
----
+a simple counting example
 
-# for loops
+try it out: [repl link](https://repl.it/LaMW)
 
----
 
-##python (example 1)
-- a simple counting example
-- try it out: [repl link](https://repl.it/LaMW)
+	for x in range(1,10):
+		print(x)
+		
+		
+Python example 2
 
-```python
-for x in range(1,10):
-	print(x)
-```
+example: looping through an array
 
-##python (example 2)
-- example: looping through an array
-- try it out: [repl link](https://repl.it/L70G/0)
+try it out: [repl link](https://repl.it/L70G/0)
 
-```python
-# declare an array
-fruits = [ "mango", "banana", "apple" ]
 
-# loop through items in array
-for fruit in fruits:
-  print fruit
-```
+	# declare an array
+	fruits = [ "mango", "banana", "apple" ]
+	
+	# loop through items in array
+	for fruit in fruits:
+	  print fruit
 
----
 
-##javascript - for
 
-- try it out: [repl link](https://repl.it/L70V/0)
-- [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
+JavaScript Example 
 
-```javascript
-// declare an array
-var fruits = [ "mango", "strawberry", "kiwi" ];
+try it out: [repl link](https://repl.it/L70V/0)
 
-// loop through items in arary
-// note: .length is a property of array datatype that results to 3
-for (x = 0; x < fruits.length; x++) {
-  console.log(fruits[x]); // print each string
-}
-```
+[https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
----
 
-##p5 - for
-The code inside the draw() function runs continuously from top to bottom until the program is stopped.
+	// declare an array
+	var fruits = [ "mango", "strawberry", "kiwi" ];
+	
+	// loop through items in arary
+	// note: .length is a property of array datatype that results to 3
+	for (x = 0; x < fruits.length; x++) {
+	  console.log(fruits[x]); // print each string
+	}
+
+
+
+JavaScript p5 examples
+
+The code inside the `draw(`) function runs continuously from top to bottom until the program is stopped.
 
 - [https://p5js.org/examples/structure-loop.html](https://p5js.org/examples/structure-loop.html)
 - [http://learningprocessing.com/examples/chp06/example-06-06-forloop](http://learningprocessing.com/examples/chp06/example-06-06-forloop)
 
 ---
 
-##c - for
+C Example
+
 there's a repl: [for that too!](https://repl.it/L709/0)
 
-```c
-#include <stdio.h>
 
-int main() {
-  // note: remember to type your variable
-  for (int a = 1; a <= 20; a++) {
-      printf("value of a: %d\n", a);
-  }
-}
-```
+	#include <stdio.h>
+	
+	int main() {
+	  // note: remember to type your variable
+	  for (int a = 1; a <= 20; a++) {
+	      printf("value of a: %d\n", a);
+	  }
+	}
 
----
 
-# while loops
+## while loops
 
----
+Python example
 
-##python - while
 [repl link](https://repl.it/L71v/0)
 
-```python
-while x < 10:      # do this ten times
-  increaseCount() # call a function we defined above
-```
 
----
+	while x < 10:      # do this ten times
+	  increaseCount() # call a function we defined above
 
-##javascript - while
-- [repl link](https://repl.it/L72P/1)
-- [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
-```
-while (i < 10) {
-    text += "The number is " + i;
-    i++;
-}
-```
 
----
+JavaScript example
 
-##c - while
-- try in a repl: [repl link](https://repl.it/L73B/0)
-- [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
+[repl link](https://repl.it/L72P/1)
 
-```c
-#include <stdio.h>
- 
-int main () {
+[w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
-   /* local variable definition */
-   int a = 0;
 
-   /* while loop execution */
-   while( a <= 10 ) {
-      printf("value of a: %d\n", a);
-      a++;
-   }
- 
-   return 0;
-}
-```
+	while (i < 10) {
+	    text += "The number is " + i;
+	    i++;
+	}
 
----
 
-# "break" and "continue" statements
 
-- `break` is used to exit a `for` or a `while` loop
+C Example
 
-<br/>
+try in a repl: [repl link](https://repl.it/L73B/0)
 
-Below is a python example that will break and exit the loop once the count is greator than five.
+[arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
 
-- try it out: [repl link](https://repl.it/LaMW)
+	#include <stdio.h>
+	 
+	int main () {
+	
+	   /* local variable definition */
+	   int a = 0;
+	
+	   /* while loop execution */
+	   while( a <= 10 ) {
+	      printf("value of a: %d\n", a);
+	      a++;
+	   }
+	 
+	   return 0;
+	}
 
-```python
-for x in range(1,10):	# a for loop that counts from 1 to 10
-	if (x > 5): 		# a conditional, are we less than 5
-	  break 			# exit the loop once our count is higher than 5
-	else:
-		print(x)
-```
 
----
+
+## "break" and "continue" statements
+
+`break` is used to exit a `for` or a `while` loop
+
+
+Python example
+
+This will break and exit the loop once the count is greator than five.
+
+try it out: [repl link](https://repl.it/LaMW)
+
+	for x in range(1,10):	# a for loop that counts from 1 to 10
+		if (x > 5): 		# a conditional, are we less than 5
+		  break 			# exit the loop once our count is higher than 5
+		else:
+			print(x)
+
+
 
 # draw()
 A draw loop is a type of loop that occurs *every frame* of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
@@ -175,7 +196,7 @@ In Arduino programming this is simply called loop().
 - [Arduino Loop](https://www.arduino.cc/en/Reference/Loop)
 - [p5 Loop](https://p5js.org/examples/structure-loop.html)
 
----
+
 
 # recursion
 The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
@@ -184,27 +205,48 @@ The most common application of recursion is in mathematics and computer science,
 - Fractals
 - Inception
 
----
 
-# sublime text
+## variables and scope
+- Local variables
+- Global variables
+
+## A review of syntax
+Helpful hints in
+
 - Convert tabs to spaces
 - Remember to choose your language for syntax highlighting
 - [Common Shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
 - [Plugins and package control](https://packagecontrol.io/)
 
----
 
-# variables and scope
-- Local variables
-- Global variables
+## Turtle Time!
+![turtle](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/star.png)
+
+- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
+- [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
+- [Try it out on a repl](https://repl.it/DoYJ/1)
+- [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
+
+## Assignment
+
+- Part 1. Create a generative artwork or study using loops and repetition.
 
 
----
+  - You can use JavaScript, p5 or python. Some inspitations:
+    - [https://www.pinterest.com/search/?q=vera+molnar](https://www.pinterest.com/search/?q=vera+molnar)
+    - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
+    - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+    - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
 
-# Assignment
 
-- create an arwork or study in the style of orbital view
-- Take photos throughout the week. You are collecting a dataset, next week we will be creating data visualizations.
+
+- Part 2. Collect a dataset. Take photos using your phone throughout the week.
+
+  - Give context to your data, maybe you take a photo everytime you smile.
+  - Be sure to turn the location feature on your phone.
+  - Next week we will be creating data visualizations.
+
+
 
 
 ## resources
@@ -218,4 +260,3 @@ The most common application of recursion is in mathematics and computer science,
 - [Using Python - Programs](http://usingpython.com/programs/)
 - [ChartJS](http://www.chartjs.org/)
 - [JavaScript For Loops](https://www.w3schools.com/js/js_loop_for.asp)
-- 
