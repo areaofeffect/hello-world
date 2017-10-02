@@ -95,37 +95,50 @@ An brief history of computing, computers and why we code.
 
 ##### [Week 2: The first building blocks of talking to machines.](https://github.com/areaofeffect/hello-world/blob/master/week2/README.md)
 
-* Variables and Data Types
-  * strings, objects, arrays, integers, structs
-  * converting data from one type to another
+* Variables
+* Data Types
+  * Primitives 
+  	* Boolean
+  	* Characters and Strings
+  	* Numbers
+  * Composites
+  	* Arrays
+  	* Objects
+* Converting data from one type to another
+* Protocols
+* Thought Experiments, Dynamic mediums (Bret Victor)
 
-* Inputs and Outputs
 
-* Learning syntax
-
-* Math operations
-
-
-​
 <br/>
 
 ##### [Week 3: Logic](https://github.com/areaofeffect/hello-world/blob/master/week3/README.md)
 
-- Operators
+* Operators
+	* Assignment
+	* Arithmetic
+	* Comparison
+	* Logical
+* Conditional Statements
+	* If
+	* Else
+	* Elif 	
+* Functions
+	* Declaration
+	* Definition
+	* Parameters and Arguments 
 
-- Conditionals
-
-- Functions
-
-- Application structure and flow
+* Application structure and flow
 
 <br/>
 
 ##### [Week 4: Loops](https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
 
-- Repetitive actions, applying some logic or change to many items with one function.
-
-- for, while
+* Repetitive actions
+	* Loops
+		* For
+		* While
+	* Recursion
+* Syntax
 
 
   ​
@@ -133,24 +146,34 @@ An brief history of computing, computers and why we code.
 
 ##### Week 5: Organizing everything we learned into a program
 
-- Scope (this)
-
-- Classes: Organizing code into reusable blocks ( OOP )
-
-- Modules and Libraries: Importing existing utilities to use in your program
-
-
+* Scope
+	* Lexical Scope and Dynamic Scope
+	* Levels of Scope
+		* Expression
+		* Block
+		* Function
+		* File
+		* Module
+		* Global
+* Modules and Libraries
+	* Writing your own
+	* Using NPM
+	* Using Arduino Libraries 
+* Classes: Organizing code into reusable blocks ( OOP )
+* Introduction to Github
+* Introduction to Node and Interactivity
+* Extracting Exif Data from images
   ​
 <br/>
 
 ##### Week 6: The thing you'll spend the most time doing is debugging!
 
-- Debugging
-
-  - Firebug, Developer Modes, Console log, Print
-  - Network, Serial
-
-- GitHub
+* Debugging
+  * Chrome Developer View
+  * Firebug
+  * Print statements
+  * Console logs
+  * Network, Serial
 
 ​<br/>
 
@@ -168,7 +191,14 @@ An brief history of computing, computers and why we code.
 
 ##### Week 8 - Infosec, Security, SSL, Tor
 
-Topics: Information security, Wifi, Networks, Sysadmin, Servers, Amazon, Devops
+
+ * Information security overview
+ 	* Wifi
+ 	* Networks
+ 	* Sysadmin
+ 	* Servers
+ * Exploring Amazon Web Services
+ * Understanding Devops
 
 <br/>
 
