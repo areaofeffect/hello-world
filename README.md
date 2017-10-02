@@ -90,6 +90,11 @@ An brief history of computing, computers and why we code.
 
 **Discussion** : Programming in the real world. Front-end developers, Back-end, Fullstack, Graphics, API developer, iOS/Android, Embedded Systems, Creative programmer*
 
+**Assignment**:
+
+1. Download required applications and set up your development environment 
+2. Modify one hello world app presented in class.
+3. Watch the Humane Representation of the Thought by Bret Victor.
 
 <br/>
 
@@ -108,6 +113,12 @@ An brief history of computing, computers and why we code.
 * Protocols
 * Thought Experiments, Dynamic mediums (Bret Victor)
 
+**Assignment**:
+
+1. Pick four objects in everyday life and represent them as a data type. 
+2. Create and object and verify the syntax using jsonlint. 
+3. Create a story using data types from user inputs, follow the example presented in class.
+4. Thought experiment: think of a way to represent a number, string, array or object in a dynamic medium.
 
 <br/>
 
@@ -129,6 +140,13 @@ An brief history of computing, computers and why we code.
 
 * Application structure and flow
 
+**Assignment**:
+
+1. Create a logic game using conditionals. 
+2. Create a flow chart of your game logic. 
+3. Prototype your game in Python. 
+
+
 <br/>
 
 ##### [Week 4: Loops](https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
@@ -140,6 +158,10 @@ An brief history of computing, computers and why we code.
 	* Recursion
 * Syntax
 
+**Assignment**:
+
+1. Create a genrative artwork or studying using loops and repetition. 
+2. Collect a dataset. Take photos using your phone throughout the week. 
 
   ​
 <br/>
