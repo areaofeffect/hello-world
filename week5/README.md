@@ -160,7 +160,41 @@ A declaration has global scope if it has effect throughout an entire program. Va
 which can expose classes, functions and global variables. 
 
 ## JavaScript Modules
-NPM
+
+Writing your own modules
+
+Immediately-Invoked Function Expression
+
+	(function() {
+	      // Your code goes here 
+	}());
+
+Revealing Module Pattern
+
+	var pokemonModule = function(inName) {
+	
+	  var name = inName;
+
+	  function sayHello() {
+	    console.log("hello i'm", name);
+	  }
+	  
+	  return {
+	    sayHello: sayHello
+	  }
+	}
+	
+	var pikachu = new pokemonModule('pikachu');
+	pikachu.sayHello();
+
+[Modern JavaScript development can be overwhelming.](https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/)
+
+Using open source modules from NPM
+
+> npm, short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management. 
+
+[NPM](https://www.npmjs.com/)
+
 
 ## Arduino Libraries
 
@@ -225,9 +259,31 @@ https://stackoverflow.com/questions/1403890/how-do-you-implement-a-class-in-c
 # Github
 
 ## Basic set up
+https://desktop.github.com/
+
 ## Creating new repo
+https://help.github.com/articles/create-a-repo/
+
 ## Uploading previous assignments
+Create a github repo to store all your previous python code from the last 3 assignments.
+
+Write a read me and include instructions on how to download and run your code.
+
 ## Creating your own node project
+First let's install node using [Node Version Manager](https://github.com/creationix/nvm)
+
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+	
+Now we're going to set up our bash profile, follow along.
+
+
+Server side app
+
+	npm install -g express-generator
+	express --git --view=hbs ./myApp
+	cd myApp
+	npm install
+		
 
 # Asking question
 https://stackoverflow.com/help/how-to-ask
