@@ -11,16 +11,12 @@
 
 ##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/#1)
 
-
-
 <br/>
 
 
 #### TLDR;
 
 Hello World is a class about learning to code and communicating with machines. By the end of this class you should have the skills to speak the language of (almost) any machine using fundamentals from Python, JavaScript and  C.
-
-
 
 We’ll dive into:
 
@@ -58,20 +54,17 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 
 
 #### RESOURCES
-
-Mozilla, w3, Adafruit, Instructables, Stack Overflow, Hack A Day, Sparkfun
+[Mozilla](https://developer.mozilla.org/en-US/), [w3](https://www.w3.org/), [Adafruit](https://learn.adafruit.com/), [Instructables](http://www.instructables.com/), [Stack Overflow](https://stackoverflow.com/), [Hack A Day](https://hackaday.io/), [Sparkfun](https://learn.sparkfun.com/)
 
 
 <br/>
 
 
 #### SOFTWARE
-
-
 - [Sublime Text 3](https://www.sublimetext.com/3)
 - [Atom](https://atom.io/)
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
-- Chrome Browser
+- [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html)
 - Terminal (Comes with your computer!)
 
 <br/>
@@ -188,7 +181,17 @@ An brief history of computing, computers and why we code.
   ​
 <br/>
 
-##### Week 6: The thing you'll spend the most time doing is debugging!
+##### Week 6: Interactivity and Debugging
+
+* Interactivity
+
+	* Keyboard
+	* Mouse
+	* Webcam
+	* Microcontroller
+
+* Automation
+	* Writing scripts to manage reptitive tasks
 
 * Debugging
   * Chrome Developer View
@@ -203,60 +206,55 @@ An brief history of computing, computers and why we code.
 
 * How do we structure and organize data in a useful / readable way?
 
-* We'll start by collecting our own datasets and visualizing with code.
-
 * API'S, JSON files, Cloud services, Local databases
 
 * Serial, protocols and microcontrollers
 
 <br/>
 
-##### Week 8 - Infosec, Security, SSL, Tor
+##### Week 8 - Intro to Computer Vision
 
-
- * Information security overview
- 	* Wifi
- 	* Networks
- 	* Sysadmin
- 	* Servers
- * Exploring Amazon Web Services
- * Understanding Devops
+* OpenCV
+* Kinect
+* Leap Motion
+* VR
+* Project Demos and workshop
 
 <br/>
 
-##### Week 9 -  More complex apps. Lets build something!
+##### Week 9 -  Intro to IoT
 
-- Interactivity
-
-- Keyboard, Mouse, Webcam, Physical Computer
-
-- Automation, Scripting, Bash, Loops, Automator, Tasks
-
-<br/>
-
-##### Week 11 - More complex apps pt 2 - Microcontrollers
+* How do we talk to things with code?
+* What is a smart object?
+* Strategies for custom hardware and wearables
+* Prototype a connected 'thing'
 
 <br/>
 
-##### Week 12 - More complex apps pt 3 - Computer Vision
-
-<br/>
-
-##### Week 12 - Project Architecture I
-
+#####week 10 - IoT II, Electric Boogaloo
 - Best practices, Software and architecture
-
 - Databases and designing schema
+- Project development.
+- How do we build and launch our own connected devices?
 
-<br/>
-
-##### Week 13 - Final project workshop
+##### Week 11 - Final Project development
 - Use what you learned to sketch out a potential project
 - Putting it all together and documenting your work
-
 <br/>
 
-##### Week 14 - Final project presentations and review
+##### Week 12 - Final Project development
+- Continue working
+<br/>
+
+##### Week 13 - Final Project development
+- Continue working
+<br/>
+
+##### Week 14 - Final Project development
+- Continue working
+<br/>
+
+##### Week 15 - Final project presentations and review
 
 - Final presentations at New Lab
 
