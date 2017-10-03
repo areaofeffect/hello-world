@@ -313,10 +313,29 @@ https://stackoverflow.com/help/how-to-ask
 ## How to extract data from 100+ images
 
 
-# Assignment
+# Assignments
 
-p5 web site (try to recreate turtle sketch or improve on it)
-start thinking about image data vis
+# Visualizing Sensor Data
+Visualize live sensor data from Arduino to your browser.
+
+1. Watch [Welcome to p5](http://hello.p5js.org/) and read the [Getting started with p5 guides](https://p5js.org/get-started/).
+
+2. Create a p5 sketch that accepts serial data from a sensor (analog or digital) attached to your Arduino. You can use the Arduino Read sketch in our repo as a starting point.
+
+3. Now that you have Arduino 'talking' to your p5 code. Visualize the sensor data in an interesting way. Remember to run the serial bridge.
+
+4. If you get stuck: Review the Resources and Additional examples from the p5-full folder in our README. There are tons of p5 resources online. Google-fu is your friend.
+
+
+# Extracting data from images (Part I)
+Practice extracting data from our images to get a sense of different data models, formats and hidden info! Try with different images and hold onto this data in a seperate file. We will be further analyzing next week.
+
+1. Upload images of interest from your phone to your computer
+
+2. Run `python_exif.py` to view meta data from your image. Make sure the file is in the same folder as your image. 
+ - Note that you may have to open the python file and change the file name to the image of interest.
+
+3. Run `python_colors.py` to view the most common colors used in the image.
 
 
 # Resources
