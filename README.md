@@ -231,7 +231,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#####week 10 - IoT II, Electric Boogaloo
+##### week 10 - IoT II
 - Best practices, Software and architecture
 - Databases and designing schema
 - Project development.
