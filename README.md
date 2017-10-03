@@ -181,7 +181,7 @@ An brief history of computing, computers and why we code.
   ​
 <br/>
 
-##### Week 6: Interactivity and Debugging
+#### Week 6: Interactivity and Debugging
 
 * Interactivity
 
