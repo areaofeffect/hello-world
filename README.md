@@ -5,7 +5,7 @@
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
-##### DURATION: 14 weeks
+##### DURATION: 15 weeks
 
 ##### TIME: Tuesdays 2:00pm - 4:50pm
 
@@ -71,7 +71,7 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 
 #### SCHEDULE
 
-##### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/master/week1)
+#### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/master/week1)
 
 An brief history of computing, computers and why we code.
 
@@ -91,7 +91,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### [Week 2: The first building blocks of talking to machines.](https://github.com/areaofeffect/hello-world/blob/master/week2/README.md)
+#### [Week 2: The first building blocks of talking to machines.](https://github.com/areaofeffect/hello-world/blob/master/week2/README.md)
 
 * Variables
 * Data Types
@@ -115,7 +115,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### [Week 3: Logic](https://github.com/areaofeffect/hello-world/blob/master/week3/README.md)
+#### [Week 3: Logic](https://github.com/areaofeffect/hello-world/blob/master/week3/README.md)
 
 * Operators
 	* Assignment
@@ -142,7 +142,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### [Week 4: Loops](https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
+#### [Week 4: Loops](https://github.com/areaofeffect/hello-world/blob/master/week4/README.md)
 
 * Repetitive actions
 	* Loops
@@ -159,7 +159,7 @@ An brief history of computing, computers and why we code.
   ​
 <br/>
 
-##### Week 5: Organizing everything we learned into a program
+#### Week 5: Organizing everything we learned into a program
 
 * Scope
 	* Lexical Scope and Dynamic Scope
@@ -202,17 +202,19 @@ An brief history of computing, computers and why we code.
 
 ​<br/>
 
-##### Week 7: Data Visualizations and Datastreams
+#### Week 7: Data Visualizations and Datastreams
 
 * How do we structure and organize data in a useful / readable way?
 
 * API'S, JSON files, Cloud services, Local databases
 
-* Serial, protocols and microcontrollers
+* Intro to React
+
+* Review of serial, protocols and microcontrollers
 
 <br/>
 
-##### Week 8 - Intro to Computer Vision
+#### Week 8 - Intro to Computer Vision
 
 * OpenCV
 * Kinect
@@ -222,7 +224,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### Week 9 -  Intro to IoT
+#### Week 9 -  Intro to IoT
 
 * How do we talk to things with code?
 * What is a smart object?
@@ -231,31 +233,44 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-##### week 10 - IoT II
+#### week 10 - IoT II
 - Best practices, Software and architecture
 - Databases and designing schema
 - Project development.
 - How do we build and launch our own connected devices?
 
-##### Week 11 - Final Project development
+<br/>
+
+#### Week 11 - Final Project development
+
 - Use what you learned to sketch out a potential project
 - Putting it all together and documenting your work
 <br/>
 
-##### Week 12 - Final Project development
-- Continue working
+#### Week 12 - Final Project development
+
+- Coding workshop
+
 <br/>
 
-##### Week 13 - Final Project development
-- Continue working
+#### Week 13 - Final Project development
+
+- Coding workshop
+
 <br/>
 
-##### Week 14 - Final Project development
-- Continue working
+#### Week 14 - Final Project development
+
+- Coding workshop
 <br/>
 
-##### Week 15 - Final project presentations and review
+#### Week 15 - Final project presentations and review
 
 - Final presentations at New Lab
 
 - Project review and guest critic
+
+<br/>
+<br/>
+
+
