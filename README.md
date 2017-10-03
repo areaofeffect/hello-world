@@ -9,7 +9,7 @@
 
 ##### TIME: Tuesdays 2:00pm - 4:50pm
 
-##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/#1)
+##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/)
 
 <br/>
 
@@ -76,7 +76,7 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 An brief history of computing, computers and why we code.
 
 - What is code? (Hint: Communicating with machines)
-- Workng with code (JavaScript, C / Arduino, Python)
+- Working with code (JavaScript, C / Arduino, Python)
 - Understanding machines and where code lives (Personal Computers, Embedded Computers, Cloud Servers)
 - Writing our first program.
 
@@ -205,11 +205,8 @@ An brief history of computing, computers and why we code.
 #### Week 7: Data Visualizations and Datastreams
 
 * How do we structure and organize data in a useful / readable way?
-
 * API'S, JSON files, Cloud services, Local databases
-
 * Intro to React
-
 * Review of serial, protocols and microcontrollers
 
 <br/>
@@ -234,41 +231,48 @@ An brief history of computing, computers and why we code.
 <br/>
 
 #### week 10 - IoT II
-- Best practices, Software and architecture
-- Databases and designing schema
-- Project development.
-- How do we build and launch our own connected devices?
+* Best practices, Software and architecture
+* Databases and designing schema
+* Project development.
+* How do we build and launch our own connected devices?
+
 
 <br/>
 
 #### Week 11 - Final Project development
 
-- Use what you learned to sketch out a potential project
-- Putting it all together and documenting your work
+* Use what you learned to sketch out a potential project
+*  Putting it all together and documenting your work
+
+
 <br/>
 
 #### Week 12 - Final Project development
 
-- Coding workshop
+* Coding workshop
+
 
 <br/>
 
 #### Week 13 - Final Project development
 
-- Coding workshop
+* Coding workshop
+
 
 <br/>
 
 #### Week 14 - Final Project development
 
-- Coding workshop
+* Coding workshop
+
+
 <br/>
 
 #### Week 15 - Final project presentations and review
 
-- Final presentations at New Lab
+* Final presentations at New Lab
+* Project review and guest critic
 
-- Project review and guest critic
 
 <br/>
 <br/>
