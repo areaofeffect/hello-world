@@ -341,8 +341,13 @@ Practice extracting data from our images to get a sense of different data models
 # Resources
 
 [Why JavaScript Development is Crazy](http://www.planningforaliens.com/blog/2016/04/11/why-js-development-is-crazy/)
+
 [Recursion in JavaScript](https://www.codecademy.com/courses/javascript-lesson-205/0/1)
+
 [You Don't Know Javascript](https://github.com/getify/You-Dont-Know-JS)
+
 [Scope (computer science)](https://en.wikipedia.org/wiki/Scope_(computer_science))
+
 [Classes in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
 
