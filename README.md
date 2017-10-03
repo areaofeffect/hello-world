@@ -159,7 +159,7 @@ An brief history of computing, computers and why we code.
   ​
 <br/>
 
-#### Week 5: Organizing everything we learned into a program
+#### [Week 5: Organizing everything we learned into a program](https://github.com/areaofeffect/hello-world/blob/master/week5/README.md)
 
 * Scope
 	* Lexical Scope and Dynamic Scope
