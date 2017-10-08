@@ -38,4 +38,5 @@ def get_colors(infile, outfile, numcolors=10, swatchsize=20, resize=150):
     colorPallete.save(outfile, "PNG")
 
 # update the following filenames for your project
-get_colors('sva.jpg', 'outfile.png')
+# the first parameter is the image you wish to load, the second is the output image.
+get_colors('sva.jpg', 'outfile.png') 
