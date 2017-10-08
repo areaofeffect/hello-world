@@ -25,7 +25,7 @@ def get_colors(infile, outfile, numcolors=10, swatchsize=20, resize=150):
 
     # Save colors to file
     colorPallete = Image.new('RGB', (swatchsize * numcolors, swatchsize))
-    draw = ImageDraw.Draw(pal)
+    draw = ImageDraw.Draw(colorPallete)
 
     # create a pallete from our image
     # for each color, draw a square!
@@ -38,4 +38,4 @@ def get_colors(infile, outfile, numcolors=10, swatchsize=20, resize=150):
     colorPallete.save(outfile, "PNG")
 
 # update the following filenames for your project
-get_colors('image.jpg', 'outfile.png')
+get_colors('sva.jpg', 'outfile.png')
