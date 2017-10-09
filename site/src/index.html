@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Code Literacy | SVA IxD | Fall 2017</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./static/images/favicon.ico" />
+  </head>
+
+  <body ng-app="app">
+    <ui-view></ui-view>
+  </body>
+
+
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'gpt8wuo',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+
+
+
+    var touch = 'ontouchstart' in document.documentElement
+            || navigator.maxTouchPoints > 0
+            || navigator.msMaxTouchPoints > 0;
+
+    if (touch) { // remove all :hover stylesheets
+        try { // prevent exception on browsers not supporting DOM styleSheets properly
+            for (var si in document.styleSheets) {
+                var styleSheet = document.styleSheets[si];
+                if (!styleSheet.rules) continue;
+
+                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                    if (!styleSheet.rules[ri].selectorText) continue;
+
+                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                        styleSheet.deleteRule(ri);
+                    }
+                }
+            }
+        } catch (ex) {}
+    }
+  </script>
+
+  
+</html>

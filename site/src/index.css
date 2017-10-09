@@ -1,0 +1,257 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  line-height: 1.7em;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: crosshair;
+  /*background-color: white;*/
+  color: rgba(20, 30, 30, 1);
+  /*background:white;*/
+  transition: opacity 1s ease-in-out;,
+  overflow-x: hidden;
+}
+
+/* links */
+a:link {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+a:visited {
+    color: #1e1e1e;
+}
+
+a:hover {
+  color: #fff;
+  background: #1e1e1e;
+  transition: background-color 1s ease;
+}
+
+a:active {
+  color: #f10625;
+}
+
+
+h1 {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 4em;
+  text-shadow: 1px 1px #2cfefb;
+  line-height: 1em;
+}
+
+h2 {  
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h4 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+h5 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > p {
+  text-align: center;
+}
+
+/* logo */
+.helloworld {
+  position:relative;
+  width:500px;
+  height:90px;
+  -webkit-perspective: 3000px; 
+  -webkit-perspective-origin: 50% 50%;
+  perspective: 3000px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+@media only screen and (min-width : 568px) {
+  .main {
+    padding: 40px;
+    max-width: 1024px;
+  }
+
+  blockquote {
+    font-size: 2.2em;
+  }
+
+  .helloworld {
+    width:500px;
+    height:90px;
+  }
+
+  .text {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .helloworld {
+    width: 320px;
+    height: 80px;
+  }
+
+  .text {
+    font-size: 2.5em;
+  }
+}
+
+
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+.header-title {
+  flex: 1;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.header-date {
+  flex: 1;
+  text-align: right;
+  margin: 1rem;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title-h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 1rem;
+}
+.title-logo {
+  height: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.title-h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.footer {
+  padding: 0.5rem;
+  font-size: 1rem;
+  /*background-color: #1f1f1f;*/
+  text-align: center;
+  /*color: white;*/
+}
+
+.color-1, .color-2, .color-3, .text {
+  width:inherit;
+  height:inherit;
+  position:absolute;
+  transform-style: inherit;
+  -webkit-backface-visibility: inherit;
+  backface-visibility: inherit;
+  top:0;
+  left:0;
+
+}
+
+.text {
+  color:white;
+  text-align:center;
+  padding-top:25px;
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  
+  /*text-shadow: 1px 1px #2cfefb; */
+  transform: translate3d(0px, 0px, 55px);
+  -webkit-transform: translate3d(0px, 0px , 55px);
+}
+
+.color-1 {
+  background: #000; /*black*/
+  color: #000000;
+}
+
+.color-2 {  
+  background: #ff2247; /*infrared*/
+  color: #ff2247;
+  opacity:0.8;
+  scale:1.1;
+}
+
+.color-3 {
+  background: #2cfefb; /*cyan*/
+  color: #2cfefb;
+  opacity:0.8;
+  scale:1.3;
+}
+
+.color-2, .color-3 {
+  mix-blend-mode: screen;
+}
+
+/* hack for blend modes firefox osx */
+_:-moz-tree-row(hover), .color-2, .color-3 {
+  mix-blend-mode: initial;
+}
+
+wiggle-hover {
+  width: 100%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
