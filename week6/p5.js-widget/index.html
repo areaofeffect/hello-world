@@ -24,22 +24,26 @@ Keyboards are typically used to input characters for composing documents, email,
 The modern computer keyboard is a direct descendant of the typewriter. The position of the keys on an English-language keyboard is inherited from early typewriters. This layout is called QWERTY because of the order of the top row of letter keys. It was developed for typewriters to put physical distance between frequently typed letter pairs, helping reduce the likelihood of the typebars colliding and jamming as they hit the ribbon. This more than one-hundred-year-old mechanical legacy still affects how we write software today.
 </p>
 
-<br/><br/><br/>
+<br/><br/>
 
 <!-- Contents -->
 <h2>Contents</h2>
 
 <ol>
   <li><a href="#coordinate-system">p5 Coordinate System</a>
-  <li><a href="#mouse-data">A simple drawing app</a>
-  <li><a href="#autosave">Autosave</a>
-  <li><a href="#implicit-setup">Implicit <code>setup()</code></a>
-  <li><a href="#error-handling">Error Handling</a>
-  <li><a href="#resizing">Resizing</a>
-  <li><a href="#specifying-p5-version">Specifying The p5 Version</a>
-  <li><a href="#base-url">Specifying The Base URL</a>
-  <li><a href="#src">Loading From An External File</a>
-  <li><a href="#wordpress">Using the Widget with Wordpress</a>
+  <li><a href="#simple-mapping">Mapping your mouse position</a>
+  <li><a href="#simple-drawing">Example: A simple drawing app</a>
+  <li><a href="#rectangular-button">Rectangular Button</a>
+  <li><a href="#circular-button">Circular Button</a>
+  <li><a href="#simple-keyboard">Keyboard Key</a>
+  <li><a href="#arrow-keys">Arrow Keys + Simple Movement</a>
+  <li><a href="#arrow-keys-object">Arrow Keys + Game Object</a>
+  <li><a href="#simple-image">Simple Load Image</a>
+  <li><a href="#simple-image-cursor">Image as Cursor</a>
+  <li><a href="#crossfade-image">Crossfade Image</a>
+  <li><a href="#simple-pong">Almost pong</a>
+  <li><a href="#simple-3d">Simple 3D</a>
+
 </ol>
 
 <br/><br/><br/>
@@ -59,6 +63,7 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 <p>
 The p5 variables mouseX and mouseY (note the capital X and Y) store the x-coordinate and y-coordinate of the cursor relative to the origin in the upper-left corner of the display window. To see the actual values produced while moving the mouse, run this program to print the values to the console:
 </p>
+
 <p>
 When a program starts, the mouseX and mouseY values are 0. If the cursor moves into the display window, the values are set to the current position of the cursor. If the cursor is at the left, the mouseX value is 0 and the value increases as the cursor moves to the right. If the cursor is at the top, the mouseY value is 0 and the value increases as the cursor moves down. If mouseX and mouseY are used in programs without a draw() or if noLoop() is run in setup(), the values will always be 0.
 </p>
@@ -89,7 +94,7 @@ function mouseMoved() {
 <br/><br/>
 
 <!-- mouse position -->
-<h2 id="simple-drawing">Mapping your mouse position</h2>
+<h2 id="simple-mapping">Mapping your mouse position</h2>
 <p>
 The mouse position is most commonly used to control the location of visual elements on screen. More interesting relations are created when the visual elements relate differently to the mouse values, rather than simply mimicking the current position. Adding and subtracting values from the mouse position creates relationships that remain constant, while multiplying and dividing these values creates changing visual relationships between the mouse position and the elements on the screen. The square below has it's rotation directly mapped to the cursor.
 </p>
@@ -170,8 +175,13 @@ function mouseDragged() {
 
 <!-- rectangular button -->
 <h2 id="rectangular-button">Rectangular Button</h2>
-[http://coursescript.com/notes/interactivecomputing/interactivity/](http://coursescript.com/notes/interactivecomputing/interactivity/)
-> Tutorial via John Kuiphoff / Interactive Computing
+
+The most common type of bounding box is a rectangle. Our mouse is inside a rectangle when `mouseX` and `mouseY` are inside it's bounds.
+
+The bounds of a rectangle can be thought of like its area.
+
+- x position of the rectangle plus the rectangles width
+- y position of the rectangle plus the rectangles height
 
 <script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
 var backgroundColor;
@@ -223,6 +233,8 @@ function mousePressed() {
 
 <!-- circular button -->
 <h2 id="circular-button">Circular Button</h2>
+We can calculate the distance from our mouse position to the center of a point. If this value is less than the radius of your object - our mouse cursor must be inside. See the example below.
+
 <script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
 var backgroundColor;
 var isOverCircle;
@@ -273,10 +285,13 @@ function mousePressed() {
 }
 </script>
 
+<a href="http://coursescript.com/notes/interactivecomputing/interactivity/">Tutorial via John Kuiphoff / Interactive Computing</a>
+
 <br/><br/>
 
 <h1>Keyboard Event</h1>
 <p>p5 registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyPressed variable remains true while the key is held down and becomes false only when the key is released.</p>
+
 <!-- simple keyboard -->
 <h2 id="simple-keyboard">Keyboard Key</h2>
 <script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
