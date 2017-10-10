@@ -34,7 +34,9 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 [https://processing.org/tutorials/drawing/]([https://processing.org/tutorials/drawing/])
 
 <br/>
+
 ![images/coordinates.png](images/coordinates.png)
+
 <br/>
 
 # Mouse Position
