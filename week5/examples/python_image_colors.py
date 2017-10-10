@@ -15,6 +15,8 @@ def get_colors(infile, outfile, numcolors=10, swatchsize=20, resize=150):
     image = Image.open(infile)
     image = image.resize((resize, resize))
 
+    print image.mode
+
     # we need to convert the image for python+PIL to work nicely
     result = image.convert('P', palette=Image.ADAPTIVE, colors=numcolors)
     result.putalpha(0)
@@ -39,4 +41,4 @@ def get_colors(infile, outfile, numcolors=10, swatchsize=20, resize=150):
 
 # update the following filenames for your project
 # the first parameter is the image you wish to load, the second is the output image.
-get_colors('sva.jpg', 'outfile.png') 
+get_colors('rainbow.jpg', 'outfile.png') 
