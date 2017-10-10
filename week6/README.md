@@ -1,7 +1,12 @@
-# Interactivity
+# PROGRAMMING INTERACTIVITY
+# SVA IxD WEEK 6
+
+<br/>
 
 ##### Introduction
-> Introduction is adapted from the Interactivity chapter of Processing (a classic!) and various p5 sources referenced below.
+> Introduction is adapted from the Interactivity chapter of Processing by John Maeda and Casey Raes and various p5 sources referenced below.
+
+<br/>
 
 The screen forms a bridge between our bodies and the realm of circuits and electricity inside computers. We control elements on screen through a variety of devices such as touch pads, trackballs, and joysticks, but the keyboard and mouse remain the most common input devices for desktop computers. The computer mouse dates back to the late 1960s, when Douglas Engelbart presented the device as an element of the oN-Line System (NLS), one of the first computer systems with a video display. The mouse concept was further developed at the Xerox Palo Alto Research Center (PARC), but its introduction with the Apple Macintosh in 1984 was the catalyst for its current ubiquity. The design of the mouse has gone through many revisions in the last forty years, but its function has remained the same. In Engelbart's original patent application in 1970 he referred to the mouse as an "X-Y position indicator," and this still accurately, but dryly, defines its contemporary use.
 
@@ -11,16 +16,22 @@ Keyboards are typically used to input characters for composing documents, email,
 
 The modern computer keyboard is a direct descendant of the typewriter. The position of the keys on an English-language keyboard is inherited from early typewriters. This layout is called QWERTY because of the order of the top row of letter keys. It was developed for typewriters to put physical distance between frequently typed letter pairs, helping reduce the likelihood of the typebars colliding and jamming as they hit the ribbon. This more than one-hundred-year-old mechanical legacy still affects how we write software today.
 
+<br/>
+
 # Week 6
 
-[Week 6 P5 Widget](http://hello-world.areaofeffect.io/week6)
+[Week 6 Interactive Tutorials](http://hello-world.areaofeffect.io/week6)
+
+<br/>
 
 # Coordinate system
 > The coordinate system for pixels in a computer window, however, is reversed along the y-axis. (0,0) can be found at the top left with the positive direction to the right horizontally and down vertically.
 
 [https://processing.org/tutorials/drawing/]([https://processing.org/tutorials/drawing/])
 
+<br/>
 ![images/coordinates.png](images/coordinates.png)
+<br/>
 
 # Mouse Position
 The p5 variables mouseX and mouseY (note the capital X and Y) store the x-coordinate and y-coordinate of the cursor relative to the origin in the upper-left corner of the display window. To see the actual values produced while moving the mouse, run this program to print the values to the console:
@@ -276,6 +287,14 @@ The system variable touches[] contains an array of the positions of all current 
 
 NOTE: The touches[] array is not supported on Safari and IE on touch-based desktops (laptops).
 
+# Mobile
+p5 also supports mobile devices! You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
+
+We will be using a simple HTTP server to HOST our processing sketches. As long as our phones and computer running on the server - your app should work on your phone! Here's how we do it:
+
+##### Simple HTTP Server
+- [https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer](https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer)
+
 # HTML ELEMENTS
 Creating elements in p5:
 
@@ -345,28 +364,15 @@ Additional Tutorials via *ITP Physical Computing*
 
 ##### Method 2:
 [Serial communication via online editor](https://github.com/ITPNYU/ICM-2016/wiki/Synthesis)
+
 # Microphone
 [https://p5js.org/examples/sound-mic-input.html](https://p5js.org/examples/sound-mic-input.html)
-
----
-# Mobile
-p5 also supports mobile devices! You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
-
-We will be using a simple HTTP server to HOST our processing sketches. As long as our phones and computer running on the server - your app should work on your phone! Here's how we do it:
-
-##### Simple HTTP Server
-- [https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer](https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer)
-
----
 
 # Accelerometer
 [https://p5js.org/examples/mobile-shake-ball-bounce.html](https://p5js.org/examples/mobile-shake-ball-bounce.html)
 
 # Webcam
 [https://p5js.org/examples/dom-video-capture.html](https://p5js.org/examples/dom-video-capture.html)
-
-# Video Scrub
-[https://p5js.org/examples/dom-video-canvas.html](https://p5js.org/examples/dom-video-canvas.html)
 
 # Leap Motion
 [https://github.com/mrzl/LeapMotionP5](https://github.com/mrzl/LeapMotionP5)
