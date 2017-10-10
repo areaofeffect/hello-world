@@ -3,6 +3,10 @@
 
 <br/>
 
+[TLDR;](http://week6-hello-world.areaofeffect.io)
+
+<br/>
+
 ##### Introduction
 > Introduction is adapted from the Interactivity chapter of Processing by John Maeda and Casey Raes and various p5 sources referenced below.
 
@@ -20,7 +24,7 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 
 # Week 6
 
-[Week 6 Interactive Tutorials](http://hello-world.areaofeffect.io/week6)
+[Week 6 Interactive Tutorials](http://week6-hello-world.areaofeffect.io)
 
 <br/>
 
