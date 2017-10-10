@@ -1,6 +1,6 @@
-# Week 3
-
-[Week 3 slides](http://hello-world.areaofeffect.io/week3/slides/#1)
+# Operators, Conditionals, and Functions
+# SVA IxD Week 3
+[Week 3 slides](http://week3-hello-world.areaofeffect.io)
 
 # Review and Discussion of Week 2
 Variables and Data Types
