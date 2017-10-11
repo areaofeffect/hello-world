@@ -1,4 +1,7 @@
-# Week 1: Notes
+# Silicon to Singularity
+# SVA IxD Week 1
+
+[Week 1 slides](http://week1-hello-world.areaofeffect.io)
 
 Notes from our week one class. These notes are generated into the slides we use for class.
 

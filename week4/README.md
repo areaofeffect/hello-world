@@ -1,7 +1,6 @@
-# Week 4
-
-[Week 4 slides](http://hello-world.areaofeffect.io/week4/slides/#1)
-
+# Loops
+# SVA IxD Week 4
+[Week 3 slides](http://week4-hello-world.areaofeffect.io)
 
 
 ## Review and Discussion of Week 3

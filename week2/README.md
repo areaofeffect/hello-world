@@ -1,6 +1,7 @@
-# Week 2
+# Data Types
+# SVA IxD Week 2
 
-[Week 2 slides](http://hello-world.areaofeffect.io/week2/slides/#1)
+[Week 2 slides](http://week2-hello-world.areaofeffect.io)
 
 # Review and Discussion of Week 1
 From Silicon to Singularity
