@@ -455,7 +455,7 @@ Remember:
 - add a second player and scores
 - run it in a seperate HTML file with larger game window
 - make your own controls!
-- (advanced) try control the players with potentiometers + arduino
+- (advanced) try control the players with potentiometers (or something else!) + arduino
 - (advanced) try controlling the paddles with your phone + rotation!
 
 <br/>
