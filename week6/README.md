@@ -454,7 +454,8 @@ Remember:
 - http://week6-hello-world.areaofeffect.io/#simple-pong
 - add a second player and scores
 - run it in a seperate HTML file with larger game window
-- control the players with potentiometers + arduino
+- make your own controls!
+- (advanced) try control the players with potentiometers + arduino
 - (advanced) try controlling the paddles with your phone + rotation!
 
 <br/>
