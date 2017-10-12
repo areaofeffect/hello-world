@@ -403,4 +403,67 @@ Additional Tutorials via *ITP Physical Computing*
 - [Intro do HTML and CSS](https://github.com/processing/p5.js/wiki/Intro-to-HTML-and-CSS)
 - [JavaScript Basics](https://github.com/processing/p5.js/wiki/JavaScript-basics)
 
+---
+
+# [Week 6 Assignment - Programming Interactivity](https://github.com/areaofeffect/hello-world/tree/master/week6)
+
+<br/>
+
+### Part 1. Read and review the following readings and questions from class.
+
+We discussed JavaScript's lack of strict typing. To further understand how the engine understands types, the typeof operator is helpful.
+
+- [typeof operator in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+There was a question about collisions of irregular shaped polygons, this module may be useful.
+
+- [2D collision module for P5.js](https://github.com/bmoren/p5.collide2D)
+
+Here is a guide to the basics of using git.
+
+- [A simple guide to git](http://rogerdudler.github.io/git-guide/)
+
+There was a question about why a dot is used when we write Classes (objects) in JavaScript. This article may help understanding that syntax.
+
+- [JavaScript Dot Notation](https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d)
+
+Further examples of how to write classes in JavaScript.
+
+- [JavaScript class example Pokémon](https://github.com/areaofeffect/hello-world/blob/master/week5/examples/javascript_class.js)
+- [Jitter Class](https://p5js.org/examples/objects-objects.html)
+
+<br/>
+
+### Part 2. Coding
+Choose one of the following programming assignments below. Rember to create a folder for your project and upload to GitHub when you are done. If you need help going through debugging remember to first check online, there is a chance someone else has gotten the same error as you! If you are still stuck ask your classmates, pair-programming or in slack.
+
+##### CODE OPTION 1. Choose an element of interactivity to make a sketch, drawing or game! You can use Keyboard, Mouse, Touch or other methods we discussed in class. If you get stuck for ideas you can try remaking your interactive python game in p5 or review our class notes from week 6. 
+
+Remember:
+
+- mouseX, mouseY, and [mouse events](http://week6-hello-world.areaofeffect.io/#simple-drawing)
+- keyboard input (key, keycode)
+- Classes ([jitterbugs](https://gist.github.com/brunokruse/fcd85f3ec8c1da3f2b6759d152360611)) are your friend.
+- loadImage(), image()
+- and more!
+
+<br/>
+
+##### CODE OPTION 2. Take "Almost pong" and make it a real game.
+
+- http://week6-hello-world.areaofeffect.io/#simple-pong
+- add a second player and scores
+- run it in a seperate HTML file with larger game window
+- make your own controls!
+- (advanced) try control the players with potentiometers (or something else!) + arduino
+- (advanced) try controlling the paddles with your phone + rotation!
+
+<br/>
+<br/>
+
+and remember....
+
+![http://i0.kym-cdn.com/photos/images/original/000/934/217/5f4.gif](http://i0.kym-cdn.com/photos/images/original/000/934/217/5f4.gif)
+
+
 > - Area of Effect. SVA IxD. Code Literacy. Fall 2017.
