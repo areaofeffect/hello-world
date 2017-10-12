@@ -202,22 +202,23 @@ An brief history of computing, computers and why we code.
 
 ​<br/>
 
-#### Week 7: Data Visualizations and Datastreams
 
-* How do we structure and organize data in a useful / readable way?
-* API'S, JSON files, Cloud services, Local databases
-* Intro to React
-* Review of serial, protocols and microcontrollers
-
-<br/>
-
-#### Week 8 - Intro to Computer Vision
+#### Week 7 - Intro to Computer Vision
 
 * OpenCV
 * Kinect
 * Leap Motion
 * VR
 * Project Demos and workshop
+
+<br/>
+
+#### Week 8: Data Visualizations and Datastreams
+
+* How do we structure and organize data in a useful / readable way?
+* API'S, JSON files, Cloud services, Local databases
+* Intro to React
+* Review of serial, protocols and microcontrollers
 
 <br/>
 
