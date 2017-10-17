@@ -5,7 +5,64 @@
 <link rel="stylesheet" href="static/index.css">
 
 <!-- INTRO -->
-<title>Week 6 Homework</title>
-<h1>Interactivity Sketches</h1>
+<title>JasonBranch</title>
+<h1>JasonBranch</h1>
 
-<a href="homework.html">Homework</a>
+<!-- simple 3d -->
+<h2 id="simple-microphone">sketch</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="500" data-height="500">
+
+function setup() {
+  createCanvas(500, 500);
+  fill(0);
+  textSize(60);
+  background(0);
+}
+
+var value = 0;
+
+
+function draw() {
+  text(key, 200, 200);
+  text(key, 600, 600);
+  text(key, 650, 650);
+  text(key, 700, 700);
+  rect(200, 200, 400, 400);
+  
+}
+
+function keyPressed() 
+
+// UP key
+  if(keyCode == UP_ARROW)
+  {
+    fill(40, 255, 0);
+  }
+ 
+  // DOWN key
+  if(keyCode == DOWN_ARROW)
+  { 
+    fill(20, 105, 0);
+  }
+ 
+  // RIGHT key
+  if(keyCode == RIGHT_ARROW)
+  {
+    fill(5, 73, 10);
+  }
+ 
+  // LEFT key
+  if(keyCode == LEFT_ARROW)
+  {
+    fill(70, 215, 5);
+  }
+
+
+
+}
+</script>
+
+<script src="static/vendor/jquery.js"></script>
+<script src="p5-widget.js" data-manual></script>
+<script src="static/vendor/prism.js" data-manual></script>
+<script src="static/index.js"></script>
