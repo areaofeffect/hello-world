@@ -203,7 +203,7 @@ An brief history of computing, computers and why we code.
 ​<br/>
 
 
-#### Week 7 - Intro to Computer Vision
+#### [Week 7 - Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
 
 * OpenCV
 * Kinect

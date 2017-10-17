@@ -2,7 +2,7 @@
 
 <br/>
 
-Follow along with this weeks examples: [examples.html](examples.html)
+Follow along with this weeks examples: [week7-hello-world.areaofeffect.io/](https://week7-hello-world.areaofeffect.io/)
 
 <br/>
 
