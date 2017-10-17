@@ -2,69 +2,196 @@
 <head>
 <style>
 
-body {
-  font-family: Sans-Serif;
-}
+  body {
+    margin: 0;
+    height: 100%;
+    font-family: "futura-pt",sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    line-height: 1.7em;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: crosshair;
+    /*background-color: white;*/
+    color: rgba(20, 30, 30, 1);
+    /*background:white;*/
+    transition: opacity 1s ease-in-out;,
+    overflow-x: hidden;
+  }
+
+  /* links */
+  a:link {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  a:visited {
+      color: #1e1e1e;
+  }
+
+  a:hover {
+    color: #fff;
+    background: #1e1e1e;
+    transition: background-color 1s ease;
+  }
+
+  a:active {
+    color: #f10625;
+  }
+
+
+  h1 {
+    font-family: "futura-pt",sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 4em;
+    text-shadow: 1px 1px #2cfefb;
+    line-height: 1em;
+  }
+
+  h2 {  
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  h3 {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  h4 {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  h5 {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .title > p {
+    text-align: center;
+  }
+
+  .title-h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: .5rem;
+    padding: 1rem;
+  }
 
 </style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Literacy | SVA IxD | Fall 2017</title>
 </head>
 
 <body>
 
-<h1>Interactive Computer Vision and Video</h1>
-<h2>Code Literacy: Week 7</h2>
-<h2>SVA IxD</h2>
+<div class="main-container">
+  <main class="main">
+  <div class="title">
+    <h1>Interactive Computer Vision and Video</h1>
+    <h2 class="title-h2">Code Literacy | Week 7 | SVA IxD</h2>
+    <img src="../images/face.png"></img>
+  
+  <p>
 
-<br/>
+    <ul>
 
-<img src="../images/face.png"></img>
+  <span class="nowrap"><a href="sva-ixd-examples/basic-capture/index.html"> Basic Capture </a></span>
 
-<br/>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/basic-threshold/index.html">Basic Threshold</a></span>
 
-<ul>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/brightest-point/index.html">Brightest Point</a></span>
 
-<li><h1><a href="sva-ixd-examples/basic-capture/index.html"> Basic Capture </a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/color-detection/index.html">Color Detection</a></span>
 
-<li><h1><a href="sva-ixd-examples/basic-threshold/index.html">Basic Threshold</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/edge-detection/index.html">Edge Detection</a></span>
 
-<li><h1><a href="sva-ixd-examples/brightest-point/index.html">Brightest Point</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/face-detection/index.html">Face Detection</a></span>
 
-<li><h1><a href="sva-ixd-examples/color-detection/index.html">Color Detection</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/face-tracking/index.html">Face Tracking</a></span>
 
-<li><h1><a href="sva-ixd-examples/edge-detection/index.html">Edge Detection</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/fiducial-tracking/index.html">Tracking Fiducials</a></span>
 
-<li><h1><a href="sva-ixd-examples/face-detection/index.html">Face Detection</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/flow-optical/index.html">Optical Flow</a></span>
 
-<li><h1><a href="sva-ixd-examples/face-tracking/index.html">Face Tracking</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/motion-difference/index.html">Motion Differencing</a></span>
 
-<li><h1><a href="sva-ixd-examples/fiducial-tracking/index.html">Tracking Fiducials</a></h1></li>
+  <span class="nowrap"> &bull; <a href="sva-ixd-examples/motion-tracking/index.html"> Motion Tracking</a></span>
 
-<li><h1><a href="sva-ixd-examples/flow-optical/index.html">Optical Flow</a></h1></li>
+  -
 
-<li><h1><a href="sva-ixd-examples/motion-difference/index.html">Motion Differencing</a></h1></li>
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.2_p5.js_photoBooth/index.html"> Photo Booth</a></span>
 
-<li><h1><a href="sva-ixd-examples/motion-tracking/index.html"> Motion Tracking</a></h1></li>
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.3_p5.js_pixels/index.html"> Pixels</a></span>
 
--
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.4_p5.js_brightness_mirror/index.html">Brightness Mirror</a></span>
 
-<li><h1><a href="codingtrain-examples-master/10.2_p5.js_photoBooth/index.html"> Photo Booth</a></h1></li>
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.5_checkbox_mirror/index.html">Checkbox Mirror</a></span>
 
-<li><h1><a href="codingtrain-examples-master/10.3_p5.js_pixels/index.html"> Pixels</a></h1></li>
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.6_p5.js_painting/index.html">Painting</a></span>
 
-<li><h1><a href="codingtrain-examples-master/10.4_p5.js_brightness_mirror/index.html">Brightness Mirror</a></h1></li>
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.7_p5.js_slitscan/index.html">Slit Scan</a></span>
 
-<li><h1><a href="codingtrain-examples-master/10.5_checkbox_mirror/index.html">Checkbox Mirror</a></h1></li>
+  <!--
+  <span class="nowrap"> &bull; <a href="codingtrain-examples-master/10.8_p5.js_seriously/index.html">Seriously</a></span>
+  -->
 
-<li><h1><a href="codingtrain-examples-master/10.6_p5.js_painting/index.html">Painting</a></h1></li>
+  </ul>
+    
+    
+  </p>
 
-<li><h1><a href="codingtrain-examples-master/10.7_p5.js_slitscan/index.html">Slit Scan</a></h1></li>
+</div>
+  
 
-<!--
-<li><h1><a href="codingtrain-examples-master/10.8_p5.js_seriously/index.html">Seriously</a></h1></li>
--->
-
-</ul>
+</main>
+</div>
 
 </body>
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'gpt8wuo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
 </html>
