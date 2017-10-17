@@ -29,6 +29,7 @@ var rectX = 10;
 var rectY = 10;
 
 var lives = 3;
+var lives2 = 3;
 
 function draw() {
   rect(500,500,50,50);
@@ -55,14 +56,7 @@ function mouseMoved() {
   rectY = mouseY;
 } 
   
-function keyPressed() {
-  /*if (keyCode === LEFT_ARROW) {
-    player.hmom -= player.speed;
-
-  } else if (keyCode === RIGHT_ARROW) {
-    player.hmom += player.speed;
-
-  }*/ 
+function keyPressed() { 
   if (keyCode === UP_ARROW) {
     player.vmom -= player.speed;
 
@@ -103,13 +97,6 @@ function gameObject() {
   }
 
   this.checkCollisions = function() {
-    /* left and right
-    if (this.x <= 0) {
-      this.x = 0
-    } else if (this.x + this.size >= width) {
-      this.x = width - this.size;
-    }*/
-
     // up and down
     if (this.y <= 0) {
       this.y = 0
@@ -148,7 +135,7 @@ function sliderBounce() {
 function sliderBounce2() {
   if(this.y < ballY && this.y + 100 > ballY) {
     ballXV = ballXV * -1;
-    lives += 1;
+    lives2 += 1;
   }
 }  
 
@@ -174,9 +161,13 @@ function bounceCheck() {
     wallBounce();
   }
   
-  if(ballX < 0) {
+  if (ballX < 0) {
     ballX = 500;
     lives -= 1;
+  }
+  if (ballX >500) {
+    ballX = 0;
+    lives2 -= 1;
   }
 }
 
@@ -198,7 +189,7 @@ function scoreCheck() {
   }
 }
 
-/*function scoreCheck2() {
+function scoreCheck2() {
   if(lives2 == 0) {
     //stop the ball
         ballXV = 0;
@@ -215,12 +206,13 @@ function scoreCheck() {
         setText();
   }
 }
-*/
+
 
 function setText() {
   textAlign(LEFT);
   textSize(22);
   text(lives, 10, 20);
+  text (lives2, 480, 20);
 }
 </script>
 
