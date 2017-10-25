@@ -92,7 +92,9 @@ Terminal commands to start this app from scratch:
 	meteor add http
 	meteor
 	
-link to app code here
+Code from class can be found here:
+	
+[in-class-apps/api-app](https://github.com/areaofeffect/hello-world/tree/master/week8/in-class-apps/api-app)
 
 [API](https://api.nasa.gov/api.html#apod)
 
@@ -106,6 +108,12 @@ Terminal commands to start this app from scratch:
 	meteor add http
 	meteor
 	
+Code from class can be found here:
+
+[in-class-apps/react-app](https://github.com/areaofeffect/hello-world/tree/master/week8/in-class-apps/react-app)
+
+[API](https://api.nasa.gov/api.html#NeoWS)
+	
 Further reading
 
 [What is NPM](https://docs.npmjs.com/getting-started/what-is-npm)
@@ -116,7 +124,7 @@ Further reading
 
 [Higher Order Components](https://reactjs.org/docs/higher-order-components.html)
 
-link to app code here
+
 
 ### 3 Node serial 
 	meteor create --release 1.6-rc.16 super-serial-app
