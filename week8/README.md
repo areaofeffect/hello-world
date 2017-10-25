@@ -156,7 +156,7 @@ Add to one of our example apps, or explore [React](https://reactjs.org/) with [D
 
 Google Maps also has an extensive API, and there are some [React components prebuilt](https://github.com/istarkov/google-map-react) if you are interested.
 
-The events channel has a link to a session at the Brooklyn Library to learn how to use the [NYC OpenData](https://opendata.cityofnewyork.us/).
+The events channel has a [link](https://www.bklynlibrary.org/calendar/nyc-open-data-101-central-library-info-102317) to a session at the Brooklyn Library to learn how to use the [NYC OpenData](https://opendata.cityofnewyork.us/).
 
 If you have an idea but need help scaffolding your app, let us know.
 
