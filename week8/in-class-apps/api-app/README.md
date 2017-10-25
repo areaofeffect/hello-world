@@ -9,6 +9,7 @@ Edit the `client/main.js` files on [line 26](https://github.com/areaofeffect/hel
 In Terminal, `cd` into this directory (api-app) and then run the following commands:
 
 	npm install
+	meteor add http
 	meteor
 	
 ## 4
