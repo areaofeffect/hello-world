@@ -152,7 +152,7 @@ You can further explore the APIs provided by NASA and use your existing key. Or 
 
 Add to one of our example apps, or explore [React](https://reactjs.org/) with [D3](https://d3js.org/) as your front end. Here's an [example](https://github.com/iamvdo/globe-react-d3-topojson) of geographic data visualized.
 
-Google Maps also has an extensive API, and there are some [React components prebuilt](https://github.com/istarkov/google-map-react) if you are intersted.
+Google Maps also has an extensive API, and there are some [React components prebuilt](https://github.com/istarkov/google-map-react) if you are interested.
 
 The events channel has a link to a session at the Brooklyn Library to learn how to use the [NYC OpenData](https://opendata.cityofnewyork.us/).
 
