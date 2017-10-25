@@ -1,9 +1,6 @@
 # DATA
 # SVA IxD WEEK 8
 
-
-# DATA
-
 We will talk about how to consume data in a software/web application. We will explore 2 types of data acquisition.
 
 ## API 
