@@ -75,7 +75,7 @@ Let's query some data via this API from Nasa
 [https://api.nasa.gov/index.html](https://api.nasa.gov/index.html)
 
 
-# Building some isomorphic javascript apps
+# Building some isomorphic Javascript apps
 
 We will be using [Meteor](https://www.meteor.com/) which is built on node. You installed node via [NVM](https://github.com/creationix/nvm) or Node Version Manager. This allows easily switching to various [releases](https://en.wikipedia.org/wiki/Software_release_life_cycle) of node if your applications dependencies require it.
 
@@ -147,6 +147,8 @@ Though we did not review this in class, the link to the application will be post
 # ASSIGNMENT
 
 Build an app that incorporates some data from an API or sensor. 
+
+To step through the tutorial on Meteor + React again, follow it [here](https://www.meteor.com/tutorials/react/creating-an-app). Note that in step 3 (collections), we are using the newer way to wrap components with reactive data. Refer to [line 2 import of withTracker](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L2) and [lines 26-33](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L26-L33) where the component is wrapped with data. (looks like they are on it though [https://github.com/meteor/todos/pull/247](https://github.com/meteor/todos/pull/247))
 
 You can further explore the APIs provided by NASA and use your existing key. Or explore other available APIs like [Open Notify](http://open-notify.org/Open-Notify-API/). Plot the course of the International Space Station :)
 
