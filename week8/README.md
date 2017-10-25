@@ -158,7 +158,9 @@ Build an app that incorporates some data from an API or sensor.
 
 To step through the tutorial on Meteor + React again, follow it [here](https://www.meteor.com/tutorials/react/creating-an-app). Please see the following notes.
 
-_1 Note in step 2, React has changed where PropTypes live._ Replace:
+_1 Note in step 2, React has changed where PropTypes live._ 
+
+Replace:
 
 	import React, { Component, PropTypes } from 'react';
 
