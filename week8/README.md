@@ -127,6 +127,7 @@ Further reading
 	meteor create --release 1.6-rc.16 super-serial-app
 	cd super-serial-app
 	npm install serialport --save
+	meteor npm install --save react react-dom
 	meteor add react-meteor-data
 	meteor
 	

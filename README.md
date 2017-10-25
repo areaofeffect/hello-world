@@ -213,7 +213,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### Week 8: Data Visualizations and Datastreams
+#### [Week 8: Data Visualizations and Datastreams](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md)
 
 * How do we structure and organize data in a useful / readable way?
 * API'S, JSON files, Cloud services, Local databases
