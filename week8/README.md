@@ -57,17 +57,24 @@ There are different types of request but the ones most frequently used are:
 
 
 ## HTTP Responses
+
+[Response protocol](https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html)
 The majority of responses include
 - some content (the data you may have requested from the API, often formatted as JSON)
 - a status code
 - in the case of an error, and erro message
 
 #### Common status codes
-[Response protocol](https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html)
+
 -	"200" OK (Success!)
 -	"400" Bad request (Check the format of your request)
--	"401" Unauthorized (Do you need an API key?)
+-	"401" Unauthorized (Do you need an API key	
 -	"50x" Something is wrong with the server where the response should be coming from
+
+And the best status code
+
+- "418" [I'm a teapot](https://www.google.com/teapot)
+
 	
 # NASA OPEN API
 
@@ -149,7 +156,23 @@ Though we did not review this in class, the link to the application will be post
 
 Build an app that incorporates some data from an API or sensor. 
 
-To step through the tutorial on Meteor + React again, follow it [here](https://www.meteor.com/tutorials/react/creating-an-app). Note that in step 3 (collections), we are using the newer way to wrap components with reactive data. Refer to [line 2 import of withTracker](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L2) and [lines 26-33](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L26-L33) where the component is wrapped with data. (looks like they are on it though [https://github.com/meteor/todos/pull/247](https://github.com/meteor/todos/pull/247))
+To step through the tutorial on Meteor + React again, follow it [here](https://www.meteor.com/tutorials/react/creating-an-app). Please see the following notes.
+
+_1 Note in step 2, React has changed where PropTypes live._ Replace:
+
+	import React, { Component, PropTypes } from 'react';
+
+with:
+
+	import React, { Component } from 'react';
+	import PropTypes from 'prop-types';
+
+
+_2 Note that in step 3 (collections), we are using the newer way to wrap components with reactive data._ 
+
+Refer to [line 2 import of withTracker](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L2) and [lines 26-33](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/imports/ui/AsteroidList.js#L26-L33) where the component is wrapped with data. (looks like they are on it though [https://github.com/meteor/todos/pull/247](https://github.com/meteor/todos/pull/247))
+
+#### App suggestions/inspirations
 
 You can further explore the APIs provided by NASA and use your existing key. Or explore other available APIs like [Open Notify](http://open-notify.org/Open-Notify-API/). Plot the course of the International Space Station :)
 
