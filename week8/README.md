@@ -133,7 +133,7 @@ Further reading
 ### 3 Node serial 
 	meteor create --release 1.6-rc.16 super-serial-app
 	cd super-serial-app
-	npm install serialport --save
+	meteor npm install serialport --save
 	meteor npm install --save react react-dom
 	meteor add react-meteor-data
 	meteor
@@ -149,7 +149,9 @@ Further reading
 
 [Node Serial Port](https://github.com/EmergingTechnologyAdvisors/node-serialport)
 	
-Though we did not review this in class, the link to the application will be posted soon.
+Code from class can be found here:
+
+[in-class-apps/react-app](https://github.com/areaofeffect/hello-world/tree/master/week8/in-class-apps/super-serial-app)
 
 
 # ASSIGNMENT
