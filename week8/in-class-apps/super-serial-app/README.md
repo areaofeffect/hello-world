@@ -15,7 +15,7 @@ How to find the path to your serial port
 Edit the `server/main.js` files on [line 73](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/super-serial-app/server/main.js#L73) with your serial port from step 2
 
 ## 4
-In Terminal, `cd` into this directory (react-app) and then run the following commands:
+In Terminal, `cd` into this directory (super-serial-app) and then run the following commands:
 
 	meteor npm install serialport --save
 	meteor npm install react-p5-wrapper --save
