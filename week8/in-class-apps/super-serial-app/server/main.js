@@ -24,7 +24,8 @@ function addAscii(data) {
     
     // the first index is the text
     let text = dataArr[0];
-
+    
+    // a comma requires a special update since we are splting on commas in line 12
     if (dataArr[0] == '' && dataArr[1] == '') {
       //console.log("it's a comma!")
       text = ",";
@@ -62,12 +63,6 @@ function addAscii(data) {
     // upsert into the database so that the front end will update each time you press the Arduino reset button
     Meteor.call('ascii.upsert', text, decValue, hexValue, octValue, binValue);
   }
-    
-
-  // construct and object
-  // 
-
-
 }
 
 var port = new SerialPort('/dev/cu.usbmodem1421', {
