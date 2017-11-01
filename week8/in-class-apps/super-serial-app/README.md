@@ -12,7 +12,7 @@ How to find the path to your serial port
 
 
 ## 3
-Edit the `server/main.js` files on [line 15](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/server/main.js#L73) with your serial port from step 2
+Edit the `server/main.js` files on [line 73](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/super-serial-app/server/main.js#L73) with your serial port from step 2
 
 ## 3
 In Terminal, `cd` into this directory (react-app) and then run the following commands:
