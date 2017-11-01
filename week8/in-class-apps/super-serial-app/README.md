@@ -1,0 +1,29 @@
+# How to run this app
+## 1 
+Download these files to your computer
+
+## 2
+
+Connect your Arduino to your computer via USB and run Examples -> Communcation -> AsciiTable (found in the Arduino IDE)
+
+How to find the path to your serial port
+
+	ls -al /dev/cu*
+
+
+## 3
+Edit the `server/main.js` files on [line 15](https://github.com/areaofeffect/hello-world/blob/master/week8/in-class-apps/react-app/server/main.js#L73) with your serial port from step 2
+
+## 3
+In Terminal, `cd` into this directory (react-app) and then run the following commands:
+
+	meteor create --release 1.6-rc.16 super-serial-app
+	cd super-serial-app
+	meteor npm install serialport --save
+	meteor npm install react-p5-wrapper --save
+	meteor npm install --save react react-dom
+	meteor add react-meteor-data
+	meteor
+	
+## 5
+View the application in your browser at `http://localhost:3000`
