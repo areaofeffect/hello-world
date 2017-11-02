@@ -1,4 +1,6 @@
-# How to run this app
+If you have not installed Node or Meteor, follow the steps in [Setting up your development environment](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md#setting-up-your-development-environment) before running this application.
+
+# How to run super-serial-app
 ## 1 
 Download these files to your computer
 

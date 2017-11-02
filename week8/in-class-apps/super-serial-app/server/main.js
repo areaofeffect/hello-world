@@ -5,7 +5,7 @@ import ascii from '../imports/api/ascii.js'
 const Readline = SerialPort.parsers.Readline;
 const parser = new Readline();
 
-// parse the data from serial into meaninful objects
+// parse the data from serial into meaningful objects
 function addAscii(data) {
   // console.log(data);
   // split into an array 
