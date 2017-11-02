@@ -152,7 +152,7 @@ Further reading
 	
 Code from class can be found here:
 
-[in-class-apps/react-app](https://github.com/areaofeffect/hello-world/tree/master/week8/in-class-apps/super-serial-app)
+[in-class-apps/super-serial-app](https://github.com/areaofeffect/hello-world/tree/master/week8/in-class-apps/super-serial-app)
 
 
 # ASSIGNMENT
