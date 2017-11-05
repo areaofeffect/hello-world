@@ -35,6 +35,6 @@ View MQTT messages in Terminal by running this command
 	mosquitto_sub -h 127.0.0.1 -t ascii
 	
 ## 7
-Follow the instructions to run the processing sketch in this folder to visualize the data in the processing app.
+Follow the instructions to run the [processing sketch in this folder](https://github.com/areaofeffect/hello-world/tree/master/week9/in-class-apps/processing) to visualize the data in the processing app.
 
 
