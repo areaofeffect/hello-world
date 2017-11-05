@@ -222,7 +222,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### Week 9 -  Intro to IoT
+#### [Week 9 -  Intro to IoT](https://github.com/areaofeffect/hello-world/tree/master/week9)
 
 * How do we talk to things with code?
 * What is a smart object?
