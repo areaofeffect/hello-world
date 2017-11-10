@@ -188,7 +188,7 @@ Google Maps also has an extensive API, and there are some [React components preb
 The events channel has a [link](https://www.bklynlibrary.org/calendar/nyc-open-data-101-central-library-info-102317) to a session at the Brooklyn Library to learn how to use the [NYC OpenData](https://opendata.cityofnewyork.us/).
 
 If you have an idea but need help scaffolding your app, let us know.
-
+ 
 
 
 
