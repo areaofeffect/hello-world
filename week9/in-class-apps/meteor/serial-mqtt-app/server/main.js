@@ -4,7 +4,7 @@ import ascii from '../imports/api/ascii.js'
 import { connect } from 'mqtt/lib/connect';
 
 export const config = {
-  mqttHost: "mqtt://127.0.0.1",
+  mqttHost: "http://23.21.151.236", //"mqtt://127.0.0.1",
   mqttPort: 1883
 };
 
