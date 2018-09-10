@@ -1,13 +1,13 @@
 # Code Literacy: Hello World
 
 
-##### FALL 2017
+##### FALL 2018
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
 ##### DURATION: 15 weeks
 
-##### TIME: Tuesdays 2:00pm - 4:50pm
+##### TIME: Wednesday 2:00pm - 4:50pm
 
 ##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/)
 
@@ -53,17 +53,8 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 <br/>
 
 
-#### RESOURCES
-[Mozilla](https://developer.mozilla.org/en-US/), [w3](https://www.w3.org/), [Adafruit](https://learn.adafruit.com/), [Instructables](http://www.instructables.com/), [Stack Overflow](https://stackoverflow.com/), [Hack A Day](https://hackaday.io/), [Sparkfun](https://learn.sparkfun.com/)
-
-
-<br/>
-
-
 #### SOFTWARE
 - [Sublime Text 3](https://www.sublimetext.com/3)
-- [Atom](https://atom.io/)
-- [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 - [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html)
 - Terminal (Comes with your computer!)
 
@@ -265,7 +256,6 @@ An brief history of computing, computers and why we code.
 #### Week 14 - Final Project development
 
 * Coding workshop
-
 
 <br/>
 
