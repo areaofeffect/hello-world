@@ -1,4 +1,4 @@
-# Code Literacy: Hello World
+# Hello World: The Logic of Interaction
 
 
 ##### FALL 2018
