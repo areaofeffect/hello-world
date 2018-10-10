@@ -292,7 +292,7 @@ Write a read me and include instructions on how to download and run your code.
 # Building your first Node.js project
 First let's install node using [Node Version Manager](https://github.com/creationix/nvm)
 
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 	
 Now we're going to set up our bash profile, follow along.
 
