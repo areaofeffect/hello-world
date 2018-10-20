@@ -91,7 +91,7 @@ Our apps are based on the standard starter apps that come with Meteor. App 1 use
 ## 1 Astronomy picture of the day
 Terminal commands to start this app from scratch:
 
-	meteor create --release 1.6-rc.16 api-app
+	meteor create api-app
 	cd api-app
 	meteor add http
 	meteor
@@ -105,7 +105,7 @@ Code from class can be found here:
 ## 2 Asteroids near the earth in React
 Terminal commands to start this app from scratch:
 
-	meteor create --release 1.6-rc.16 react-app
+	meteor create react-app
 	cd react-app
 	meteor npm install --save react react-dom
 	meteor add react-meteor-data
@@ -131,7 +131,7 @@ Further reading
 
 
 ### 3 Node serial 
-	meteor create --release 1.6-rc.16 super-serial-app
+	meteor create super-serial-app
 	cd super-serial-app
 	meteor npm install serialport --save
 	meteor npm install react-p5-wrapper --save
