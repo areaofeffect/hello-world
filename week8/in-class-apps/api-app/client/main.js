@@ -23,7 +23,7 @@ Template.hello.events({
   'click button'(event, instance) {
 
     HTTP.call('GET', 'https://api.nasa.gov/planetary/apod', {
-      params: { api_key: "your_api_key", date:"2017-10-23" }
+      params: { api_key: "iyuaalFBShG6fxUdb0muEx616dsZEdkTIFqQ9iV0", date:"2018-10-14" }
     }, (error, result) => {
       if (!error) {
         console.log(result.data.url);
