@@ -45,6 +45,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 ---
 <a name="resources"></a>
+
 # Resources and Office Hours
 
 - Office Hours
@@ -52,7 +53,7 @@ Notes from our week one class. These notes are generated into the slides we use 
   - Web / Skype / Hangout: Schedule with us in advance
 - Slack
 - Posting Assignments
-  - Due 12:00pm before class
+  - Due 12:00pm Wednesday's before class
 
 ---
 # Class Methods
@@ -179,10 +180,7 @@ Goals:
 # Editors
 
 - [Sublime Text 3](https://www.sublimetext.com/3)
-- [Atom](https://atom.io/)
-
 - Mac, [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
-- Windows, Visual Studio
 
 ---
 # Scripting
@@ -199,7 +197,6 @@ Goals:
 > quotes
 <code></code>
 ```
-
 
 ---
 
@@ -304,7 +301,6 @@ Swift is the newest language developed by apple. It now supports emoji variable 
 
 [Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 
-
 ---
 
 <br/>
@@ -318,10 +314,8 @@ Swift is the newest language developed by apple. It now supports emoji variable 
 
 1. Join our slack. We will help you through questions and guide installing any of the software below.
 2. Download and setup your computer for coding. Come to next prepared class with:
-	* Install a Text Editor of your choice (Atom or Sublime)
-	* Install a development Browser (Chrome)
-	* [Install XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (via app store) and [Xcode command line tools](#commandline)
-	* note: The XCode download is quite large and may take a moment.
+  * Install a Text Editor of your choice (Sublime)
+  * Install a development Browser (Chrome)
 
 3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 

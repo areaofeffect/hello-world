@@ -19,7 +19,7 @@ Continuous stream of data, possibly from a sensor
 Open a new window in Terminal and run the following commands line by line
 
 	touch ~/.bash_profile
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 	nvm install node
 	
 ## 3
