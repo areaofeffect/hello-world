@@ -10,7 +10,7 @@ Edit the `server/main.js` files on [line 15](https://github.com/areaofeffect/hel
 In Terminal, `cd` into this directory (react-app) and then run the following commands:
 
 	npm install
-  meteor npm install --save react react-dom
+  	meteor npm install --save react react-dom
 	meteor add react-meteor-data
 	meteor add http
 	meteor
