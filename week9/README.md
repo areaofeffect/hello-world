@@ -31,7 +31,7 @@ Now that you have the Mosquitto broker and clients install on your computer, you
 We will add MQTT to [one of our apps from last class](https://github.com/areaofeffect/hello-world/tree/master/week8#building-some-isomorphic-javascript-apps).
 
 ### Node + Serial + MQTT
-	meteor create --release 1.6 serial-mqtt-app
+	meteor create serial-mqtt-app
 	cd serial-mqtt-app
 	meteor npm install serialport --save
 	meteor npm install mqtt --save
