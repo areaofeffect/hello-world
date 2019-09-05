@@ -1,13 +1,13 @@
 # Hello World: The Logic of Interaction
 
 
-##### FALL 2018
+##### FALL 2019
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
 ##### DURATION: 15 weeks
 
-##### TIME: Wednesday 2:00pm - 4:50pm
+##### TIME: Thursday 2:00pm - 4:50pm
 
 ##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/)
 
@@ -191,20 +191,9 @@ An brief history of computing, computers and why we code.
   * Console logs
   * Network, Serial
 
-​<br/>
-
-
-#### [Week 7 - Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
-
-* OpenCV
-* Kinect
-* Leap Motion
-* VR
-* Project Demos and workshop
-
 <br/>
 
-#### [Week 8: Data Visualizations and Datastreams](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md)
+#### [Week 7: Data Visualizations and Datastreams](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md)
 
 * How do we structure and organize data in a useful / readable way?
 * API'S, JSON files, Cloud services, Local databases
@@ -213,35 +202,48 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### [Week 9 -  Intro to IoT](https://github.com/areaofeffect/hello-world/tree/master/week9)
+#### [Week 8: Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
 
-* How do we talk to things with code?
-* What is a smart object?
-* Strategies for custom hardware and wearables
-* Prototype a connected 'thing'
-
-<br/>
-
-#### week 10 - IoT II
-* Best practices, Software and architecture
-* Databases and designing schema
-* Project development.
-* How do we build and launch our own connected devices?
+* OpenCV
+* Kinect
+* Leap Motion
+* VR
+* Project Demos and workshop
 
 
 <br/>
 
-#### Week 11 - Final Project development
+#### Week 9: Prototyping with Machine Learning (RunwayML)
 
-* Use what you learned to sketch out a potential project
-*  Putting it all together and documenting your work
+* A gentle introduction to the worlds of Deep Learning and Nueral Networks
+* Data Collection and Features
+* Discussion on Bias and Ethics
+* Prototype experiences with RunwayML.
+
+<br/>
+
+#### Week 10: Mixed Reality I
+
+* Unity 3D Fundamentals for prototyping
+* Developing AR Experiences
+* Developing VR Experiences
+
+
+<br/>
+
+#### Week 11: Mixed Reality II
+
+* Continued AR / VR Explorations
+* Deploying apps to our mobile devices
 
 
 <br/>
 
 #### Week 12 - Final Project development
 
-* Coding workshop
+* Use what you learned to sketch out a potential project
+*  Putting it all together and documenting your work
+
 
 
 <br/>
