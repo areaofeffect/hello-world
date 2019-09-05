@@ -1,13 +1,13 @@
 # Hello World: The Logic of Interaction
 
 
-##### FALL 2019
+##### FALL 2018
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
 ##### DURATION: 15 weeks
 
-##### TIME: Thursday 2:00pm - 4:50pm
+##### TIME: Wednesday 2:00pm - 4:50pm
 
 ##### WEBSITE: [hello-world.areaofeffect.io](http://hello-world.areaofeffect.io/)
 
@@ -196,8 +196,7 @@ An brief history of computing, computers and why we code.
 #### [Week 7: Data Visualizations and Datastreams](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md)
 
 * How do we structure and organize data in a useful / readable way?
-* API'S, JSON files, Cloud services, Local databases
-* Intro to React
+* API's, JSON files, Cloud services, Local databases
 * Review of serial, protocols and microcontrollers
 
 <br/>
@@ -215,7 +214,7 @@ An brief history of computing, computers and why we code.
 
 #### Week 9: Prototyping with Machine Learning (RunwayML)
 
-* A gentle introduction to the worlds of Deep Learning and Nueral Networks
+* A gentle introduction to the worlds of Deep Learning and Neural Networks
 * Data Collection and Features
 * Discussion on Bias and Ethics
 * Prototype experiences with RunwayML.
@@ -269,5 +268,3 @@ An brief history of computing, computers and why we code.
 
 <br/>
 <br/>
-
-
