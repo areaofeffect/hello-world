@@ -153,7 +153,7 @@ Or just explore their jaw-dropping beauty.
 > According to the principle of his work, LeWitt's wall drawings are usually executed by people other than the artist himself. Writing about making wall drawings, LeWitt himself observed in 1971 that "each person draws a line differently and each person understands words differently".
 
 
-![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/art/Figure-3.png?token=AADEjw21l1eyJJthaB8y_IDJBZku5yLTks5ZuVTvwA%3D%3D)
+![Sol](/week1/images/art/Figure-3.png)
 
 ---
 # Workshop
@@ -201,14 +201,14 @@ Goals:
 *View -> Developer -> JavaScript Console*
 *CMD + OPTION + J*
 
-![Developer Console](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%203.40.07%20PM.png?token=AADEj5_ovR9SJMgVx9d6RdO6fojXiSyVks5ZuU1TwA%3D%3D)
+![Developer Console](/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%203.40.07%20PM.png)
 
 ### 2. type your code
 ```javascript
 alert ('hello, world.')
 ```
 
-![notes](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png?token=AADEj-maEUBMFj9VCeCqeEUYN4GSVQ_uks5ZuU4AwA%3D%3D)
+![notes](/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png)
 
 ---
 
@@ -261,7 +261,7 @@ xcode-select --install
 ```
 
 The following will pop up. Click OK to install.
-![](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png?token=AADEj7kadfpwWUC4FGn15Oz_3Avc61Seks5ZuU1ywA%3D%3D)
+![](/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png)
 
 ---
 # Hello C
@@ -290,12 +290,6 @@ gcc -ansi -o hello-world hello-world.c
 ```
 ---
 
-# Hello Swift
-Swift is the newest language developed by apple. It now supports emoji variable names!
-
-[Hello Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
-
----
 
 <br/>
 <br/>
