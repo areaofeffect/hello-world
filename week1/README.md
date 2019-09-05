@@ -67,12 +67,6 @@ these skills and learn new ones even faster.
 the problems code enables us to solve.
 - We'll learn how to evaluate what's good Copy Pasta (paste) v.s bad Copy Pasta. We want you to own your successes and failures. :)
 
----
-# Poydar Method
-- What did you do this week.
-- What do you need help with?
-- Do you think you have enough time?
-- [Henry Poydar](https://medium.com/@henrypoydar)
 
 ---
 # Real-time
@@ -102,7 +96,7 @@ the problems code enables us to solve.
 Grace Jones. What does she have to do with code? In the 80s there was an entire Bond film about the destruction all of Silicon Valley. Why Silicon?
 
 
-![Jones](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/silicon/silicon_mayday.jpg?token=AADEj3GUVHAM_LqUioLQBQGiZ0lboj4Uks5ZuUqxwA%3D%3D)
+![Jones](/week1/images/silicon/silicon_mayday.jpg)
 
   The element silicon is used extensively as a semiconductor in solid-state devices in the computer and microelectronics industries. For this, hyperpure silicon is needed. The silicon is selectively doped with tiny amounts of boron, gallium, phosphorus or arsenic to control its electrical properties.
 
@@ -126,7 +120,7 @@ Many times when evaluating a toolchain, you end up with Linux. And why is that?
 
 Linux now supports more different types of devices and processors than any other operating system ever has in the history of computing. It runs on everything from mobile phones, to laptops and cloud servers, to raspberry pi.
 
-![Kernel Map](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/kernel/1280px-Kernel_Layout.svg_.png?token=AADEj1jaj1k1T3e4s7G3l5OxQuiPXdUeks5ZuUr6wA%3D%3D)
+![Kernel Map](/week1/images/kernel/1280px-Kernel_Layout.svg_.png)
 
 This is largely due to the development of it's kernel.
 
