@@ -39,9 +39,9 @@ Notes from our week one class. These notes are generated into the slides we use 
 ---
 # Introduce yourselves
 
-- Do you want to code?
-- If so, why or why not?
-- Do you believe in the singularity?
+- Do you want to code? Why or why not?  
+- How do you feel about the singularity?  
+- Tell us one thing you'd like to get out of this class.  
 
 ---
 <a name="resources"></a>
