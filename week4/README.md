@@ -219,7 +219,7 @@ Helpful hints in
 
 
 # Turtle Time!
-![turtle](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/star.png)
+![turtle](/week4/slides/images/star.png)
 
 - [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
 - [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
