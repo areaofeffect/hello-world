@@ -239,15 +239,6 @@ Helpful hints in
 
 
 
-- Part 2. Collect a dataset. Take photos using your phone throughout the week.
-
-  - Give context to your data, maybe you take a photo everytime you smile.
-  - Be sure to turn the location feature on your phone.
-  - Next week we will be creating data visualizations.
-
-
-
-
 ## resources
 
 - [learnpython.org loops tutorial](https://www.learnpython.org/en/Loops)
