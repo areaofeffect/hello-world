@@ -308,10 +308,6 @@ Server side app
 # Asking questions
 https://stackoverflow.com/help/how-to-ask
 
-# EXIF data
-## Extract data from one image
-## How to extract data from 100+ images
-
 
 # Assignments
 
@@ -325,17 +321,6 @@ Visualize live sensor data from Arduino to your browser.
 3. Now that you have Arduino 'talking' to your p5 code. Visualize the sensor data in an interesting way. Remember to run the serial bridge.
 
 4. If you get stuck: Review the Resources and Additional examples from the p5-full folder in our README. There are tons of p5 resources online. Google-fu is your friend.
-
-
-# Extracting data from images (Part I)
-Practice extracting data from our images to get a sense of different data models, formats and hidden info! Try with different images and hold onto this data in a seperate file. We will be further analyzing next week.
-
-1. Upload images of interest from your phone to your computer
-
-2. Run `python_exif.py` to view meta data from your image. Make sure the file is in the same folder as your image. 
- - Note that you may have to open the python file and change the file name to the image of interest.
-
-3. Run `python_colors.py` to view the most common colors used in the image.
 
 
 # Resources
