@@ -193,14 +193,6 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### [Week 7: Data Visualizations and Datastreams]
-
-* How do we structure and organize data in a useful / readable way?
-* API's, JSON files, Cloud services, Local databases
-* Review of serial, protocols and microcontrollers
-
-<br/>
-
 #### [Week 8: Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
 
 * OpenCV
