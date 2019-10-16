@@ -169,7 +169,7 @@ An brief history of computing, computers and why we code.
 * Introduction to Github
 * Introduction to Node and Interactivity
 * Extracting Exif Data from images
-  ​
+  
 <br/>
 
 #### [Week 6: Interactivity and Debugging](https://github.com/areaofeffect/hello-world/blob/master/week6/README.md)
@@ -209,19 +209,9 @@ An brief history of computing, computers and why we code.
 * VR
 * Project Demos and workshop
 
-
 <br/>
 
-#### Week 9: Prototyping with Machine Learning (RunwayML)
-
-* A gentle introduction to the worlds of Deep Learning and Neural Networks
-* Data Collection and Features
-* Discussion on Bias and Ethics
-* Prototype experiences with RunwayML.
-
-<br/>
-
-#### Week 10: Mixed Reality I
+#### Week 9: Mixed Reality I
 
 * Unity 3D Fundamentals for prototyping
 * Developing AR Experiences
@@ -230,11 +220,19 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### Week 11: Mixed Reality II
+#### Week 10: Mixed Reality II
 
 * Continued AR / VR Explorations
 * Deploying apps to our mobile devices
 
+<br/>
+
+#### Week 11: Prototyping with Machine Learning (RunwayML)
+
+* A gentle introduction to the worlds of Deep Learning and Neural Networks
+* Data Collection and Features
+* Discussion on Bias and Ethics
+* Prototype experiences with RunwayML.
 
 <br/>
 
