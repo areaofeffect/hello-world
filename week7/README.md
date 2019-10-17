@@ -2,7 +2,7 @@
 
 <br/>
 
-Follow along with this weeks examples: https://kylemcdonald.github.io/cv-examples/
+Follow along with this weeks examples: https://kylemcdonald.github.io/cv-examples/ <br/>
 Deprecated: [week7-hello-world.areaofeffect.io/](https://week7-hello-world.areaofeffect.io/)
 
 <br/>
