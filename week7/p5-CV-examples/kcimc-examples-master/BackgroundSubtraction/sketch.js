@@ -1,11 +1,22 @@
+// https://kylemcdonald.github.io/cv-examples/
+
 var capture;
-var w = 640,
-    h = 480;
+var w = 640;
+var h = 480;
 
 function setup() {
-    capture = createCapture(VIDEO);
-    createCanvas(w, h);
+    capture = createCapture({
+        audio: false,
+        video: {
+            width: w,
+            height: h
+        }
+    }, function() {
+        console.log('capture ready.')
+    });
+    capture.elt.setAttribute('playsinline', '');
     capture.size(w, h);
+    createCanvas(w, h);
     capture.hide();
 }
 
@@ -13,6 +24,27 @@ var backgroundPixels;
 
 function resetBackground() {
     backgroundPixels = undefined;
+}
+
+function getRadioValue(name) {
+    var inputs = selectAll('input');
+    for (var i = 0; i < inputs.length; i++) {
+        var x = inputs[i];
+        if (name == x.elt.name && x.elt.checked) {
+            return x.elt.value;
+        }
+    }
+}
+
+function copyImage(src, dst) {
+    var n = src.length;
+    if (!dst || dst.length != n) {
+        dst = new src.constructor(n);
+    }
+    while (n--) {
+        dst[n] = src[n];
+    }
+    return dst;
 }
 
 function draw() {
