@@ -219,7 +219,7 @@ Helpful hints in
 
 
 # Turtle Time!
-![turtle](https://raw.githubusercontent.com/areaofeffect/hello-world/week4/week4/slides/images/star.png)
+![turtle](/week4/slides/images/star.png)
 
 - [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
 - [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
@@ -236,15 +236,6 @@ Helpful hints in
     - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
     - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
     - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
-
-
-
-- Part 2. Collect a dataset. Take photos using your phone throughout the week.
-
-  - Give context to your data, maybe you take a photo everytime you smile.
-  - Be sure to turn the location feature on your phone.
-  - Next week we will be creating data visualizations.
-
 
 
 

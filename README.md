@@ -169,7 +169,7 @@ An brief history of computing, computers and why we code.
 * Introduction to Github
 * Introduction to Node and Interactivity
 * Extracting Exif Data from images
-  ​
+  
 <br/>
 
 #### [Week 6: Interactivity and Debugging](https://github.com/areaofeffect/hello-world/blob/master/week6/README.md)
@@ -193,15 +193,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### [Week 7: Data Visualizations and Datastreams](https://github.com/areaofeffect/hello-world/blob/master/week8/README.md)
-
-* How do we structure and organize data in a useful / readable way?
-* API's, JSON files, Cloud services, Local databases
-* Review of serial, protocols and microcontrollers
-
-<br/>
-
-#### [Week 8: Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
+#### [Week 7: Intro to Computer Vision](https://github.com/areaofeffect/hello-world/blob/master/week7/README.md)
 
 * OpenCV
 * Kinect
@@ -209,19 +201,9 @@ An brief history of computing, computers and why we code.
 * VR
 * Project Demos and workshop
 
-
 <br/>
 
-#### Week 9: Prototyping with Machine Learning (RunwayML)
-
-* A gentle introduction to the worlds of Deep Learning and Neural Networks
-* Data Collection and Features
-* Discussion on Bias and Ethics
-* Prototype experiences with RunwayML.
-
-<br/>
-
-#### Week 10: Mixed Reality I
+#### Week 8: Mixed Reality I
 
 * Unity 3D Fundamentals for prototyping
 * Developing AR Experiences
@@ -230,19 +212,32 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### Week 11: Mixed Reality II
+#### Week 9: Mixed Reality II
 
 * Continued AR / VR Explorations
 * Deploying apps to our mobile devices
 
+<br/>
+
+#### Week 10: Prototyping with Machine Learning (RunwayML)
+
+* A gentle introduction to the worlds of Deep Learning and Neural Networks
+* Data Collection and Features
+* Discussion on Bias and Ethics
+* Prototype experiences with RunwayML.
+
+<br/>
+
+#### Week 11 - Final Project development
+
+* Use what you learned to sketch out a potential project
+*  Putting it all together and documenting your work
 
 <br/>
 
 #### Week 12 - Final Project development
 
-* Use what you learned to sketch out a potential project
-*  Putting it all together and documenting your work
-
+* Coding workshop
 
 
 <br/>
@@ -250,7 +245,6 @@ An brief history of computing, computers and why we code.
 #### Week 13 - Final Project development
 
 * Coding workshop
-
 
 <br/>
 
