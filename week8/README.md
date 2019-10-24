@@ -107,7 +107,7 @@ display 2D text and images to the AR marker location (billboarding)
 load a custom model (gltf or obj) at the marker location
 
 ### example-4
-render div to plane (not working)
+render div to plane
 
 ### example-video
 render a video file (mp4 or webm) at the marker location on a 3D plane
@@ -141,6 +141,8 @@ render a video file (mp4 or webm) at the marker location on a 3D plane
 
 ### Deploy your project
 
+![Imgur](https://imgur.com/WT6Omaa)
+
 #### 1. Run SimpleHTTPServer
 Run *SimpleHTTPServer*: 
 
@@ -157,6 +159,8 @@ Use the same port as your simplehttpserver:
 
 `ngrok http 8080`
 
+
+Now you can walk around and test your project on your mobile device.
 
 <br/>
 
