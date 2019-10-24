@@ -103,11 +103,40 @@ display 2D text and images to the AR marker location (billboarding)
 ### example-3
 load a custom model (gltf or obj) at the marker location
 
-### example-4
+### example-4 (not working on mobile)
 render div to plane
 
 ### example-video
 render a video file (mp4 or webm) at the marker location on a 3D plane
+
+
+### example multiple-markers
+
+```
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='path/to/pattern-marker.patt'>
+      <a-box position='0 0.5 0' material='color: red;'></a-box>
+    </a-marker>
+
+    <!-- handle marker with hiro preset -->
+    <a-marker preset='hiro'>
+      <a-box position='0 0.5 0' material='color: green;'></a-box>
+    </a-marker>
+
+    <!-- handle barcode marker -->
+    <a-marker type='barcode' value='5'>
+      <a-box position='0 0.5 0' material='color: blue;'></a-box>
+    </a-marker>
+
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+```
 
 <br/>
 
@@ -118,6 +147,12 @@ render a video file (mp4 or webm) at the marker location on a 3D plane
 
 * [Marker Generator](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
 * [how-to-create-your-own-marker via Medium](https://medium.com/arjs/how-to-create-your-own-marker-44becbec1105)
+* [Barcode Markers: Barcode marker generator](http://www.artoolworks.com/support/applications/marker/)
+
+```
+<a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'></a-scene>
+<a-marker type='barcode' value='5'></a-marker>
+```
 
 <br/>
 
