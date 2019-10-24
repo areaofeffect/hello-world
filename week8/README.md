@@ -4,9 +4,42 @@
 
 <br/>
 
-## Notes
+## arjs design
+
+* **Screen space vs World space**
+	* [Coordinate Systems](https://learnopengl.com/Getting-started/Coordinate-Systems)
+	* ![Imgur](https://i.imgur.com/G23RtCd.png)
+	* [Prototyping AR](https://blog.prototypr.io/tagged/augmented-reality)
+* **Billboarding**
+	* Billboarding is a technique that adjusts an object's orientation so that it "faces" some target, usually the camera. The word faces is in quotes since it can have several meanings, as the tutorial will show. This technique is quite popular in games and applications that require a large number of polygons.
+	* ![Imgur](https://i.imgur.com/wDuHWsp.jpg) 
+* **Marker based (arjs)**
+	* In one mode, you use <a-marker-camera>. In this mode, the camera is moving and the marker is static, fixed at 0,0,0. This way to work is more common for 3d programmers and is used in most examples.
+	* ```<a-marker-camera preset='hiro'></a-marker-camera>```
+* **Camera based (arjs)**
+	* In the other mode, you use <a-marker>. It behaves the other way around: the camera is static at all times while the objects or markers are moving. The camera is fixed at 0,0,0 at all times and looks toward negative-z. Nevertheless this mode got a limitation, it can’t handle multiple independent markers at once.
+	
+	* ```html
+		<!-- define your markers -->
+		<a-marker preset='hiro'>
+		  <!-- here define the content to display on top of the marker -->
+		  <a-box position='0 0.5 0' material='color: red;'></a-box>
+		</a-marker>
+		<!-- define a simple camera -->
+		<a-entity camera></a-entity>	
+	  ```
+
+* **AR / VR / MR / XR**
+	* Augmented reality (AR) is a technology that superimposes a computer-generated image on a user's view of the real world.
+	* Augmented reality (AR) adds digital elements to a live view often by using the camera on a smartphone. Examples of augmented reality experiences include Snapchat lenses and the game Pokemon Go. 
+	* Virtual reality (VR) implies a complete immersion experience that shuts out the physical world.
+	* Mixed reality (MR) strives to put fully digital objects that are trackable and intractable in the user's environment.
+* **People, traffic and flow**
+	* ![Imgur](https://imgur.com/cxvp6C5.jpg)
 
 <br/>
+
+## Notes
 
 * Tools
 	* [A-FRAME AR.js](https://aframe.io/blog/arjs/)
@@ -46,42 +79,6 @@
 
 * Also, Using p5 and the camera [kcimc examples](https://kylemcdonald.github.io/cv-examples/FaceTracking/)
 	* [JSARToolKit](https://github.com/kig/JSARToolKit)
-
-<br/>
-
-## arjs design
-
-* **Screen space vs World space**
-	* [Coordinate Systems](https://learnopengl.com/Getting-started/Coordinate-Systems)
-	* ![Imgur](https://i.imgur.com/G23RtCd.png)
-	* [Prototyping AR](https://blog.prototypr.io/tagged/augmented-reality)
-* **Billboarding**
-	* Billboarding is a technique that adjusts an object's orientation so that it "faces" some target, usually the camera. The word faces is in quotes since it can have several meanings, as the tutorial will show. This technique is quite popular in games and applications that require a large number of polygons.
-	* ![Imgur](https://i.imgur.com/wDuHWsp.jpg) 
-* **Marker based (arjs)**
-	* In one mode, you use <a-marker-camera>. In this mode, the camera is moving and the marker is static, fixed at 0,0,0. This way to work is more common for 3d programmers and is used in most examples.
-	* ```<a-marker-camera preset='hiro'></a-marker-camera>```
-* **Camera based (arjs)**
-	* In the other mode, you use <a-marker>. It behaves the other way around: the camera is static at all times while the objects or markers are moving. The camera is fixed at 0,0,0 at all times and looks toward negative-z. Nevertheless this mode got a limitation, it can’t handle multiple independent markers at once.
-	
-	* ```html
-		<!-- define your markers -->
-		<a-marker preset='hiro'>
-		  <!-- here define the content to display on top of the marker -->
-		  <a-box position='0 0.5 0' material='color: red;'></a-box>
-		</a-marker>
-		<!-- define a simple camera -->
-		<a-entity camera></a-entity>	
-	  ```
-
-* **AR / VR / MR / XR**
-	* Augmented reality (AR) is a technology that superimposes a computer-generated image on a user's view of the real world.
-	* Augmented reality (AR) adds digital elements to a live view often by using the camera on a smartphone. Examples of augmented reality experiences include Snapchat lenses and the game Pokemon Go. 
-	* Virtual reality (VR) implies a complete immersion experience that shuts out the physical world.
-	* Mixed reality (MR) strives to put fully digital objects that are trackable and intractable in the user's environment.
-* **People, traffic and flow**
-	* ![Imgur](https://imgur.com/cxvp6C5.jpg)
-
 
 <br/>
 
