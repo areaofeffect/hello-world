@@ -43,6 +43,7 @@
 
 * Tools
 	* [A-FRAME AR.js](https://aframe.io/blog/arjs/)
+		* [AR.js GitHub](https://github.com/jeromeetienne/AR.js/blob/master/README.md)
 		* Entity component system (Scenes)
 		* Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.
 		* [https://aframe.io/docs/0.9.0/introduction/models.html](https://aframe.io/docs/0.9.0/introduction/models.html)
