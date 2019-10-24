@@ -1,6 +1,4 @@
-# AR
-
-### Hello World: The Logic of Augmented Reality
+### Hello AR
 
 ![Imgur](https://imgur.com/1OWwE3f.png)
 
