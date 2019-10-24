@@ -9,8 +9,6 @@
 <br/>
 
 * Tools
-	* Using p5 and the camera [kcimc examples](https://kylemcdonald.github.io/cv-examples/FaceTracking/)
-		* [JSARToolKit](https://github.com/kig/JSARToolKit)
 	* [AR.js](https://twitter.com/nicolocarp)
 		* Entity component system (Scenes)
 		* Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.
@@ -45,6 +43,9 @@
 	* (android) [https://github.com/google-ar/WebARonARCore](https://github.com/google-ar/WebARonARCore)
 	* (ios) [https://github.com/google-ar/WebARonARKit](https://github.com/google-ar/WebARonARKit)
 	* (mozilla webxr) [https://apps.apple.com/us/app/webxr-viewer/id1295998056?ls=1](https://apps.apple.com/us/app/webxr-viewer/id1295998056?ls=1)
+
+* Also, Using p5 and the camera [kcimc examples](https://kylemcdonald.github.io/cv-examples/FaceTracking/)
+	* [JSARToolKit](https://github.com/kig/JSARToolKit)
 
 <br/>
 
