@@ -141,7 +141,7 @@ render a video file (mp4 or webm) at the marker location on a 3D plane
 
 ### Deploy your project
 
-![Imgur](https://imgur.com/WT6Omaa)
+![Imgur](https://imgur.com/WT6Omaa.png)
 
 #### 1. Run SimpleHTTPServer
 Run *SimpleHTTPServer*: 
@@ -160,7 +160,7 @@ Use the same port as your simplehttpserver:
 `ngrok http 8080`
 
 
-Now you can walk around and test your project on your mobile device.
+You can walk around and test your project on your mobile device.
 
 <br/>
 
