@@ -15,7 +15,7 @@
 Use of of the AR examples above to create a prototype of your own. You can choose to create a webcam based or a mobile experience. 
 
 * Use custom markers, videos, models and assets to make a unique experience.
-* Upload your project to GitHub and make sure to include a README.me with a short paragraph or iamge describing your project. 
+* Upload your project to GitHub and make sure to include a README.me with a short paragraph or image describing your project. 
 
 
 #### Option 2: 
