@@ -7,7 +7,11 @@
 
 ## Week 8 Assignment
 
-* Option 1: Use of of the AR examples above to create a prototype of your own. You can choose to create a webcam based or a mobile experience. Make sure to also include a README.me with a short paragraph or images describing your project. Use custom markers, videos, models and assets to make a unique experience.
+* Option 1: Use of of the AR examples above to create a prototype of your own. You can choose to create a webcam based or a mobile experience. 
+
+* Use custom markers, videos, models and assets to make a unique experience.
+* Upload your project to GitHub and make sure to include a README.me with a short paragraph or iamge describing your project. 
+
 
 * Option 2: Continue work on your Computer Vision project from Week 7. https://github.com/areaofeffect/hello-world/tree/master/week7
 
