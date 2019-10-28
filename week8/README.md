@@ -6,6 +6,9 @@
 
 
 ## Week 8 Assignment
+#### Reading:
+* [The Ultimate Display](http://worrydream.com/refs/Sutherland%20-%20The%20Ultimate%20Display.pdf)
+* via Yohe Wang: [A channel on Medium that collected some AR-related articles](https://blog.prototypr.io/tagged/augmented-reality)
 
 #### Option 1: 
 
@@ -17,7 +20,7 @@ Use of of the AR examples above to create a prototype of your own. You can choos
 
 #### Option 2: 
 
-Continue work on your Computer Vision project from Week 7. https://github.com/areaofeffect/hello-world/tree/master/week7
+Continue work on your Computer Vision project from Week 7. https://github.com/areaofeffect/hello-world/tree/master/week7#assignment
 
 </br>
 
