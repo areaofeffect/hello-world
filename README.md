@@ -203,19 +203,19 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### Week 8: Mixed Reality I
+#### [Week 8: Augmented Reality](https://github.com/areaofeffect/hello-world/tree/master/week8/README.md)
 
-* Unity 3D Fundamentals for prototyping
+* Aframe Fundamentals for prototyping
 * Developing AR Experiences
-* Developing VR Experiences
-
+* Deploying apps to our mobile devices
 
 <br/>
 
-#### Week 9: Mixed Reality II
+#### Week 9: Review
+
 
 * Continued AR / VR Explorations
-* Deploying apps to our mobile devices
+
 
 <br/>
 
