@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "angular": "^1.6.2",
+    "angular": "^1.8.0",
     "angular-ui-router": "1.0.0-beta.3",
     "load-styles": "^2.0.0",
     "native-promisify-if-present": "^1.0.1",
