@@ -211,6 +211,20 @@ alert ('hello, world.')
 ![notes](/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%2011.46.43%20PM.png)
 
 ---
+# Hello Python (your first python program)
+You already have python on your computer!
+
+### 1. write
+```python
+person = input('Enter your name: ')
+print('Hello', person)
+```
+### 2. run
+```bash
+python hello-world.py
+```
+
+---
 
 # Terminal Tips
 
@@ -235,20 +249,7 @@ ifconfig
 ```
 
 ---
-# Hello Python (your first python program)
-You already have python on your computer!
 
-### 1. write
-```python
-person = input('Enter your name: ')
-print('Hello', person)
-```
-### 2. run
-```bash
-python hello-world.py
-```
-
----
 <a name="commandline"></a>
 # Install OSX Command Line Tools 
 Unlike JavaScript and Python, your machine doesn't have a way to build C applications. Sometimes we need to download additional things to get our apps working. These are usually referred to as <i>dependencies</i> We'll try a quick demo.
