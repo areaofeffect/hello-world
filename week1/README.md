@@ -172,13 +172,13 @@ Goals:
 <a name="downloads"></a>
 
 # Editors
-
-- [Sublime Text 3](https://www.sublimetext.com/3)
-- Mac, [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+VSCode will be the editor we use for most things in class.
+- [VSCODE](https://code.visualstudio.com/)
 
 ---
 # Scripting
 - [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [What is Markdown?](https://www.markdownguide.org/getting-started/)
 - Python
 - JavaScript
 
@@ -195,7 +195,7 @@ Goals:
 ---
 
 
-# Hello JavaScript
+# Hello JavaScript (your first javascript program)
 
 ### 1. open the developer console
 *View -> Developer -> JavaScript Console*
@@ -235,7 +235,7 @@ ifconfig
 ```
 
 ---
-# Hello Python
+# Hello Python (your first python program)
 You already have python on your computer!
 
 ### 1. write
@@ -250,8 +250,8 @@ python hello-world.py
 
 ---
 <a name="commandline"></a>
-# Install OSX Command Line Tools
-Unlike JavaScript and Python, your machine doesn't have a way to build C applications. We'll try a quick demo.
+# Install OSX Command Line Tools 
+Unlike JavaScript and Python, your machine doesn't have a way to build C applications. Sometimes we need to download additional things to get our apps working. These are usually referred to as <i>dependencies</i> We'll try a quick demo.
 
 ### 1. Open your terminal
 
@@ -264,7 +264,7 @@ The following will pop up. Click OK to install.
 ![](/week1/images/tutorial/Screen%20Shot%202017-09-03%20at%202.42.00%20PM.png)
 
 ---
-# Hello C
+# Hello C (your first javascript program)
 
 ### 1. write
 ```c
@@ -301,12 +301,11 @@ gcc -ansi -o hello-world hello-world.c
 # Assignments Week 1
 
 1. Join our slack. We will help you through questions and guide installing any of the software below.
-2. Download and setup your computer for coding. Come to next prepared class with:
-  * Install a Text Editor of your choice (Sublime)
-  * Install a development Browser (Chrome)
+
+2. Download and setup your computer for coding. Come to next prepared class with VSCode installed.
 
 3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
 4. Pick any of the hello world examples from above and modify to say a different message. We will discuss the differences between the languages next class.
 
-5. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). We will discuss next week in class.
+5. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). Write three things you learned, we will share next class.
