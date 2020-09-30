@@ -54,7 +54,7 @@ How do we use code as a tool to solve day-to-day problems? How does a processor 
 
 
 #### SOFTWARE
-- [Sublime Text 3](https://www.sublimetext.com/3)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html)
 - Terminal (Comes with your computer!)
 
