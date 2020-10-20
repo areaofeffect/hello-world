@@ -1,13 +1,13 @@
 # DEEP DEEP FOREST
 # Now updated to Python 3
 
-# At the top of the file are declerations and variables we need.
+# At the top of the file are declarations and variables we need.
 # 
 # Scroll to the bottom and look for the main() function, that is
 # where the program logic starts.
 
-import random # random numbers
-import sys # system stuff for exiting
+import random # random numbers (https://docs.python.org/3.3/library/random.html)
+import sys # system stuff for exiting (https://docs.python.org/3/library/sys.html)
 
 # an object describing our player
 player = { 
@@ -33,7 +33,7 @@ def rollDice(minNum, maxNum, difficulty):
         print ("trying again....")
         
         raw_input("press enter >")
-        rollDice(minNum, maxNum, difficulty)
+        rollDice(minNum, maxNum, difficulty) # this is a recursive call
 
     return result
 
