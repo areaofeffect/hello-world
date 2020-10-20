@@ -5,17 +5,17 @@
 Deep deep forest is an adventure game designed to explore conditionals, functions and interactive story telling. There are multiple endings depending on which path you take. Good luck!
 
 ```python
-print '   /\   /\            '
-print '  // \_// \     ____  '
-print '  \_     _/    /   /  '
-print '   / * * \    /^^^]   '
-print '   \_\O/_/    [   ]   '
-print '    /   \_    [   /   '
-print '    \     \_  /  /    '
-print '     [ [ /  \/ _/     '
-print '    _[ [ \  /_/       '
-print '                      '
-print '       the fox        '
+print ('   /\   /\            ')
+print ('  // \_// \     ____  ')
+print ('  \_     _/    /   /  ')
+print ('   / * * \    /^^^]   ')
+print ('   \_\O/_/    [   ]   ')
+print ('    /   \_    [   /   ')
+print ('    \     \_  /  /    ')
+print ('     [ [ /  \/ _/     ')
+print ('    _[ [ \  /_/       ')
+print ('                      ')
+print ('       the fox        ')
 ```
 
 [The full game source is available here](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py)
