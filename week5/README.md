@@ -74,7 +74,7 @@ In this type of scope, variables may be resolved by using the state of the progr
 	
 	bar();
 	
-How can this be? Because when foo() cannot resolve the variable reference for a, instead of stepping up the nested (lexical) scope chain, it walks up the call-stack, to find where foo() was called from. Since foo() was called from bar(), it checks the variables in scope for bar(), and finds an a there with value 3. - [You Don't Know JS: Scope & Closures, Appendix A](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/apA.md)
+How can this be? Because when foo() cannot resolve the variable reference for a, instead of stepping up the nested (lexical) scope chain, it walks up the call-stack, to find where foo() was called from. Since foo() was called from bar(), it checks the variables in scope for bar(), and finds an a there with value 3. - [You Don't Know JS: Scope & Closures, Appendix A](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/apA.md)
 
 ### foo? bar???
 [metasyntactic variable](http://www.outpost9.com/reference/jargon/jargon_28.html#TAG1136)
