@@ -1,11 +1,11 @@
 # Hello World: The Logic of Interaction
 
 
-##### FALL 2020
+##### FALL 2021
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
-##### DURATION: 12 weeks
+##### DURATION: 15 weeks
 
 ##### TIME: Wednesday 2:00pm - 5:10pm
 
