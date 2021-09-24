@@ -425,15 +425,15 @@ isGreater(1,0) #True
 
 Design and build a game of your own using different types of operators:
 
-- [arithmetic](http://hello-world.areaofeffect.io/week3/slides/#8) ```=``` ```+``` ```/``` ```-``` ```%```
+- [arithmetic](http://week3-hello-world.areaofeffect.io/#8) ```=``` ```+``` ```/``` ```-``` ```%```
 
-- [comparison](http://hello-world.areaofeffect.io/week3/slides/#13) ```!=``` ```==``` ```>``` ```<``` ```>=``` ```<=```
+- [comparison](http://week3-hello-world.areaofeffect.io/#13) ```!=``` ```==``` ```>``` ```<``` ```>=``` ```<=```
 
-- [logical](http://hello-world.areaofeffect.io/week3/slides/#16) ```and``` ```(&&)``` , ```or``` ```(||)``` , ```not``` ```(!)```
+- [logical](http://week3-hello-world.areaofeffect.io/#16) ```and``` ```(&&)``` , ```or``` ```(||)``` , ```not``` ```(!)```
 
-- [conditional statements](http://hello-world.areaofeffect.io/week3/slides/#23) ```if``` ```elif``` ```else```
+- [conditional statements](http://week3-hello-world.areaofeffect.io/#23) ```if``` ```elif``` ```else```
 
-- [functions](http://hello-world.areaofeffect.io/week3/slides/#29)
+- [functions](http://week3-hello-world.areaofeffect.io/#29)
 
 Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/master/week3/examples) game from class.
 
@@ -441,7 +441,7 @@ To start, it will help to break down your game as variables, datatypes and objec
 
 <br/>
 
-### Due next week (9 / 26):
+### Due next week (9 / 29):
 - Create a flow-chart of your game logic and how you imagine it working as code.
 - A prototype of your game in python demonstrating conditionals and logic from your design.
 
