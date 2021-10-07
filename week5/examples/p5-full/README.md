@@ -1,7 +1,7 @@
 # Arduino + p5 Serial Examples
 
 
-### Some helpful tip
+### Some helpful tips
 
 - [Here is a tutorial outlining](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/) how to setup your arduino and p5 code to talk to each other.
 
