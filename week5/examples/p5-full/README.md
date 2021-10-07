@@ -5,7 +5,7 @@
 
 - [Here is a tutorial outlining](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/) how to setup your arduino and p5 code to talk to each other.
 
-- Take a look at the **serial-example-graph** and **serial-example-simple** sketches to start.
+- You can use the **serial-example-graph** and **serial-example-simple** sketches in this repo to start.
 
 - Remember to [P5 Serial control application](https://github.com/vanevery/p5.serialcontrol/releases). This serves as a data bridge between Arduino and your p5 sketch.
 
