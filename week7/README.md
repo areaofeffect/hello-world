@@ -108,7 +108,7 @@ So many wonderful projects and people; this is just a tiny tiny list that has in
 - [Theo Watsen and Emily Gabrielle: Design I/O](http://design-io.com/)
 	- [Auto Smiley Generator](https://vimeo.com/10356980)
 - [Elliot Woods](http://www.kimchiandchips.com/)
-- [Memo Akten](www.memo.tv)
+- [Memo Akten](https://www.memo.tv/)
 - [Google: Quick Draw](https://quickdraw.withgoogle.com/)
 - [Matt Parker](http://gamecenter.nyu.edu/faculty/matt-parker/)
 	- [Lumarca](http://lumarca.info/)
