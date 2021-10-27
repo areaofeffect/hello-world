@@ -179,39 +179,21 @@ render a video file (mp4 or webm) at the marker location on a 3D plane
 
 ## Publishing your Project
 
-### Install Dependencies
-#### 1. Install Brew
-* [https://brew.sh/](https://brew.sh/)
+#### 1. Generate SSL Key and Cert
 
-#### 2. Install npm, simplehttpserver
-* `brew install npm`
-* `npm install simplehttpserver -g`
+`openssl req -x509 -newkey rsa:4096 -keyout server1.example.com.key -out server1.example.com.pem -days 365 -nodes`
 
-#### 3. Install ngrok
+#### 2. run server.py
+Navigate to the 'https://' url via your phone or browser.
+
+#### 3. Optional: Install ngrok
 `brew cask install ngrok`
 
-<br/>
-
-### Deploy your project
-
-![Imgur](https://imgur.com/WT6Omaa.png)
-
-#### 1. Run SimpleHTTPServer
-Run *SimpleHTTPServer*: 
-
-`python -m SimpleHTTPServer [port]`
-
-You can also change the port like this: 
-
-`python -m SimpleHTTPServer 8080`
-
-#### 2. Deploy live via ngrok
 [ngrok](https://ngrok.com/docs) is a tool that servers our local files on the web
 
 Use the same port as your simplehttpserver:
 
 `ngrok http 8080`
-
 
 You can walk around and test your project on your mobile device.
 

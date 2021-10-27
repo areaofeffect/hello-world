@@ -83,6 +83,15 @@
 * **People, traffic and flow**
 	* ![Imgur](https://imgur.com/cxvp6C5.jpg)
 
+<br/>
+
+## Custom Markers
+
+![Imgur](https://imgur.com/kneNvpG.png)
+
+
+* [Marker Generator](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
+* [how-to-create-your-own-marker via Medium](https://medium.com/arjs/how-to-create-your-own-marker-44becbec1105)
 
 <br/>
 
@@ -113,51 +122,46 @@ render div to plane (not working)
 ### example-video
 render a video file (mp4 or webm) at the marker location on a 3D plane
 
-<br/>
-
-## Custom Markers
-
-![Imgur](https://imgur.com/kneNvpG.png)
-
-
-* [Marker Generator](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
-* [how-to-create-your-own-marker via Medium](https://medium.com/arjs/how-to-create-your-own-marker-44becbec1105)
 
 <br/>
 
 ## Publishing your Project
 
-### Install Dependencies
-#### 1. Install Brew
-* [https://brew.sh/](https://brew.sh/)
+#### 1. Generate SSL Key and Cert
 
-#### 2. Install npm, simplehttpserver
-* `brew install npm`
-* `npm install simplehttpserver -g`
+`openssl req -x509 -newkey rsa:4096 -keyout server1.example.com.key -out server1.example.com.pem -days 365 -nodes`
 
-#### 3. Install ngrok
+#### 2. run server.py
+Navigate to the 'https://' url via your phone or browser.
+
+#### 3. Optional: Install ngrok
 `brew cask install ngrok`
 
-<br/>
-
-### Deploy your project
-
-#### 1. Run SimpleHTTPServer
-Run *SimpleHTTPServer*: 
-
-`python -m SimpleHTTPServer [port]`
-
-You can also change the port like this: 
-
-`python -m SimpleHTTPServer 8080`
-
-#### 2. Deploy live via ngrok
 [ngrok](https://ngrok.com/docs) is a tool that servers our local files on the web
 
 Use the same port as your simplehttpserver:
 
 `ngrok http 8080`
 
+<br/>
+
+## Week 8 Assignment
+
+#### Reading:
+* [The Ultimate Display](http://worrydream.com/refs/Sutherland%20-%20The%20Ultimate%20Display.pdf)
+* via Yohe Wang: [A channel on Medium that collected some AR-related articles](https://blog.prototypr.io/tagged/augmented-reality)
+
+#### Option 1: 
+
+Use of of the AR examples above to create a prototype of your own. You can choose to create a webcam based or a mobile experience. 
+
+* Use custom markers, videos, models and assets to make a unique experience.
+* Upload your project to GitHub and make sure to include a README.me with a short paragraph or image describing your project. 
+
+
+#### Option 2: 
+
+Continue work on your Computer Vision project from Week 7. https://github.com/areaofeffect/hello-world/tree/master/week7#assignment
 
 <br/>
 
