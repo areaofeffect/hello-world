@@ -28,6 +28,8 @@ The example application is subscribed to the topic `sva/#`. `#` is a wildcard in
 
 ![Publishing to topic](/week9/images/publish_message.png)
 
+The MQTT client comes from this [include](https://github.com/areaofeffect/hello-world/blob/master/week9/p5/index.html#L13). Documentation about this can be found [here](https://github.com/eclipse/paho.mqtt.javascript).
+
 
 
 
