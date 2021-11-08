@@ -22,6 +22,14 @@ Now that you have the MQTTx installed let's create some clients and test publish
 
 We will add MQTT to [a p5.js app](/week9/p5).
 
+## Publishing messages to your P5js application
+
+The example application is subscribed to the topic `sva/#`. `#` is a wildcard indicator meean you can publish topics like `sva/carrie`, `sva/bruno` or `sva/coding` etc and the application will receive them. Check your console logs in the developer tools to check that it's working.
+
+![Publishing to topic](/week9/images/publish_message.png)
+
+
+
 
 
 
