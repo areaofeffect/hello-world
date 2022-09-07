@@ -2,19 +2,16 @@
 
 # SVA IxD Week 1
 
-[Week 1 slides](http://week1-hello-world.areaofeffect.io)
-
 Notes from our week one class. These notes are generated into the slides we use for class.
 
 <br/>
 
 #### TLDR;
 
-1. [Slides from Week 1](http://hello-world.areaofeffect.io/#1)
-2. [Office Hours/ Slack info](#resources)
-3. [Overview of Computation: From Silicon to Singularity](#singularity)
-4. [Week 1: Assignments](#assignments)
-5. [Software to download](#downloads)
+1. [Office Hours/ Slack info](#resources)
+2. [Overview of Computation: From Silicon to Singularity](#singularity)
+3. [Week 1: Assignments](#assignments)
+4. [Software to download](#downloads)
 
 <br/>
 
@@ -61,7 +58,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 ---
 
-# Class Methods
+# Class Methods, Code as a Tool, Code + Design
 
 - This class is designed to immerse you in programming and learn a new language or method by the end of our journey.
 - We'll add code as as a tool to our design process, solving complex and specific problems in our projects.
@@ -71,11 +68,11 @@ Notes from our week one class. These notes are generated into the slides we use 
   these skills and learn new ones even faster.
 - Design wise, we'll measure our successes by not only the code we write, but
   the problems code enables us to solve.
-- We'll learn how to evaluate what's good Copy Pasta (paste) v.s bad Copy Pasta. We want you to own your successes and failures. :)
+- We'll learn how to evaluate what's good Copy Pasta (paste) vs bad Copy Pasta. We want you to own your successes and failures. :)
 
 ---
 
-# Real-time
+# Learning in Real-time
 
 - Lot's of feedback and communication.
 - Coding is massive; we want to know what's confusing and what's not.
@@ -116,7 +113,7 @@ Moore's law is the observation that the number of transistors in a dense integra
 
 Silicon together with Moore's law is the driving force behind everything that's happened with computers since the microcontroller.
 
-It is an interesting time now because we are about to hit a physical wall where the
+It is an interesting time now because we are about to hit a physical wall where the chips simply cannot hold any more transistors.
 
 > Moore's law has died at the age of 51 after an extended illness.
 
@@ -152,7 +149,8 @@ And, they solve really hard problems in computer science. Which makes computatio
 
 If you are interested, try exploring the many ways to sort something. 'Can we do better?' - a question that computer scientists ask themselves.
 
-[http://sortvis.org/algorithms/timsort.html](http://sortvis.org/algorithms/timsort.html)
+- [Audio/Visual Tim sort](https://www.youtube.com/watch?v=NVIjHj-lrT4)
+- [Visualization Sorting Algorithms](https://corte.si/posts/code/visualisingsorting/)
 
 Or just explore their jaw-dropping beauty.
 [https://bost.ocks.org/mike/algorithms/](https://bost.ocks.org/mike/algorithms/)
@@ -164,10 +162,6 @@ Or just explore their jaw-dropping beauty.
 > According to the principle of his work, LeWitt's wall drawings are usually executed by people other than the artist himself. Writing about making wall drawings, LeWitt himself observed in 1971 that "each person draws a line differently and each person understands words differently".
 
 ![Sol](/week1/images/art/Figure-3.png)
-
----
-
-# Workshop
 
 ---
 

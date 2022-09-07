@@ -75,7 +75,7 @@ An brief history of computing, computers and why we code.
 
 <br/>
 
-#### [Week 2: The first building blocks of talking to machines.]
+#### Week 2: The first building blocks of talking to machines.
 
 - Variables
 - Data Types
