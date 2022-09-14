@@ -12,7 +12,7 @@
 
 #### TLDR;
 
-Hello World is a class about learning to code and communicating with machines. By the end of this class you should have the skills to speak the language of (almost) any machine using fundamentals from Python, JavaScript and C.
+Hello World - The Logic of Interaction, is a class about learning to code and communicating with machines. By the end of this class you should have the skills to speak the language of (almost) any machine using fundamentals from Python, JavaScript and C.
 
 We’ll dive into:
 
@@ -58,7 +58,7 @@ How does a processor work and what is a for loop? How do we use code as a tool t
 
 #### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/master/week1)
 
-An brief history of computing, computers and why we code.
+A brief history of computing, computers and why we code.
 
 - What is code? (Hint: Communicating with machines)
 - Working with code (JavaScript, C / Arduino, Python)

@@ -87,8 +87,8 @@
 
 class: inverse, left, middle
 
-# Code Literacy: Week 2
-Fall 2017
+# Logic of Interaction: Week 2
+Fall 2022
 
 ---
 class: inverse, left, middle
@@ -104,19 +104,6 @@ class: inverse, left, middle, large
 
 - [A very brief overview of how computers work.](https://github.com/areaofeffect/hello-world/tree/master/week1#singularity)
 
----
-class: inverse, left, middle, large, center
-# Where does code belong in design?
-.center.center-50[![Center-aligned image](./images/giphy-2.gif)]
-
-what do you think?
-
----
-class: inverse, left, middle, large,center
-# Where do you belong with code?
-.center.center-50[![Center-aligned image](./images/giphy-1.gif)]
-what do you think?
-
 
 ---
 class: inverse, left, middle, large
@@ -126,8 +113,8 @@ by Bret Victor
 - Code and variables are representations of thought.
 - New ways of sensing the world.
 - New ways of representing ideas.
-- [Dyanmic mediums](https://twitter.com/Dynamicland1).
-- [Sketch Synth](https://vimeo.com/42053193).
+- [What of these dynamic mediums?](https://news.ycombinator.com/item?id=26725370).
+- [Sketch Synth](https://vimeo.com/42053193). (A decade ago!)
 
 ---
 
@@ -135,7 +122,7 @@ class: inverse, left, middle, large
 
 # Variables
 
-> a variable is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
+> a variable is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value. Each variable has a specific data type.
 
 ---
 class: inverse
@@ -147,7 +134,7 @@ class: inverse, left, middle, large
 
 # Data Types
 
-> a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data.
+> a data type is a classification of data which tells the compiler or interpreter how the programmer (you) intends to use the data.
 
 ---
 
@@ -159,8 +146,8 @@ class: inverse, large
 *types that are built in to the programming language*
 
 - Boolean
-- String
 - Number
+- String
 
 #### And some [composite types](https://en.wikipedia.org/wiki/Composite_data_type)
 
@@ -179,13 +166,13 @@ class: inverse
 Python example
 ```
 myBool = True
-print myBool
+print(myBool)
 ```
 
 JavaScript example
 
 ```javascript
-var myBool = true;
+let myBool = true;
 console.log(myBool);
 ```
 
@@ -193,91 +180,6 @@ C example
 ```
 boolean myBool = true;
 ```
----
-
-class: inverse, large
-# Characters and Strings
-- Examples
-- Delimiters
-- Concatenation
-
-.center.center-40[![Left-aligned image](./images/characters_strings.png)]
-
----
-
-class: inverse
-Characters and Strings
-# Examples
-Python example
-```
-myString = "Hello World"
-print myString
-```
-
-JavaScript example
-```
-var myString = "Hello World";
-console.log(myString);
-```
-
-C example
-```
-char myCharacter = 'A'; // this is just a single character
-char *myString = "Hello world"; //string literal, cannot be changed
-char myString[] = "Hello world"; //newly allocated memory
-```
----
-class: inverse, medium, center
-Characters and Strings
-# Delimiters
-
-.center.center-50[![Left-aligned image](./images/beaverdam.jpg)]
-
-A common delimiter is a comma (,) or pipe (|).
-
----
-class: inverse, medium
-Characters and Strings
-# Delimiters
-
-> A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
-
-[Wikipedia Definition](https://en.wikipedia.org/wiki/Delimiter)
-
-Understanding and using delimiters in strings will be important once we get to conversion a little later in class.
-
----
-class: inverse
-Characters and Strings
-# Concatentation
-
-Joining character strings end to end.
-
-Python example
-```python
-word1 = "hello "
-word2 = "world"
-print (word1 + word2)
-
-```
-<!-- myString = "".join(["Hello ", "World"]) -->
-
-JavaScript example
-```
-var myString = "Hello" + " World";
-console.log(myString);
-```
-
----
-class: inverse, large
-Characters and Strings
-# Concatentation
-
-C example
-
-There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
-
-We'll talk about more Arduino and strings later :)
 
 ---
 
@@ -307,17 +209,15 @@ Numbers
 Python example
 ```python
 myInt = 1
-print myInt
+print(myInt)
 ```
 
 JavaScript example
 
 ```
-var myInt = 1;
+let myInt = 1;
 console.log(myInt);
 ```
-
-
 
 C example
 ```
@@ -331,11 +231,11 @@ Numbers
 Python example
 ```
 myFloat = 3.14
-print myFloat
+print(myFloat)
 ```
 JavaScript example
 ```
-var myFloat = 3.14;
+let myFloat = 3.14;
 console.log(myFloat);
 ```
 
@@ -361,7 +261,7 @@ Numbers
 # NaN
 Not a Number
 
-If, for example, you attempt to divide by zero, you may receive this result.
+If, for example, you attempt to obtain an integer from dividing 2 numbers and you accidentally divide by zero, you may receive this result because any number divided by zero is inifinity.
 
 Trying to perform mathematic operations on a string data type, will also result in this warning.
 
@@ -377,8 +277,6 @@ Binary representations of number use only ones and zeros. Hexadecimal can repres
 
 ---
 
-
-
 class: inverse
 Numbers
 # Bases
@@ -393,14 +291,141 @@ Binary = base 2
 Decimal = base 10
 
 Hexadecimal = base 16
+
+---
+
+class: inverse, large
+# Characters and Strings
+- Examples
+- Concatenation
+- Substrings and Delimiters
+
+.center.center-40[![Left-aligned image](./images/characters_strings.png)]
+
+---
+
+class: inverse
+Characters and Strings
+# Examples
+Python example
+```
+myString = "Hello World"
+print(myString)
+```
+
+JavaScript example
+```
+let myString = "Hello World";
+console.log(myString);
+```
+
+C example
+```
+char myCharacter = 'A'; // this is just a single character
+char *myString = "Hello world"; //string literal, cannot be changed
+char myString[] = "Hello world"; //newly allocated memory
+```
+
+---
+class: inverse
+Characters and Strings
+# Concatentation
+
+Joining character strings end to end.
+
+Python example
+```python
+myString = "Hello, my name is "
+myName = "Carrie"
+print(myString + myName)
+
+```
+<!-- myString = "".join(["Hello ", "World"]) -->
+
+JavaScript example
+```
+let myString = "Hello, my name is "
+let myName = "Carrie"
+console.log(myString + myName);
+```
+
+---
+class: inverse, large
+Characters and Strings
+# Concatentation
+
+C example
+
+There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
+
+We'll talk about more Arduino and strings later :)
+
+
+---
+class: inverse, medium
+Characters and Strings
+# Substrings
+
+How can we separate strings into smaller strings?
+
+.center.center-50[![Left-aligned image](./images/beaverdam.jpg)]
+
+
+
+---
+class: inverse, small
+Characters and Strings
+# Delimiters
+
+> A [delimiter](https://en.wikipedia.org/wiki/Delimiter) is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
+
+Stated more plainly, a delimiter is a character that marks the beginning or end of a unit of data.   
+Common delimiters are commas (,) or pipes (|).
+
+---
+class: inverse, medium
+Characters and Strings
+# Delimiter examples
+
+### What if we want to pass the RGB value for an something that we want to turn red? Maybe a game element, an LED, or even a lightbulb?
+
+We know that the following is a valid set of numbers for an RGB value of red:  
+Red: 255  
+Green: 0  
+Blue: 0    
+
+
+We could represent this as a comma delimited string like this. This format would be much easier to pass over serial as an example.  
+`255,0,0`
+
+Let's see some code examples on how we could retrieve individual red, green and blue values on the next slide.
+---
+class: inverse, medium
+Characters and Strings
+# Substring Examples
+Python 
+```
+myColorString = "255,0,0"
+(r,g,b) = myString.split(",")
+print(r)
+```
+
+JavaScript 
+```
+let myColorString = "255,0,0";
+let [r,g,b] = myString.split(",")
+console.log(r);
+```
+
+C   
+Splitting strings in C requires the use of a loop AND a delimiter. We can explore this when we learn loops.
+
 ---
 
 class: inverse
 # Arrays
 
-
-
-Python example, (there is an array module in python, but we will use list)
+Python example, ([there is an array module in python, but we will use list](https://learnpython.com/blog/python-array-vs-list/))
 ````
 myList = ["Water", "Apple", "Banana"]
 print myList
@@ -408,7 +433,7 @@ print myList[0] #this will print Water
 ```
 JavaScript example
 ```javascript
-var myArray = ["Water", "Apple", "Banana"];
+let myArray = ["Water", "Apple", "Banana"];
 console.log(myArray);
 console.log(myArray[0]); //this will log Water
 ```
@@ -417,6 +442,9 @@ C example
 ```
 char myArray[3] = {"Water", "Apple", "Banana"};
 ```
+
+
+
 ---
 
 class: inverse
@@ -426,17 +454,17 @@ Objects are collections of properties
 
 
 
-Python example, (dictionary)
+Python example, (objects are called dictionaries in python)
 ```
-myDict = {"fuel_type": "electric", "model": "S", "color": "red"}
-print myDict
-print myDict["fuel_type"]
+myObj = {"top": 0, "left": 0, "width": 100, "height": 100, "color": "red"}
+print myObj
+print(myObj["color"])
 ```
 JavaScript example
 ```javascript
-var myObj = {"fuel_type": "electric", "model": "S", "color": "red"};
+let myObj = {"top": 0, "left": 0, "width": 100, "height": 100, "color": "red"};
 console.log(myObj);
-console.log(myObj.model);
+console.log(myObj.color);
 ```
 ---
 
@@ -448,12 +476,14 @@ Objects are collections of properties
 C example
 ```
 typedef struct {
-  char *fuel_type;
-  char *model;
+  int top;
+  int left;
+  int width;
+  int height;
   char *color;
-} tesla;
+} rectange;
 
-struct tesla s;
+struct rectange r;
 ```
 <!-- [ck: json callback with bio examples] -->
 
@@ -488,8 +518,8 @@ myNum = int(myString)
 
 JavaScript example
 ```javascript
-var myString = "1";
-var myNum = parseInt(myString)
+let myString = "1";
+let myNum = parseInt(myString)
 ```
 
 C example
@@ -511,8 +541,8 @@ myString = str(myNum)
 
 JavaScript example
 ```javascript
-var myNum = 1;
-var myString = myNum.toString();
+let myNum = 1;
+let myString = myNum.toString();
 ```
 
 ---
@@ -531,10 +561,12 @@ char buffer[10];
 itoa(myNum,buffer,10); // base 10
 ```
 ---
-class: inverse
+class: inverse, medium
 More on Data Types
 Conversion from one Data Type to Another
 # String -> Bool
+
+#### We will cover this in more detail next week when we learn conditionals.
 
 Python example
 ```
@@ -544,8 +576,8 @@ myBool = (myString == "True")
 
 JavaScript example
 ```javascript
-var myString = "true";
-var myBool = (myString == "true")
+let myString = "true";
+let myBool = (myString == "true")
 ```
 
 C example
@@ -569,8 +601,8 @@ myArray = myString.split(",")
 
 Javascript example
 ```javascript
-var myString = "January 5th, 1978";
-var myArray = myString.split(",");
+let myString = "January 5th, 1978";
+let myArray = myString.split(",");
 ```
 
 
@@ -590,8 +622,8 @@ myString = "".join(myList)
 
 JavaScript example
 ```javascript
-var myArray = ["January 5th", "1978"];
-var myString = myArray.join(",");
+let myArray = ["January 5th", "1978"];
+let myString = myArray.join(",");
 
 ```
 
@@ -628,7 +660,7 @@ class: inverse
 Protocols
 # Naming conventions
 Increasing the readability of your code will make working with others easier. Remember not to use any [reserved words](https://en.wikipedia.org/wiki/Reserved_word) for your language as the variable name. A common style is camelCase
-- var myName = "firstname lastname"
+- let myName = "firstname lastname"
 
 Python rules
 - Remember that variables can't start with a number
