@@ -11,5 +11,5 @@ resultString = x + y
 resultInt = int(x) + int(y)
 
 # finally we print out our results to the user
-print ("the result of x + y as strings: " + resultString) # result as a string
-print ("the result of x + y as integers: " + str(resultInt)) # result as numbers
+print("the result of x + y as strings: " + resultString) # result as a string
+print("the result of x + y as integers: " + str(resultInt)) # result as numbers

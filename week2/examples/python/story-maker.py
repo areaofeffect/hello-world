@@ -26,4 +26,4 @@ story = "The dear " + adjective1 + " grandma has come to " + color1 + " Riding H
 "to take some goodies back to " + yourName + "."
 
 # finally we print the story
-print (story)
+print(story)
