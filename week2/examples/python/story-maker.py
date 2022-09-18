@@ -4,14 +4,14 @@ print ("Answer the questions below to play.")
 print ("-----------------------------------")
 
 # variables containing all of your story info
-adjective1 = raw_input("Enter an adjective: ")
-color1 = raw_input("What is your favorite color?: ")
-location1 = raw_input("Name a place: ")
-object1 = raw_input("An object from your home: ")
-famousPerson1 = raw_input("A famous person you don't really like: ")
-famousPerson2 = raw_input("A famous person you sort of like, but not you're favorite: ")
-yourName = raw_input("What's your name?: ")
-adjective2 = raw_input("Enter one more adjective: ")
+adjective1 = input("Enter an adjective: ")
+color1 = input("What is your favorite color?: ")
+location1 = input("Name a place: ")
+object1 = input("An object from your home: ")
+famousPerson1 = input("A famous person you don't really like: ")
+famousPerson2 = input("A famous person you sort of like, but not you're favorite: ")
+yourName = input("What's your name?: ")
+adjective2 = input("Enter one more adjective: ")
 
 # this is the story. it is made up of strings and variables.
 # the \ at the end of each line let's the computer know our string is a long one
