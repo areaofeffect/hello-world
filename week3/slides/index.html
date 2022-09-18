@@ -87,8 +87,8 @@
 
 class: inverse, left, middle
 
-# Code Literacy: Week 3
-Fall 2017
+# Logic of Interaction: Week 3  
+Fall 2022
 
 ---
 class: inverse, left
@@ -160,7 +160,7 @@ isOn = False
     
 JavaScript example
 ```javascript
-var isOn = true
+let isOn = true
 isOn = false
 ```
 
@@ -223,7 +223,7 @@ studentsInClass += 1 # studentsInClass will be 1
 
 JavaScript example
 ```javascript
-var studentsInClass = 1;
+let studentsInClass = 1;
 studentsInClass++; // studentsInClass will be 2
 ```
 
@@ -246,7 +246,7 @@ studentsInClass -= 1
 
 JavaScript example
 ```javascript
-var studentsInClass = 1;
+let studentsInClass = 1;
 studentsInClass--;
 ```
 
@@ -262,14 +262,22 @@ Arithmetic operators
 # increment, decrement and placement
 _a note about placement_
 
-For JavaScript and C, you can place this operator before your variable like this, `++count`. Depending on how you use your variable you may get different results.
+For JavaScript and C, you can place this operator before your variable like this, `++count`. This will increment the variable before the expression is evaluated. This is called a prefix operator.
 
 ```javascript
-var count = 3;
-x = 0;
-x = ++count; // x==4, count==4
-x = count++; // x==3, count==4
+let count = 3;
+let x = 0;
+x = ++count;
+console.log(x); // 4  (pre-increment)
+console.log(count); // 4
+
+let count = 3;
+let x = 0;
+x = count++;
+console.log(x); // 3 (post-increment)
+console.log(count); // 4
 ```
+
 
 ---
 class: inverse, left
@@ -277,17 +285,17 @@ class: inverse, left
 
 _Comparison operators yield Boolean values_
 
-### **==**  ...    equal to
+### <span style="color:white">**==**</span>    equal to
 
-### **!=**  ...    not equal to
+### <span style="color:white">**!=**</span>    not equal to
 
-### **\>**  ...   greater than
+### <span style="color:white">**\>**</span>     greater than
 
-### **<**   ...    less than
+### <span style="color:white">**<**</span>       less than
 
-### **\>=** ...   great than or equal to
+### <span style="color:white">**\>=**</span>    great than or equal to
 
-### **<=**  ...   less than or equal to
+### <span style="color:white">**<=**</span>     less than or equal to
 
 ---
 class: inverse, left
@@ -296,14 +304,15 @@ Comparison Operations on data types
 Python example
 ```python 
 teachers = ["bruno", "carrie"]
-haveSameName = (teachers[0] is teachers[1]) # False
+haveSameName = (teachers[0] == teachers[1]) # False
+doNoHaveSameName = (teachers[0] != teachers[1]) # True
 ```
 
 JavaScript example
 ```javascript
-var teachers = ["bruno", "carrie"]
-var slackHandle = ["brun.no", "carrie"]
-var nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
+let teachers = ["bruno", "carrie"]
+let slackHandle = ["brun.no", "carrie"]
+let nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
 ```
 C example
 
@@ -320,12 +329,12 @@ Python example
 ```python  
 x = 1
 y = 2
-print (x < y) # False
+print(x < y) # False
 ```    
 
 JavaScript example
 ```javascript
-var isGreater = (x > y); // false
+let isGreater = (x > y); // false
 ```
 
 C example
@@ -340,11 +349,11 @@ class: inverse, left
 
 With logical operators you can combine one or more comparisons to make more complex decisions.
 
-We know that Booleans were one of our primitive data types in computer science. Now we are going to learn about Boolean logic. We will use it in our programs, but it is interesting to note that the this same logic is a core component of a computer's CPU.
+We know that Booleans are primitive data types from last week's class. Now we are going to learn about Boolean logic. We will use it in our programs, but it is interesting to note that the this same logic is a core component of a computer's CPU.
 
 Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), and computer memory, all the way up through complete microprocessors, which may contain more than 100 million gates.
 
-.center.center-50[![Center-aligned image](./images/logic_gates.png)]
+.center.center-50[![Center-aligned image](./images/logic_gates_2.webp)]
 
 ---
 class: inverse, left
@@ -369,7 +378,7 @@ Python example
 
 JavaScript example
 ```javascript
-var levelUp = (yourLocation == theLocation && yourItems.includes(neededItem))
+let levelUp = (yourLocation == theLocation && yourItems.includes(neededItem))
 ```
 
 ---
@@ -409,7 +418,7 @@ not(neededFriend in yourFriends)
 
 JavaScript example
 ```javascript
-var hasFriend = !(yourFriends.includes(neededFriend))
+let hasFriend = !(yourFriends.includes(neededFriend))
 ```
 
 C example
@@ -429,7 +438,7 @@ Python example
 
 JavaScript example
 ```javascript
-var levelUp = (yourLocation == theLocation || yourItems.includes(neededItem))
+let levelUp = (yourLocation == theLocation || yourItems.includes(neededItem))
 ```
 
 C example
@@ -490,7 +499,7 @@ Conditional Statements
 
 JavaScript example
 ```javascript
-var isGreater = (x > y) // false
+let isGreater = (x > y) // false
 if (isGreater) {
   console.log( "x is greater than y")
 }
