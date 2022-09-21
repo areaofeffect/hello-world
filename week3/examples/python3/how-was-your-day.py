@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+
 # enter a greeting
-playerAnswer = raw_input ("How was your day?: ")
+print ("How was your day?")
+playerAnswer = input ("options [good, bad, sleepy, tired] : ")
 
 # now we validate
 # little demo in a string function
