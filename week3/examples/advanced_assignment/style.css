@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+canvas {
+  display: none;
+}
+
+html {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title {
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: regular;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.23rem;
+  text-decoration: none;
+  margin: 2rem;
+  color: #fff;
+}
+
+.gif-container {
+  filter: drop-shadow(0px 0px 13px rgba(33, 33, 33, 1));
+}
+
+.gif-image {
+  z-index: 1;
+  clip-path: inset(0 0 10px 0);
+}
+
+.theEnd {
+  display: none;
+  position: relative;
+  top: -23rem;
+  left: -15rem;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: 2.15rem;
+  z-index: 999;
+}
+
+.storyText {
+  color: #333;
+  margin: -1rem 0 1.5rem 0;
+  font-size: 1.7rem;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  color: #fff;
+}
+
+.input-group {
+  top: 10rem;
+  margin: 2rem;
+  width: 100%;
+}
+
+.btn {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  background: rgba(33, 33, 33, 0.8);
+  width: 18rem;
+  height: 3rem;
+  color: #f2f2f2f2;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 3.5rem;
+  font-weight: regular;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.23rem;
+  text-decoration: none;
+  box-shadow: 0px 2px 3px rgba(13, 13, 13, 0.45);
+}
+
+.input {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  border: none;
+  width: 18rem;
+  height: 3rem;
+  color: black;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 3.5rem;
+  font-weight: regular;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.23rem;
+  text-decoration: none;
+  box-shadow: 0px 2px 3px rgba(13, 13, 13, 0.45);
+}
+
+.btn:hover {
+  background: rgba(33, 33, 33, 0.9);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+  background: rgba(33, 33, 33, 1);
+  box-shadow: 0px 1px rgba(13, 13, 13, 0.25);
+}
