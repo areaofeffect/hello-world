@@ -39,7 +39,6 @@ html {
 
 .gif-image {
   z-index: 1;
-  clip-path: inset(0 0 10px 0);
 }
 
 .theEnd {
