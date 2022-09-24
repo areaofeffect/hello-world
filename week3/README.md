@@ -193,7 +193,7 @@ JavaScript example
 
 C example
 
-	boolean isGreater = (x > y) // true
+	boolean isGreater = (x > y) // false
 	
 
 
