@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # functions
 # and passing parameters to functions
 
@@ -10,6 +12,7 @@ def sayHello():
 def sayGoodbye():
 	print("goodbye")
 
+# call the function, with no parameters
 sayHello()
 sayGoodbye()
 
@@ -18,5 +21,6 @@ sayGoodbye()
 def sayMessage(myMessage):
 	print(myMessage)
 
+# call the function and pass a parameter
 sayMessage(myMessage)
 sayMessage("goodbye")

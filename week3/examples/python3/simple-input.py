@@ -42,10 +42,10 @@ def gringots():
 
 def chooseStore():
   print("chooseStore")
-  pcmd = input("please choose a store [1, 2, 3] > ")
-  print ("pcmd", (pcmd == "1"))
+  playerCommand = input("please choose a store [1, 2, 3] > ")
+  print ("playerCommand", (playerCommand == "1"))
   
-  if (pcmd == "1"):
+  if (playerCommand == "1"):
     print("it's 1")
     gringots()
     

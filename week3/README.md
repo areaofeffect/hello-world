@@ -185,7 +185,7 @@ Python example
 	
 	x = 1
 	y = 2
-	(x < y) # False
+	(x < y) # True
 		
 JavaScript example
 
@@ -193,7 +193,7 @@ JavaScript example
 
 C example
 
-	boolean isGreater = (x > y) // true
+	boolean isGreater = (x > y) // false
 	
 
 
@@ -233,7 +233,7 @@ Python example
 	
 	x = 1
 	y = 2
-	not(x > y) # False
+	not(x > y) # True
 		
 JavaScript example
 
@@ -252,7 +252,7 @@ Python example
 	
 	x = 1
 	y = 2
-	(x > y || x > 0) # True
+	(x > y or x > 0) # True, note in python 3+ we use "or" instead of ||
 		
 JavaScript example
 

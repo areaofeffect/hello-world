@@ -18,7 +18,7 @@ print ('                      ')
 print ('       the fox        ')
 ```
 
-[The full game source is available here](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py)
+[The full game source is available here](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py)
  
 <br/>
 
@@ -73,7 +73,7 @@ player = {
 - if the roll is ```>=``` the difficulty, the event is successful! (or true)
 - all the numbers are ints
 
-[rollDice(min, max, difficulty)](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L19)
+[rollDice(min, max, difficulty)](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L27)
 
 <br/>
 
@@ -81,14 +81,14 @@ player = {
 - prints graphics to the screen
 - pass in the name of the graphic you want to print as a "string"
 
-[printGraphic(name)](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L32)
+[printGraphic(name)](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L40)
 
 <br/>
 
 ### game over
 - lets the use know our game is over, and exits the game
 
-[gameOver()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L104)
+[gameOver()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L112)
 
 <br/>
 
@@ -96,7 +96,7 @@ player = {
 - the road less traveled
 - a series of player choices and dice rolls to try to find the hidden gem
 
-[strangePath()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L114)
+[strangePath()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L122)
 
 <br/>
 
@@ -105,7 +105,7 @@ player = {
 - meet the fox, roll dice to see if he is friendly
 - special 'give gem' options appear if you have the gem!
 
-[forestPath()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L174)
+[forestPath()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L186)
 
 <br/>
 
@@ -113,21 +113,21 @@ player = {
 - there are two paths here, and player choice is decided with conditionals
 - here the player can decide which path to take
 
-[forestClearing()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L256)
+[forestClearing()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L276)
 
 <br/>
 
 ### intro story
 - a little intro so the user has context to what is going on.
 
-[introStory()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L306)
+[introStory()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L334)
 
 <br/>
 
 ### main
 - the application starts here!
 
-[main()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/deep-deep-forest.py#L334)
+[main()](https://github.com/areaofeffect/hello-world/blob/master/week3/examples/python3/deep-deep-forest/deep-deep-forest.py#L362)
 
 <br/>
 
