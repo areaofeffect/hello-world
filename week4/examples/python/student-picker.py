@@ -30,11 +30,11 @@ students = [
     {"name": "Valunporn Sithivaraporn", "image": "ValunpornSithivaraporn.png"},
 ]
 
-soundPath = os.path.join(os.getcwd() +'/sounds')
-soundfiles = [ "tick.wav", "1.wav", "2.wav", "3.wav", "4.wav", "5.wav" ]
-
-path = os.path.join(os.getcwd() +'/images')
+path = os.path.join(os.getcwd() + "/images")
 images = os.listdir(path)
+
+soundPath = os.path.join(os.getcwd() + "/sounds")
+soundfiles = ["tick.wav", "1.wav", "2.wav", "3.wav", "4.wav", "5.wav"]
 
 GUI = Tk()
 GUI.title("Class of 2024")
@@ -56,18 +56,18 @@ final_image = ImageTk.PhotoImage(Image.open(os.getcwd() + "/" + "thats_all_folks
 
 # recursive function to display images in a loop
 def move():
-  global count
-  global photo_images
-  global soundfiles
-  global loop
-  print(count)
-  if (count == len(students)):
-    count=0
-  l.config(text=students[count]['name'], image=photo_images[count])
-  count += 1
-  if loop == True:
-    playsound(soundPath + "/tick.wav")
-  GUI.after(100, move)
+    global count
+    global photo_images
+    global loop
+    # return to the beginning of the list if we hit the end
+    if count == len(students):
+        count = 0
+    l.config(text=students[count]["name"], image=photo_images[count])
+    # spin the wheel by calling this recursively
+    if loop:
+        playsound(soundPath + "/tick.wav", block=False)
+        count += 1
+        GUI.after(100, move)
 
 
 # start the loop
@@ -91,7 +91,7 @@ def select(event):
         if count == len(students):
             count = 0
         print("stop loop and select", count, students[count]["name"])
-        playsound(soundPath + "/" + str(random.randrange(1,6)) + ".wav")
+        playsound(soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False)
 
     else:
         # remove the selected student, and start the loop again
@@ -107,6 +107,9 @@ def select(event):
             # only one student left, so do not restart the loop
             print("select the last student", students, photo_images)
             l.config(text=students[0]["name"], image=photo_images[0])
+            playsound(
+                soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False
+            )
 
 
 # bind the enter/return key to the select function
