@@ -34,7 +34,7 @@ path = os.path.join(os.getcwd() + "/images")
 images = os.listdir(path)
 
 soundPath = os.path.join(os.getcwd() + "/sounds")
-soundfiles = ["tick.wav", "1.wav", "2.wav", "3.wav", "4.wav", "5.wav"]
+soundfiles = ["1.wav", "2.wav", "3.wav", "4.wav", "5.wav"]
 
 GUI = Tk()
 GUI.title("Class of 2024")
@@ -83,7 +83,8 @@ def select(event):
         print("that's all folks!")
         l.config(text="No more students", image=final_image)
         GUI.unbind_all("<Return>")
-        return
+        playsound(soundPath + "/folks.mp3", block=False)
+
 
     if loop:
         # stop the loop and select a student
@@ -91,6 +92,7 @@ def select(event):
         if count == len(students):
             count = 0
         print("stop loop and select", count, students[count]["name"])
+        print("only... ", len(students), " left!")
         playsound(soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False)
 
     else:
