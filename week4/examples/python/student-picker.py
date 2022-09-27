@@ -55,7 +55,7 @@ for i in range(0, len(students)):
 final_image = ImageTk.PhotoImage(Image.open(os.getcwd() + "/" + "thats_all_folks.png"))
 
 # recursive function to display images in a loop
-def move():
+def spin():
     global count
     global photo_images
     global loop
@@ -68,11 +68,11 @@ def move():
         playsound(soundPath + "/tick.wav", block=False)
         count += 1
         speed = int(1000 / len(students))
-        GUI.after(speed, move)
+        GUI.after(speed, spin)
 
 
 # start the loop
-move()
+spin()
 
 # handle enter/return key press
 def select(event):
@@ -105,7 +105,7 @@ def select(event):
         if len(students) > 1:
             # start the loop again
             loop = True
-            move()
+            spin()
         else:
             # only one student left, so do not restart the loop
             print("select the last student", students, photo_images)
