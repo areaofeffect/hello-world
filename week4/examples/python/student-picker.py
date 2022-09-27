@@ -2,6 +2,8 @@
 from tkinter import *
 import os
 from PIL import Image, ImageTk
+from playsound import playsound
+import random
 
 students = [
     {"name": "EunJung Yang", "image": "EunJungYang-Headshot.png"},
@@ -28,7 +30,10 @@ students = [
     {"name": "Valunporn Sithivaraporn", "image": "ValunpornSithivaraporn.png"},
 ]
 
-path = os.path.join(os.getcwd() + "/images")
+soundPath = os.path.join(os.getcwd() +'/sounds')
+soundfiles = [ "tick.wav", "1.wav", "2.wav", "3.wav", "4.wav", "5.wav" ]
+
+path = os.path.join(os.getcwd() +'/images')
 images = os.listdir(path)
 
 GUI = Tk()
@@ -51,17 +56,18 @@ final_image = ImageTk.PhotoImage(Image.open(os.getcwd() + "/" + "thats_all_folks
 
 # recursive function to display images in a loop
 def move():
-    global count
-    global photo_images
-    global loop
-    # return to the beginning of the list if we hit the end
-    if count == len(students):
-        count = 0
-    l.config(text=students[count]["name"], image=photo_images[count])
-    # spin the wheel by calling this recursively
-    if loop:
-        count += 1
-        GUI.after(100, move)
+  global count
+  global photo_images
+  global soundfiles
+  global loop
+  print(count)
+  if (count == len(students)):
+    count=0
+  l.config(text=students[count]['name'], image=photo_images[count])
+  count += 1
+  if loop == True:
+    playsound(soundPath + "/tick.wav")
+  GUI.after(100, move)
 
 
 # start the loop
@@ -85,6 +91,7 @@ def select(event):
         if count == len(students):
             count = 0
         print("stop loop and select", count, students[count]["name"])
+        playsound(soundPath + "/" + str(random.randrange(1,6)) + ".wav")
 
     else:
         # remove the selected student, and start the loop again
