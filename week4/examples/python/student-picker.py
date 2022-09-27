@@ -84,7 +84,7 @@ def select(event):
         l.config(text="No more students", image=final_image)
         GUI.unbind_all("<Return>")
         playsound(soundPath + "/folks.mp3", block=False)
-
+        return
 
     if loop:
         # stop the loop and select a student
@@ -92,7 +92,7 @@ def select(event):
         if count == len(students):
             count = 0
         print("stop loop and select", count, students[count]["name"])
-        print("only... ", len(students), " left!")
+        print("only... ", len(students) - 1, " left!")
         playsound(soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False)
 
     else:
