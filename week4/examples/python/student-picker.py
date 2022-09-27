@@ -67,7 +67,8 @@ def move():
     if loop:
         playsound(soundPath + "/tick.wav", block=False)
         count += 1
-        GUI.after(100, move)
+        speed = int(1000 / len(students))
+        GUI.after(speed, move)
 
 
 # start the loop
