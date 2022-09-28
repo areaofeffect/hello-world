@@ -94,7 +94,8 @@ def select(event):
             count = 0
         print("stop loop and select", count, students[count]["name"])
         print("only... ", len(students) - 1, " left!")
-        playsound(soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False)
+        # 12 sounds now
+        playsound(soundPath + "/" + str(random.randrange(1, 13)) + ".wav", block=False)
 
     else:
         # remove the selected student, and start the loop again
@@ -111,7 +112,7 @@ def select(event):
             print("select the last student", students, photo_images)
             l.config(text=students[0]["name"], image=photo_images[0])
             playsound(
-                soundPath + "/" + str(random.randrange(1, 6)) + ".wav", block=False
+                soundPath + "/" + str(random.randrange(1, 13)) + ".wav", block=False
             )
 
 
