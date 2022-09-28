@@ -34,7 +34,6 @@ path = os.path.join(os.getcwd() + "/images")
 images = os.listdir(path)
 
 soundPath = os.path.join(os.getcwd() + "/sounds")
-soundfiles = ["1.wav", "2.wav", "3.wav", "4.wav", "5.wav"]
 
 GUI = Tk()
 GUI.title("Class of 2024")
