@@ -28,16 +28,8 @@ def drawCircle(x, y, radius, color):
 
 
 for i in range(4):
-    # print("row", i)
-    # drawCircle(
-    #     i * (width * scaleFactor),
-    #     0,
-    #     width * scaleFactor,
-    #     (randint(0, 255), randint(0, 255), randint(0, 255)),  # Random colors
-    # )
-
     for j in range(4):
-        # print("col", j)
+        print("row: ", i, "col: ", j)
         drawCircle(
             i * (width * scaleFactor),
             j * (height * scaleFactor),
