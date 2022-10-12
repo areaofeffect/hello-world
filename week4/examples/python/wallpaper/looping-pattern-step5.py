@@ -19,6 +19,9 @@ get_rgb = lambda x: list(int(x[i : i + 2], 16) for i in (0, 2, 4))
 palette = [elem.replace("#", "") for elem in palette]
 rgb_palette = list(map(get_rgb, palette))
 
+print(palette)
+print(rgb_palette)
+
 
 scaleFactor = 4
 appWidth = 400
@@ -57,8 +60,8 @@ def drawMultipleCircles(x, y, radius, color, number):
     # an example of drawing things in a circle, but you can modify x,y in any way you want
     angle = pi * 2 / number
     for i in range(number):
-        new_x = sin(angle * i) * radius / 2 + x  # x + (i * 50)
-        new_y = cos(angle * i) * radius / 2 + y  # y + (i * 50)
+        new_x = x + (i * 50) #sin(angle * i) * radius / 2 + x  # x + (i * 50)
+        new_y =  y + (i * 50) #cos(angle * i) * radius / 2 + y  # y + (i * 50)
         drawCircle(new_x, new_y, radius / 2, (*color, 125), (*color, 255))
 
 

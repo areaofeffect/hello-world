@@ -19,8 +19,8 @@ from math import sin, cos, pi
 # palette = list(sns.color_palette("viridis", 16).as_hex())
 # palette = list(sns.color_palette("cubehelix", 16).as_hex())
 # palette = list(sns.color_palette("coolwarm", 16).as_hex())
-# palette = list(sns.color_palette("twilight", 16).as_hex())
-palette = list(sns.color_palette("Greys", 16).as_hex())
+palette = list(sns.color_palette("twilight", 16).as_hex())
+# palette = list(sns.color_palette("Greys", 16).as_hex())
 
 
 # convert hex to rgb
@@ -49,7 +49,7 @@ canvas.pack()
 myImage = Image.new(
     "RGB",
     (appWidth * scaleFactor, appHeight * scaleFactor),
-    color="black",
+    color="white",
 )
 # next create a drawing context
 drawingContext = ImageDraw.Draw(
@@ -73,11 +73,12 @@ def drawMultipleCircles(x, y, radius, number):
     # an example of drawing things in a circle, but you can modify x,y in any way you want
     angle = pi * 2 / number
     for i in range(number):
-        if (i % 4) == 0:
-            alpha = 10
-        else:
-            alpha = 0
-        outline_alpha = 0
+        # if (i % 4) == 0:
+        #     alpha = 10
+        # else:
+        #     alpha = 0
+        outline_alpha = 255
+        alpha = 0
         new_x = sin(angle * i) * radius / 2 + x  # x + (i * 20)
         new_y = cos(angle * i) * radius / 2 + y  # y + (i * 20)
         drawCircle(

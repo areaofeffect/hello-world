@@ -7,9 +7,9 @@ import seaborn as sns  # install seaborn for color palettes (https://seaborn.pyd
 # create a palette of 16 colors as hex values
 # http://man.hubwiz.com/docset/Seaborn.docset/Contents/Resources/Documents/tutorial/color_palettes.html
 # https://holypython.com/python-visualization-tutorial/colors-with-python/
-palette = list(sns.color_palette("Spectral", 16).as_hex())
+# palette = list(sns.color_palette("Spectral", 16).as_hex())
 # palette = list(sns.color_palette("ocean", 16).as_hex())
-# palette = list(sns.color_palette("Purples", 16).as_hex())
+palette = list(sns.color_palette("Purples", 16).as_hex())
 # palette = list(sns.color_palette("Purples_r", 16).as_hex())
 
 scaleFactor = 4
