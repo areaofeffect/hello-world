@@ -124,10 +124,10 @@ function draw() {
       let brightness = (r + g + b) / 3;
       let hsbValue = map(brightness, 0, 255, 0, 360);
 
-      // uncomment line 133 to draw greyscale
+      // uncomment line 128 to draw greyscale
       // drawRetangles(brightness, xpos, ypos, pixelSize);
 
-      // uncomment line 137 tp 143 to draw color
+      // uncomment line 132 tp 148 to draw color
       // draw rectangles that are rainbox
       // push();
       // // hue, saturation, brightness
