@@ -84,6 +84,12 @@ Rember to update your `index.html` to include both files:
   </body>
 ```
 
+<br>
+
+![img](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week5/examples/monster-like/img/screeenshot.png)
+
+<br>
+
 Features:
 - each minute the monster grows 1 year in monster time
 - monster eyes rotate to the current time (hour and minute)
