@@ -102,7 +102,7 @@ Rember to update your `index.html` to include both files:
 
 <br>
 
-![img](./monster-like/img/screeenshot.png | width=320)
+<img src="./monster-like/img/screeenshot.png" width="320" height="207" />
 
 <br>
 
