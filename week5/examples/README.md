@@ -23,12 +23,12 @@
   - Introduction to Github
   - Introduction to Node and Interactivity
 
+
 <br>
 
 # Useful functions and code help
 
 Remember to always check the p5 reference first!
-
 ## https://p5js.org/reference/
 
 <br>
@@ -41,25 +41,33 @@ Remember to always check the p5 reference first!
 - and many more! https://p5js.org/reference/
 
 Creating buttons:
-
 - https://p5js.org/reference/#/p5/createButton
 
 Calculating angles:
-
 - https://p5js.org/examples/math-arctangent.html
 
-Loop templates and advanced animations:
+Setting the current frame of a video:
+- https://editor.p5js.org/brunokruse/sketches/z6CtepvN7
 
+Additional things you can do with video playback:
+- https://p5js.org/reference/#/p5.MediaElement
+
+Setting the current frame of a gifs:
+- https://p5js.org/reference/#/p5.Image/setFrame
+
+Renaming files in a folder via python:
+- https://stackoverflow.com/questions/18805348/how-rename-the-images-in-folder/47105286#47105286
+
+Loop templates and advanced animations:
 - https://github.com/golanlevin/LoopTemplates
 
-Some more examples on using transformations via Gene Kogan:
 
+Some more examples on using transformations via Gene Kogan: 
 - https://genekogan.com/code/p5js-transformations/
 
 <br>
 
 ### Clock Assignment Examples:
-
 - https://p5js.org/examples/input-clock.html
 - https://codingtrain.github.io/12oclocks/
 - http://golancourses.net/2018_60212f/category/03/03-clock/
@@ -81,7 +89,6 @@ http://www.naimark.net/writing/firstword.html
 This app contains two files. `sketch.js` and `monster.js`
 
 Rember to update your `index.html` to include both files:
-
 ```
   <body>
     <script src="sketch.js"></script>
@@ -91,12 +98,9 @@ Rember to update your `index.html` to include both files:
 
 <br>
 
-![img](./monster-like/img/screeenshot.png)
 
 <br>
-
 Features:
-
 - each minute the monster grows 1 year in monster time
 - monster eyes rotate to the current time (hour and minute)
 - monster is proceduraly generated each refresh
@@ -106,8 +110,3 @@ Features:
 - play with monster ... coming soon
 - clean monster ... coming soon
 
-# CUSTOM PIXEL
-
-The custom pixel with video input we did in class is [here](./p5-custom-pixel)
-
-Another version that uses images is [here](./p5-custom-pixel-2)
