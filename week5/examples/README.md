@@ -33,13 +33,6 @@ Remember to always check the p5 reference first!
 
 <br>
 
-- push();
-- pop();
-- translate();
-- map();
-- constrain();
-- and many more! https://p5js.org/reference/
-
 Creating buttons:
 
 - https://p5js.org/reference/#/p5/createButton
@@ -58,19 +51,37 @@ Some more examples on using transformations via Gene Kogan:
 
 <br>
 
-### Clock Assignment Examples:
+# Working with video and gifs
+
+Setting the current frame of a video:
+- https://editor.p5js.org/brunokruse/sketches/z6CtepvN7
+
+Additional things you can do with video playback:
+- https://p5js.org/reference/#/p5.MediaElement
+
+Setting the current frame of a gifs:
+- https://p5js.org/reference/#/p5.Image/setFrame
+
+Renaming files in a folder via python:
+- https://stackoverflow.com/questions/18805348/how-rename-the-images-in-folder/47105286#47105286
+
+<br>
+
+# Clock Assignment:
+
+Examples:
 
 - https://p5js.org/examples/input-clock.html
 - https://codingtrain.github.io/12oclocks/
 - http://golancourses.net/2018_60212f/category/03/03-clock/
 
-### Reading
+Reading:
 
-http://www.naimark.net/writing/firstword.html
+- http://www.naimark.net/writing/firstword.html
 
 <br>
 
-# CLOCK MONSTERS
+# Clock monsters demo
 
 ```
 // a prototype clock monster game based on time
@@ -106,7 +117,9 @@ Features:
 - play with monster ... coming soon
 - clean monster ... coming soon
 
-# CUSTOM PIXEL
+<br>
+
+# CUSTOM PIXEL:
 
 The custom pixel with video input we did in class is [here](./p5-custom-pixel)
 
