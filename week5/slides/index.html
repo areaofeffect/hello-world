@@ -180,7 +180,7 @@ class: inverse, left
 
 > How can this be? Because when `foo()` cannot resolve the variable reference for a, instead of stepping up the nested (lexical) scope chain, it walks up the call-stack, to find where `foo()` was called from. Since `foo()` was called from `bar()`, it checks the variables in scope for `bar()`, and finds an a there with value 3. 
 
-- [You Don't Know JS: Scope & Closures, Appendix A](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/apA.md)
+- [You Don't Know JS: Scope & Closures, Appendix A](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/README.md)
 
 
 ---
@@ -323,9 +323,10 @@ class: inverse, left
 
 * Write your own
 
-* Use NPM
+* Use [NPM](https://www.npmjs.com/)
 
-[Modern JavaScript development can be overwhelming.](https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/)
+> npm, short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management. 
+
 
 ---
 class: inverse, left
@@ -361,14 +362,6 @@ var pokemonModule = function(inName) {
 var pikachu = new pokemonModule('pikachu');
 pikachu.sayHello();
 ```
-
----
-class: inverse, left
-# Using open source modules from NPM
-
-> npm, short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management. 
-
-[NPM](https://www.npmjs.com/)
 
 ---
 class: inverse, left
@@ -461,19 +454,11 @@ class: inverse, left
 
 
 ---
-class: inverse, left
-# p5.js
- 
-Now we're going to learn how to visualize serial data online, follow along.
-
-
-
----
 class: inverse, left, large
 # Assignments
 
 * Build a clock
-* Create a custome pixel display
+* Create a custom pixel display
 
 
 ---
