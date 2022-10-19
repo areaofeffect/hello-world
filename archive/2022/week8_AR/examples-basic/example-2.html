@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    simple ar - display text and images
+  </title>
+  <meta name="description" content="simple_ar">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+  <a-scene embedded arjs>
+    <a-marker preset="hiro">
+
+            <!-- some text -->
+            <a-text position='0 0.5 0'  value="Hello, Tree!"></a-text>
+
+            <!-- a png image -->
+            <a-image rotation="0 0 0" src="assets/img/tree.png"></a-image>
+
+    </a-marker>
+    <a-entity camera>
+    </a-entity>
+
+  </a-scene>
+  
+</body>
+
+</html>

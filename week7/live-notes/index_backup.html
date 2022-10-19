@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=768, initial-scale=1">
+<link rel="stylesheet" href="static/vendor/prism.css">
+<link rel="stylesheet" href="static/index.css">
+
+<!-- INTRO -->
+<title>Interactivity</title>
+<h1>Interactivity</h1>
+
+<p>
+The screen forms a bridge between our bodies and the realm of circuits and electricity inside computers. We control elements on screen through a variety of devices such as touch pads, trackballs, and joysticks, but the keyboard and mouse remain the most common input devices for desktop computers. The computer mouse dates back to the late 1960s, when Douglas Engelbart presented the device as an element of the oN-Line System (NLS), one of the first computer systems with a video display. The mouse concept was further developed at the Xerox Palo Alto Research Center (PARC), but its introduction with the Apple Macintosh in 1984 was the catalyst for its current ubiquity. The design of the mouse has gone through many revisions in the last forty years, but its function has remained the same. In Engelbart's original patent application in 1970 he referred to the mouse as an "X-Y position indicator," and this still accurately, but dryly, defines its contemporary use.
+</p>
+
+<p>
+The physical mouse object is used to control the position of the cursor on screen and to select interface elements. The cursor position is read by computer programs as two numbers, the x-coordinate and the y-coordinate. These numbers can be used to control attributes of elements on screen. If these coordinates are collected and analyzed, they can be used to extract higher-level information such as the speed and direction of the mouse. This data can in turn be used for gesture and pattern recognition.
+</p>
+
+<p>
+Keyboards are typically used to input characters for composing documents, email, and instant messages, but the keyboard has potential for use beyond its original intent. The migration of the keyboard from typewriter to computer expanded its function to enable launching software, moving through the menus of software applications, and navigating 3D environments in games. When writing your own software, you have the freedom to use the keyboard data any way you wish. For example, basic information such as the speed and rhythm of the fingers can be determined by the rate at which keys are pressed. This information could control the speed of an event or the quality of motion. It's also possible to ignore the characters printed on the keyboard itself and use the location of each key relative to the keyboard grid as a numeric position.
+</p>
+
+<p>
+The modern computer keyboard is a direct descendant of the typewriter. The position of the keys on an English-language keyboard is inherited from early typewriters. This layout is called QWERTY because of the order of the top row of letter keys. It was developed for typewriters to put physical distance between frequently typed letter pairs, helping reduce the likelihood of the typebars colliding and jamming as they hit the ribbon. This more than one-hundred-year-old mechanical legacy still affects how we write software today.
+</p>
+
+<br/><br/><br/>
+
+<!-- Contents -->
+<h2>Contents</h2>
+
+<ol>
+  <li><a href="#coordinate-system">p5 Coordinate System</a>
+  <li><a href="#mouse-data">A simple drawing app</a>
+  <li><a href="#autosave">Autosave</a>
+  <li><a href="#implicit-setup">Implicit <code>setup()</code></a>
+  <li><a href="#error-handling">Error Handling</a>
+  <li><a href="#resizing">Resizing</a>
+  <li><a href="#specifying-p5-version">Specifying The p5 Version</a>
+  <li><a href="#base-url">Specifying The Base URL</a>
+  <li><a href="#src">Loading From An External File</a>
+  <li><a href="#wordpress">Using the Widget with Wordpress</a>
+</ol>
+
+<br/><br/><br/>
+
+<!-- coordinate system -->
+<h2 id="coordinate-system">p5 Coordinate System</h2>
+
+<p>In p5 the coordinate system starts with 0,0 at the top left. This will be the basis for interacting with the canvas and drawing objects to the screen.</p>
+
+<br/>
+
+<center><img src="https://processing.org/reference/environment/images/coordinates2D3D.png"></img></center>
+<br/><br/>
+
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+var xPos;
+var yPos;
+
+function setup() {
+  createCanvas(200, 200); // create a window for our sketch
+  rectMode(CENTER); // draw rectangles from the center
+}
+
+function draw() {
+  background(127);
+  fill(0,0,255);
+  rect(xPos, yPos, 25, 25);
+  text("x: " + int(mouseX) + " y: " + int(mouseY), 0, 10);
+}
+
+function mouseMoved() {
+  // capture the mouse positions into our variables
+  xPos = mouseX;
+  yPos = mouseY;
+}
+</script>
+
+<br/><br/>
+
+<!-- simple drawing -->
+<h2 id="simple-drawing">A simple drawing app</h2>
+<p>Drag your mouse cursor to draw<p>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+function setup() {
+  createCanvas(200, 200);
+  strokeWeight(10)
+  background(127);
+}
+
+function mouseDragged() {
+  // drag to draw a line from previouse mouse position
+  // to current mouse position
+  stroke(random(255),random(255),random(255));
+  line(mouseX, mouseY, pmouseX, pmouseY);
+}
+</script>
+
+<br/><br/>
+
+<!-- mouse position -->
+<h2 id="simple-drawing">Mouse Position</h2>
+<p>Rotate and scale the square based on your mouse position<p>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+function setup() {
+  createCanvas(200, 200);
+  background(127);
+  rectMode(CENTER);
+}
+
+function draw() {
+  background(127)
+
+  translate(width/2, height/2); // translation to center
+
+  // map the mouse X position to radians
+  var mappedValueX = map(mouseX, 0, 200, 0, 2*PI);
+  
+  // map the mouse Y position to scale
+  var mappedValueY = map(mouseY, 0, 200, 0, 5);
+
+  // scale the sketch based on mouse position
+  scale(mappedValueY);
+
+  // rotate the sketch based on the mouse position
+  rotate(mappedValueX);
+
+  // draw the rectangle
+  fill(255,255,0);
+  rect(0, 0, 50, 50);
+}
+
+</script>
+
+<br/><br/>
+
+<!-- rectangular button -->
+<h2 id="rectangular-button">Rectangular Button</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+var backgroundColor;
+var isOverRectangle; // boolean!
+ 
+function setup() {
+  // set canvas size
+  createCanvas(200, 200);
+  backgroundColor = color(127, 127, 127);
+}
+ 
+function draw() {
+  background(backgroundColor);
+ 
+  // check if mouse is inside the rectangle
+  // formula: (mouseX >= x && mouseX <= x+width) && (mouseY >= y && mouseY <= y+height)
+
+  if (mouseX >= 75 && mouseX <= 125 && mouseY >= 75 && mouseY <= 125) {
+    isOverRectangle = true;
+  } else {
+    isOverRectangle = false;
+  }
+  
+  // draw a rectangle
+  stroke(0);
+  strokeWeight(5);
+  
+  if(isOverRectangle == true) {
+    fill(100);
+    cursor(HAND); // change the cursor!
+  } 
+  else {
+    fill(200); 
+    cursor(ARROW); 
+  }
+
+  rect(75, 75, 50, 50);
+}
+ 
+function mousePressed() {
+  // wwe check if we are over the rectangle when the mouse is pressed
+  if(isOverRectangle == true) {
+    backgroundColor = color(random(255), random(255), random(255));
+  }
+}
+</script>
+
+<br/><br/>
+
+<!-- circular button -->
+<h2 id="circular-button">Circular Button</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+var backgroundColor;
+var isOverCircle;
+ 
+function setup() {
+  // set canvas size
+  createCanvas(200, 200);
+  backgroundColor = color(127, 127, 127);
+  ellipseMode(CENTER);
+}
+ 
+function draw() {
+  background(backgroundColor);
+ 
+  // get distance between mouse and center of the circle
+  var distance = dist(mouseX, mouseY, 100, 100);
+  fill(255);
+  text("distance: " + int(distance), 0, 10);
+
+  // if the distance is less than the circle's radius
+  if(distance < 25) {
+    isOverCircle = true;
+  } else {
+    isOverCircle = false;
+  }
+  
+  // draw a circle
+
+  if(isOverCircle == true) {
+    fill(0,255,0);
+    cursor(HAND);
+  } else {
+    fill(200); 
+    cursor(ARROW); 
+  }
+  
+  stroke(0);
+  ellipse(100, 100, 50, 50);
+
+  line(100,100,mouseX, mouseY);
+  
+}
+ 
+function mousePressed() {
+  if(isOverCircle == true) {
+    backgroundColor = color(random(255), random(255), random(255));
+  }
+}
+</script>
+
+<br/><br/>
+
+<!-- simple keyboard -->
+<h2 id="simple-keyboard">Keyboard Key</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+function setup() {
+  createCanvas(200, 200);
+  fill(245, 123, 158);
+  textSize(50);
+}
+
+function draw() {
+  background(200);
+  text(key, 65, 65); // Display last key pressed.
+}
+
+</script>
+
+<br/><br/>
+
+<!-- arrow keys -->
+<h2 id="arrow-keys">Arrow Keys + Simple Movement</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+// x position variable
+var xpos = 100;
+ 
+// y position variable
+var ypos = 100;
+ 
+// numPixels variable
+var numPixels = 10;
+ 
+function setup() {
+  // set canvas size
+  createCanvas(200, 200);
+}
+ 
+function draw()  {
+  // clear background
+  background(127);
+ 
+  // set the fill color
+  fill(255, 0, 0);
+ 
+  // black outline
+  stroke(0);
+ 
+  // set the ellipse mode
+  ellipseMode(CENTER);
+ 
+  // draw a circle
+  ellipse(xpos, ypos, 25, 25);  
+}
+ 
+function keyPressed(){
+  // UP key
+  if(keyCode == UP_ARROW) {
+    ypos = ypos - numPixels; 
+  }
+ 
+  // DOWN key
+  if(keyCode == DOWN_ARROW) { 
+    ypos = ypos + numPixels; 
+  }
+ 
+  // RIGHT key
+  if(keyCode == RIGHT_ARROW) {
+    xpos = xpos + numPixels; 
+  }
+ 
+  // LEFT key
+  if(keyCode == LEFT_ARROW) {
+    xpos = xpos - numPixels; 
+  }
+
+  return false;
+}
+</script>
+
+<br/><br/>
+<!-- arrow keys -->
+<h2 id="arrow-keys">Arrow Keys + Game Object</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+var player;
+
+function setup() {
+  createCanvas(200, 200);
+
+  // create object
+  player = new gameObject();
+}
+
+function draw() {
+  background(127);
+  player.update();
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    player.hmom -= player.speed;
+
+  } else if (keyCode === RIGHT_ARROW) {
+    player.hmom += player.speed;
+
+  } else if (keyCode === UP_ARROW) {
+    player.vmom -= player.speed;
+
+  } else if (keyCode === DOWN_ARROW) {
+    player.vmom += player.speed;
+
+  }
+
+  return false; // prevent any default behaviour
+  // like the page scrolling when you press the arrows
+}
+
+function gameObject() {
+
+  this.x = width / 2;
+  this.y = width / 2;
+
+  this.hmom = 0;
+  this.vmom = 0;
+
+  this.speed = 10;
+  this.size = 25;
+
+  this.update = function() {
+    this.move();
+    this.render();
+  }
+
+  this.move = function() {
+    this.x += this.hmom;
+    this.y += this.vmom;
+
+    // dampenings
+    this.hmom *= 0.9;
+    this.vmom *= 0.9;
+
+    this.checkCollisions();
+  }
+
+  this.checkCollisions = function() {
+    // left and right
+    if (this.x <= 0) {
+      this.x = 0
+    } else if (this.x + this.size >= width) {
+      this.x = width - this.size;
+    }
+
+    // up and down
+    if (this.y <= 0) {
+      this.y = 0
+    } else if (this.y + this.size >= height) {
+      this.y = height - this.size;
+    }
+  }
+
+  this.render = function() {
+    fill(255,0,0);
+    rect(this.x, this.y, this.size, this.size);
+  }
+
+}
+</script>
+
+<br/><br/>
+
+<!-- simple load image -->
+<h2 id="simple-image">Simple Load Image</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+var img;
+
+function preload() {
+  img = loadImage("/static/img/sva.jpg");
+}
+
+function setup(){
+  createCanvas(200, 200);
+}
+
+function draw(){
+  background(200);
+  image(img, 0, 0, 200, 200);
+}
+
+</script>
+
+<br/><br/>
+
+<!-- simple load image -->
+<h2 id="simple-image">Simple Load Image II</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+var img;
+var ufo;
+
+function preload() {
+  img = loadImage("/static/img/sva.jpg");
+  ufo = loadImage("/static/img/ufo.png");
+
+}
+
+function setup(){
+  createCanvas(200, 200);
+}
+
+function draw(){
+  background(200);
+  image(img, 0, 0, 200, 200);
+  image(ufo, mouseX - ufo.width/2, mouseY - ufo.height/2);
+}
+
+</script>
+<br/><br/>
+
+<!-- simple load image -->
+<h2 id="crossfade-image">Crossfade Image</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+
+var img;
+var img2;
+
+function preload() {
+  img = loadImage("/static/img/sva.jpg");
+  img2 = loadImage("/static/img/cat.jpg");
+}
+
+function setup(){
+  createCanvas(200, 200);
+}
+
+function draw(){
+  background(200);
+  // background image
+  image(img2, 0, 0, 200, 200);
+
+  // second image
+  var alpha = map(mouseX, 0, width, 0, 255);
+  tint(255, alpha);
+  image(img, 0, 0, 200, 200);
+}
+
+</script>
+
+<br/><br/>
+
+<!-- almost pong -->
+<h2 id="simple-pong">Almost pong</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="600">
+function setup() {
+  createCanvas(200, 200);
+  background(0);
+  noStroke();
+  fill(0, 255, 0);  
+}
+
+var ballX = 100;
+var ballY = 100;
+
+var ballXV = -4;
+var ballYV = 1;
+
+var rectX = 10;
+var rectY = 10;
+
+var lives = 3;
+
+function draw() {
+  rect(300,30,50,50);
+  background(0);  
+  setText();
+  setShapes();    
+  bounceCheck();
+  increment();
+  scoreCheck();  
+}
+
+function increment() {  
+  ballX += ballXV;  
+  ballY += ballYV;
+  
+  if(millis() % 1000 == 0) {
+    ballXV = ballXV * 2;
+  }
+}
+
+function mouseMoved() {
+  rectY = mouseY;
+}
+
+function ball(x, y) {
+  ellipse(x - 2, y, 30, 30);
+  ellipse(x, y, 15, 15);
+}
+
+function setShapes() {
+  fill(255);
+  rect(rectX, rectY, 20, 75);
+  ball(ballX, ballY);
+}
+
+function sliderBounce() {
+  if(rectY < ballY && rectY + 100 > ballY) {
+    ballXV = ballXV * -1;
+    lives += 1;
+  }
+}
+
+function wallBounce() {
+  ballXV = ballXV * -1;
+}
+
+function bounceCheck() {
+  if(ballY < 0 || ballY > 200) {
+    ballYV = ballYV * -1;
+  }
+  
+  if(ballX < 40 && ballXV < 0) {
+    sliderBounce();
+  }
+  
+  if(ballX > 200 && ballXV > 0) {
+    wallBounce();
+  }
+  
+  if(ballX < 0) {
+    ballX = 200;
+    lives -= 1;
+  }
+}
+
+function scoreCheck() {
+  if(lives == 0) {
+    noLoop();
+    lives = "YOU LOSE";
+  }
+  
+  if(lives == 10) {
+    noLoop();
+    lives = "YOU WIN";
+  }
+}
+
+function setText() {
+  textAlign(CENTER);
+  textSize(22);
+  text(lives, 10, 20);
+}
+
+</script>
+
+<br/><br/>
+
+<!-- simple 3d -->
+<h2 id="simple-microphone">Simple 3D</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+function setup(){
+  createCanvas(200, 200, WEBGL);
+}
+
+function draw(){
+  background(200);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  box(200, 200, 200);
+}
+</script>
+
+<script src="static/vendor/jquery.js"></script>
+<script src="p5-widget.js" data-manual></script>
+<script src="static/vendor/prism.js" data-manual></script>
+<script src="static/index.js"></script>

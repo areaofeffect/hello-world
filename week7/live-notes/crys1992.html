@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=768, initial-scale=1">
+<link rel="stylesheet" href="static/vendor/prism.css">
+<link rel="stylesheet" href="static/index.css">
+
+<!-- INTRO -->
+<title>crys1992</title>
+<h1>crys1992</h1>
+
+<!-- simple 3d -->
+<h2 id="simple-microphone">spinning stick game</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="250" data-height="400">
+function setup(){
+  createCanvas(200, 200, WEBGL);
+}
+
+function draw(){
+  background(255);
+  if (keyIsPressed == true){
+  rotateZ(frameCount *0.5)
+  box(200, 20, 20);
+  }
+  
+}  
+</script>
+
+<script src="static/vendor/jquery.js"></script>
+<script src="p5-widget.js" data-manual></script>
+<script src="static/vendor/prism.js" data-manual></script>
+<script src="static/index.js"></script>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=768, initial-scale=1">
+<link rel="stylesheet" href="static/vendor/prism.css">
+<link rel="stylesheet" href="static/index.css">
+
+<!-- INTRO -->
+<title>arielleroyston</title>
+<h1>arielleroyston</h1>
+
+<!-- simple 3d -->
+<h2 id="simple-microphone">Drawing app</h2>
+<script type="text/p5" data-autoplay data-hide-sourcecode data-preview-width="600" data-height="600">
+var cnv;
+var colorArray;
+
+function setup() {
+  cnv = createCanvas(600, 600);
+  colorArray = [66, 134, 244];
+  background(255);
+  strokeWeight(4.0);
+  strokeCap(ROUND);
+  text("Press '1' for Electric Blue; '2' for Defiant Red; '3' for Party Purple ", 30, 30);
+  text("Press 'Q' for skinny stroke; 'W' for medium stroke; 'E' for thick stroke ", 30, 45);
+ //image(img, 0, 0, 200, 200);
+}
+
+function draw() {
+
+}
+
+// this function fires after the mouse has been
+// clicked anywhere
+function mouseDragged() {
+  //d = d + 10;
+  stroke(colorArray[0],colorArray[1],colorArray[2]);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+}
+
+function keyPressed() {
+    if(keyCode == 49) {
+// RGB "Electric Blue" : 66, 134, 244
+  colorArray = [66, 134, 244]; }
+
+    if(keyCode == 50) {
+// RGB "Hot Pinky Orange" : 255, 25, 82
+  colorArray = [255, 25, 82]; }
+
+    if(keyCode == 51) {
+// RGB "Subdued Purple" : 210, 141, 239
+  colorArray = [210, 141, 239];}
+  
+  if(keyCode == 81) {
+// Stroke is skinny : 4.0
+  strokeWeight(4.0); }
+
+    if(keyCode == 87) {
+// Stroke is medium : 7.0
+  strokeWeight(7.0); }
+
+    if(keyCode == 69) {
+// Stroke is thick : 12.0
+  strokeWeight(12.0);}
+
+
+  return 0;
+}
+</script>
+
+<script src="static/vendor/jquery.js"></script>
+<script src="p5-widget.js" data-manual></script>
+<script src="static/vendor/prism.js" data-manual></script>
+<script src="static/index.js"></script>

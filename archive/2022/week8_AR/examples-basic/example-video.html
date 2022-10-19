@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    simple ar - play a video
+  </title>
+  
+  <meta name="description" content="simple_ar">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+  
+    
+    <!-- include the js -->
+    <!--<script src="scripts/video-ar.js"></script>-->
+    <script> 
+      AFRAME.registerComponent('vidhandler', { 
+        init: function () { 
+          this.toggle = false; 
+          this.vid = document.querySelector("#vid"); 
+          this.vid.pause(); 
+        }, 
+        tick:function() { 
+
+          if(this.el.object3D.visible == true) { 
+            if(!this.toggle){ this.toggle = true; 
+              this.vid.play(); 
+            } 
+          }else{ 
+            this.toggle = false; 
+            this.vid.pause(); 
+          } 
+        } 
+      }); 
+      function refrespage() { location.reload(); }
+
+    </script>
+
+    
+    
+    <!-- define your video asset -->
+    <a-assets>
+      <video preload="auto" id="vid" loop="true" src="assets/video/earth.mp4" crossorigin webkit-playsinline playsinline controls>
+
+        <!-- error handling -->
+        <h3>Error : Your browser does not support.</h3>
+
+      </video>
+    </a-assets>
+
+    <a-scene embedded arjs>
+      
+    <a-marker preset="hiro" crossorigin="anonymous" vidhandler>
+
+            <!-- display your video asset -->
+            <a-video vidhandler src="#vid" width="1.78" height="1" rotation="270 0 0" play="true"></a-video>
+
+    </a-marker>
+    <a-entity camera></a-entity>
+
+  </a-scene>
+    <script>
+      window.addEventListener('click', function () {
+      var v = document.querySelector('#vid');
+      v.play();
+      });
+    </script>
+</body>
+
+</html>
