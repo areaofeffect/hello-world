@@ -60,8 +60,8 @@ def drawMultipleCircles(x, y, radius, color, number):
     # an example of drawing things in a circle, but you can modify x,y in any way you want
     angle = pi * 2 / number
     for i in range(number):
-        new_x = x + (i * 50) #sin(angle * i) * radius / 2 + x  # x + (i * 50)
-        new_y =  y + (i * 50) #cos(angle * i) * radius / 2 + y  # y + (i * 50)
+        new_x = sin(angle * i) * radius / 2 + x  # x + (i * 50)
+        new_y = cos(angle * i) * radius / 2 + y  # y + (i * 50)
         drawCircle(new_x, new_y, radius / 2, (*color, 125), (*color, 255))
 
 
