@@ -1,5 +1,7 @@
+// https://kylemcdonald.github.io/cv-examples/
 // more here:
 // http://fhtr.org/JSARToolKit/demos/tests/test2.html
+
 var capture;
 var w = 640,
     h = 480;
@@ -7,8 +9,17 @@ var w = 640,
 var raster, param, pmat, resultMat, detector;
 
 function setup() {
-    pixelDensity(1); // this makes the internal p5 canvas smaller 
-    capture = createCapture(VIDEO);
+    pixelDensity(1); // this makes the internal p5 canvas smaller
+    capture = createCapture({
+        audio: false,
+        video: {
+            width: w,
+            height: h
+        }
+    }, function() {
+        console.log('capture ready.')
+    });
+    capture.elt.setAttribute('playsinline', '');
     createCanvas(w, h);
     capture.size(w, h);
     capture.hide();
