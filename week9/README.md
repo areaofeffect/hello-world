@@ -114,3 +114,5 @@ Terminal commands to run this app:
 
 Code from class can be found here:
 [in-class-apps/super-serial-app](./in-class-apps/super-serial-app)
+
+![Super Serial Success](./images/super-serial.png)
