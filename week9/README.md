@@ -89,9 +89,9 @@ Let's query some data via this API from Nasa
 
 We will be using [Meteor](https://www.meteor.com/) which is built on node. You installed node via [NVM](https://github.com/creationix/nvm) or Node Version Manager. This allows easily switching to various [releases](https://en.wikipedia.org/wiki/Software_release_life_cycle) of node if your applications dependencies require it.
 
-Our apps are based on the standard starter apps that come with Meteor. The both use React as it is now the default. We also add serial communication with your Arduino which you can visualize in real-time in p5.
+Our apps are based on the standard starter apps that come with Meteor. They both use React as it is now the default. App 2 adds serial communication with your Arduino visualized in real-time in p5.js.
 
-You must be in the folder that contains the code for the app you want to run. For example, if you want to run the API app, you must be in the folder `week9/in-class-apps/api-api` for example. Then you can run `meteor npm install` and then `meteor` in the terminal. Note: only run one app at a time which will be on port 3000 (http://localhost:3000).
+You must be in the folder that contains the code for the app you want to run. For example, if you want to run the API app, you must be in the folder `{path on your machine to this repo}/hello-world/week9/in-class-apps/api-api`. Then you can run `meteor npm install` and then `meteor` in the terminal. Note: only run one app at a time which will be on port 3000 (http://localhost:3000).
 
 ## 1 Astronomy picture of the day
 
@@ -103,7 +103,8 @@ Terminal commands to run this app:
 Code from class can be found here:
 [in-class-apps/api-app](./in-class-apps/api-app)
 
-[API](https://api.nasa.gov/api.html#apod)
+[Astronomy picture of the day from NASA](https://apod.nasa.gov/apod/astropix.html)  
+[API found here under APOD](https://api.nasa.gov/)
 
 ## 2 Super serial app
 
