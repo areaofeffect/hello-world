@@ -5,10 +5,11 @@ export const Hello = () => {
   const [imageSrc, setImageSrc] = useState(null);
   const [imageTitle, setImageTitle] = useState(null);
   const loadImage = async (url = '', data = {}) => {
-    console.log('data', data);
+    console.log('the data sent to the api ', data);
     const response = await fetch(url+'?'+new URLSearchParams(data));
     const imageData = await response.json();
-    console.log('imageData', imageData);
+
+    console.log('the image data returned from the api: ', imageData);
     setImageSrc(imageData.url);
     setImageTitle(imageData.explanation);
   }
