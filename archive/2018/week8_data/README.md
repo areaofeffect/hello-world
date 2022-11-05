@@ -12,18 +12,19 @@ Continuous stream of data, possibly from a sensor
 # Setting up your development environment
 
 ## 1
-[Download and install the free version of Robo 3T](https://robomongo.org/)
+[Download and install the free version of Robo 3T](https://robomongo.org/) which is now Studio 3T
 
 
 ## 2
-Open a new window in Terminal and run the following commands line by line
+Install [NVM](https://github.com/nvm-sh/nvm) On a Mac, open a new window in Terminal and run the following commands line by line. See Windows instructions [here](https://github.com/coreybutler/nvm-windows)
 
-	touch ~/.bash_profile
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+	
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 	nvm install node
+	nvm use 14
 	
 ## 3
-In the same or new window in Terminal run the following command
+Install Meteor, in the same or new window in Terminal run the following command
 
 	curl https://install.meteor.com/ | sh
 

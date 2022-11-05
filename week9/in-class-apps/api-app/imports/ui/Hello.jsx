@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import { fetch, Headers, Request, Response } from 'meteor/fetch';
+import { fetch } from 'meteor/fetch';
 
 export const Hello = () => {
-  const [imageSrc, setImageSrc] = useState(0);
-
-  async function loadImage (url, data) {
-    try {
-      const response = await fetch(url, {
-          method: 'GET', // *GET, POST, PUT, DELETE, etc.
-          params: data
-      });
-      const data = await response.json();
-      return response(null, data);
-    } catch (err) {
-      return response(err, null);
-    } 
+  const [imageSrc, setImageSrc] = useState(null);
+  const [imageTitle, setImageTitle] = useState(null);
+  const loadImage = async (url = '', data = {}) => {
+    console.log('data', data);
+    const response = await fetch(url+'?'+new URLSearchParams(data));
+    const imageData = await response.json();
+    console.log('imageData', imageData);
+    setImageSrc(imageData.url);
+    setImageTitle(imageData.explanation);
   }
 
-  const loadImageCall = Meteor.wrapAsync(loadImage);
-  const results = loadImageCall('https://api.nasa.gov/planetary/apod', {api_key: "iyuaalFBShG6fxUdb0muEx616dsZEdkTIFqQ9iV0", date:"2018-10-20"});
-
+  const getImage = () => {
+    const loadImageAsync = Meteor.wrapAsync(loadImage);
+    // change the date to see different images
+    loadImageAsync('https://api.nasa.gov/planetary/apod', {api_key: "iyuaalFBShG6fxUdb0muEx616dsZEdkTIFqQ9iV0", date:"2018-10-20"})   
+  }
 
   return (
     <div>
-      <button onClick={loadImageCall}>Click Me To Load An Image</button>
+      <button onClick={getImage}>Click Me To Load An Image</button>
+      {imageTitle && <p>{imageTitle}</p>}
+      {imageSrc && <img src={imageSrc} />}
     </div>
   );
 };
