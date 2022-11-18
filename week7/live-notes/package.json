@@ -6,20 +6,20 @@
   "dependencies": {
     "autoprefixer": "^6.3.6",
     "codemirror": "^5.13.4",
-    "css-loader": "^0.23.1",
+    "css-loader": "^6.7.2",
     "esprima": "^2.7.2",
     "postcss": "^5.0.19",
     "postcss-custom-properties": "^5.0.0",
-    "postcss-loader": "^0.8.2",
+    "postcss-loader": "^7.0.1",
     "raw-loader": "^0.5.1",
     "react": "^0.14.8",
     "react-addons-pure-render-mixin": "^0.14.8",
     "react-dom": "^0.14.8",
     "style-loader": "^0.13.1",
-    "ts-loader": "^0.8.1",
+    "ts-loader": "^9.4.1",
     "typescript": "^1.8.9",
     "underscore": "^1.8.3",
-    "webpack": "^1.12.14"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
