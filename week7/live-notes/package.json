@@ -22,7 +22,7 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
+    "mocha": "^10.2.0",
     "mocha-phantomjs": "^4.0.2",
     "chai": "^3.5.0",
     "webpack-dev-server": "^1.14.1"
