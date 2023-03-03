@@ -19,13 +19,13 @@
     "ts-loader": "^0.8.1",
     "typescript": "^1.8.9",
     "underscore": "^1.8.3",
-    "webpack": "^1.12.14"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
+    "mocha": "^10.2.0",
     "mocha-phantomjs": "^4.0.2",
     "chai": "^3.5.0",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
     "test": "webpack && mocha-phantomjs test/index.html",
