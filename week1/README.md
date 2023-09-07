@@ -29,10 +29,10 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 ---
 
-# Area of Effect
+# Hii
 
-- Carrie Kengle @kandizzy
-- Bruno Kruse @brunokuse
+- Carrie Kengle
+- Bruno Kruse
 - areaofeffect.io
 
 ---
@@ -40,7 +40,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 # Introduce yourselves
 
 - Do you want to code? Why or why not?
-- How do you feel about the singularity?
+- How do you feel about the singularity? What is the metaverse? Why are you here? Context/Decision.
 - Tell us one thing you'd like to get out of this class.
 
 ---
@@ -54,7 +54,7 @@ Notes from our week one class. These notes are generated into the slides we use 
   - Web / Skype / Hangout: Schedule with us in advance
 - Slack
 - Posting Assignments
-  - Due 12:00pm Wednesday's before class
+  - Due 12:00pm Thursday's before class
 
 ---
 
@@ -79,6 +79,8 @@ Notes from our week one class. These notes are generated into the slides we use 
 - Join our #slack channel.
 
 ---
+
+<a href="http://hello-world-week1.s3-website-us-east-1.amazonaws.com/">Week 1 Slides</a>  
 
 <a name="singularity"></a>
 
