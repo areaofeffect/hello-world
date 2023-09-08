@@ -101,7 +101,7 @@ function greet() {
 
   if (connected) {
     // console.log(client);
-    client.send("/sva/hello", name);
+    client.publish("/sva/hello", name);
   }
 }
 

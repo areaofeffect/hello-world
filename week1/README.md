@@ -80,7 +80,7 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 ---
 
-<a href="http://hello-world-week1.s3-website-us-east-1.amazonaws.com/">Week 1 Slides</a>  
+<a href="http://hello-world-week1.s3-website-us-east-1.amazonaws.com/">Week 1 Slides</a>
 
 <a name="singularity"></a>
 
@@ -186,7 +186,7 @@ Goals:
 
 VSCode will be the editor we use for most things in class.
 
-- [VSCODE](https://code.visualstudio.com/)
+- [VSCODE](https://code.visualstudio.com/download)
 
 ---
 
@@ -338,7 +338,7 @@ gcc -ansi -o hello-world hello-world.c
 
 1. Join our slack. We will help you through questions and guide installing any of the software below.
 
-2. Download and setup your computer for coding. Come to next prepared class with VSCode installed.
+2. Download and setup your computer for coding. Come to next prepared class with [VSCode](https://code.visualstudio.com/download) installed.
 
 3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
