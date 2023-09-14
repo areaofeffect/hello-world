@@ -1,35 +1,38 @@
 # Data Types
+
 # SVA IxD Week 2
 
-[Week 2 slides](http://week2-hello-world.areaofeffect.io)
+[Week 2 slides](http://hello-world-week2.s3-website-us-east-1.amazonaws.com/#1)
 
 # Review and Discussion of Week 1
+
 From Silicon to Singularity
+
 - Overview of how computers actually work.
 
-
 ### The Humane Representation of Thought.
+
 by Bret Victor
+
 - Code and variables are representations of thought.
 - New ways of sensing the world.
 - New ways of representing ideas.
 - [Dyanmic mediums](https://twitter.com/Dynamicland1).
 - [Sketch Synth](https://vimeo.com/42053193).
 
-
 ### Variables
 
 > a variable is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
 
-
 # Data Types
 
 > a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data.
- 
+
 ### Every variable you create will be of a certain data type.
 
 #### Let's explore some [primitive data types](https://en.wikipedia.org/wiki/List_of_data_structures#Data_types)
-*types that are built in to the programming language*
+
+_types that are built in to the programming language_
 
 - Boolean
 - String
@@ -41,31 +44,33 @@ by Bret Victor
 - Objects
 
 ## Booleans
+
 A var of this type can only have 1 of 2 possible values. True or False, yes or no, on or off.
 JavaScript example
 
-	var myBool = true
+    var myBool = true
 
 Python example
 
-	myBool = True
+    myBool = True
 
 C example
 
-	boolean myBool = true
+    boolean myBool = true
 
 ## Characters and Strings
+
 [BK: image of character, image of string]
 
 A character is a single character, and string is a sequence of characters.
 
 JavaScript example
 
-	var myString = "Hello World"
+    var myString = "Hello World"
 
 Python example
 
-	myString = "Hello World"
+    myString = "Hello World"
 
 C example
 
@@ -74,11 +79,12 @@ C example
 	char *myString = "Hello world"; //string literal, cannot be changed
 	char myString[] = "Hello world"; //newly allocated memory
 ```
+
 Last week's questions about single quote vs double quotes applies here to the C example, but the Python and JavaScript examples are interchangeable so long as they match.
 
 ### Delimiters
-A common delimiter is a comma (,) or pipe (|).
 
+A common delimiter is a comma (,) or pipe (|).
 
 > A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[1] An example of a delimiter is the comma character, which acts as a field delimiter in a sequence of comma-separated values. Another example of a delimiter is the time gap used to separate letters and words in the transmission of Morse code.
 
@@ -87,15 +93,16 @@ A common delimiter is a comma (,) or pipe (|).
 Understanding and using delimiters in strings will be important once we get to conversion a little later in class.
 
 ### String Concatenation
+
 Joining character strings end to end.
 
 JavaScript example
 
-	var myString = "Hello" + " World"
+    var myString = "Hello" + " World"
 
 Python example
 
-	myString = "".join(["Hello ", "World"])
+    myString = "".join(["Hello ", "World"])
 
 C example. There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
 
@@ -103,49 +110,54 @@ C example. There is no string concatentation operator in C. Luckily, Arduino pro
 
 ## Numbers
 
-The two main types of numbers you'll decide between in most cases are *integers* or *floating point decimals*. Floats are used when more preceision is required.
+The two main types of numbers you'll decide between in most cases are _integers_ or _floating point decimals_. Floats are used when more preceision is required.
 
 Some things, like pi, cannot be expressed as an integer.
 
 In Javascript, though things are rapidly changing, there is one type of [number](https://en.wikipedia.org/wiki/IEEE_754-1985#Double-precision_64_bit). Later in class during we will discuss builtin function `parseInt` and `parseFloat`.
 
 ### Integers
-	-1, 0, 1, 2
+
+    -1, 0, 1, 2
 
 JavaScript example
 
-	var myInt = 1
+    var myInt = 1
 
 Python example
 
-	myInt = 1
+    myInt = 1
 
 C example
 
-	int myInt = 1
+    int myInt = 1
 
 ### Floats
+
     -0.1, 0.0, 0.1, 0.2, 3.14
 
 JavaScript example
 
-	var myFloat = 3.14
+    var myFloat = 3.14
 
 Python example
 
-	myFloat = 3.14
+    myFloat = 3.14
 
 C example
 
-	float myFloat = 3.14
+    float myFloat = 3.14
 
 ### Further Number Types
 
 #### NaN
+
 Not a Number, If, for example, you attempt to divide by zero.
+
 - [bk: willy nillying]
 
 #### Binary and Hexadecimal
+
 Binary representations of number use only ones and zeros. Hexadecimal can represent 8 binary characters with 2 consecutive hexadecimal digits and therefore save space.
 
 - [The Martian](http://www.businessinsider.com/the-martian-hexidecimal-language-2015-9)
@@ -167,8 +179,8 @@ Decimal = base 10
 
 Hexadecimal = base 16
 
-
 ## Arrays
+
 [bk: why can't I hold all these vars]
 [bk: zero index]
 [bk: refridgerator example]
@@ -177,16 +189,15 @@ List of items, all of the same data type.
 
 JavaScript example
 
-	var myArray = ["Water", "Apple", "Banana"];
+    var myArray = ["Water", "Apple", "Banana"];
 
 Python example, (there is an array module in python, but we will use list)
 
-	myList = ["Water", "Apple", "Banana"]
+    myList = ["Water", "Apple", "Banana"]
 
 C example
 
-	char myArray [ 3 ] = {"Water", "Apple", "Banana"}
-
+    char myArray [ 3 ] = {"Water", "Apple", "Banana"}
 
 [Code Academy's excellent explanation](https://www.codecademy.com/courses/web-beginner-en-8a35h/0/1)
 
@@ -196,35 +207,39 @@ Objects are collections of properties
 
 JavaScript example
 
-	var myObj = {fuel_type: "electric", model: "S", color: "red"};
+    var myObj = {fuel_type: "electric", model: "S", color: "red"};
 
 Python example, (dictionary)
 
-	myDict = {fuel_type: "electric", model: "S", color: "red"}
+    myDict = {fuel_type: "electric", model: "S", color: "red"}
 
 C example
 
-	typedef struct {
-	  char *fuel_type;
-	  char *model;
-	  char *color;
-	} tesla;
-	
-	struct tesla s;
+    typedef struct {
+      char *fuel_type;
+      char *model;
+      char *color;
+    } tesla;
+
+    struct tesla s;
 
 [ck: json callback with bio examples]
 
 # More on datatypes.
 
 ## Conversion from one Data Type to Another
+
 Converting one data type to another. Why would you need this?
 
 class: inverse
 More on Data Types
+
 # Conversion from one Data Type to Another
+
 Converting one data type to another. Why would you need this?
 
 Conversion from one Data Type to Another
+
 ### String -> Number
 
 Python example
@@ -245,7 +260,6 @@ C example
 
 There is no built in method in C for this conversion. Arduino's [String](https://www.arduino.cc/en/Reference/StringObject) class has a toInt() function.
 
-
 ### Number -> String
 
 Python example
@@ -256,17 +270,18 @@ myString = str(myNum)
 ```
 
 JavaScript example
+
 ```
 var myNum = 1;
 var myString = myNum.toString();
 ```
-
 
 ### Number -> String
 
 C example
 
 There is no built in method in C for this conversion. Arduino can use `itoa()` from the stdlib C library.
+
 ```
 int myNum = 1;
 char buffer[10];
@@ -293,13 +308,12 @@ C example
 
 We would recommend not using the strings "True" or "true", but perhaps use 0 and 1 and use other conversions.
 
-
 ### String -> Array
+
 <!-- [ example or string that's delimited ]
 [bk: example -->
 
 Python example
-
 
 ```
 myString = "January 5th, 1978"
@@ -308,16 +322,15 @@ myArray = myString.split(",")
 
 Javascript example
 
-
 ```
 var myString = "January 5th, 1978";
 var myArray = myString.split(",");
 ```
 
-
 ### Array -> String
 
 Python example
+
 ```
 myList = ["1", "2", "3"]
 myString = "".join(myList)
@@ -328,9 +341,7 @@ JavaScript example
 ```javascript
 var myArray = ["January 5th", "1978"];
 var myString = myArray.join(",");
-
 ```
-
 
 ## Strict Typing, Strong or Weak, Static or Dynamic
 
@@ -340,14 +351,14 @@ If you guessed C, you are correct! Each time we delcared a variable we had to pr
 
 Strong and weak typing are phrases that loosely correlate to Static and Dynamic. Static means the typing happens at the compile phase, and dynamic means it happens at runtime.
 
-
-
 ## Readability
 
 ### Naming conventions
+
 Increasing the readability of your code will make working with others easier.
 
 Decide on using camelCase or snake-case
+
 - var myName = "firstname lastname"
 
 Remeber that variables can't start with a number.
@@ -381,6 +392,7 @@ steps to initializing a variable
 ## Assignments
 
 ### Assignment 1
+
 Pick four objects in everyday life and represent them as a data type.
 
 ### Assignment 2
@@ -401,16 +413,14 @@ Example:
 ```
 
 ### Assignment 3
-Create your own story algorithm. You can modify an example from class (story maker) or create your own. Remember to comment your code and use examples of:
-	- user inputs
-	- variables (int or float, string, boolean)
-	- concatenation
+
+Create your own story algorithm. You can modify an example from class (story maker) or create your own. Remember to comment your code and use examples of: - user inputs - variables (int or float, string, boolean) - concatenation
 
 ## Thought Experiment
 
 This should be a fun 20 to 30 minute idea session. This can be free form, and you do not need to build a working version of your idea.
 
-Think of a way to represent a number, string, array optgroup object in a dynamic medium.  Bring in your example for next class.
+Think of a way to represent a number, string, array optgroup object in a dynamic medium. Bring in your example for next class.
 
 # Resources
 
