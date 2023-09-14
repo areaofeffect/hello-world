@@ -48,7 +48,7 @@ How does a processor work and what is a for loop? How do we use code as a tool t
 
 #### SOFTWARE
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 - [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html)
 - Terminal (Comes with your computer!)
 
