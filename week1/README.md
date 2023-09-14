@@ -295,7 +295,7 @@ The following will pop up. Click OK to install.
 
 ---
 
-# Hello C (your first javascript program)
+# Hello C (your first C program)
 
 ### 1. write
 
