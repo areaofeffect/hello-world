@@ -1,6 +1,9 @@
 # import required modules
 from tkinter import *
 from PIL import Image, ImageDraw, ImageTk
+
+if not hasattr(Image, "Resampling"):  # Pillow<9.0
+    Image.Resampling = Image
 from random import randint
 
 scaleFactor = 4

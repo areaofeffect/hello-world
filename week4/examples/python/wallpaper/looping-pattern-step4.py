@@ -1,6 +1,10 @@
 # import required modules
 from tkinter import *
 from PIL import Image, ImageDraw, ImageTk
+
+if not hasattr(Image, "Resampling"):  # Pillow<9.0
+    Image.Resampling = Image
+    
 from random import randint
 import seaborn as sns  # install seaborn for color palettes (https://seaborn.pydata.org/installing.html)
 

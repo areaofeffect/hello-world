@@ -21,7 +21,15 @@ drawingContext.ellipse(
     (0, 0, width * scaleFactor, height * scaleFactor), fill=(255, 0, 0)
 )
 # resize it back to 100 so we can smooth it out, https://pillow.readthedocs.io/en/stable/handbook/concepts.html#PIL.Image.LANCZOS
+
+# this is a hack to get around the fact that the PIL.Image.LANCZOS is not available in Pillow<9.0
+if not hasattr(Image, "Resampling"):  # Pillow<9.0
+    Image.Resampling = Image
 myImage = myImage.resize((width, height), Image.Resampling.LANCZOS)
+
+# this is the correct way to do it
+# myImage = myImage.resize((width, height), Image.LANCZOS)
+
 # convert the image to a Tkinter PhotoImage
 myImage = ImageTk.PhotoImage(myImage)
 # draw it to the app canvas
