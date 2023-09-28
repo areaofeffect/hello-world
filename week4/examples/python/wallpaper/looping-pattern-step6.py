@@ -42,17 +42,17 @@ app = Tk()
 app.geometry("1920x1080")
 
 # remove the white canvas background
-# canvas = Canvas(app, bg=palette[1])
-# canvas.pack(fill=BOTH, expand=1)
-canvas = Canvas(width=appWidth, height=appHeight)
-canvas.pack()
+canvas = Canvas(app, bg=palette[1])
+canvas.pack(fill=BOTH, expand=1)
+# canvas = Canvas(width=appWidth, height=appHeight)
+# canvas.pack()
 
 # create a blank image the size of the app canvas, you can include or omit a background color
 # myImage = Image.new("RGBA", (appWidth * scaleFactor, appHeight * scaleFactor))
 myImage = Image.new(
     "RGB",
     (appWidth * scaleFactor, appHeight * scaleFactor),
-    color="white",
+    color="black",
 )
 # next create a drawing context
 drawingContext = ImageDraw.Draw(
@@ -66,7 +66,7 @@ def drawCircle(x, y, radius, color, outline_color):
         (x, y, x + radius, y + radius),
         fill=color,
         outline=outline_color,
-        width=1,  # randint(1, 20)
+        width=1, #randint(1, 20),
     )
     # draw with a black outline and default thickness
     # drawingContext.ellipse((x, y, x + radius, y + radius), fill=color, outline="black")

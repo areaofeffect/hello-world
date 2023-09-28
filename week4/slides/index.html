@@ -316,6 +316,30 @@ class: inverse, center
 
 The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
 
+---
+class: inverse, left, large
+.center.center-75[![image](./images/the-golden-ratio-teaser.jpeg)]
+
+---
+class: inverse, left, medium
+# Fibonacci sequence
+```python
+def recursive_fibonacci(n):
+   if n <= 1:
+       return n
+   else:
+       return(recursive_fibonacci(n-1) + recursive_fibonacci(n-2))
+
+count = 10
+
+# check count is valid
+if count <= 0:
+   print("Plese enter a number greater than zero")
+else:
+   print("Fibonacci sequence:")
+   for i in range(count):
+       print(recursive_fibonacci(i))
+```
 
 ---
 class: inverse, left
@@ -352,14 +376,30 @@ Helpful hints in
 - Visual Studio Code has many built in features that can help you write code faster and more efficiently, you can even customize [your own Terminal appearance](https://code.visualstudio.com/docs/terminal/appearance)
 
 ---
-class: inverse, left, large
-# Turtle Time!
-.center.center-40[![Center-aligned image](./images/star.png)]
+class: inverse, left, small
+# Tkinter
 
-- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
-- [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
-- [Try it out on a repl](https://repl.it/DoYJ/1)
-- [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
+Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications. Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit.
+
+.center.center-30[![Center-aligned image](./images/tkinter.webp)]
+
+```bash
+pip install tkinter
+pip install pillow
+```
+
+---
+class: inverse, left, small
+# Color palettes
+
+Seaborn is a library for making statistical [graphics](https://seaborn.pydata.org/examples/index.html) in Python. In our examples we take advantage of their [color palettes](https://seaborn.pydata.org/tutorial/color_palettes.html).
+
+.center.center-50[![Center-aligned image](./images/myImage.png)]
+
+```bash
+pip install seaborn
+```
+
 
 ---
 class: inverse, left
@@ -368,11 +408,13 @@ class: inverse, left
 - Part 1. Create a generative artwork or study using loops and repetition.
 <br/>
 
-  - You can use JavaScript, p5 or python. Some inspitations:
-    - [https://www.pinterest.com/search/?q=vera+molnar](https://www.pinterest.com/search/?q=vera+molnar)
+  - You can use JavaScript (p5) or python. Some inspitation:
+    - [Vera Molnár](https://ropac.net/artists/231-vera-molnar/)
+    - [More Vera Molnár](https://www.youtube.com/watch?v=8tNESHtfkr0)
     - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
     - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
-    - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
+    - [Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY)
+    - [Turtle](https://trinket.io/python/43bc79b582)
 
 
 <br/>
