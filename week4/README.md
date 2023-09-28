@@ -195,8 +195,6 @@ Helpful hints in
 
 # Assignment
 
-- Create a generative artwork or study using loops and repetition.
-
 Create a generative artwork or study using loops and repetition. You can use JavaScript (p5) or python.
 
 Some inspiration:
