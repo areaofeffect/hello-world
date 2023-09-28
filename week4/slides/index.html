@@ -121,7 +121,6 @@ class: inverse, left, large
 def sayMessage(myMessage):
 	print(myMessage)
 
-sayMessage(myMessage)
 sayMessage("goodbye")
 ```
 
@@ -143,7 +142,7 @@ There are many types of loops but we will focus on <span style="color:white">for
 class: inverse, left, large
 # for loops - Python
 
-- try it out: [repl link](https://repl.it/LaMW)
+- try it out: [repl link](https://replit.com/@codelit/python-break#main.py)
 
 ```python
 for x in range(1,10):
@@ -154,7 +153,7 @@ for x in range(1,10):
 class: inverse, left, large
 # for loops - JavaScript
 
-- try it out: [repl link](https://repl.it/L70V/0)
+- try it out: [repl link](https://replit.com/@codelit/javascript-for#index.js)
 - [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
 <br/>
@@ -170,7 +169,7 @@ class: inverse, left, large
 
 # for loops - C example
 
-- there's a repl: [for that too!](https://repl.it/L709/0)
+- there's a repl: [for that too!](https://replit.com/@codelit/c-for#main.c)
 
 ```c
 for (int x = 1; x <= 10; x++ ) {
@@ -178,21 +177,23 @@ for (int x = 1; x <= 10; x++ ) {
 }
 ```
 ---
-class: inverse, left, large
+class: inverse, left, small
 # why use loops?
 
 .left.center-40[![image](./images/fry.png)]
 
+- cleaner and more efficient code
+- looping through an arrays and lists
 - repetition / patterns
-- [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
-- draw() and loop()
-- looping through an array
+- because they are already there, like draw() and loop()
+- generative art
+
 
 ---
 class: inverse, left, large
 # for loop, array - Python
 
-- try it out: [repl link](https://repl.it/L70G/0)
+- try it out: [repl link](https://replit.com/@codelit/python-for#main.py)
 ```python
 fruits = [ "mango", "banana", "apple" ]
 for fruit in fruits:
@@ -204,7 +205,7 @@ class: inverse, left
 
 # for loop, array - JavaScript
 
-- try it out: [repl link](https://repl.it/L70V/0)
+- try it out: [repl link](https://replit.com/@codelit/javascript-for#index.js)
 - [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
 <br/>
@@ -222,18 +223,18 @@ for (x = 0; x < fruits.length; x++) {
 class: inverse, left
 # for loop, array - C example
 
-- repl: [for that too!](https://repl.it/L709/0)
+- Arduino: [fruit loops](https://create.arduino.cc/editor/kandizzy/7291fbb6-2f94-43c9-8723-aafc5ef367ea/preview)
 
 <br/>
 
 ```c
 char * fruits [] = { "mango", "banana", "apple" };
-int len = sizeof(fruits)/sizeof(fruits[0]);
-int i;
-for(i = 0; i < len; ++i)
-{
-  Serial.println(fruits[i])
-}
+  int len = sizeof(fruits)/sizeof(fruits[0]);
+  int i;
+  for(i = 0; i < len; ++i)
+  {
+    Serial.println(fruits[i]);
+  }
 ```
 
 ---
@@ -244,7 +245,7 @@ class: inverse, left, large, middle
 class: inverse, left, large
 # while loops - Python
 
-- Check out the: [repl link](https://repl.it/L71v/0)
+- Check out the: [repl link](https://replit.com/@codelit/python-while#main.py)
 
 ```python
 while x < 10:      # do this ten times
@@ -255,13 +256,13 @@ while x < 10:      # do this ten times
 class: inverse, left large
 # while loops - JavaScript
 
-- [repl link](https://repl.it/L72P/1)
+- [repl link](https://replit.com/@codelit/javascript-while#index.js)
 - [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
 ```javascript
 while (i < 10) {
-    text += "The number is " + i;
-    i++;
+  console.log("The number is " + i);
+  i++;
 }
 ```
 
@@ -269,7 +270,7 @@ while (i < 10) {
 class: inverse, left
 # while loops - C example
 
-- try in a repl: [repl link](https://repl.it/L73B/0)
+- try in a repl: [repl link](https://replit.com/@codelit/c-while#main.c)
 - [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
 
 ```c
@@ -295,7 +296,7 @@ class: inverse, left
 
 Below is a python example that will <span style="color:white">break</span> and exit the loop once the count is greator than five.
 
-- try it out: [repl link](https://repl.it/LaMW)
+- try it out: [repl link](https://replit.com/@codelit/python-break#main.py)
 - <span style="color:white">return</span> will exit the loop
 
 <br/>
@@ -342,8 +343,13 @@ else:
 ```
 
 ---
+class: inverse, left, large
+
+.center.center-50[![image](./images/inception.jpg)]
+
+---
 class: inverse, left
-# draw()
+# draw() and loop()
 
 A draw loop is a type of loop that occurs *every frame* of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
 
@@ -356,14 +362,14 @@ In Arduino programming this is simply called loop().
 - [p5 Loop](https://p5js.org/examples/structure-loop.html)
 
 
-
-
 ---
 class: inverse, left, large
-# variables and scope
+# A note on variables and scope
 
 - Local variables
 - Global variables
+
+__ in python you only need to use the global keyword if you want to reassign the global variable within a function__
 
 ---
 class: inverse, left, large
@@ -405,16 +411,15 @@ pip install seaborn
 class: inverse, left
 # Week 4 Assignment - Due 10 / 4
 
-- Part 1. Create a generative artwork or study using loops and repetition.
-<br/>
-
-  - You can use JavaScript (p5) or python. Some inspitation:
-    - [Vera Molnár](https://ropac.net/artists/231-vera-molnar/)
-    - [More Vera Molnár](https://www.youtube.com/watch?v=8tNESHtfkr0)
-    - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
-    - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
-    - [Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY)
-    - [Turtle](https://trinket.io/python/43bc79b582)
+  Create a generative artwork or study using loops and repetition. You can use JavaScript (p5) or python. 
+  
+  Some inspiration:
+  - [Vera Molnár](https://ropac.net/artists/231-vera-molnar/)
+  - [More Vera Molnár](https://www.youtube.com/watch?v=8tNESHtfkr0)
+  - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
+  - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+  - [Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY)
+  - [Turtle](https://trinket.io/python/43bc79b582)
 
 
 <br/>

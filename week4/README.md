@@ -1,11 +1,12 @@
 # Loops
-# SVA IxD Week 4
-[Week 3 slides](http://week4-hello-world.areaofeffect.io)
 
+# SVA IxD Week 4
+
+[Week 3 slides](http://hello-world-week4.s3-website-us-east-1.amazonaws.com/)
 
 ## Review and Discussion of Week 3
-_Operators, Conditionals, Functions_
 
+_Operators, Conditionals, Functions_
 
 - Assignment, Comparison, and Logical Operators
 
@@ -15,24 +16,20 @@ _Operators, Conditionals, Functions_
 
 - Function declaration, definition, parameters and arguments
 
-
-
 ### Deep Deep Forest
 
 _Week 3 Assignment: Lets playtest our games!_
 
 ![Forest](https://github.com/areaofeffect/hello-world/blob/master/week4/slides/images/forest.jpg?raw=true)
 
-
-
 ### Review of Functions
 
-	def sayMessage(myMessage):
-		print(myMessage)
-	
-	sayMessage(myMessage)
-	sayMessage("goodbye")
-	
+    def sayMessage(myMessage):
+    	print(myMessage)
+
+    sayMessage(myMessage)
+    sayMessage("goodbye")
+
 [Week3 Examples](https://github.com/areaofeffect/hello-world/blob/week4/week3/examples/functions.py)
 
 # LOOPS
@@ -52,44 +49,36 @@ a simple counting example
 
 try it out: [repl link](https://repl.it/LaMW)
 
+    for x in range(1,10):
+    	print(x)
 
-	for x in range(1,10):
-		print(x)
-		
-		
 Python example 2
 
 example: looping through an array
 
 try it out: [repl link](https://repl.it/L70G/0)
 
+    # declare an array
+    fruits = [ "mango", "banana", "apple" ]
 
-	# declare an array
-	fruits = [ "mango", "banana", "apple" ]
-	
-	# loop through items in array
-	for fruit in fruits:
-	  print fruit
+    # loop through items in array
+    for fruit in fruits:
+      print fruit
 
-
-
-JavaScript Example 
+JavaScript Example
 
 try it out: [repl link](https://repl.it/L70V/0)
 
 [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
+    // declare an array
+    var fruits = [ "mango", "strawberry", "kiwi" ];
 
-	// declare an array
-	var fruits = [ "mango", "strawberry", "kiwi" ];
-	
-	// loop through items in arary
-	// note: .length is a property of array datatype that results to 3
-	for (x = 0; x < fruits.length; x++) {
-	  console.log(fruits[x]); // print each string
-	}
-
-
+    // loop through items in arary
+    // note: .length is a property of array datatype that results to 3
+    for (x = 0; x < fruits.length; x++) {
+      console.log(fruits[x]); // print each string
+    }
 
 JavaScript p5 examples
 
@@ -104,16 +93,14 @@ C Example
 
 there's a repl: [for that too!](https://repl.it/L709/0)
 
+    #include <stdio.h>
 
-	#include <stdio.h>
-	
-	int main() {
-	  // note: remember to type your variable
-	  for (int a = 1; a <= 20; a++) {
-	      printf("value of a: %d\n", a);
-	  }
-	}
-
+    int main() {
+      // note: remember to type your variable
+      for (int a = 1; a <= 20; a++) {
+          printf("value of a: %d\n", a);
+      }
+    }
 
 ## while loops
 
@@ -121,11 +108,8 @@ Python example
 
 [repl link](https://repl.it/L71v/0)
 
-
-	while x < 10:      # do this ten times
-	  increaseCount() # call a function we defined above
-
-
+    while x < 10:      # do this ten times
+      increaseCount() # call a function we defined above
 
 JavaScript example
 
@@ -133,13 +117,10 @@ JavaScript example
 
 [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
-
-	while (i < 10) {
-	    text += "The number is " + i;
-	    i++;
-	}
-
-
+    while (i < 10) {
+        text += "The number is " + i;
+        i++;
+    }
 
 C Example
 
@@ -147,28 +128,25 @@ try in a repl: [repl link](https://repl.it/L73B/0)
 
 [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
 
-	#include <stdio.h>
-	 
-	int main () {
-	
-	   /* local variable definition */
-	   int a = 0;
-	
-	   /* while loop execution */
-	   while( a <= 10 ) {
-	      printf("value of a: %d\n", a);
-	      a++;
-	   }
-	 
-	   return 0;
-	}
+    #include <stdio.h>
 
+    int main () {
 
+       /* local variable definition */
+       int a = 0;
+
+       /* while loop execution */
+       while( a <= 10 ) {
+          printf("value of a: %d\n", a);
+          a++;
+       }
+
+       return 0;
+    }
 
 ## "break" and "continue" statements
 
 `break` is used to exit a `for` or a `while` loop
-
 
 Python example
 
@@ -176,40 +154,38 @@ This will break and exit the loop once the count is greator than five.
 
 try it out: [repl link](https://repl.it/LaMW)
 
-	for x in range(1,10):	# a for loop that counts from 1 to 10
-		if (x > 5): 		# a conditional, are we less than 5
-		  break 			# exit the loop once our count is higher than 5
-		else:
-			print(x)
-
-
+    for x in range(1,10):	# a for loop that counts from 1 to 10
+    	if (x > 5): 		# a conditional, are we less than 5
+    	  break 			# exit the loop once our count is higher than 5
+    	else:
+    		print(x)
 
 # draw()
-A draw loop is a type of loop that occurs *every frame* of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
+
+A draw loop is a type of loop that occurs _every frame_ of your application. It is generally used for programing animations, interactions or visuals. Think of it working like a movie or gif with sequential frames.
 
 In Arduino programming this is simply called loop().
 
->After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
-
+> After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
 
 - [Arduino Loop](https://www.arduino.cc/en/Reference/Loop)
 - [p5 Loop](https://p5js.org/examples/structure-loop.html)
 
-
-
 # recursion
+
 The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
 
 - Factorials
 - Fractals
 - Inception
 
-
 # variables and scope
+
 - Local variables
 - Global variables
 
 # A review of syntax
+
 Helpful hints in
 
 - Convert tabs to spaces
@@ -217,36 +193,34 @@ Helpful hints in
 - [Common Shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html)
 - [Plugins and package control](https://packagecontrol.io/)
 
-
-# Turtle Time!
-![turtle](/week4/slides/images/star.png)
-
-- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
-- [More turtly examples](https://michael0x2a.com/blog/turtle-examples)
-- [Try it out on a repl](https://repl.it/DoYJ/1)
-- [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
-
 # Assignment
 
-- Part 1. Create a generative artwork or study using loops and repetition.
+- Create a generative artwork or study using loops and repetition.
 
+Create a generative artwork or study using loops and repetition. You can use JavaScript (p5) or python.
 
-  - You can use JavaScript, p5 or python. Some inspitations:
-    - [https://www.pinterest.com/search/?q=vera+molnar](https://www.pinterest.com/search/?q=vera+molnar)
-    - [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
-    - [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
-    - [https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI](https://fallsfpc2015.hackpad.com/Vera-Molnar-M9yh3cjCUBI)
+Some inspiration:
 
-
+- [Vera Molnár](https://ropac.net/artists/231-vera-molnar/)
+- [More Vera Molnár](https://www.youtube.com/watch?v=8tNESHtfkr0)
+- [http://printingcode.runemadsen.com/lecture-repetition/](http://printingcode.runemadsen.com/lecture-repetition/)
+- [Form + Code](http://formandcode.com/code-examples/repeat-embedded)
+- [Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY)
+- [Turtle](https://trinket.io/python/43bc79b582)
 
 ## resources
 
 - [learnpython.org loops tutorial](https://www.learnpython.org/en/Loops)
 - [Tutorials Point python overview](https://www.tutorialspoint.com/python/)
 - [Coding Train with Daniel Shiffman](https://www.youtube.com/watch?v=h4ApLHe8tbk)
-- [Python Turtle](https://www.youtube.com/watch?v=Grc1-j4EvTk)
 - [Invent With Python - Tic Tac Toe](https://inventwithpython.com/chapter10.html)
 - [Tic Tac Toe AI with Javascript](https://mostafa-samir.github.io/Tic-Tac-Toe-AI/)
-- [Using Python - Programs](http://usingpython.com/programs/)
-- [ChartJS](http://www.chartjs.org/)
 - [JavaScript For Loops](https://www.w3schools.com/js/js_loop_for.asp)
+
+# Turtle Time!
+
+![turtle](/week4/slides/images/star.png)
+
+- [Python Turtle](https://www.youtube.com/watch?v=Grc1-j4EvTk)
+- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
+- [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)
