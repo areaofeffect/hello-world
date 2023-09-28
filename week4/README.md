@@ -2,7 +2,7 @@
 
 # SVA IxD Week 4
 
-[Week 3 slides](http://hello-world-week4.s3-website-us-east-1.amazonaws.com/)
+[Week 4 slides](http://hello-world-week4.s3-website-us-east-1.amazonaws.com/)
 
 ## Review and Discussion of Week 3
 

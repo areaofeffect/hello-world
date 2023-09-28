@@ -13,10 +13,10 @@ from math import sin, cos, pi
 # http://man.hubwiz.com/docset/Seaborn.docset/Contents/Resources/Documents/tutorial/color_palettes.html
 # https://holypython.com/python-visualization-tutorial/colors-with-python/
 # palette = list(reversed(sns.color_palette("magma_r", 16).as_hex()))
-palette = list(sns.color_palette("Spectral", 16).as_hex())
+# palette = list(sns.color_palette("Spectral", 16).as_hex())
 # palette = list(sns.color_palette("ocean", 16).as_hex())
 # palette = list(sns.color_palette("Purples", 16).as_hex())
-# palette = list(sns.color_palette("Purples_r", 16).as_hex())
+palette = list(sns.color_palette("Purples_r", 16).as_hex())
 # palette = list(sns.color_palette("hls", 16).as_hex())
 # palette = list(sns.color_palette("mako", 16).as_hex())
 # palette = list(sns.color_palette("viridis", 16).as_hex())
@@ -33,7 +33,7 @@ rgb_palette = list(map(get_rgb, new_palette))
 
 print(rgb_palette)
 
-count = 400
+count = 800
 scaleFactor = 10
 offset = 0.0
 phi = (1 + 5**0.5) / 2.0  # golden ratio approx = 1.618033989
@@ -57,7 +57,7 @@ canvas.pack(fill=BOTH, expand=1)
 myImage = Image.new(
     "RGB",
     (600, 600),
-    color="black",
+    color="white",
 )
 # next create a drawing context
 drawingContext = ImageDraw.Draw(
