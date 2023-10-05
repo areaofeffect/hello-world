@@ -1,6 +1,6 @@
 # Scope
 # SVA IxD Week 5
-[Week 5 slides](http://week5-hello-world.areaofeffect.io)
+[Week 5 slides](http://hello-world-week5.s3-website-us-east-1.amazonaws.com/)
 
 
 
