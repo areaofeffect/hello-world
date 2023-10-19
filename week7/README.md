@@ -31,7 +31,7 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 
 <br/>
 
-![images/coordinates.png](images/coordinates.png)
+![images/coordinates.png](slides/images/coordinates.png)
 
 <br/>
 
@@ -57,7 +57,7 @@ function draw() {
 }
 ```
 
-![images/position.png](images/position.png)
+![images/position.png](slides/images/position.png)
 
 When a program starts, the mouseX and mouseY values are 0. If the cursor moves into the display window, the values are set to the current position of the cursor. If the cursor is at the left, the mouseX value is 0 and the value increases as the cursor moves to the right. If the cursor is at the top, the mouseY value is 0 and the value increases as the cursor moves down. If mouseX and mouseY are used in programs without a draw() or if noLoop() is run in setup(), the values will always be 0.
 
@@ -85,7 +85,7 @@ Code inside this block is run one time when the mouse is moved while a mouse but
 # A drawing app
 Combine what we learned above to create a drawing app. Use your mouse do draw.
 
-![images/events.png](images/events.png)
+![images/events.png](slides/images/events.png)
 
 ```
 function mouseDragged() {
@@ -109,7 +109,7 @@ Since we can now keep track of our mouse position and click events, we can begin
 
 The first step is to calculate if our `mouseX`, `mouseY` positions are within the bounding box of our object. Let's start with simple rectangle and ellipse shapes.
 
-![images/buttons.png](images/buttons.png)
+![images/buttons.png](slides/images/buttons.png)
 
 https://processing.org/examples/button.html
 
@@ -157,7 +157,7 @@ if(distance < 50) {
 # Keyboard Events
 Processing registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyPressed variable remains true while the key is held down and becomes false only when the key is released.
 
-![images/cat.jpg](images/cat.jpg)
+![images/cat.jpg](slides/images/cat.jpg)
 
 
 ##### keyPressed()
@@ -247,7 +247,7 @@ function mouseMoved() {
 
 # Touch Events
 
-![images/touch.png](images/touch.png)
+![images/touch.png](slides/images/touch.png)
 
 
 ##### touchStarted()
@@ -292,7 +292,7 @@ NOTE: The touches[] array is not supported on Safari and IE on touch-based deskt
 # Mobile
 p5 also supports mobile devices! You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
 
-![images/button.jpg](images/button.jpg)
+![images/button.jpg](slides/images/button.jpg)
 
 We will be using a simple HTTP server to HOST our processing sketches. As long as our phones and computer running on the server - your app should work on your phone! Here's how we do it:
 
@@ -314,7 +314,7 @@ Communicate to Python with Arduino via PySerial.
 
 
 # Serial Data - p5
-![images/render.png](images/render.jpg)
+![images/render.png](slides/images/render.jpg)
 
 > Image courtesy Code Literacy class
 
@@ -459,7 +459,6 @@ Remember:
 
 and remember....
 
-![http://i0.kym-cdn.com/photos/images/original/000/934/217/5f4.gif](http://i0.kym-cdn.com/photos/images/original/000/934/217/5f4.gif)
-
+![https://media.tenor.com/AX2vrTOx4MEAAAAC/hack-ghost-in-shell.gif](https://media.tenor.com/AX2vrTOx4MEAAAAC/hack-ghost-in-shell.gif)
 
 > - Area of Effect. SVA IxD. Hello World. Fall 2020.
