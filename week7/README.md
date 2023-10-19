@@ -1,5 +1,7 @@
 # PROGRAMMING INTERACTIVITY
-# SVA IxD WEEK 7
+# SVA IxD WEEK 7  
+
+[Week 7 slides](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/)
 
 <br/>
 
