@@ -2,7 +2,7 @@
 
 # SVA IxD Week 1
 
-Notes from our week one class. These notes are generated into the slides we use for class.
+[Week 1 slides](http://hello-world-week1.s3-website-us-east-1.amazonaws.com/#1)
 
 <br/>
 
@@ -51,10 +51,10 @@ Notes from our week one class. These notes are generated into the slides we use 
 
 - Office Hours
   - Quick questions, project help, code review
-  - Web / Skype / Hangout: Schedule with us in advance
+  - Slack/Zoom:  Schedule with us in advance
 - Slack
 - Posting Assignments
-  - Due 12:00pm Thursday's before class
+  - Due 12:00pm Monday before class
 
 ---
 
