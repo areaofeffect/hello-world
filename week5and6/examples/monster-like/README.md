@@ -19,7 +19,7 @@ Rember to update your `index.html` to include both files:
 
 <br>
 
-<img src="./monster-like/img/screeenshot.png" width="320" height="207" />
+<img src="./img/screeenshot.png" width="320" height="207" />
 
 <br>
 
