@@ -1,4 +1,4 @@
-# Clock monsters demo
+# Monster Care Demo
 
 ```
 // a prototype clock monster game based on time
