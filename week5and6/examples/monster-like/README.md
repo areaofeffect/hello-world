@@ -2,8 +2,8 @@
 
 ```
 // a prototype clock monster game based on time
-// more features coming soon...
-// https://www.bandai.com/wp-content/uploads/TamaIS_Gen2_pg1.pdf
+// inspiration
+// [https://www.bandai.com/wp-content/uploads/TamaIS_Gen2_pg1.pdf](https://20thcenturyvideogames.com/sistemas/Bandai-Tamagotchi/manuales/BandaiTamagotchi.pdf)
 ```
 
 This app contains two files. `sketch.js` and `monster.js`
