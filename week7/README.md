@@ -421,4 +421,4 @@ and remember....
 
 ![https://media.tenor.com/AX2vrTOx4MEAAAAC/hack-ghost-in-shell.gif](https://media.tenor.com/AX2vrTOx4MEAAAAC/hack-ghost-in-shell.gif)
 
-> - Area of Effect. SVA IxD. Hello World. Fall 2020.
+> - Area of Effect. SVA IxD. Hello World. Fall 2024.
