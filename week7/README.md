@@ -316,60 +316,15 @@ Communicate to Python with Arduino via PySerial.
 
 
 # Serial Data - p5
-![images/render.png](slides/images/render.jpg)
+[https://github.com/brunokruse/super-serial](https://github.com/brunokruse/super-serial)
 
-> Image courtesy Code Literacy class
-
-Browsers aren't typically the place where you would think to send Arduino data! With the help of websockets and p5 we are able to send sensor data (usually live) to the web for graphing or visualizations.
-
-##### Method 1:
-To have your Arduino project talk to p5 first:
-
-- download p5.serialport.js to your modules directory
-- run and configure the p5 serialcontrol bridge
-
-Data from Arduino is then routed from the serial port to your browser. The method [serialEvent](https://github.com/areaofeffect/hello-world/blob/master/week5/examples/p5-full/serial-example-simple/sketch.js#L26) gets called every time data comes in from the Arduino. Remember to define it in the `setup()` function.
-
-```
-var inData;
-
-function setup() {
- createCanvas(400, 300);
-
- serial = new p5.SerialPort(); 		// make a new instance of the serialport library
- serial.on('data', serialEvent);    // callback for when new data arrives
-
- // change the data rate to whatever you wish
- var options = { baudrate: 9600};
- serial.open(portName, options);
-
-}
-
-function serialEvent() {
-  // retreive value from serial port
-  inData = Number(serial.read());
-}
-
-```
-
-##### Downloads
-- [p5 library](https://p5js.org/download/)
-
-- [p5.serialport.js](http://vanevery.github.io/p5.serialport/docs/files/lib_p5.serialport.js)
-
-- [p5 serialcontrol Mac](https://github.com/vanevery/p5.serialcontrol/releases/download/0.0.6/p5.serialcontrol-win32-x64.zip)
+Tutorial for downloading and running the p5js <-> Arduino serial communication examples, using nodejs and p5js. Here is what we are building:
+![flow](https://github.com/user-attachments/assets/d7c9a283-bd7d-44c5-95de-53fa8c8f2fb4)
 
 
 <br/>
 
 Additional Tutorials via *ITP Physical Computing*
-
-- [Input from Arduino to P5](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-input-to-the-p5-js-ide/)
-
-- [Output from p5 to Arduino](https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-output-from-p5-js/)
-
-##### Method 2:
-[Serial communication via online editor](https://github.com/ITPNYU/ICM-2016/wiki/Synthesis)
 
 # Microphone
 [https://p5js.org/examples/sound-mic-input.html](https://p5js.org/examples/sound-mic-input.html)
@@ -378,7 +333,7 @@ Additional Tutorials via *ITP Physical Computing*
 [https://p5js.org/examples/mobile-shake-ball-bounce.html](https://p5js.org/examples/mobile-shake-ball-bounce.html)
 
 # Webcam
-[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/examples/dom-video-capture.html)
+[[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/)]([https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/))
 
 # Leap Motion
 [https://github.com/mrzl/LeapMotionP5](https://github.com/mrzl/LeapMotionP5)
