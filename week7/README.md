@@ -22,7 +22,8 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 
 # Week 6
 
-[Week 6 Interactive Tutorials](../examples)
+Examples:
+[https://github.com/areaofeffect/hello-world/tree/master/week7/examples](https://github.com/areaofeffect/hello-world/tree/master/week7/examples)
 
 <br/>
 
