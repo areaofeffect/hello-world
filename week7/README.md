@@ -292,14 +292,11 @@ The system variable touches[] contains an array of the positions of all current 
 NOTE: The touches[] array is not supported on Safari and IE on touch-based desktops (laptops).
 
 # Mobile
-p5 also supports mobile devices! You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
+p5 also supports mobile devices. You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
 
 ![images/button.jpg](slides/images/button.jpg)
 
-We will be using a simple HTTP server to HOST our processing sketches. As long as our phones and computer running on the server - your app should work on your phone! Here's how we do it:
-
-##### Simple HTTP Server
-- [https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer](https://github.com/lmccart/itp-creative-js/wiki/SimpleHTTPServer)
+As long as our phones and computer running on the same wifi - your app should work on your phone but connecting your browser to your computers IP and PORT.
 
 # HTML ELEMENTS
 Creating elements in p5:
@@ -321,16 +318,21 @@ Communicate to Python with Arduino via PySerial.
 Tutorial for downloading and running the p5js <-> Arduino serial communication examples, using nodejs and p5js. Here is what we are building:
 ![flow](https://github.com/user-attachments/assets/d7c9a283-bd7d-44c5-95de-53fa8c8f2fb4)
 
-
 <br/>
 
 Additional Tutorials via *ITP Physical Computing*
 
 # Microphone
-[https://p5js.org/examples/sound-mic-input.html](https://p5js.org/examples/sound-mic-input.html)
+[https://p5js.org/reference/p5.sound/p5.AudioIn/](https://p5js.org/reference/p5.sound/p5.AudioIn/)
+
+# Touches
+[https://p5js.org/reference/p5/touches/](https://p5js.org/reference/p5/touches/)
 
 # Accelerometer
-[https://p5js.org/examples/mobile-shake-ball-bounce.html](https://p5js.org/examples/mobile-shake-ball-bounce.html)
+[https://editor.p5js.org/Tiri/sketches/yI2_BczF8](https://editor.p5js.org/Tiri/sketches/yI2_BczF8)
+
+# Accelerometer 3D
+[https://editor.p5js.org/shiffman/sketches/BJxoCbdxx](https://editor.p5js.org/shiffman/sketches/BJxoCbdxx)
 
 # Webcam
 [[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/)]([https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/))
@@ -339,7 +341,7 @@ Additional Tutorials via *ITP Physical Computing*
 [https://github.com/mrzl/LeapMotionP5](https://github.com/mrzl/LeapMotionP5)
 
 # A-Frame VR
-[https://mozvr.com/](https://mozvr.com/)
+[https://aframe.io/](https://aframe.io/)
 
 # Resources
 
