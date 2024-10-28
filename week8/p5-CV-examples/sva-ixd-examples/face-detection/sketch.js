@@ -1,24 +1,22 @@
-// based on https://github.com/mtschirs/js-objectdetect
-// the jsfeat detector is much faster but only does one object at a time:
-// https://inspirit.github.io/jsfeat/sample_haar_face.html
-// also see:
-// https://github.com/mtschirs/js-objectdetect/blob/master/js/objectdetect.frontalcatface.js
-// https://ahprojects.com/projects/cv-dazzle/
-
 var w = 640,
-    h = 480;
+    h = 640;
 var detector;
 var classifier = objectdetect.frontalface;
 var img;
 var faces;
+var scaleSlider;  // slider for scaleFactor
 
 function setup() {
     createCanvas(w, h);
-    var scaleFactor = 1.2;
-    detector = new objectdetect.detector(w, h, scaleFactor, classifier);
-    img = loadImage('class_photo.jpg', function (img) {
+    
+    // Set up the slider for scaleFactor
+    scaleSlider = createSlider(1.0, 5.0, 3.0, 0.1);  // min, max, default, step
+    scaleSlider.position(10, h + 10);  // position below the canvas
+    
+    img = loadImage('./images/photo1.jpg', function (img) {
+        updateDetector();
         faces = detector.detect(img.canvas);
-    })
+    });
 }
 
 function draw() {
@@ -32,6 +30,18 @@ function draw() {
             if (count > 4) { // try different thresholds
                 rect(face[0], face[1], face[2], face[3]);
             }
-        })
+        });
     }
+    
+    // Update the detector if scaleFactor has changed
+    if (scaleSlider.value() !== detector.scaleFactor) {
+        updateDetector();
+        faces = detector.detect(img.canvas);
+    }
+}
+
+// Helper function to update the detector with the current scaleFactor
+function updateDetector() {
+    var scaleFactor = scaleSlider.value();
+    detector = new objectdetect.detector(w, h, scaleFactor, classifier);
 }
