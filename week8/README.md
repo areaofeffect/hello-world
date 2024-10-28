@@ -2,11 +2,6 @@
 
 <br/>
 
-Follow along with this weeks examples: https://kylemcdonald.github.io/cv-examples/ <br/>
-Deprecated: [week7-hello-world.areaofeffect.io/](https://week7-hello-world.areaofeffect.io/)
-
-<br/>
-
 #### Introduction
 
 The following document is an overview on creating interactive experinces using computer vision, video and cameras as our tools. We stand on the shoulders of giants!

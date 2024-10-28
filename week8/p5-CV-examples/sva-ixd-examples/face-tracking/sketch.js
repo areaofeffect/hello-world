@@ -1,4 +1,6 @@
 // https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2
+// https://github.com/auduno/clmtrackr
+
 var capture;
 var tracker
 var w = 640,
