@@ -365,7 +365,7 @@ A fiducial marker or fiducial is an object placed in the field of view of an ima
 # Assignment
 
 #### 1. readings
-- [Golan Levin: Computer Vision for artists and designers](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.474.4593&rep=rep1&type=pdf)
+- [Golan Levin: Computer Vision for artists and designers](http://www.flong.com/archive/texts/essays/essay_cvad/index.html)
 - [Kyle McDonald: Appropriating New Technologies](https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2)
 - [Zach Leiberman: Daily Sketches](https://medium.com/@zachlieberman/daily-sketches-2016-28586d8f008e)
 - [Allison Parish: Working with Video](http://creative-coding.decontextualize.com/video/)
