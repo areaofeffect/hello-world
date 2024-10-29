@@ -379,12 +379,6 @@ Choose a Technique / Method or Tool from above and create a sketch. Remember to 
 
 <br/>
 
-#### code
-- [p5js CV examples](https://github.com/kylemcdonald/cv-examples)
-- [p5js-osc](https://github.com/genekogan/p5js-osc)
-
-<br/>
-
 #### p5js CDN
 - https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js
 
