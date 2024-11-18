@@ -2,11 +2,6 @@
 #include <PubSubClient.h>
 #include <Adafruit_NeoPixel.h>
 
-// const char* ssid = "STAR 3FL";
-// const char* password = "testing123";
-// const char* mqtt_server = "23.21.151.236";
-// const int mqtt_port = 1883;
-
 const char* ssid = "xxx";
 const char* password = "xxx";
 const char* mqtt_server = "xxx";

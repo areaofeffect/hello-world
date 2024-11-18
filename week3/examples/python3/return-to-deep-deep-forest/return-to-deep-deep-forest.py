@@ -6,7 +6,7 @@ import gameGraphics
 import dice
 
 # MQTT Configuration
-mqtt_broker = "23.21.151.236"
+mqtt_broker = "xx.xx.xx.xx"
 mqtt_port = 1883
 mqtt_topic = "led/control"
 
