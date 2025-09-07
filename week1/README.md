@@ -8,7 +8,7 @@
 
 #### TLDR;
 
-1. [Office Hours/ Slack info](#resources)
+1. [Office Hours info](#resources)
 2. [Overview of Computation: From Silicon to Singularity](#singularity)
 3. [Week 1: Assignments](#assignments)
 4. [Software to download](#downloads)
@@ -51,8 +51,7 @@
 
 - Office Hours
   - Quick questions, project help, code review
-  - Slack/Zoom:  Schedule with us in advance
-- Slack
+  - Via Zoom: Schedule with us in advance
 - Posting Assignments
   - Due 12:00pm Monday before class
 
@@ -76,7 +75,6 @@
 
 - Lot's of feedback and communication.
 - Coding is massive; we want to know what's confusing and what's not.
-- Join our #slack channel.
 
 ---
 
@@ -336,12 +334,10 @@ gcc -ansi -o hello-world hello-world.c
 
 # Assignments Week 1
 
-1. Join our slack. We will help you through questions and guide installing any of the software below.
+1. Download and setup your computer for coding. Come to next prepared class with [VSCode](https://code.visualstudio.com/download) installed.
 
-2. Download and setup your computer for coding. Come to next prepared class with [VSCode](https://code.visualstudio.com/download) installed.
+2. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
 
-3. Review our 'From Silicon to Singularity' notes above. This is a (very brief) overview of the world of computation, coding and the internet.
+3. Pick any of the hello world examples from above and modify to say a different message. We will discuss the differences between the languages next class.
 
-4. Pick any of the hello world examples from above and modify to say a different message. We will discuss the differences between the languages next class.
-
-5. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). Write three things you learned, we will share next class.
+4. Watch Bret Victors the [Humane Representation of Thought](https://vimeo.com/115154289). Write three things you learned, we will share next class.
