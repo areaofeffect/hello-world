@@ -32,7 +32,7 @@ function draw() {
   // https://p5js.org/reference/#/p5.Image/loadPixels
   capture.loadPixels();
 
-  let pixelSize = 20;
+  let pixelSize = 40;
   for (let captureY = 0; captureY < capture.height; captureY += pixelSize) {
     for (let captureX = 0; captureX < capture.width; captureX += pixelSize) {
       // https://p5js.org/reference/#/p5/pixels

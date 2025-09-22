@@ -9,7 +9,7 @@ import random # to generate random numbers
 
 # configure options
 numberOfSides = 6 # how many sides on your dice
-weightedDiceOption = True # True or False
+weightedDiceOption = False # True or False
 prediction = 0 # global variable
 
 # function to roll the dice
@@ -22,22 +22,26 @@ def rollDice(inNumberOfSides, weightedDice=weightedDiceOption):
     else:
         # generate a random number between 1 and the number of sides
         result = random.randint(1, numberOfSides)
-    
-    print ("You roll a: " + str(result) + " out of " + str(numberOfSides))
+
+    print ("You roll : " + str(result) + " out of " + str(numberOfSides))
 
     return result
- 
+
 def main():
     global prediction # we need to access the global variable
 
     # user input
     prediction = input("Enter a prediction up to " + str(numberOfSides) + " : ")
-    
+
+    print("You predicted: " + str(prediction))
+
     # roll the dice and assign the result to a variable
-    diceRoll = rollDice(numberOfSides, True)
+    diceRoll = rollDice(numberOfSides, False)
+
+    print("The dice rolled a: " + str(diceRoll))
 
     # if the prediction is correct, we will print a message
-    if (diceRoll == prediction):
+    if (int(diceRoll) == int(prediction)):
         print("Winner winner!")
     else:
         print("You lose!")

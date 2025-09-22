@@ -60,7 +60,7 @@ function addAscii(data) {
   }
 }
 
-const port = new SerialPort({ path: "/dev/cu.usbmodem22301", baudRate: 9600 });
+const port = new SerialPort({ path: "/dev/cu.usbmodem1101", baudRate: 9600 });
 
 const parser = port.pipe(new ReadlineParser({ delimiter: "\r\n" }));
 // our callback function must be wrapped in Meteor.bindEnvironment to avoid Fiber errors

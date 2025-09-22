@@ -326,7 +326,7 @@ Python example
 ```python  
 x = 1
 y = 2
-print(x < y) # False
+print(x < y) # True
 ```    
 
 JavaScript example
@@ -337,7 +337,7 @@ let isGreater = (x > y); // false
 C example
 
 ```c
-boolean isGreater = (x > y); // true
+boolean isGreater = (x > y); // false
 ```
 
 ---
@@ -400,12 +400,12 @@ If your player has not befriended the correct person, then you must go back and 
 
 Python example
 ```python  
-hasFriend = not(neededFriend in yourFriends)
+notHasFriend = not(neededFriend in yourFriends)
 ```
 
 JavaScript example
 ```javascript
-let hasFriend = !(yourFriends.includes(neededFriend))
+let notHasFriend = !(yourFriends.includes(neededFriend))
 ```
 
 C example
