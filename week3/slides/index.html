@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Hello World: Week 3</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <style>
       /* Headers */
@@ -14,15 +14,19 @@
       /* Code Snips */
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif'; }
+      body {
+        font-family: "Droid Serif";
+      }
 
       code {
         background: #e7e8e2;
         border-radius: 5px;
       }
 
-      h1, h2, h3 {
-        font-family: 'Roboto';
+      h1,
+      h2,
+      h3 {
+        font-family: "Roboto";
         font-weight: normal;
       }
 
@@ -31,16 +35,26 @@
         color: #777872;
         text-shadow: 0 0 20px #333;
       }
-      .inverse h1, .inverse h2, .inverse h2 {
+      .inverse h1,
+      .inverse h2,
+      .inverse h2 {
         color: #f3f3f3;
         line-height: 1.2em;
       }
 
-      li p { line-height: 2.0em; color: #FFF}
-      .red { color: #fa0000; }
-      .large { font-size: 2em; }
+      li p {
+        line-height: 2em;
+        color: #fff;
+      }
+      .red {
+        color: #fa0000;
+      }
+      .large {
+        font-size: 2em;
+      }
 
-      a, a > code {
+      a,
+      a > code {
         color: rgb(249, 38, 114);
         text-decoration: none;
       }
@@ -50,8 +64,14 @@
         border-radius: 5px;
       }
 
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 1.3em; }
-      .remark-code-line-highlighted     { background-color: #373832; }
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+        font-size: 1.3em;
+      }
+      .remark-code-line-highlighted {
+        background-color: #373832;
+      }
 
       .center img {
         width: 100%; /* Keep our Images fitting in the slides */
@@ -78,8 +98,10 @@
         width: 25%; /* Keep our Images fitting in the slides */
       }
 
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+      }
     </style>
   </head>
   <body>
@@ -674,7 +696,7 @@ Design and build a game of your own using different types of operators:
 class: inverse, left
 # Assignment
 
-Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/master/week3/examples) game from class.
+Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/main/week3/examples) game from class.
 
 To start, it will help to break down your game as variables, datatypes and objects. Use a flow-chart and plan your game before writing any code. You can work in groups of 2, pair coding. Next week we will play-testing our games in class.
 
@@ -700,7 +722,7 @@ class: inverse, left
 class: inverse, left
 # Advanced assignment
 
-JavaScript apps have more parts like HTML and CSS. You can replace the index.html, sketch.js, and style.css files that you generated following the last slide with [these files](https://github.com/areaofeffect/hello-world/tree/master/week3/examples/advanced_assignment) to get started. Start by handling the case where the player choses answer B. From there are opportunities to make your own questions and options, add your own graphics, and finish the story. Make it fun :)
+JavaScript apps have more parts like HTML and CSS. You can replace the index.html, sketch.js, and style.css files that you generated following the last slide with [these files](https://github.com/areaofeffect/hello-world/tree/main/week3/examples/advanced_assignment) to get started. Start by handling the case where the player choses answer B. From there are opportunities to make your own questions and options, add your own graphics, and finish the story. Make it fun :)
 
 You will have questions. Refer to our previous slides for JavaScript syntax and most importantly the internet as reference.
 
@@ -734,17 +756,14 @@ class: inverse, left, middle, large
 
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
-
       var slideshow = remark.create({
-          highlightStyle: 'monokai',
-          highlightLanguage: 'remark',
-          highlightLines: true,
-          ratio: '16:9'
-        });
-
+        highlightStyle: "monokai",
+        highlightLanguage: "remark",
+        highlightLines: true,
+        ratio: "16:9",
+      });
     </script>
   </body>
 </html>

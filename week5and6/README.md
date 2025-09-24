@@ -137,7 +137,7 @@ Most blocks are contained in functions, which can have it's own scope. Functions
     	var c = 3;
     }
 
-[Scope from functions](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch3.md#scope-from-functions)
+[Scope from functions](https://github.com/getify/You-Dont-Know-JS/blob/main/scope%20%26%20closures/ch3.md#scope-from-functions)
 
 ### File scope
 
@@ -301,7 +301,6 @@ Server side app
     cd myApp
     npm install
 
-
 # Asking questions
 
 https://stackoverflow.com/help/how-to-ask
@@ -316,7 +315,7 @@ There are two options to choose from this week:
 
 2. Expand your understanding of incrementing and decrementing (maybe your clock is a countdown) by creating a [clock](http://hello-world-week5.s3-website-us-east-1.amazonaws.com/#32).
 
-There are [two](https://github.com/areaofeffect/hello-world/tree/master/week5and6/examples/p5-custom-pixel) [examples](https://github.com/areaofeffect/hello-world/tree/master/week5and6/examples/p5-custom-pixel-2) for custom pixel available in our Github repo.
+There are [two](https://github.com/areaofeffect/hello-world/tree/main/week5and6/examples/p5-custom-pixel) [examples](https://github.com/areaofeffect/hello-world/tree/main/week5and6/examples/p5-custom-pixel-2) for custom pixel available in our Github repo.
 
 This is the clock reference from class, [CenterClock](https://leebyron.com/centerclock/).
 

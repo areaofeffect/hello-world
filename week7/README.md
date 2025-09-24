@@ -1,11 +1,13 @@
 # PROGRAMMING INTERACTIVITY
-# SVA IxD WEEK 7  
+
+# SVA IxD WEEK 7
 
 [Week 7 slides](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/)
 
 <br/>
 
 ##### Introduction
+
 > Introduction is adapted from the Interactivity chapter of Processing by John Maeda and Casey Raes and various p5 sources referenced below.
 
 <br/>
@@ -23,11 +25,12 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 # Week 6
 
 Examples:
-[https://github.com/areaofeffect/hello-world/tree/master/week7/examples](https://github.com/areaofeffect/hello-world/tree/master/week7/examples)
+[https://github.com/areaofeffect/hello-world/tree/main/week7/examples](https://github.com/areaofeffect/hello-world/tree/main/week7/examples)
 
 <br/>
 
 # Coordinate system
+
 > The coordinate system for pixels in a computer window, however, is reversed along the y-axis. (0,0) can be found at the top left with the positive direction to the right horizontally and down vertically.
 
 [https://processing.org/tutorials/drawing/]([https://processing.org/tutorials/drawing/])
@@ -39,6 +42,7 @@ Examples:
 <br/>
 
 # Mouse Position
+
 The p5 variables mouseX and mouseY (note the capital X and Y) store the x-coordinate and y-coordinate of the cursor relative to the origin in the upper-left corner of the display window. To see the actual values produced while moving the mouse, run this program to print the values to the console:
 
 ```
@@ -50,7 +54,7 @@ function draw() {
 - mouseX
 - mouseY
 
-*The system variable mouseX always contains the current horizontal position of the mouse, relative to (0, 0) of the canvas. If touch is used instead of mouse input, mouseX will hold the x value of the most recent touch point.*
+_The system variable mouseX always contains the current horizontal position of the mouse, relative to (0, 0) of the canvas. If touch is used instead of mouse input, mouseX will hold the x value of the most recent touch point._
 
 ```
 // the following will draw a rectangle at your mouse position
@@ -73,19 +77,23 @@ Computer mice and other related input devices typically have between one and thr
 <i>The mouse event functions are `mousePressed()`, `mouseReleased()`, `mouseMoved()`, and `mouseDragged()`:</i>
 
 ##### mouseReleased()
+
 Code inside this block is run one time when a mouse button is pressed mouseReleased()
 
 ##### mouseMoved()
+
 Code inside this block is run one time when a mouse button is released mouseMoved()
 
 ##### mouseDragged()
+
 Code inside this block is run one time when the mouse is moved mouseDragged()
 
 ##### mousePressed()
+
 Code inside this block is run one time when the mouse is moved while a mouse button is pressed
 
-
 # A drawing app
+
 Combine what we learned above to create a drawing app. Use your mouse do draw.
 
 ![images/events.png](slides/images/events.png)
@@ -104,8 +112,6 @@ function mouseDragged() {
 - pmouseX
 - pmouseY
 
-
-
 # Creating interfaces
 
 Since we can now keep track of our mouse position and click events, we can begin to build apps that begin to explore hovering, clicking, dragging and even tapping / pinching elements on the screen.
@@ -119,6 +125,7 @@ https://processing.org/examples/button.html
 <br/>
 
 ##### Rectangular buttons
+
 The most common type of bounding box is a rectangle. Our mouse is inside a rectangle when `mouseX` and `mouseY` are inside it's bounds.
 
 The bounds of a rectangle can be thought of like its area.
@@ -139,8 +146,8 @@ if (mouseX >= 150 && mouseX <= 150+100 && mouseY >= 150 && mouseY <= 150+100){
 <br/>
 
 ##### Circular buttons
-We can calculate the distance from our mouse position to the center of a point. If this value is less than the radius of your object - our mouse cursor must be inside. See the example below.
 
+We can calculate the distance from our mouse position to the center of a point. If this value is less than the radius of your object - our mouse cursor must be inside. See the example below.
 
 ```
 // get distance between mouse and circle
@@ -155,15 +162,17 @@ if(distance < 50) {
 ```
 
 [http://coursescript.com/notes/interactivecomputing/interactivity/](http://coursescript.com/notes/interactivecomputing/interactivity/)
+
 > Tutorial via John Kuiphoff / Interactive Computing
 
 # Keyboard Events
+
 Processing registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyPressed variable remains true while the key is held down and becomes false only when the key is released.
 
 ![images/cat.jpg](slides/images/cat.jpg)
 
-
 ##### keyPressed()
+
 ```
 function keyPressed() {
     if(keyCode == UP_ARROW) {
@@ -176,6 +185,7 @@ function keyPressed() {
 ```
 
 ##### keyReleased()
+
 ```
 function keyPressed() {
     if(keyCode == UP_ARROW) {
@@ -188,9 +198,10 @@ function keyPressed() {
 ```
 
 ##### keyCode
+
 In addition to reading key values for numbers, letters, and symbols. If you're making cross-platform projects, note that the Enter key is commonly used on PCs and UNIX and the Return key is used on Macintosh. Check for both Enter and Return to make sure your program will work for all platforms.
 
-*The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [http://keycode.info/](http://keycode.info/)*
+_The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [http://keycode.info/](http://keycode.info/)_
 
 ```
 if (keyCode == UP_ARROW) {
@@ -199,6 +210,7 @@ if (keyCode == UP_ARROW) {
 ```
 
 ##### key
+
 The key variable stores a single alphanumeric character. Specifically, it holds the most recently pressed key. The key can be displayed on screen with the text() function (p. 150).
 
 `text(key, 33,65); // Display last key pressed.`
@@ -206,6 +218,7 @@ The key variable stores a single alphanumeric character. Specifically, it holds 
 The key variable may be used to determine whether a specific key is pressed. The following example uses the expression key=='A' to test if the A key is pressed. The single quotes signify A as the data type char (p. 144). The expression key == "A" will cause an error because the double quotes signify the A as a String, and it's not possible to compare a String with a char. The logical AND symbol, the && operator, is used to connect the expression with the keyPressed variable to ascertain that the key pressed is the uppercase A.
 
 ##### keyIsPressed
+
 ```
 function draw() {
   background(0);
@@ -246,14 +259,12 @@ function mouseMoved() {
 }
 ```
 
-
-
 # Touch Events
 
 ![images/touch.png](slides/images/touch.png)
 
-
 ##### touchStarted()
+
 [https://p5js.org/reference/#/p5/touchStarted](https://p5js.org/reference/#/p5/touchStarted)
 
 ```
@@ -277,15 +288,20 @@ function touchStarted() {
 ```
 
 ##### touchMoved()
+
 ##### touchEnded()
+
 ##### touches[]
+
 You can loop through touches and access each individual one like:
+
 ```
 xpos = touches[0].y
 ypos = touches[0].x
 ```
 
 ##### touchX - x position of a touch
+
 ##### touchY - y position of a touch
 
 The system variable touches[] contains an array of the positions of all current touch points, relative to (0, 0) of the canvas, and IDs identifying a unique touch as it moves. Each element in the array is an object with x, y, and id properties.
@@ -293,6 +309,7 @@ The system variable touches[] contains an array of the positions of all current 
 NOTE: The touches[] array is not supported on Safari and IE on touch-based desktops (laptops).
 
 # Mobile
+
 p5 also supports mobile devices. You may be wondering how do we get our applications running on our phones. Earlier we talked about code 'living' in sperate places like a server versus locally on our machines.
 
 ![images/button.jpg](slides/images/button.jpg)
@@ -300,20 +317,22 @@ p5 also supports mobile devices. You may be wondering how do we get our applicat
 As long as our phones and computer running on the same wifi - your app should work on your phone but connecting your browser to your computers IP and PORT.
 
 # HTML ELEMENTS
+
 Creating elements in p5:
 
 - Beyond the canvas
-	- HTML buttons
-	- HTML sliders
-	- [https://github.com/processing/p5.js/wiki/Beyond-the-canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
+  - HTML buttons
+  - HTML sliders
+  - [https://github.com/processing/p5.js/wiki/Beyond-the-canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
 
 # Serial Data - Python
+
 Communicate to Python with Arduino via PySerial.
 
 - [PySerial](http://pyserial.readthedocs.io/en/latest/shortintro.html)
 
-
 # Serial Data - p5
+
 [https://github.com/brunokruse/super-serial](https://github.com/brunokruse/super-serial)
 
 Tutorial for downloading and running the p5js <-> Arduino serial communication examples, using nodejs and p5js. Here is what we are building:
@@ -321,27 +340,34 @@ Tutorial for downloading and running the p5js <-> Arduino serial communication e
 
 <br/>
 
-Additional Tutorials via *ITP Physical Computing*
+Additional Tutorials via _ITP Physical Computing_
 
 # Microphone
+
 [https://p5js.org/reference/p5.sound/p5.AudioIn/](https://p5js.org/reference/p5.sound/p5.AudioIn/)
 
 # Touches
+
 [https://p5js.org/reference/p5/touches/](https://p5js.org/reference/p5/touches/)
 
 # Accelerometer
+
 [https://editor.p5js.org/Tiri/sketches/yI2_BczF8](https://editor.p5js.org/Tiri/sketches/yI2_BczF8)
 
 # Accelerometer 3D
+
 [https://editor.p5js.org/shiffman/sketches/BJxoCbdxx](https://editor.p5js.org/shiffman/sketches/BJxoCbdxx)
 
 # Webcam
-[[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/)]([https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/))
+
+[[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/)](<[https://p5js.org/examples/dom-video-capture.html](https://p5js.org/reference/p5/createCapture/)>)
 
 # Leap Motion
+
 [https://github.com/mrzl/LeapMotionP5](https://github.com/mrzl/LeapMotionP5)
 
 # A-Frame VR
+
 [https://aframe.io/](https://aframe.io/)
 
 # Resources
@@ -356,12 +382,13 @@ Additional Tutorials via *ITP Physical Computing*
 - [http://genekogan.com/code/p5js-perlin-noise/](http://genekogan.com/code/p5js-perlin-noise/)
 
 # Web Resources
+
 - [Intro do HTML and CSS](https://github.com/processing/p5.js/wiki/Intro-to-HTML-and-CSS)
 - [JavaScript Basics](https://github.com/processing/p5.js/wiki/JavaScript-basics)
 
 ---
 
-# [Week 6 Assignment - Programming Interactivity](https://github.com/areaofeffect/hello-world/tree/master/week6)
+# [Week 6 Assignment - Programming Interactivity](https://github.com/areaofeffect/hello-world/tree/main/week6)
 
 <br/>
 
@@ -385,15 +412,16 @@ There was a question about why a dot is used when we write Classes (objects) in 
 
 Further examples of how to write classes in JavaScript.
 
-- [JavaScript class example Pokémon](https://github.com/areaofeffect/hello-world/blob/master/week5/examples/javascript_class.js)
+- [JavaScript class example Pokémon](https://github.com/areaofeffect/hello-world/blob/main/week5/examples/javascript_class.js)
 - [Jitter Class](https://p5js.org/examples/objects-objects.html)
 
 <br/>
 
 ### Part 2. Coding
+
 Choose one of the following programming assignments below. Rember to create a folder for your project and upload to GitHub when you are done. If you need help going through debugging remember to first check online, there is a chance someone else has gotten the same error as you! If you are still stuck ask your classmates, pair-programming or in slack.
 
-##### CODE OPTION 1. Choose an element of interactivity to make a sketch, drawing or game! You can use Keyboard, Mouse, Touch or other methods we discussed in class. If you get stuck for ideas you can try remaking your interactive python game in p5 or review our class notes from week 6. 
+##### CODE OPTION 1. Choose an element of interactivity to make a sketch, drawing or game! You can use Keyboard, Mouse, Touch or other methods we discussed in class. If you get stuck for ideas you can try remaking your interactive python game in p5 or review our class notes from week 6.
 
 Remember:
 

@@ -1,8 +1,11 @@
 # Operators, Conditionals, and Functions
+
 # SVA IxD Week 3
+
 [Week 3 slides](http://hello-world-week3.s3-website-us-east-1.amazonaws.com/)
 
 # Review and Discussion of Week 2
+
 Variables and Data Types
 
 - Creating variables and assigning values
@@ -13,11 +16,9 @@ Variables and Data Types
 
 - Protocols
 
-
-
 ### Data typing the real world.
-![Matrix](http://vignette2.wikia.nocookie.net/matrix/images/d/df/Thematrixincode99.jpg/revision/latest?cb=20140425045724)
 
+![Matrix](http://vignette2.wikia.nocookie.net/matrix/images/d/df/Thematrixincode99.jpg/revision/latest?cb=20140425045724)
 
 ### Review of Objects
 
@@ -36,47 +37,43 @@ Let's take for example analyzing the temperature of this room over time and then
 
 Saving one object per minute would give you 60 temperatures to plot overtime to analyze the temp changes. Some companies are using data like this to make heating buildings more efficient.
 
-
 ### Stories and Thought experiment
 
-![Hypercell](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)
+![Hypercell](https://raw.githubusercontent.com/areaofeffect/hello-world/main/week3/slides/images/AADRL_Spyropoulos_Design_Lab_Hypercell_003.jpg)
 
 [https://www.youtube.com/watch?v=dg7SaaH-GYw](https://www.youtube.com/watch?v=dg7SaaH-GYw)
 
-
-
 # Operators
-
 
 _an operator is a character that represents an action_
 
 Like data types, there are many different types of operators. We've already used the assignment operator, let's explore a few more.
 
-
 ## Assignment operators
+
 Let's think of the light in a room. What is it's current state? What happens to the assignment when that state changes?
 
 Python example
 
-	isOn = True
-	isOn = False
-		
+    isOn = True
+    isOn = False
+
+
 JavaScript example
 
-	var isOn = true
-	isOn = false
-
+    var isOn = true
+    isOn = false
 
 C example
 
-	boolean isOn = true
-	isOn = false
+    boolean isOn = true
+    isOn = false
 
 ## Arithmetic operators
 
 ### addition ( + )
 
-### substraction ( - ) 
+### substraction ( - )
 
 ### multiplication ( \* )
 
@@ -85,6 +82,7 @@ C example
 ### modulo ( % )
 
 #### Order of operations
+
 Some operators are given a higher precedence.
 
 PEMDAS
@@ -104,47 +102,43 @@ Subtraction
 ### increment ( ++ )
 
 Python example
-	
-	studentsInClass = 0
-	studentsInClass += 1 # studentsInClass will be 1
-		
+studentsInClass = 0
+studentsInClass += 1 # studentsInClass will be 1
 JavaScript example
 
-	var studentsInClass = 1;
-	studentsInClass++; // studentsInClass will be 2
+    var studentsInClass = 1;
+    studentsInClass++; // studentsInClass will be 2
 
 C example
 
-	int studentsInClass = 2;
-	studentsInClass++; // studentsInClass will be 3
-	
+    int studentsInClass = 2;
+    studentsInClass++; // studentsInClass will be 3
+
 ### decrement ( -- )
 
 Python example
-	
-	studentsInClass = 1
-	studentsInClass -= 1
-		
+studentsInClass = 1
+studentsInClass -= 1
 JavaScript example
 
-	var studentsInClass = 1;
-	studentsInClass--;
+    var studentsInClass = 1;
+    studentsInClass--;
 
 C example
 
-	int studentsInClass = 1;
-	studentsInClass--;
-	
-*a note about placement*
+    int studentsInClass = 1;
+    studentsInClass--;
+
+_a note about placement_
 
 For JavaScript and C, you can place this operator before your variable like this, `++count`. Depending on how you use your variable you may get different results.
 
-	count = 3
-	x = 0
-	x = ++count; // x==4, count==4
-  	x = count++; // x==3, count==4
+    count = 3
+    x = 0
+    x = ++count; // x==4, count==4
 
-	
+x = count++; // x==3, count==4
+
 ## Comparison operators
 
 Comparison operators yield Boolean values.
@@ -164,16 +158,15 @@ Comparison operators yield Boolean values.
 ### Comparison Operations on data types
 
 #### Strings
+
 Python example
-	
-	teachers = ["bruno", "carrie"]
-	haveSameName = (teachers[0] is teachers[1]) # False
-		
+teachers = ["bruno", "carrie"]
+haveSameName = (teachers[0] is teachers[1]) # False
 JavaScript example
 
-	var teachers = ["bruno", "carrie"]
-	var slackHandle = ["brun.no", "carrie"]
-	var nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
+    var teachers = ["bruno", "carrie"]
+    var slackHandle = ["brun.no", "carrie"]
+    var nameMatchesSlackHandle = (teachers[0] == slackHandle[0]) // false
 
 C example
 
@@ -182,20 +175,16 @@ The operators `!=` and `==` only compare the memory addresses and not the actual
 #### Numbers
 
 Python example
-	
-	x = 1
-	y = 2
-	(x < y) # True
-		
+x = 1
+y = 2
+(x < y) # True
 JavaScript example
 
-	var isGreater = (x > y) // false
+    var isGreater = (x > y) // false
 
 C example
 
-	boolean isGreater = (x > y) // false
-	
-
+    boolean isGreater = (x > y) // false
 
 ## Logical operators
 
@@ -203,7 +192,7 @@ With logical operators you can combine one or more comparisons to make more comp
 
 We know that Booleans were one of our primitive data types in computer science. Now we are going to learn about Boolean logic. We will use it in our programs, but it is interesting to note that the this same logic is a core component of a computer's CPU.
 
-Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), and computer memory, all the way up through complete microprocessors, which may contain more than 100 million gates. 
+Logic circuits include such devices as multiplexers, registers, arithmetic logic units (ALUs), and computer memory, all the way up through complete microprocessors, which may contain more than 100 million gates.
 
 [CTD: logic gates, elementary ]
 
@@ -212,59 +201,48 @@ https://en.wikipedia.org/wiki/Logic_gate
 ### Logical AND ( && )
 
 Python example
-	
-	
-	(x < y and myString is "hello") # True
-		
+(x < y and myString is "hello") # True
 JavaScript example
 
-	var isGreater = (x > y && myString == "world") // false
+    var isGreater = (x > y && myString == "world") // false
 
 C example
-	
-	int x = 0;
-	int y = 10;
-	boolean bothAreNonZero = (a && b); // false
-
+int x = 0;
+int y = 10;
+boolean bothAreNonZero = (a && b); // false
 
 ### Logical NOT ( ! )
 
 Python example
-	
-	x = 1
-	y = 2
-	not(x > y) # True
-		
+x = 1
+y = 2
+not(x > y) # True
 JavaScript example
 
-	var isGreater = !(x > y) // true
+    var isGreater = !(x > y) // true
 
 C example
 
-	int x = 0;
-	int y = 10;
-	boolean bothAreNonZero = !(a && b); // true
-
+    int x = 0;
+    int y = 10;
+    boolean bothAreNonZero = !(a && b); // true
 
 ### Logical OR ( || )
 
 Python example
-	
-	x = 1
-	y = 2
-	(x > y or x > 0) # True, note in python 3+ we use "or" instead of ||
-		
+x = 1
+y = 2
+(x > y or x > 0) # True, note in python 3+ we use "or" instead of ||
 JavaScript example
 
-	var isGreater = (x > y || y > 2) // false
+    var isGreater = (x > y || y > 2) // false
 
 C example
 
-	boolean oneIsNonZero = (x || y) // true
-
-
+    boolean oneIsNonZero = (x || y) // true
 
 # Additional Operators
+
 Just like there were more data types than we covered in class last week, there are also more operators. Here are a few types to explore on your own.
 
 Bitwise Operators
@@ -275,108 +253,99 @@ Bitwise Operators
 
 [Ternary conditional](https://en.wikipedia.org/wiki/%3F:)
 
-	
 # Conditional Statements
 
 ## If
+
 Now that we've reviewed the operators that evaluate our variables into meaningful logic, we are ready to make deicisions. Enter the mighty if statement!
 
 Python example
-	
-	if (x < y):
-		print "x is less than y"
-		
+if (x < y):
+print "x is less than y"
 JavaScript example
 
-	var isGreater = (x > y) // false
-	if (isGreater) {
-		console.log( "x is greater than y")
-	}
+    var isGreater = (x > y) // false
+    if (isGreater) {
+    	console.log( "x is greater than y")
+    }
 
 C example
 
-	boolean isGreater = (x > y) // true
-	if (isGreater) {
-		printf("isGreater is true");
-	}
+    boolean isGreater = (x > y) // true
+    if (isGreater) {
+    	printf("isGreater is true");
+    }
 
 ## Else
+
 In the case that the conditional expression in your if statement is not true, you may want to do something else.
 
 Python example
-	
-	if (x < y):
-		print "x is less than y"
-	else:
-		print "y is less than x"
-		
+if (x < y):
+print "x is less than y"
+else:
+print "y is less than x"
 JavaScript example
 
-	if (x > y) {
-		console.log( "x is greater than y")
-	} else {
-		console.log( "y is greater than x")
-	}
+    if (x > y) {
+    	console.log( "x is greater than y")
+    } else {
+    	console.log( "y is greater than x")
+    }
 
 C example
 
-	if (x > y) {
-		printf( "x is greater than y")
-	} else {
-		printf( "y is greater than x")
-	}
+    if (x > y) {
+    	printf( "x is greater than y")
+    } else {
+    	printf( "y is greater than x")
+    }
 
 ## Elif
+
 Python can only have one else. But it can have many `elif`
 
 Python example
-	
-	import math
-	x = 'nan'
-	y = 1
-	if (x < y):
-		print "x is less than y"
-	elif math.isnan(float(x)):
-		print "x is NaN"
-	else:
-		print "y is less than x"
-		
+import math
+x = 'nan'
+y = 1
+if (x < y):
+print "x is less than y"
+elif math.isnan(float(x)):
+print "x is NaN"
+else:
+print "y is less than x"
 
-
-![image](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/if_else_statement.jpg)
+![image](https://raw.githubusercontent.com/areaofeffect/hello-world/main/week3/slides/images/if_else_statement.jpg)
 
 # Functions
 
-
 > In programming, a named section of a program that performs a specific task. In this sense, a function is a type of procedure or routine. Some programming languages make a distinction between a function, which returns a value, and a procedure, which performs some operation but does not return a value.
-Most programming languages come with a prewritten set of functions that are kept in a library. You can also write your own functions to perform specialized tasks.
+> Most programming languages come with a prewritten set of functions that are kept in a library. You can also write your own functions to perform specialized tasks.
 
 http://www.webopedia.com/TERM/F/function.html
 
 ## Declaration
 
 Python example
-	
-	def myFunction():
-		# statements here
-		
+def myFunction(): # statements here
 JavaScript example
 
-	function myFunction() {
-		// statements here
-	}
+    function myFunction() {
+    	// statements here
+    }
 
 C example
 
-	boolean myFunction () {
-		// statements here
-	}
+    boolean myFunction () {
+    	// statements here
+    }
 
 ## Definition
 
 Python example
 
-```  
+```
 def isGreater(x, y):
   return (x > y)
 
@@ -401,13 +370,13 @@ boolean isGreater (int x, int y) {
 
 ## Parameters and Arguments
 
-In the last slide `x` and `y` are parameters of the function. 
+In the last slide `x` and `y` are parameters of the function.
 
 The values you pass in for `x` and `y` are known as arguments.
 
 Python example
 
-```  
+```
 def isGreater(x, y):
   return (x > y)
 
@@ -416,41 +385,40 @@ isGreater(1,0) #True
 ```
 
 # A Forest
-![AForest](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week3/slides/images/forest.jpg)
+
+![AForest](https://raw.githubusercontent.com/areaofeffect/hello-world/main/week3/slides/images/forest.jpg)
 
 # Assignment
-
 
 ### Create a logic game!
 
 Design and build a game of your own using different types of operators:
 
-- [arithmetic](http://week3-hello-world.areaofeffect.io/#8) ```=``` ```+``` ```/``` ```-``` ```%```
+- [arithmetic](http://week3-hello-world.areaofeffect.io/#8) `=` `+` `/` `-` `%`
 
-- [comparison](http://week3-hello-world.areaofeffect.io/#13) ```!=``` ```==``` ```>``` ```<``` ```>=``` ```<=```
+- [comparison](http://week3-hello-world.areaofeffect.io/#13) `!=` `==` `>` `<` `>=` `<=`
 
-- [logical](http://week3-hello-world.areaofeffect.io/#16) ```and``` ```(&&)``` , ```or``` ```(||)``` , ```not``` ```(!)```
+- [logical](http://week3-hello-world.areaofeffect.io/#16) `and` `(&&)` , `or` `(||)` , `not` `(!)`
 
-- [conditional statements](http://week3-hello-world.areaofeffect.io/#23) ```if``` ```elif``` ```else```
+- [conditional statements](http://week3-hello-world.areaofeffect.io/#23) `if` `elif` `else`
 
 - [functions](http://week3-hello-world.areaofeffect.io/#29)
 
-Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/master/week3/examples) game from class.
+Some inspirations can be: puzzle games, a sudoku checker, a card or dice games, escape the room type game or the [sample forest game](https://github.com/areaofeffect/hello-world/tree/main/week3/examples) game from class.
 
 To start, it will help to break down your game as variables, datatypes and objects. Use a flow-chart and plan your game before writing any code. You can work in groups of 2, pair coding. Next week we will be play-testing our games in class.
 
 <br/>
 
 ### Due next week (9 / 29):
+
 - Create a flow-chart of your game logic and how you imagine it working as code.
 - A prototype of your game in python demonstrating conditionals and logic from your design.
 
-
-
 <br/>
 
-
 #### Advanced assignment (a 2nd path, optional):
+
 - Convert your game logic into a JavaScript web app
 - Use our slides, notes and most importantly the internet (stackoverflow, repl.it, w3schools etc...) as reference on how to set this up.
 - Add graphics, finess your copy. Make it fun :)
@@ -463,7 +431,7 @@ Here are some JavaScript resources for getting started, if you choose this path!
 
 # Resources
 
-[Python  operators](https://www.programiz.com/python-programming/operators)
+[Python operators](https://www.programiz.com/python-programming/operators)
 
 [JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
 
@@ -477,10 +445,4 @@ Here are some JavaScript resources for getting started, if you choose this path!
 
 [Order of operations](https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-order-of-operations/v/introduction-to-order-of-operations)
 
-[Parameter](https://en.wikipedia.org/wiki/Parameter_(computer_programming))
-
-
-
-
-
-
+[Parameter](<https://en.wikipedia.org/wiki/Parameter_(computer_programming)>)

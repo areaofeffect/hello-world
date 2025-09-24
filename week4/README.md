@@ -20,7 +20,7 @@ _Operators, Conditionals, Functions_
 
 _Week 3 Assignment: Lets playtest our games!_
 
-![Forest](https://github.com/areaofeffect/hello-world/blob/master/week4/slides/images/forest.jpg?raw=true)
+![Forest](https://github.com/areaofeffect/hello-world/blob/main/week4/slides/images/forest.jpg?raw=true)
 
 ### Review of Functions
 
@@ -220,5 +220,5 @@ Some inspiration:
 ![turtle](/week4/slides/images/star.png)
 
 - [Python Turtle](https://www.youtube.com/watch?v=Grc1-j4EvTk)
-- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simple_turtle_tutorial.md)
+- [Great tutorial on drawing with Python and Turtle](https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/main/simple_turtle_tutorial.md)
 - [Ideo: Painting with Code](https://labs.ideo.com/2014/06/04/painting-with-code/)

@@ -56,7 +56,7 @@ How does a processor work and what is a for loop? How do we use code as a tool t
 
 #### SCHEDULE
 
-#### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/master/week1)
+#### [Week 1: Hello World](https://github.com/areaofeffect/hello-world/tree/main/week1)
 
 A brief history of computing, computers and why we code.
 

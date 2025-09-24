@@ -141,7 +141,7 @@ _Beautiful Code, Chapter 16_
 
 # Algorithms
 
-![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/master/week1/images/algorithms/tiedie.png?token=AADEj9_Ke9ABTA5qyzx2WnmF09oGrmrfks5ZuUyFwA%3D%3D)
+![Sol](https://raw.githubusercontent.com/areaofeffect/hello-world/main/week1/images/algorithms/tiedie.png?token=AADEj9_Ke9ABTA5qyzx2WnmF09oGrmrfks5ZuUyFwA%3D%3D)
 
 The thing about algorithms is that they are really, really beautiful.
 
