@@ -422,17 +422,20 @@ If your player has not befriended the correct person, then you must go back and 
 
 Python example
 ```python  
-notHasFriend = not(neededFriend in yourFriends)
+toggle = True
+toggle = not(toggle) # toggle is now False
 ```
 
 JavaScript example
 ```javascript
-let notHasFriend = !(yourFriends.includes(neededFriend))
+let toggle = false;
+toggle = !toggle; // toggle is now true
 ```
 
 C example
 
-_In C we would need to loop through every item in a array and check that the strings match or not._
+boolean toggle = true;
+toggle = !toggle; // toggle is now false
 
 ---
 class: inverse, left
