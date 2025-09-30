@@ -55,8 +55,8 @@ for i in range(4):
 # resize it back to app width and so we can smooth it out, https://pillow.readthedocs.io/en/stable/handbook/concepts.html#PIL.Image.LANCZOS
 # a note about this, newer versions of Pillow will warn about the use of ANTIALIAS DeprecationWarning: ANTIALIAS is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.LANCZOS instead.
 # choose the line that works with your installation
-# myImage = myImage.resize((appWidth, appHeight), Image.Resampling.LANCZOS)
-myImage = myImage.resize((appWidth, appHeight), Image.ANTIALIAS)
+myImage = myImage.resize((appWidth, appHeight), Image.Resampling.LANCZOS)
+# myImage = myImage.resize((appWidth, appHeight), Image.ANTIALIAS)
 # convert the image to a Tkinter PhotoImage
 myImage = ImageTk.PhotoImage(myImage)
 # draw it to the app canvas
