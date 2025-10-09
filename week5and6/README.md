@@ -309,15 +309,11 @@ https://stackoverflow.com/help/how-to-ask
 
 ## Week 5 Assignment
 
-There are two options to choose from this week:
+### Update Week 4 assignment to JavaScript
 
-1. Continue exploring and understanding the use of loops by accessing each pixel in an image. Create a work that takes an image or video and changes each pixel into a [Custom Pixel](http://hello-world-week5.s3-website-us-east-1.amazonaws.com/#33)
+Take your Week 4 assignment (repeating patterns/wallpaper) and translate it to JavaScript using P5.js.
 
-2. Expand your understanding of incrementing and decrementing (maybe your clock is a countdown) by creating a [clock](http://hello-world-week5.s3-website-us-east-1.amazonaws.com/#32).
-
-There are [two](https://github.com/areaofeffect/hello-world/tree/main/week5and6/examples/p5-custom-pixel) [examples](https://github.com/areaofeffect/hello-world/tree/main/week5and6/examples/p5-custom-pixel-2) for custom pixel available in our Github repo.
-
-This is the clock reference from class, [CenterClock](https://leebyron.com/centerclock/).
+[Week 5 Assignment Repo](https://github.com/areaofeffect/hello-world-week5-assignment)
 
 ## Week 6 Assignment
 
