@@ -60,8 +60,6 @@ C example
 
 ## Characters and Strings
 
-[BK: image of character, image of string]
-
 A character is a single character, and string is a sequence of characters.
 
 JavaScript example
@@ -105,8 +103,6 @@ Python example
     myString = "".join(["Hello ", "World"])
 
 C example. There is no string concatentation operator in C. Luckily, Arduino provides a nice [String](https://www.arduino.cc/en/Reference/StringObject) class with a concat method for you.
-
-[CTD::: we'll talk about arduino and strings later :)]
 
 ## Numbers
 
@@ -154,16 +150,12 @@ C example
 
 Not a Number, If, for example, you attempt to divide by zero.
 
-- [bk: willy nillying]
-
 #### Binary and Hexadecimal
 
 Binary representations of number use only ones and zeros. Hexadecimal can represent 8 binary characters with 2 consecutive hexadecimal digits and therefore save space.
 
 - [The Martian](http://www.businessinsider.com/the-martian-hexidecimal-language-2015-9)
 - [The Martian hexidecimal reference getting nerdy](https://scifi.stackexchange.com/questions/107675/why-does-mark-use-hexadecimal-to-communicate)
-
-[bk: get the martian movie to show the scene]
 
 #### A side note about Bases
 
@@ -180,10 +172,6 @@ Decimal = base 10
 Hexadecimal = base 16
 
 ## Arrays
-
-[bk: why can't I hold all these vars]
-[bk: zero index]
-[bk: refridgerator example]
 
 List of items, all of the same data type.
 
@@ -207,7 +195,7 @@ Objects are collections of properties
 
 JavaScript example
 
-    var myObj = {fuel_type: "electric", model: "S", color: "red"};
+    let myObj = {fuel_type: "electric", model: "S", color: "red"};
 
 Python example, (dictionary)
 
@@ -222,8 +210,6 @@ C example
     } tesla;
 
     struct tesla s;
-
-[ck: json callback with bio examples]
 
 # More on datatypes.
 
@@ -252,8 +238,8 @@ myNum = int(myString)
 JavaScript example
 
 ```
-var myString = "1";
-var myNum = parseInt(myString)
+let myString = "1";
+let myNum = parseInt(myString)
 ```
 
 C example
@@ -272,8 +258,8 @@ myString = str(myNum)
 JavaScript example
 
 ```
-var myNum = 1;
-var myString = myNum.toString();
+let myNum = 1;
+let myString = myNum.toString();
 ```
 
 ### Number -> String
@@ -300,8 +286,8 @@ myBool = (myString == "True")
 JavaScript example
 
 ```
-var myString = "true";
-var myBool = (myString == "true")
+let myString = "true";
+let myBool = (myString == "true")
 ```
 
 C example
@@ -309,9 +295,6 @@ C example
 We would recommend not using the strings "True" or "true", but perhaps use 0 and 1 and use other conversions.
 
 ### String -> Array
-
-<!-- [ example or string that's delimited ]
-[bk: example -->
 
 Python example
 
@@ -323,8 +306,8 @@ myArray = myString.split(",")
 Javascript example
 
 ```
-var myString = "January 5th, 1978";
-var myArray = myString.split(",");
+let myString = "January 5th, 1978";
+let myArray = myString.split(",");
 ```
 
 ### Array -> String
@@ -339,8 +322,8 @@ myString = "".join(myList)
 JavaScript example
 
 ```javascript
-var myArray = ["January 5th", "1978"];
-var myString = myArray.join(",");
+let myArray = ["January 5th", "1978"];
+let myString = myArray.join(",");
 ```
 
 ## Strict Typing, Strong or Weak, Static or Dynamic
@@ -359,7 +342,7 @@ Increasing the readability of your code will make working with others easier.
 
 Decide on using camelCase or snake-case
 
-- var myName = "firstname lastname"
+- let myName = "firstname lastname"
 
 Remeber that variables can't start with a number.
 
@@ -384,7 +367,7 @@ Fun times! we will use all our new knowledge to build a mad lib
 
 steps to initializing a variable
 
-1. datatype (var, int, etc... )(some languages like python you don't have to do this)
+1. datatype (let, int, etc... )(some languages like python you don't have to do this)
 2. variable name
 3. assignment operator (=, and a note on ==)
 4. the value

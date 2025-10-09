@@ -81,6 +81,8 @@ C example
 
 ### modulo ( % )
 
+### exponent ( \*\* )
+
 #### Order of operations
 
 Some operators are given a higher precedence.
@@ -145,7 +147,7 @@ Comparison operators yield Boolean values.
 
 **==** equal to
 
-**!-** not equal to
+**!=** not equal to
 
 **\>** greater than
 

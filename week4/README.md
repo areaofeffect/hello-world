@@ -47,7 +47,7 @@ Python example 1
 
 a simple counting example
 
-try it out: [repl link](https://repl.it/LaMW)
+try it out: [repl link](https://replit.com/@codelit/python-for)
 
     for x in range(1,10):
     	print(x)
@@ -56,7 +56,7 @@ Python example 2
 
 example: looping through an array
 
-try it out: [repl link](https://repl.it/L70G/0)
+try it out: [repl link](https://replit.com/@codelit/python-for)
 
     # declare an array
     fruits = [ "mango", "banana", "apple" ]
@@ -67,7 +67,7 @@ try it out: [repl link](https://repl.it/L70G/0)
 
 JavaScript Example
 
-try it out: [repl link](https://repl.it/L70V/0)
+try it out: [repl link](https://replit.com/@codelit/javascript-for)
 
 [https://www.learn-js.org/en/Loops](https://www.learn-js.org/en/Loops)
 
@@ -91,7 +91,7 @@ The code inside the `draw(`) function runs continuously from top to bottom until
 
 C Example
 
-there's a repl: [for that too!](https://repl.it/L709/0)
+there's a repl: [for that too!](https://replit.com/@codelit/c-for)
 
     #include <stdio.h>
 
@@ -106,14 +106,14 @@ there's a repl: [for that too!](https://repl.it/L709/0)
 
 Python example
 
-[repl link](https://repl.it/L71v/0)
+[repl link](https://replit.com/@codelit/python-while)
 
     while x < 10:      # do this ten times
       increaseCount() # call a function we defined above
 
 JavaScript example
 
-[repl link](https://repl.it/L72P/1)
+[repl link](https://replit.com/@codelit/javascript-while)
 
 [w3schools: while example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
@@ -124,7 +124,7 @@ JavaScript example
 
 C Example
 
-try in a repl: [repl link](https://repl.it/L73B/0)
+try in a repl: [repl link](https://replit.com/@codelit/c-while)
 
 [arduino example](https://www.arduino.cc/en/Tutorial/WhileStatementConditional)
 
@@ -152,7 +152,7 @@ Python example
 
 This will break and exit the loop once the count is greator than five.
 
-try it out: [repl link](https://repl.it/LaMW)
+try it out: [repl link](https://replit.com/@codelit/python-break)
 
     for x in range(1,10):	# a for loop that counts from 1 to 10
     	if (x > 5): 		# a conditional, are we less than 5
