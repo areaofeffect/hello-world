@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 6</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: "Droid Serif";
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Roboto";
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1,
+      .inverse h2,
+      .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p {
+        line-height: 2em;
+        color: #fff;
+      }
+      .red {
+        color: #fa0000;
+      }
+      .large {
+        font-size: 2em;
+      }
+
+      a,
+      a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+        font-size: 1.3em;
+      }
+      .remark-code-line-highlighted {
+        background-color: #373832;
+      }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-75 img {
+        width: 75%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-50 img {
+        width: 50%; /* Keep our Images fitting in the slides */
+      }
+
+      .center-40 img {
+        width: 40%; /* Keep our Images fitting in the slides */
+      }
+      .center-35 img {
+        width: 35%; /* Keep our Images fitting in the slides */
+      }
+      .center-30 img {
+        width: 30%; /* Keep our Images fitting in the slides */
+      }
+      .center-25 img {
+        width: 25%; /* Keep our Images fitting in the slides */
+      }
+
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# The Logic of Interaction: Week 6
+Fall 2025
+
+---
+class: inverse, left, large
+
+# Review of Week 5
+
+_Scope and Organizing Code_
+
+* Lexical vs Dynamic Scope
+* Levels of Scope
+* Modules and Libraries
+* Classes
+
+---
+class: inverse, left
+
+# Today's Focus
+
+## Loops, Nested Loops, and Classes
+
+Building visual systems with:
+* Nested loops for grids and patterns
+* Pixel manipulation
+* Classes for organization
+
+---
+class: inverse, left
+
+# Understanding Nested Loops
+
+### Single Loop - A Line
+
+```javascript
+for (let x = 0; x < width; x += 20) {
+  rect(x, 100, 15, 15);
+}
+```
+
+### Nested Loop - A Grid
+
+```javascript
+for (let y = 0; y < height; y += 20) {
+  for (let x = 0; x < width; x += 20) {
+    rect(x, y, 15, 15);
+  }
+}
+```
+
+The outer loop controls rows (y), the inner loop controls columns (x).
+
+---
+class: inverse, left
+
+# Custom Pixel Displays
+
+Breaking down images into grids of pixels
+
+### What can you do?
+
+* Analyze color and brightness
+* Replace pixels with custom graphics
+* Create visual effects
+* Build interactive installations
+
+.center.center-50[![Pixel Display](./images/pixel-example.png)]
+
+---
+class: inverse, left
+
+# The Pixel Array
+
+Every image has a `pixels[]` array with RGBA values
+
+```javascript
+capture.loadPixels(); // Load pixel data first
+
+// Each pixel has 4 values: Red, Green, Blue, Alpha
+let offset = (y * capture.width + x) * 4;
+
+let r = capture.pixels[offset];     // Red
+let g = capture.pixels[offset + 1]; // Green
+let b = capture.pixels[offset + 2]; // Blue
+let a = capture.pixels[offset + 3]; // Alpha
+```
+
+---
+class: inverse, left
+
+# Why `(y * width + x) * 4`?
+
+The pixels array is 1-dimensional, but images are 2D:
+
+1. **Skip past all complete rows:** `y * width`
+2. **Add the column position:** `+ x`
+3. **Multiply by 4 for RGBA:** `* 4`
+
+```javascript
+// For a 640x480 image
+// Pixel at (10, 5):
+let offset = (5 * 640 + 10) * 4;
+// = (3200 + 10) * 4
+// = 12840
+```
+
+---
+class: inverse, left
+
+# Example 1: Basic Pixel Display
+
+`week6/examples/p5-custom-pixel`
+
+```javascript
+let pixelSize = 40;
+
+for (let y = 0; y < capture.height; y += pixelSize) {
+  for (let x = 0; x < capture.width; x += pixelSize) {
+    let offset = (y * capture.width + x) * 4;
+```
+
+---
+class: inverse, left
+
+# Example 1: Basic Pixel Display (cont.)
+
+```javascript
+    let c = color(
+      capture.pixels[offset],
+      capture.pixels[offset + 1],
+      capture.pixels[offset + 2]
+    );
+
+    fill(c);
+    rect(xpos, ypos, pixelSize, pixelSize);
+  }
+}
+```
+
+---
+class: inverse, left
+
+# Example 2: Advanced Techniques
+
+`week6/examples/p5-custom-pixel-2`
+
+### Converting to Greyscale
+```javascript
+let brightness = (r + g + b) / 3;
+```
+
+### Converting to HSB
+```javascript
+let hsbValue = map(brightness, 0, 255, 0, 360);
+```
+
+---
+class: inverse, left
+
+# Example 2: Advanced Techniques (cont.)
+
+### Replacing with Images
+```javascript
+if (hsbValue > 0 && hsbValue < 45) {
+  image(red, xpos, ypos);
+} else if (hsbValue > 45 && hsbValue < 90) {
+  image(orange, xpos, ypos);
+}
+```
+
+---
+class: inverse, left, large
+
+# Classes
+
+A better way to organize code
+
+---
+class: inverse, left
+
+# Why Use Classes?
+
+* **Encapsulate** related data and functions
+* Create **reusable** components
+* Better code **organization**
+* Easier to **maintain** and extend
+
+Think of a class as a blueprint for creating objects
+
+---
+class: inverse, left
+
+# Basic Class Structure
+
+```javascript
+class CustomPixel {
+  // Constructor - runs when object is created
+  constructor(x, y, size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.color = color(255);
+  }
+
+  // Method to update
+  update(newColor) {
+    this.color = newColor;
+  }
+
+  // Method to display
+  display() {
+    fill(this.color);
+    rect(this.x, this.y, this.size, this.size);
+  }
+}
+```
+
+---
+class: inverse, left
+
+# Creating Instances
+
+```javascript
+// Create a new CustomPixel object
+let myPixel = new CustomPixel(100, 100, 20);
+
+// Use its methods
+myPixel.update(color(255, 0, 0));
+myPixel.display();
+```
+
+Each instance has its own properties and can be controlled independently
+
+---
+class: inverse, left
+
+# Classes with Nested Loops
+
+Create a grid of objects
+
+```javascript
+let pixelGrid = [];
+
+function setup() {
+  // Create grid using nested loops
+  for (let y = 0; y < rows; y++) {
+    pixelGrid[y] = [];
+    for (let x = 0; x < cols; x++) {
+      pixelGrid[y][x] = new CustomPixel(x, y, 20);
+    }
+  }
+}
+```
+
+---
+class: inverse, left
+
+# Classes with Nested Loops (cont.)
+
+```javascript
+function draw() {
+  // Update and display each
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < cols; x++) {
+      pixelGrid[y][x].display();
+    }
+  }
+}
+```
+
+---
+class: inverse, left
+
+# Example 3: Simple Clock
+
+`week6/examples/p5-simple-clock`
+
+Using classes to organize time display
+
+```javascript
+class TimeDisplay {
+  constructor(x, y, label) {
+    this.x = x;
+    this.y = y;
+    this.label = label;
+  }
+
+  display(value) {
+    text(this.label, this.x, this.y - 40);
+    text(nf(value, 2), this.x, this.y);
+  }
+}
+
+let hourDisplay = new TimeDisplay(120, 150, "HOURS");
+```
+
+---
+class: inverse, left
+
+# Performance Tips
+
+### Optimize Pixel Processing
+
+```javascript
+// Better performance
+pixelDensity(1);
+
+// Reduce video resolution
+capture.size(videoWidth / 20, videoHeight / 20);
+
+// Skip pixels
+let gridSize = 2;
+```
+
+### Flip Video (Zoom-style)
+```javascript
+translate(width, 0);
+scale(-1, 1);
+```
+
+---
+class: inverse, left, large
+
+# Assignment
+
+Custom Pixel Display **OR** Clock
+
+---
+class: inverse, left
+
+# Clock | Representing Time
+
+Design a visual clock that displays a novel or unconventional way of representing time.
+
+1. Review and research historical methods, devices and systems of timekeeping.
+
+2. Devise graphic concepts and design a visual representation of time.
+
+3. Use programming and motion graphics to represent temporal data.
+
+---
+class: inverse, left
+
+# Custom Pixel
+
+Reimagining the pixel display
+
+1. Reflect on the constitution and perception of images in art and design.
+
+2. Explore the relationship between an image and its component parts.
+
+3. Appropriately access low-level pixel data.
+
+---
+class: inverse, left
+
+# Requirements
+
+1. Demonstrate understanding of **nested loops**
+2. Use at least **one class**
+3. **Comment** your code
+4. Make it **visually interesting**
+
+### Bonus Challenges
+* Color mode switching
+* Multiple visual modes
+* Creative use of loops
+* Combine both concepts!
+
+---
+class: inverse, left
+
+# Examples to Reference
+
+1. `week6/examples/p5-custom-pixel` - Basic pixel display
+2. `week6/examples/p5-custom-pixel-2` - Advanced effects
+3. `week6/examples/p5-simple-clock` - Clock with classes
+
+---
+class: inverse, left
+
+# Resources
+
+### P5.js Documentation
+* [loadPixels()](https://p5js.org/search/?term=loadPixels)
+* [pixels[]](https://p5js.org/search/?term=pixels)
+* [createCapture()](https://p5js.org/search/?term=createCapture)
+* [Classes (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+### Video Tutorials
+* [Coding Train: Nested Loops](https://www.youtube.com/watch?v=H7frvcAHXps)
+* [Coding Train: Pixels](https://www.youtube.com/watch?v=nMUMZ5YRxHI)
+* [Coding Train: Classes](https://www.youtube.com/watch?v=T-HGdc8L-7w)
+
+---
+class: inverse, left
+
+# Next Week
+
+## Interactivity and Debugging
+
+* Mouse and keyboard input
+* Webcam interaction
+* Chrome Developer Tools
+* Debugging strategies
+
+---
+class: inverse, center
+
+# Keep Creating!
+
+.center.center-50[![Center-aligned image](./images/pixel-art.gif)]
+
+---
+class: inverse, left, middle, large
+
+# Thanks!
+
+- carrie@areaofeffect.io
+- bruno@areaofeffect.io
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({
+        highlightStyle: "monokai",
+        highlightLanguage: "remark",
+        highlightLines: true,
+        ratio: "16:9",
+      });
+    </script>
+  </body>
+</html>
