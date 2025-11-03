@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 9 - Application State</title>
+    <meta charset="utf-8">
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Roboto';
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p { line-height: 2.0em; color: #FFF}
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# HELLO WORLD
+# WEEK 9: APPLICATION STATE
+Fall 2025
+
+---
+
+class: inverse, left, top, large
+
+## Today's Topics
+
+- What is application state?
+- State in your daily life
+- State in games and apps
+- State machines
+- Implementing state in P5.js
+- Virtual creature example
+- Applying state machines to your projects
+
+---
+
+class: inverse, left, top
+
+# What is Application State?
+
+**State** is the current condition or mode of your program at any given moment.
+
+Think of it like the "memory" of your application - it remembers:
+- Where you are in the program
+- What the user is doing
+- What should happen next
+
+Just like a light switch has two states (ON/OFF), programs have states too!
+
+---
+
+class: inverse, left, top, large
+
+# State in Your Daily Life
+
+Examples of state you encounter every day:
+
+- **Traffic Light**: Red, Yellow, Green
+- **Phone**: Locked, Unlocked, Calling, In App
+- **Door**: Open, Closed, Locked
+- **Music Player**: Playing, Paused, Stopped
+- **Oven**: Off, Preheating, Ready, Cooking
+
+Each state determines what can happen next!
+
+---
+
+class: inverse, left, top
+
+# Remember: Choose Your Own Adventure?
+
+In Python, you built text adventure games with different scenes:
+
+```python
+current_scene = "forest"
+
+if current_scene == "forest":
+    print("You are in a dark forest.")
+    choice = input("Go left or right? ")
+
+    if choice == "left":
+        current_scene = "cave"
+    elif choice == "right":
+        current_scene = "river"
+```
+
+**This is state management!** You were tracking which scene the player was in.
+
+---
+
+class: inverse, left, top, large
+
+# State in Games
+
+Most games have at least these three states:
+
+1. **MENU** - Start screen, waiting to play
+2. **PLAYING** - Active gameplay
+3. **GAMEOVER** - Game ended, show score
+
+Some games have more states:
+- PAUSED
+- LOADING
+- CUTSCENE
+- LEVEL_COMPLETE
+- SETTINGS
+
+---
+
+class: inverse, left, top
+
+# State in Applications
+
+Apps use state to track what screen or mode you're in:
+
+**Social Media App:**
+- Login screen
+- Feed view
+- Profile view
+- Settings
+- Composing a post
+- Viewing a photo
+
+**The current state determines:**
+- What appears on screen
+- What buttons do
+- What data is loaded
+
+---
+
+class: inverse, left, top
+
+# What is a State Machine?
+
+A **state machine** is a pattern for managing states with clear rules:
+
+1. The program can only be in ONE state at a time
+2. Each state has specific behaviors
+3. States can TRANSITION to other states based on events
+4. Transitions follow defined rules
+
+Think of it like a map of your program's possible modes!
+
+---
+
+class: inverse, left, top
+
+# State Machine Diagram Example
+
+```
+    ┌─────────┐
+    │  MENU   │
+    └────┬────┘
+         │ (press SPACE)
+         ▼
+    ┌─────────┐
+    │ PLAYING │
+    └────┬────┘
+         │ (timer ends)
+         ▼
+    ┌─────────┐
+    │GAMEOVER │
+    └────┬────┘
+         │ (press SPACE)
+         └──────────────► back to MENU
+```
+
+---
+
+class: inverse, left, top, large
+
+# Implementing State in P5.js
+
+The basic pattern:
+
+```javascript
+let gameState = "MENU";  // Current state
+
+function draw() {
+  if (gameState === "MENU") {
+    drawMenu();
+  } else if (gameState === "PLAYING") {
+    drawGame();
+  } else if (gameState === "GAMEOVER") {
+    drawGameOver();
+  }
+}
+```
+
+Draw different things based on the current state!
+
+---
+
+class: inverse, left, top
+
+# State Transitions
+
+Change state when events happen:
+
+```javascript
+function keyPressed() {
+  if (key === ' ') {
+    if (gameState === "MENU") {
+      gameState = "PLAYING";
+      score = 0;  // Reset game
+      timer = 300;
+    } else if (gameState === "GAMEOVER") {
+      gameState = "MENU";
+    }
+  }
+}
+
+function draw() {
+  if (gameState === "PLAYING") {
+    timer--;
+    if (timer <= 0) {
+      gameState = "GAMEOVER";  // Time's up!
+    }
+  }
+}
+```
+
+---
+
+class: inverse, left, top, large
+
+# More Complex State: Virtual Creatures
+
+State machines can model complex behaviors!
+
+A virtual creature might have states like:
+- **HAPPY** - Well fed and rested
+- **HUNGRY** - Needs food
+- **TIRED** - Needs rest
+- **BORED** - Needs play
+- **ANGRY** - Multiple needs unmet
+
+Each state affects how the creature looks and behaves.
+
+---
+
+class: inverse, left, top
+
+# Virtual Creature: Managing Stats
+
+Complex state often depends on multiple variables:
+
+```javascript
+class Creature {
+  constructor() {
+    this.hunger = 50;   // 0-100
+    this.energy = 50;   // 0-100
+    this.happiness = 50; // 0-100
+    this.mood = "HAPPY";
+  }
+
+  update() {
+    // Stats decay over time
+    this.hunger = constrain(this.hunger - 0.1, 0, 100);
+    this.energy = constrain(this.energy - 0.05, 0, 100);
+
+    this.updateMood();  // Determine state based on stats
+  }
+}
+```
+
+---
+
+class: inverse, left, top
+
+# Virtual Creature: State Logic
+
+```javascript
+updateMood() {
+  // Priority-based state transitions
+  if (this.hunger < 20) {
+    this.mood = "HUNGRY";
+  } else if (this.energy < 20) {
+    this.mood = "TIRED";
+  } else if (this.happiness < 30) {
+    this.mood = "BORED";
+  } else if (this.hunger < 40 && this.energy < 40) {
+    this.mood = "ANGRY";
+  } else {
+    this.mood = "HAPPY";
+  }
+}
+```
+
+The creature's state emerges from its stats!
+
+---
+
+class: inverse, left, top, large
+
+# Live Example: Virtual Creature
+
+[Virtual Creature Demo](../examples/p5/virtual-creature/)
+
+Try interacting with the creature:
+- Feed it when hungry
+- Let it rest when tired
+- Play with it when bored
+- Watch how its mood changes!
+
+---
+
+class: inverse, left, top, large
+
+# Example: State Machine Game
+
+A simple game demonstrating the three-state pattern:
+
+[State Machine Game Demo](../examples/p5/state-machine-game/)
+
+Shows how to:
+- Create MENU, PLAYING, GAMEOVER states
+- Handle state transitions with keyboard
+- Display different content per state
+- Manage game variables across states
+- Reset and restart properly
+
+---
+
+class: inverse, left, top
+
+# Key Concepts to Remember
+
+1. **State** = the current mode/condition of your program
+2. **One state at a time** = clear, predictable behavior
+3. **State transitions** = events that change state
+4. **Different rendering** = each state looks different
+5. **Different behaviors** = each state acts different
+
+State machines help you organize complex interactive programs!
+
+---
+
+class: inverse, left, top
+
+# Applying State Machines to YOUR Project
+
+Think about your own project ideas:
+
+**Does your project have different modes or screens?**
+- Menu vs gameplay
+- Different tools or editing modes
+- Tutorial vs normal mode
+
+**Does your project have objects with changing behavior?**
+- Characters with moods or actions
+- Interactive elements with multiple states
+
+**Does your project respond to conditions?**
+- Health/energy systems
+- Day/night or weather changes
+- Difficulty adjustments
+
+---
+
+class: inverse, left, top, large
+
+# How State Machines Help
+
+**Organization**
+- Clear structure instead of nested if-statements
+- Each state has its own section of code
+
+**Debugging**
+- Easy to see what state you're in
+- Test each state independently
+
+**Extension**
+- Adding new features is easier
+- Need a pause menu? Add a new state!
+
+---
+
+class: inverse, left, top
+
+# Getting Started
+
+1. **Identify 2-3 states** your project already has
+2. **Draw a state diagram** on paper
+3. **Implement one state** and test it
+4. **Add transitions** one at a time
+5. **Refine** as your project grows
+
+Start simple. Add complexity as needed.
+
+---
+
+class: inverse, left, top
+
+# Tips for State Machines
+
+**Keep it organized:**
+- Use clear, descriptive state names (ALL_CAPS helps)
+- Draw a state diagram on paper first
+- One state variable, many rendering functions
+- Handle state transitions in one place (like keyPressed)
+
+**Debugging:**
+- Print the current state to the console
+- Color-code your states while developing
+- Test each state individually
+- Make sure ALL transitions work both ways
+
+---
+
+class: inverse, left, top, large
+
+# Resources
+
+**P5.js References:**
+- [Variables](https://p5js.org/reference/#group-Data)
+- [Conditionals](https://p5js.org/reference/#/p5/if-else)
+- [Classes](https://p5js.org/reference/#/p5/class)
+
+**Examples:**
+- Virtual Creature
+- State Machine Game
+- Week 7 One-Button Game
+
+---
+
+class: inverse, left, top, large
+
+# Discussion
+
+Let's talk about:
+- State machines in apps/games you use
+- Where state machines might fit in YOUR project
+- Challenges organizing interactive code
+- How this connects to your Python adventures
+
+---
+
+class: inverse, left, top, large
+
+# See you next week!
+
+.center[![Center-aligned image](images/state-machine-diagram.gif)]
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        });
+
+    </script>
+  </body>
+</html>

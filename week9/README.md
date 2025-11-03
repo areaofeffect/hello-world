@@ -1,119 +1,257 @@
-# DATA
+# Week 9: Application State & State Machines
 
-# SVA IxD WEEK 9
+## Overview
+This week introduces the concept of **application state** - one of the most important concepts in interactive programming. Students will learn how to manage different modes and conditions in their programs using state machines, building on their experience with Python text adventures and P5.js interactive sketches.
 
-We will talk about how to consume data in a software/web application. We will explore 2 types of data acquisition.
+## Learning Objectives
+By the end of this week, students will be able to:
+- Understand what application state means in programming
+- Identify different states in games and applications they use daily
+- Implement a state machine pattern in P5.js
+- Manage state transitions based on user input and conditions
+- Use state to control program flow and visual presentation
+- Debug state-based programs by tracking state changes
 
-## API
+## Key Concepts
 
-Request <-> response
+### What is State?
+**State** represents the current condition or mode of a program at any given moment. Think of it as the program's "memory" of where it is and what it should be doing.
 
-## Streams
+### State Machines
+A **state machine** is a design pattern with these properties:
+1. The program can only be in ONE state at a time
+2. Each state has specific behaviors and visuals
+3. States transition to other states based on events
+4. Transitions follow defined rules
 
-Continuous stream of data, possibly from a sensor
+### Common State Examples
+- **Games**: MENU → PLAYING → PAUSED → GAMEOVER
+- **Apps**: LOGIN → FEED → PROFILE → SETTINGS
+- **Devices**: OFF → STARTING → READY → RUNNING → SHUTTING_DOWN
 
-# Setting up your development environment
+## Connection to Previous Learning
 
-## 1
+### Python Choose Your Own Adventure
+Students already used state management in their Python text adventures:
+```python
+current_scene = "forest"
 
-[Download and install the free version of Robo 3T](https://robomongo.org/)
+if current_scene == "forest":
+    # Show forest description
+    # Handle forest choices
+elif current_scene == "cave":
+    # Show cave description
+    # Handle cave choices
+```
 
-## 2
+This same pattern extends to P5.js with visual feedback!
 
-Open a new window in Terminal and run the following commands line by line
+### P5.js Interactive Sketches
+Previous weeks covered:
+- Mouse and keyboard interaction
+- Conditionals for behavior
+- Objects and classes
+- Animation and visual feedback
 
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-    nvm use 14
+State machines combine all these skills into organized, complex programs.
 
-## 3
+## Slides
+[View Week 9 Slides](slides/index.html)
 
-In the same or new window in Terminal run the following command
+## Examples
 
-    curl https://install.meteor.com/ | sh
+### 1. Virtual Creature ([Demo](examples/p5/virtual-creature/))
+An interactive creature with multiple moods/states based on its needs:
+- **Stats**: hunger, energy, happiness (decay over time)
+- **States**: HAPPY, HUNGRY, TIRED, BORED, WORRIED, EXCITED
+- **Interactions**: Feed, Rest, Play (click the creature)
+- **Visual Feedback**: Color, facial expression, animation change with state
 
-# HTTP
+**Key Learning Points:**
+- Complex state determined by multiple variables
+- Priority-based state transitions
+- State affects both appearance and behavior
+- User interaction changes state indirectly (through stats)
 
-Hypertext Transfer Protocol
+**Code Highlights:**
+```javascript
+updateMood() {
+  // Priority-based state machine
+  if (this.hunger < 20) {
+    this.mood = "HUNGRY";
+  } else if (this.energy < 20) {
+    this.mood = "TIRED";
+  } else if (this.happiness < 25) {
+    this.mood = "BORED";
+  } else {
+    this.mood = "HAPPY";
+  }
+}
+```
 
-[Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+### 2. State Machine Game ([Demo](examples/p5/state-machine-game/))
+A simple clicker game demonstrating the classic three-state pattern:
+- **States**: MENU, PLAYING, GAMEOVER
+- **Transitions**:
+  - SPACE key: MENU → PLAYING
+  - Timer ends: PLAYING → GAMEOVER
+  - SPACE key: GAMEOVER → MENU
+- **State-specific behavior**: Different rendering and input handling per state
 
-> HTTP functions as a request–response protocol in the client–server computing model.
+**Key Learning Points:**
+- Clear separation of states
+- Explicit state transitions
+- Different draw functions per state
+- State controls what inputs do
 
-## Client
+**Code Highlights:**
+```javascript
+let gameState = "MENU";
 
-Examples of clients
+function draw() {
+  if (gameState === "MENU") {
+    drawMenu();
+  } else if (gameState === "PLAYING") {
+    drawPlaying();
+  } else if (gameState === "GAMEOVER") {
+    drawGameOver();
+  }
+}
 
-- web browsers
-- mobile devices
-- other software applications requesting data from the 'internet'
+function keyPressed() {
+  if (key === ' ') {
+    if (gameState === "MENU") {
+      gameState = "PLAYING";
+      // Initialize game variables
+    } else if (gameState === "GAMEOVER") {
+      gameState = "MENU";
+    }
+  }
+}
+```
 
-## Server
+## In-Class Activities
 
-A server is an computer, available on the internet (or localhost) that hosts an application accessible to clients.
+### Activity 1: State Identification (15 min)
+- Students identify states in familiar games/apps
+- Draw state diagrams on paper
+- Discuss state transitions and what triggers them
 
-## HTTP Requests
+### Activity 2: Simple State Toggle (20 min)
+Create a two-state sketch:
+- Click to toggle between DAY and NIGHT
+- Different colors/visuals for each state
+- Practice state transitions
 
-[Request protocol](https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html)
-There are different types of request but the ones most frequently used are:
+### Activity 3: Traffic Light (25 min)
+Implement a traffic light with automatic state changes:
+- States: RED, YELLOW, GREEN
+- Automatic transitions with timers
+- Optional: Add pedestrian crossing button
 
-- GET (this method means retrieve whatever information (in the form of an entity) is identified by the request)
-- POST (this method asks the server to accept some packet of information before returning an response)
+### Activity 4: Explore Examples (30 min)
+- Run and modify the virtual creature example
+- Experiment with the state machine game
+- Discuss how state machines organize complex behavior
 
-## HTTP Responses
+## Applying State Machines to Your Project
 
-[Response protocol](https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html)
-The majority of responses include
+Now that you're working on individual projects, consider where state machines might help organize your code:
 
-- some content (the data you may have requested from the API, often formatted as JSON)
-- a status code
-- in the case of an error, and error message
+### Questions to Ask About Your Project
 
-#### Common status codes
+**Does your project have different modes or screens?**
+- Menu vs gameplay
+- Different tools or editing modes
+- Levels or scenes
+- Intro/playing/ending sequences
 
-- "200" OK (Success!)
-- "400" Bad request (Check the format of your request)
-- "401" Unauthorized (Do you need an API key)
-- "404" Not found
-- "50x" Something is wrong with the server where the response should be coming from
+**Does your project have objects with changing behavior?**
+- Characters with different moods or actions
+- UI elements that toggle between states
+- Game objects with lifecycle stages (spawning → active → dying)
+- Interactive elements with multiple response types
 
-And the best status code
+**Does your project respond to conditions over time?**
+- Health/energy systems that affect behavior
+- Environmental changes (day/night, weather)
+- Difficulty that adjusts based on performance
+- Tutorial vs normal gameplay
 
-- "418" [I'm a teapot](https://www.google.com/teapot)
+### How State Machines Can Help
 
-# NASA OPEN API
+**Organization:** Instead of many nested if-statements, state machines give you clear structure:
+```javascript
+if (gameState === "PLAYING") {
+  // All gameplay logic here
+} else if (gameState === "PAUSED") {
+  // All pause logic here
+}
+```
 
-Let's query some data via this API from Nasa
-[https://api.nasa.gov/index.html](https://api.nasa.gov/index.html)
+**Debugging:** When something goes wrong, you can see exactly which state you're in and what should be happening.
 
-# Building some isomorphic Javascript apps
+**Collaboration:** If working with others, state machines make it clear what modes exist and how they transition.
 
-We will be using [Meteor](https://www.meteor.com/) which is built on node. You installed node via [NVM](https://github.com/creationix/nvm) or Node Version Manager. This allows easily switching to various [releases](https://en.wikipedia.org/wiki/Software_release_life_cycle) of node if your applications dependencies require it.
+**Extension:** Adding new features becomes easier - need a settings menu? Add a new state!
 
-Our apps are based on the standard starter apps that come with Meteor. They both use React as it is now the default. App 2 adds serial communication with your Arduino visualized in real-time in p5.js.
+### Where to Start
 
-You must be in the folder that contains the code for the app you want to run. For example, if you want to run the API app, you must be in the folder `{path on your machine to this repo}/hello-world/week9/in-class-apps/api-api`. Then you can run `meteor npm install` and then `meteor` in the terminal. Note: only run one app at a time which will be on port 3000 (http://localhost:3000).
+1. **Identify 2-3 states** your project already has (even implicitly)
+2. **Draw a state diagram** showing how states connect
+3. **Implement one state** and make sure it works
+4. **Add transitions** between states one at a time
+5. **Refine** by adding more states or refactoring existing code
 
-## 1 Astronomy picture of the day
+## Tips for Success
 
-Terminal commands to run this app:
+### Planning Your State Machine
+1. **Draw a diagram first**: Map out all states and transitions on paper
+2. **Start simple**: Get 2-3 states working before adding more
+3. **Use clear names**: ALL_CAPS for state names makes them easy to spot
+4. **One state at a time**: Verify you can only be in one state
 
-    meteor npm install
-    meteor
+### Debugging State Machines
+```javascript
+// Add to draw() to see current state
+console.log("Current state:", gameState);
 
-Code from class can be found here:
-[in-class-apps/api-app](./in-class-apps/api-app)
+// Or display on canvas
+fill(0);
+text("State: " + gameState, 10, 20);
+```
 
-[Astronomy picture of the day from NASA](https://apod.nasa.gov/apod/astropix.html)  
-[API found here under APOD](https://api.nasa.gov/)
+### Organizing Your Code
+- Create separate draw functions for each state (`drawMenu()`, `drawPlaying()`, etc.)
+- Handle state transitions in one place (like `keyPressed()`)
+- Initialize/reset variables when entering a state
+- Comment your state transition logic clearly
 
-## 2 Super serial app
+### Common Pitfalls
+- **Multiple states at once**: Make sure transitions are clean and exclusive
+- **Forgetting to reset**: Initialize variables when entering a state
+- **No way back**: Ensure all states have a way to transition out
+- **Hardcoded values**: Use variables for timing and thresholds
 
-Terminal commands to run this app:
+## Resources
 
-    meteor npm install
-    meteor
+### P5.js References
+- [Variables](https://p5js.org/reference/#/p5/variables)
+- [Conditionals (if/else)](https://p5js.org/examples/control-conditionals-1.html)
+- [Classes](https://p5js.org/reference/#/p5/class)
+- [constrain()](https://p5js.org/reference/#/p5/constrain)
+- [map()](https://p5js.org/reference/#/p5/map)
 
-Code from class can be found here:
-[in-class-apps/super-serial-app](./in-class-apps/super-serial-app)
+### State Machine Patterns
+- [Game Programming Patterns: State](http://gameprogrammingpatterns.com/state.html)
+- [State Machines in Games](https://www.raywenderlich.com/5428806-state-pattern-using-swift)
 
-![Super Serial Success](./images/super-serial.png)
+### Inspiration
+- Tamagotchi virtual pets
+- [Neko](https://en.wikipedia.org/wiki/Neko_(software)) - classic desktop pet
+- Cookie Clicker
+- Classic arcade game state flows
+
+---
+
+Understanding state machines is foundational for building any interactive application. As you work on your individual projects, don't hesitate to ask questions about how state machines might help solve specific organizational challenges you encounter!

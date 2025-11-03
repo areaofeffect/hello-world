@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Creature - State Machine Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="sketch.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .instructions {
+      max-width: 600px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .instructions h2 {
+      margin-top: 0;
+      color: #555;
+    }
+    .instructions ul {
+      line-height: 1.8;
+    }
+    canvas {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Virtual Creature - State Machine Example</h1>
+  <div class="instructions">
+    <h2>How to Interact:</h2>
+    <ul>
+      <li><strong>Click the creature</strong> to interact based on its current mood</li>
+      <li>When HUNGRY: Feeding increases hunger stat</li>
+      <li>When TIRED: Resting increases energy stat</li>
+      <li>When BORED: Playing increases happiness stat</li>
+      <li>Watch how stats decay over time and trigger mood changes</li>
+    </ul>
+    <p><strong>Notice:</strong> The creature's state emerges from multiple variables working together!</p>
+  </div>
+</body>
+</html>

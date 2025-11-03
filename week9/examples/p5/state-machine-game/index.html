@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>State Machine Game - Challenge</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="sketch.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #ecf0f1;
+      margin-bottom: 10px;
+    }
+    .instructions {
+      max-width: 600px;
+      background: #34495e;
+      color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .instructions h2 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    .instructions ul {
+      line-height: 1.8;
+    }
+    canvas {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      border-radius: 8px;
+    }
+    .challenge {
+      max-width: 600px;
+      background: #e74c3c;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>State Machine Game - Challenge</h1>
+  <div class="instructions">
+    <h2>How to Play:</h2>
+    <ul>
+      <li><strong>SPACE:</strong> Start game / Return to menu</li>
+      <li><strong>CLICK:</strong> Score points during gameplay</li>
+      <li>You have 5 seconds to click as many times as possible!</li>
+      <li>Watch the game state change: MENU → PLAYING → GAMEOVER</li>
+    </ul>
+  </div>
+  <div class="challenge">
+    <h2>Explore the Code:</h2>
+    <p>Notice how each state has its own draw function and behavior.</p>
+    <p><strong>Try modifying:</strong> Change the timer duration, add new states (PAUSED, INSTRUCTIONS), or create your own game using this pattern!</p>
+  </div>
+</body>
+</html>
