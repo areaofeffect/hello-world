@@ -96,7 +96,14 @@ Think of it like the "memory" of your application - it remembers:
 - What the user is doing
 - What should happen next
 
-Just like a light switch has two states (ON/OFF), programs have states too!
+Just like everyday objects, programs have states too:
+
+💡 **Light Switch**: ON or OFF
+
+🚦 **Traffic Light**: Red, Yellow, Green
+
+📱 **Phone**: Locked or Unlocked
+
 
 ---
 
@@ -118,28 +125,49 @@ Each state determines what can happen next!
 
 class: inverse, left, top
 
-# Remember: Choose Your Own Adventure?
+# State in Your Python Game
 
-In Python, you built text adventure games with different scenes:
+Remember your choose-your-own-adventure game? **You were already using state!**
 
 ```python
-current_scene = "forest"
-
-if current_scene == "forest":
-    print("You are in a dark forest.")
-    choice = input("Go left or right? ")
-
-    if choice == "left":
-        current_scene = "cave"
-    elif choice == "right":
-        current_scene = "river"
+location = "forest"
+health = 100
+has_key = False
 ```
 
-**This is state management!** You were tracking which scene the player was in.
+Your game tracked:
+- **Where the player is** (location state)
+- **How much health they have** (numeric state)
+- **What items they've collected** (boolean state)
+
+The program "remembered" these values and used them to determine what happens next!
 
 ---
 
-class: inverse, left, top, large
+class: inverse, left, top
+
+# Why State Matters
+
+Interactive programs need to **remember things** and **respond differently** based on what happened before.
+
+🎮 **Games**
+- Player score, level, power-ups
+- Enemy behavior and health
+- Menu vs gameplay vs game over
+
+🎨 **Art Applications**
+- Tool selected (brush, eraser, fill)
+- Color chosen
+- Drawing mode (freehand vs shapes)
+
+🤖 **Virtual Pets**
+- Mood (happy, sad, hungry)
+- Energy and health levels
+- Time since last interaction
+
+---
+
+class: inverse, left, top
 
 # State in Games
 
@@ -183,12 +211,19 @@ class: inverse, left, top
 
 # What is a State Machine?
 
-A **state machine** is a pattern for managing states with clear rules:
+A **state machine** is a design pattern where your program can be in ONE state at a time, and transitions between states based on rules.
 
-1. The program can only be in ONE state at a time
-2. Each state has specific behaviors
-3. States can TRANSITION to other states based on events
-4. Transitions follow defined rules
+🎯 **One State at a Time**
+- Only one active state at any moment
+- No confusion about what mode you're in
+
+🔄 **Transitions**
+- Clear rules for changing states
+- Events trigger state changes
+
+⚡ **Actions**
+- Each state has different behavior
+- Different rendering and responses
 
 Think of it like a map of your program's possible modes!
 
@@ -215,6 +250,72 @@ class: inverse, left, top
          │ (press SPACE)
          └──────────────► back to MENU
 ```
+
+---
+
+class: inverse, left, top
+
+# Simple State: Toggle Button
+
+The simplest state example - a button that switches between two states.
+
+```javascript
+// Track the state
+let isOn = false;
+
+function setup() {
+  createCanvas(200, 200);
+}
+
+function draw() {
+  // Draw based on state
+  if (isOn) {
+    background(255, 255, 0);  // Yellow when ON
+    text("ON", 90, 100);
+  } else {
+    background(100);  // Gray when OFF
+    text("OFF", 85, 100);
+  }
+}
+
+function mousePressed() {
+  // Toggle the state
+  isOn = !isOn;
+}
+```
+
+**Result:** The button remembers if it's ON or OFF!
+
+---
+
+class: inverse, left, top
+
+# Multiple States: Traffic Light
+
+When you have more than two options, use strings to represent states.
+
+```javascript
+let light = "green";
+
+function draw() {
+  background(50);
+
+  if (light === "green") {
+    fill(0, 255, 0);
+    text("GO!", 90, 100);
+  } else if (light === "yellow") {
+    fill(255, 255, 0);
+    text("SLOW", 85, 100);
+  } else if (light === "red") {
+    fill(255, 0, 0);
+    text("STOP", 85, 100);
+  }
+
+  ellipse(100, 50, 40, 40);
+}
+```
+
+**Three possible states:** 🟢 GREEN → 🟡 YELLOW → 🔴 RED
 
 ---
 
@@ -273,7 +374,7 @@ function draw() {
 
 ---
 
-class: inverse, left, top, large
+class: inverse, left, top
 
 # More Complex State: Virtual Creatures
 
@@ -346,7 +447,7 @@ class: inverse, left, top, large
 
 # Live Example: Virtual Creature
 
-[Virtual Creature Demo](../examples/p5/virtual-creature/)
+[Virtual Creature Demo](https://brunokruse.github.io/week7-interactive/examples/p5/virtual-creature/learn.html)
 
 Try interacting with the creature:
 - Feed it when hungry
@@ -356,13 +457,13 @@ Try interacting with the creature:
 
 ---
 
-class: inverse, left, top, large
+class: inverse, left, top
 
 # Example: State Machine Game
 
 A simple game demonstrating the three-state pattern:
 
-[State Machine Game Demo](../examples/p5/state-machine-game/)
+[State Machine Game Demo](https://brunokruse.github.io/week7-interactive/examples/p5/challenges/challenge-05-state-machine/learn.html)
 
 Shows how to:
 - Create MENU, PLAYING, GAMEOVER states
@@ -409,7 +510,7 @@ Think about your own project ideas:
 
 ---
 
-class: inverse, left, top, large
+class: inverse, left, top
 
 # How State Machines Help
 
@@ -469,9 +570,10 @@ class: inverse, left, top, large
 - [Classes](https://p5js.org/reference/#/p5/class)
 
 **Examples:**
-- Virtual Creature
-- State Machine Game
-- Week 7 One-Button Game
+- [Traffic Light System](https://brunokruse.github.io/week7-interactive/students/ramon-naula/challenge-02.html)
+- [Virtual Creature](https://brunokruse.github.io/week7-interactive/examples/p5/virtual-creature/learn.html)
+- [State Machine Game](https://brunokruse.github.io/week7-interactive/examples/p5/challenges/challenge-05-state-machine/learn.html)
+- [One-Button Golf Game](https://brunokruse.github.io/week7-interactive/examples/p5/one-button-golf-like/learn.html)
 
 ---
 
@@ -489,9 +591,9 @@ Let's talk about:
 
 class: inverse, left, top, large
 
-# See you next week!
+# You are not alone.
 
-.center[![Center-aligned image](images/state-machine-diagram.gif)]
+.center[![Center-aligned image](images/totoro.gif)]
 
 
     </textarea>
