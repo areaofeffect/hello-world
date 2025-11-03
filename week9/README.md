@@ -1,10 +1,13 @@
 # Week 9: Application State & State Machines
 
 ## Overview
+
 This week introduces the concept of **application state** - one of the most important concepts in interactive programming. Students will learn how to manage different modes and conditions in their programs using state machines, building on their experience with Python text adventures and P5.js interactive sketches.
 
 ## Learning Objectives
+
 By the end of this week, students will be able to:
+
 - Understand what application state means in programming
 - Identify different states in games and applications they use daily
 - Implement a state machine pattern in P5.js
@@ -15,16 +18,27 @@ By the end of this week, students will be able to:
 ## Key Concepts
 
 ### What is State?
+
 **State** represents the current condition or mode of a program at any given moment. Think of it as the program's "memory" of where it is and what it should be doing.
 
+Just like everyday objects, programs have states too:
+
+- 💡 **Light Switch**: ON or OFF
+- 🚦 **Traffic Light**: Red, Yellow, Green
+- 📱 **Phone**: Locked or Unlocked
+
 ### State Machines
-A **state machine** is a design pattern with these properties:
-1. The program can only be in ONE state at a time
-2. Each state has specific behaviors and visuals
-3. States transition to other states based on events
-4. Transitions follow defined rules
+
+A **state machine** is a design pattern where your program can be in ONE state at a time, and transitions between states based on rules.
+
+🎯 **One State at a Time** - Only one active state at any moment, no confusion about what mode you're in
+
+🔄 **Transitions** - Clear rules for changing states, events trigger state changes
+
+⚡ **Actions** - Each state has different behavior and rendering
 
 ### Common State Examples
+
 - **Games**: MENU → PLAYING → PAUSED → GAMEOVER
 - **Apps**: LOGIN → FEED → PROFILE → SETTINGS
 - **Devices**: OFF → STARTING → READY → RUNNING → SHUTTING_DOWN
@@ -32,22 +46,49 @@ A **state machine** is a design pattern with these properties:
 ## Connection to Previous Learning
 
 ### Python Choose Your Own Adventure
-Students already used state management in their Python text adventures:
-```python
-current_scene = "forest"
 
-if current_scene == "forest":
-    # Show forest description
-    # Handle forest choices
-elif current_scene == "cave":
-    # Show cave description
-    # Handle cave choices
+Remember your choose-your-own-adventure game? **You were already using state!**
+
+```python
+location = "forest"
+health = 100
+has_key = False
 ```
 
-This same pattern extends to P5.js with visual feedback!
+Your game tracked:
+
+- **Where the player is** (location state)
+- **How much health they have** (numeric state)
+- **What items they've collected** (boolean state)
+
+The program "remembered" these values and used them to determine what happens next. This same pattern extends to P5.js with visual feedback!
+
+### Why State Matters
+
+Interactive programs need to **remember things** and **respond differently** based on what happened before.
+
+🎮 **Games**
+
+- Player score, level, power-ups
+- Enemy behavior and health
+- Menu vs gameplay vs game over
+
+🎨 **Art Applications**
+
+- Tool selected (brush, eraser, fill)
+- Color chosen
+- Drawing mode (freehand vs shapes)
+
+🤖 **Virtual Pets**
+
+- Mood (happy, sad, hungry)
+- Energy and health levels
+- Time since last interaction
 
 ### P5.js Interactive Sketches
+
 Previous weeks covered:
+
 - Mouse and keyboard interaction
 - Conditionals for behavior
 - Objects and classes
@@ -56,24 +97,80 @@ Previous weeks covered:
 State machines combine all these skills into organized, complex programs.
 
 ## Slides
-[View Week 9 Slides](slides/index.html)
 
-## Examples
+[View Week 9 Slides](http://hello-world-week9.s3-website-us-east-1.amazonaws.com/#1)
 
-### 1. Virtual Creature ([Demo](examples/p5/virtual-creature/))
+## Simple Examples
+
+Before diving into complex state machines, start with these foundational examples:
+
+### Toggle Button
+
+The simplest state example - a button that switches between two states (ON/OFF):
+
+```javascript
+let isOn = false;
+
+function draw() {
+  if (isOn) {
+    background(255, 255, 0); // Yellow when ON
+    text("ON", 90, 100);
+  } else {
+    background(100); // Gray when OFF
+    text("OFF", 85, 100);
+  }
+}
+
+function mousePressed() {
+  isOn = !isOn; // Toggle the state
+}
+```
+
+### Traffic Light
+
+When you have more than two options, use strings to represent states:
+
+```javascript
+let light = "green";
+
+function draw() {
+  if (light === "green") {
+    fill(0, 255, 0);
+    text("GO!", 90, 100);
+  } else if (light === "yellow") {
+    fill(255, 255, 0);
+    text("SLOW", 85, 100);
+  } else if (light === "red") {
+    fill(255, 0, 0);
+    text("STOP", 85, 100);
+  }
+}
+```
+
+**Three possible states:** 🟢 GREEN → 🟡 YELLOW → 🔴 RED
+
+See the [live traffic light example](https://brunokruse.github.io/week7-interactive/students/ramon-naula/challenge-02.html) by a student.
+
+## Complex Examples
+
+### 1. Virtual Creature ([Demo](https://brunokruse.github.io/week7-interactive/examples/p5/virtual-creature/learn.html))
+
 An interactive creature with multiple moods/states based on its needs:
+
 - **Stats**: hunger, energy, happiness (decay over time)
 - **States**: HAPPY, HUNGRY, TIRED, BORED, WORRIED, EXCITED
 - **Interactions**: Feed, Rest, Play (click the creature)
 - **Visual Feedback**: Color, facial expression, animation change with state
 
 **Key Learning Points:**
+
 - Complex state determined by multiple variables
 - Priority-based state transitions
 - State affects both appearance and behavior
 - User interaction changes state indirectly (through stats)
 
 **Code Highlights:**
+
 ```javascript
 updateMood() {
   // Priority-based state machine
@@ -89,8 +186,10 @@ updateMood() {
 }
 ```
 
-### 2. State Machine Game ([Demo](examples/p5/state-machine-game/))
+### 2. State Machine Game ([Demo](https://brunokruse.github.io/week7-interactive/examples/p5/challenges/challenge-05-state-machine/learn.html))
+
 A simple clicker game demonstrating the classic three-state pattern:
+
 - **States**: MENU, PLAYING, GAMEOVER
 - **Transitions**:
   - SPACE key: MENU → PLAYING
@@ -99,12 +198,14 @@ A simple clicker game demonstrating the classic three-state pattern:
 - **State-specific behavior**: Different rendering and input handling per state
 
 **Key Learning Points:**
+
 - Clear separation of states
 - Explicit state transitions
 - Different draw functions per state
 - State controls what inputs do
 
 **Code Highlights:**
+
 ```javascript
 let gameState = "MENU";
 
@@ -119,7 +220,7 @@ function draw() {
 }
 
 function keyPressed() {
-  if (key === ' ') {
+  if (key === " ") {
     if (gameState === "MENU") {
       gameState = "PLAYING";
       // Initialize game variables
@@ -133,23 +234,29 @@ function keyPressed() {
 ## In-Class Activities
 
 ### Activity 1: State Identification (15 min)
+
 - Students identify states in familiar games/apps
 - Draw state diagrams on paper
 - Discuss state transitions and what triggers them
 
 ### Activity 2: Simple State Toggle (20 min)
+
 Create a two-state sketch:
+
 - Click to toggle between DAY and NIGHT
 - Different colors/visuals for each state
 - Practice state transitions
 
 ### Activity 3: Traffic Light (25 min)
+
 Implement a traffic light with automatic state changes:
+
 - States: RED, YELLOW, GREEN
 - Automatic transitions with timers
 - Optional: Add pedestrian crossing button
 
 ### Activity 4: Explore Examples (30 min)
+
 - Run and modify the virtual creature example
 - Experiment with the state machine game
 - Discuss how state machines organize complex behavior
@@ -161,18 +268,21 @@ Now that you're working on individual projects, consider where state machines mi
 ### Questions to Ask About Your Project
 
 **Does your project have different modes or screens?**
+
 - Menu vs gameplay
 - Different tools or editing modes
 - Levels or scenes
 - Intro/playing/ending sequences
 
 **Does your project have objects with changing behavior?**
+
 - Characters with different moods or actions
 - UI elements that toggle between states
 - Game objects with lifecycle stages (spawning → active → dying)
 - Interactive elements with multiple response types
 
 **Does your project respond to conditions over time?**
+
 - Health/energy systems that affect behavior
 - Environmental changes (day/night, weather)
 - Difficulty that adjusts based on performance
@@ -181,6 +291,7 @@ Now that you're working on individual projects, consider where state machines mi
 ### How State Machines Can Help
 
 **Organization:** Instead of many nested if-statements, state machines give you clear structure:
+
 ```javascript
 if (gameState === "PLAYING") {
   // All gameplay logic here
@@ -206,12 +317,14 @@ if (gameState === "PLAYING") {
 ## Tips for Success
 
 ### Planning Your State Machine
+
 1. **Draw a diagram first**: Map out all states and transitions on paper
 2. **Start simple**: Get 2-3 states working before adding more
 3. **Use clear names**: ALL_CAPS for state names makes them easy to spot
 4. **One state at a time**: Verify you can only be in one state
 
 ### Debugging State Machines
+
 ```javascript
 // Add to draw() to see current state
 console.log("Current state:", gameState);
@@ -222,12 +335,14 @@ text("State: " + gameState, 10, 20);
 ```
 
 ### Organizing Your Code
+
 - Create separate draw functions for each state (`drawMenu()`, `drawPlaying()`, etc.)
 - Handle state transitions in one place (like `keyPressed()`)
 - Initialize/reset variables when entering a state
 - Comment your state transition logic clearly
 
 ### Common Pitfalls
+
 - **Multiple states at once**: Make sure transitions are clean and exclusive
 - **Forgetting to reset**: Initialize variables when entering a state
 - **No way back**: Ensure all states have a way to transition out
@@ -236,19 +351,29 @@ text("State: " + gameState, 10, 20);
 ## Resources
 
 ### P5.js References
+
 - [Variables](https://p5js.org/reference/#/p5/variables)
 - [Conditionals (if/else)](https://p5js.org/examples/control-conditionals-1.html)
 - [Classes](https://p5js.org/reference/#/p5/class)
 - [constrain()](https://p5js.org/reference/#/p5/constrain)
 - [map()](https://p5js.org/reference/#/p5/map)
 
+### Live Examples
+
+- [Traffic Light System](https://brunokruse.github.io/week7-interactive/students/ramon-naula/challenge-02.html) - Student example of state-based traffic light
+- [Virtual Creature](https://brunokruse.github.io/week7-interactive/examples/p5/virtual-creature/learn.html) - Complex state machine with mood management
+- [State Machine Game](https://brunokruse.github.io/week7-interactive/examples/p5/challenges/challenge-05-state-machine/learn.html) - Three-state game pattern
+- [One-Button Golf Game](https://brunokruse.github.io/week7-interactive/examples/p5/one-button-golf-like/learn.html) - State-based game mechanics
+
 ### State Machine Patterns
+
 - [Game Programming Patterns: State](http://gameprogrammingpatterns.com/state.html)
 - [State Machines in Games](https://www.raywenderlich.com/5428806-state-pattern-using-swift)
 
 ### Inspiration
+
 - Tamagotchi virtual pets
-- [Neko](https://en.wikipedia.org/wiki/Neko_(software)) - classic desktop pet
+- [Neko](<https://en.wikipedia.org/wiki/Neko_(software)>) - classic desktop pet
 - Cookie Clicker
 - Classic arcade game state flows
 
