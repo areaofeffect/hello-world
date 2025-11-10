@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World: Week 10 - P5.js + React</title>
+    <meta charset="utf-8">
+
+    <style>
+      /* Headers */
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+      /* Regular Text */
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+      /* Code Snips */
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Roboto';
+        font-weight: normal;
+      }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.2em;
+      }
+
+      li p { line-height: 2.0em; color: #FFF}
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+
+      .center img {
+        width: 100%; /* Keep our Images fitting in the slides */
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, left, middle
+
+# HELLO WORLD
+# WEEK 10: P5.JS + REACT
+Fall 2025
+
+---
+
+class: inverse, left, top, large
+
+## Today's Topics
+
+- What is React?
+- Why combine P5.js with React?
+- Multi-page applications
+- Working with real-world data
+- NYC Open Data API
+- Demo walkthrough
+
+---
+
+class: inverse, left, top
+
+# What is React?
+
+**React** is a JavaScript library for building user interfaces, created by Facebook.
+
+Think of it as a way to organize your web application into **reusable components**.
+
+🧩 **Components**
+- Like building blocks for your interface
+- Each component manages its own logic and appearance
+
+🔄 **State Management**
+- React keeps track of changing data
+- Automatically updates the UI when data changes
+
+🧭 **Routing**
+- Navigate between different "pages" without page reloads
+- Creates smooth, app-like experiences
+
+---
+
+class: inverse, left, top
+
+# Why React + P5.js?
+
+Combining React with P5.js gives you the best of both worlds:
+
+**React provides:**
+- 📄 Multi-page structure and navigation
+- 🔌 Easy integration with APIs and external data
+- 🎛️ UI controls and interface elements
+- 📦 Modern development tools and ecosystem
+
+**P5.js provides:**
+- 🎨 Creative coding and visual output
+- 🖼️ Canvas-based rendering
+- 🎮 Easy interactive animations
+- 📊 Data visualization capabilities
+
+---
+
+class: inverse, left, top
+
+# The Demo App
+
+Our demo shows two key patterns:
+
+1. **Multiple P5 sketches** in one app
+   - Home page with navigation
+   - Basic sketch page (animation)
+   - Data visualization page
+
+2. **Real-world data integration**
+   - Fetching data from NYC Open Data
+   - Passing data to P5 sketches
+   - Visualizing the data
+
+---
+
+class: inverse, left, top
+
+# Project Structure
+
+```
+p5-react-demo/
+├── src/
+│   ├── App.jsx              # Routes (pages)
+│   ├── main.jsx             # Entry point
+│   └── pages/
+│       ├── Home.jsx         # Landing page
+│       ├── BasicSketch.jsx  # Simple P5 animation
+│       └── DataSketch.jsx   # NYC Data viz
+├── package.json
+└── vite.config.js
+```
+
+**Key Concept:** Each page is a separate React component that can include its own P5 sketch.
+
+---
+
+class: inverse, left, top
+
+# React Router
+
+Navigation between pages using React Router:
+
+```javascript
+import { BrowserRouter as Router, Routes, Route }
+  from 'react-router-dom'
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/basic" element={<BasicSketch />} />
+        <Route path="/data" element={<DataSketch />} />
+      </Routes>
+    </Router>
+  )
+}
+```
+
+Each route renders a different component!
+
+---
+
+class: inverse, left, top
+
+# P5 in React: The p5 Prefix
+
+When using `@p5-wrapper/react`, you need to prefix all P5 functions:
+
+```javascript
+function sketch(p5) {
+  p5.setup = () => {
+    p5.createCanvas(600, 400);
+  }
+
+  p5.draw = () => {
+    p5.background(30, 30, 50);
+    p5.fill(100, 200, 255);
+    p5.ellipse(p5.mouseX, p5.mouseY, 50, 50);
+  }
+}
+```
+
+**Why?** The `p5` parameter gives you access to all P5 functions in a way that plays nicely with React.
+
+---
+
+class: inverse, left, top
+
+# Passing Data to P5
+
+React can pass data to your P5 sketches as props:
+
+```javascript
+// In React component:
+<ReactP5Wrapper
+  sketch={dataSketch}
+  babyNames={babyNames}
+/>
+
+// In P5 sketch:
+p5.updateWithProps = props => {
+  if (props.babyNames) {
+    babyNames = props.babyNames;
+  }
+}
+```
+
+This lets React handle data fetching while P5 handles visualization!
+
+---
+
+class: inverse, left, top
+
+# NYC Open Data API
+
+**Huge collection of real-world datasets** from New York City:
+
+- 🍼 Popular Baby Names
+- 🚗 Traffic collisions
+- 🌳 Street trees
+- 🏢 Building permits
+- 🚓 Crime statistics
+- 📊 And 2,000+ more!
+
+**No API key required** for basic usage (up to 1000 requests/day)
+
+Visit: https://opendata.cityofnewyork.us/
+
+---
+
+class: inverse, left, top
+
+# Using the API
+
+Fetching data in React with `useEffect`:
+
+```javascript
+useEffect(() => {
+  const fetchData = async () => {
+    const response = await fetch(
+      'https://data.cityofnewyork.us/resource/25th-nujf.json?year_of_birth=2023&$limit=10'
+    );
+    const data = await response.json();
+    setBabyNames(data);
+  }
+
+  fetchData();
+}, []);  // Empty array = run once on mount
+```
+
+---
+
+class: inverse, left, top
+
+# Visualizing the Data
+
+Once React fetches the data, P5 can visualize it:
+
+```javascript
+p5.draw = () => {
+  babyNames.forEach((name, index) => {
+    let count = parseInt(name.count);
+    let barWidth = p5.map(count, 0, maxCount, 0, 600);
+
+    // Color by gender
+    if (name.gender === 'FEMALE') {
+      p5.fill(255, 100, 150);
+    } else {
+      p5.fill(100, 150, 255);
+    }
+
+    p5.rect(150, yPos, barWidth, 25);
+  });
+}
+```
+
+---
+
+class: inverse, left, top
+
+# Getting Started
+
+**To run the demo:**
+
+```bash
+cd week10/p5-react-demo
+npm install
+npm run dev
+```
+
+Then open your browser to the URL shown (usually `http://localhost:5173`)
+
+---
+
+class: inverse, left, top, large
+
+# Key Takeaways
+
+1. **React organizes** your app into components and pages
+2. **P5 visualizes** using the canvas
+3. **APIs provide** real-world data to work with
+4. **Modern tools** (Vite, npm) make development easier
+5. **You can combine** any data source with any visualization
+
+Start with the demo, then customize it to explore your own ideas!
+
+---
+
+class: inverse, left, top
+
+# Ideas for Your Projects
+
+**What could you build?**
+
+- 📊 Visualize different NYC datasets
+- 🎮 Multi-level game with state management
+- 🎨 Art tool with different modes/pages
+- 📱 Interactive data dashboard
+- 🌤️ Weather app with visual display
+- 📈 Personal habit tracker with charts
+
+The combination of React + P5 + APIs opens up endless possibilities!
+
+---
+
+class: inverse, left, top, large
+
+# Resources
+
+**Documentation:**
+- [React Tutorial](https://react.dev/learn)
+- [React Router](https://reactrouter.com/)
+- [P5.js Reference](https://p5js.org/reference/)
+- [NYC Open Data](https://opendata.cityofnewyork.us/)
+
+**Demo Code:**
+- `week10/p5-react-demo/` - Full source code
+- `README.md` - Complete setup instructions
+- `QUICKSTART.md` - Quick reference guide
+
+---
+
+class: inverse, left, top, large
+
+# You are not alone.
+
+.center[![Center-aligned image](images/totoro.gif)]
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        });
+
+    </script>
+  </body>
+</html>
