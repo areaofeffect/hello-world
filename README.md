@@ -1,6 +1,6 @@
 # Hello World: The Logic of Interaction
 
-##### FALL 2025
+##### FALL 2026
 
 ##### INSTRUCTORS: Carrie Kengle, Bruno Kruse
 
