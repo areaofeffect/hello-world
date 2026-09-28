@@ -374,6 +374,8 @@ steps to initializing a variable
 
 ## Assignments
 
+Turn in all three assignments in one GitHub repo. Step-by-step instructions: [Submitting your Week 2 homework with GitHub](submitting-with-github.md).
+
 ### Assignment 1
 
 Pick four objects in everyday life and represent them as a data type.
