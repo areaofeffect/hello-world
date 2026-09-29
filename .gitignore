@@ -5,3 +5,6 @@ dist/
 node_modules/
 website
 .vscode
+
+# Weekly quizzes (entered in Canvas, kept local)
+quizzes/

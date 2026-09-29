@@ -147,3 +147,9 @@ player = {
 > ! Forest Hero Ending: Find the gem, and give it to the fox!
 
 > ! Spooky Ending: Find the gem, and trade it with the ghost!
+
+<br/>
+
+## bonus: a colorful version with Rich
+
+Want color, boxes, and menus that reject bad input for you? [deep-deep-forest-rich](https://github.com/areaofeffect/hello-world/tree/main/week3/examples/python3/deep-deep-forest-rich) is the same game using the [Rich](https://github.com/Textualize/rich) library. Install it with `pip3 install rich`. The README in that folder explains every new line.

@@ -711,6 +711,31 @@ To start, it will help to break down your game as variables, datatypes and objec
 
 ---
 class: inverse, left
+# Make it look good (optional)
+
+In class we looked at [charm.land](https://charm.land/), a set of tools for building beautiful terminal apps. Those tools are written in Go, so they don't plug into a Python game.
+
+The Python alternative is [Rich](https://github.com/Textualize/rich). Same idea, and it works with what you already know:
+
+```bash
+pip3 install rich
+```
+
+```python
+from rich.console import Console
+from rich.prompt import Prompt, Confirm
+
+console = Console()
+console.print("[bold green]You enter the deep deep forest.[/]")
+path = Prompt.ask("Which way?", choices=["north", "south"])
+if Confirm.ask("Take the lantern?"):
+    console.print("[yellow]It flickers to life.[/]")
+```
+
+Colors, menus that reject bad input, yes/no prompts, boxes and tables. See the [Rich version of the forest game](https://github.com/areaofeffect/hello-world/tree/main/week3/examples/python3/deep-deep-forest-rich) for a full example.
+
+---
+class: inverse, left
 # Advanced assignment
 ## Convert your game logic into a JavaScript web app
 
