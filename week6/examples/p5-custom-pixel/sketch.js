@@ -13,7 +13,7 @@ function setup() {
   createCanvas(640, 480);
   //  https://p5js.org/examples/dom-video-capture.html
   capture = createCapture(VIDEO);
-  // capture.hide();
+  capture.hide();
   // https://p5js.org/reference/#/p5/pixelDensity
   pixelDensity(1);
   rectMode(CENTER);
@@ -32,7 +32,7 @@ function draw() {
   // https://p5js.org/reference/#/p5.Image/loadPixels
   capture.loadPixels();
 
-  let pixelSize = 40;
+  let pixelSize = 20;
   for (let captureY = 0; captureY < capture.height; captureY += pixelSize) {
     for (let captureX = 0; captureX < capture.width; captureX += pixelSize) {
       // https://p5js.org/reference/#/p5/pixels
@@ -54,7 +54,7 @@ function draw() {
       );
     }
   }
-  // filter(GRAY);
+  filter(GRAY);
   // filter(BLUR, 3);
   // filter(INVERT);
   // filter(ERODE);

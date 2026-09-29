@@ -2,6 +2,8 @@
 
 # SVA IxD Week 6
 
+[Week 6 Slides](http://hello-world-week1.s3-website-us-east-1.amazonaws.com/#1)
+
 ## Review and Discussion of Week 5
 
 ### Scope and Organizing Code

@@ -159,9 +159,9 @@ function draw() {
       pixelGrid[y][x].updateFromCapture(capture, appWidth, appHeight);
 
       // Choose display mode:
-      pixelGrid[y][x].displayAsImage();
+      // pixelGrid[y][x].displayAsImage();
       // pixelGrid[y][x].displayAsGreyscale();
-      // pixelGrid[y][x].displayAsRainbow();
+      pixelGrid[y][x].displayAsRainbow();
     }
   }
 }
