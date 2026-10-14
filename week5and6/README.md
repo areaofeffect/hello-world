@@ -309,23 +309,25 @@ https://stackoverflow.com/help/how-to-ask
 
 ## Week 5 Assignment
 
-### Update Week 4 assignment to JavaScript
+### Create a virtual creature using classes
 
-Take your Week 4 assignment (repeating patterns/wallpaper) and translate it to JavaScript using P5.js.
+Use classes to create an artificial life, a virtual creature!
 
-[Week 5 Assignment Repo](https://github.com/areaofeffect/hello-world-week5-assignment)
+1. Consider what environment the creature lives in and how it can respond to it.
+2. Consider how the creature evolves through interactions or over time.
+3. Consider working together with your classmates to let your creatures interact with theirs.
+
+Starting point:
+
+- [Monster care demo](./examples/monster-like), a p5 Tamagotchi in two files, `sketch.js` and `monster.js`
+
+Python is fine too. A Python creature can live in the terminal (`print` or [Rich](https://github.com/Textualize/rich)), in a tkinter window, or on an Arduino over serial.
+
+You are welcome to use an AI assistant (Codex or Claude in VS Code, as demoed in class). Ask it to explain every line it writes, give it small jobs, and paste the prompts that mattered into your README.
 
 ## Week 6 Assignment
 
-### Visualize sensor data from Arduino to your browser.
-
-1. Watch [Welcome to p5](http://hello.p5js.org/) and read the [Getting started with p5 guides](https://p5js.org/get-started/).
-
-2. Create a p5 sketch that accepts serial data from a sensor (analog or digital) attached to your Arduino. You can use the Arduino Read sketch in our repo as a starting point.
-
-3. Now that you have Arduino 'talking' to your p5 code. Visualize the sensor data in an interesting way. Remember to run the serial bridge.
-
-4. If you get stuck: Review the Resources and Additional examples from the p5-full folder in our README. There are tons of p5 resources online. Google-fu is your friend.
+To be announced next class.
 
 # Resources
 
