@@ -302,7 +302,7 @@ Build a visual clock that:
 
 ### JavaScript Classes
 - [Classes (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [P5.js Objects Tutorial](https://p5js.org/examples/objects-objects.html)
+- [P5 Jitter class](../week5and6/examples/p5-jitter)
 
 ### Video Tutorials
 - [Coding Train: Nested Loops](https://www.youtube.com/watch?v=H7frvcAHXps)

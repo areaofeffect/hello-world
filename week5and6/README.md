@@ -248,7 +248,7 @@ A class is actually a Data Type :) A composite data type.
 
 JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance.
 
-[P5 Jitter class](https://p5js.org/examples/objects-objects.html)
+[P5 Jitter class](./examples/p5-jitter)
 
 ## Classes in C
 

@@ -413,7 +413,7 @@ There was a question about why a dot is used when we write Classes (objects) in 
 Further examples of how to write classes in JavaScript.
 
 - [JavaScript class example Pokémon](https://github.com/areaofeffect/hello-world/blob/main/week5/examples/javascript_class.js)
-- [Jitter Class](https://p5js.org/examples/objects-objects.html)
+- [Jitter Class](../week5and6/examples/p5-jitter)
 
 <br/>
 
