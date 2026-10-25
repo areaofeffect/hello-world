@@ -1,59 +1,69 @@
-var ballX = 100;
-var ballY = 100;
+// Almost pong
+// A deliberately unfinished pong. Move the mouse to control the paddle.
+// Things you could finish:
+//   - a second player on the right with their own paddle
+//   - a score for each player instead of "lives"
+//   - serve the ball from the center after a miss
+//   - a start screen and a game over screen (see application state)
+//   - keyboard controls instead of the mouse
 
-var ballXV = -4;
-var ballYV = 1;
+let canvasWidth = 600;
+let canvasHeight = 400;
 
-var rectX = 10;
-var rectY = 10;
-var rectH = 75; // paddle height
+// the ball: position and velocity
+let ballX = 300;
+let ballY = 200;
+let ballXV = -4;
+let ballYV = 2;
+let ballSize = 30;
 
-var lives = 3;
+// the paddle
+let paddleX = 20;
+let paddleY = 20;
+let paddleW = 20;
+let paddleH = 120;
+
+let lives = 3;
 
 function setup() {
-  createCanvas(200, 200);
-  background(0);
+  createCanvas(canvasWidth, canvasHeight);
   noStroke();
-  fill(0, 255, 0);  
+  textSize(32);
 }
 
 function draw() {
   background(0);
   setText();
-  setShapes();    
+  setShapes();
   bounceCheck();
   increment();
-  scoreCheck();  
+  scoreCheck();
 }
 
-function increment() {  
-  ballX += ballXV;  
+function increment() {
+  ballX += ballXV;
   ballY += ballYV;
-  
+
   // every 10 seconds (600 frames at 60fps) the ball speeds up
-  if(frameCount % 600 == 0) {
+  if (frameCount % 600 == 0) {
     ballXV = ballXV * 2;
   }
 }
 
 function mouseMoved() {
-  rectY = mouseY;
-}
-
-function ball(x, y) {
-  ellipse(x - 2, y, 30, 30);
-  ellipse(x, y, 15, 15);
+  // the paddle follows the mouse, centered on it
+  paddleY = mouseY - paddleH / 2;
 }
 
 function setShapes() {
   fill(255);
-  rect(rectX, rectY, 20, rectH);
-  ball(ballX, ballY);
+  rect(paddleX, paddleY, paddleW, paddleH);
+  ellipse(ballX, ballY, ballSize, ballSize);
 }
 
-function sliderBounce() {
+function paddleBounce() {
   // is the ball between the top and bottom of the paddle?
-  if(rectY < ballY && rectY + rectH > ballY) {
+  if (ballY > paddleY && ballY < paddleY + paddleH) {
     ballXV = ballXV * -1;
     lives += 1;
   }
@@ -64,31 +74,35 @@ function wallBounce() {
 }
 
 function bounceCheck() {
-  if(ballY < 0 || ballY > 200) {
+  // top and bottom walls
+  if (ballY < 0 || ballY > height) {
     ballYV = ballYV * -1;
   }
-  
-  if(ballX < 40 && ballXV < 0) {
-    sliderBounce();
+
+  // reached the paddle, moving left
+  if (ballX < paddleX + paddleW + ballSize / 2 && ballXV < 0) {
+    paddleBounce();
   }
-  
-  if(ballX > 200 && ballXV > 0) {
+
+  // right wall, moving right
+  if (ballX > width && ballXV > 0) {
     wallBounce();
   }
-  
-  if(ballX < 0) {
-    ballX = 200;
+
+  // missed the paddle: lose a life and put the ball back on the right
+  if (ballX < 0) {
+    ballX = width;
     lives -= 1;
   }
 }
 
 function scoreCheck() {
-  if(lives == 0) {
+  if (lives == 0) {
     noLoop();
     lives = "YOU LOSE";
   }
-  
-  if(lives == 10) {
+
+  if (lives == 10) {
     noLoop();
     lives = "YOU WIN";
   }
@@ -96,6 +110,18 @@ function scoreCheck() {
 
 function setText() {
   textAlign(CENTER);
-  textSize(22);
-  text(lives, 10, 20);
+  fill(255);
+  text(lives, width / 2, 40);
+}
+
+// --- canvas size and fullscreen ---
+// The Fullscreen button in index.html asks the browser to go fullscreen.
+// Whenever the window changes size, fit the canvas to it, and go back
+// to the normal size when fullscreen ends.
+function windowResized() {
+  if (document.fullscreenElement) {
+    resizeCanvas(windowWidth, windowHeight);
+  } else {
+    resizeCanvas(canvasWidth, canvasHeight);
+  }
 }

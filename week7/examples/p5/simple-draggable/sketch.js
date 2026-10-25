@@ -1,64 +1,81 @@
-// Click and Drag an object
-// Daniel Shiffman <http://www.shiffman.net>
+// Click and drag an object
+// Based on an example by Daniel Shiffman <http://www.shiffman.net>
 
-var dragging = false; // Is the object being dragged?
-var rollover = false; // Is the mouse over the ellipse?
+let canvasWidth = 600;
+let canvasHeight = 400;
 
-var x, y, w, h;          // Location and size
-var offsetX, offsetY;    // Mouseclick offset
+let dragging = false; // is the object being dragged?
+let rollover = false; // is the mouse over the rectangle?
+
+let x, y, w, h;       // location and size
+let offsetX, offsetY; // where inside the rectangle did we click?
 
 function setup() {
-  createCanvas(640, 360);
-  
-  // Starting location
+  createCanvas(canvasWidth, canvasHeight);
+
+  // starting location
   x = 100;
   y = 100;
-  // Dimensions
-  w = 75;
-  h = 50;
+
+  // dimensions
+  w = 150;
+  h = 100;
 }
 
 function draw() {
   background(127);
-  
-  
-  // Is mouse over object
+
+  // is the mouse over the rectangle?
   if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
     rollover = true;
-  } 
-  else {
+  } else {
     rollover = false;
   }
-  
-  // Adjust location if being dragged
+
+  // move the rectangle while it is being dragged
   if (dragging) {
     x = mouseX + offsetX;
     y = mouseY + offsetY;
   }
 
   stroke(0);
-  // Different fill based on state
+
+  // different fill depending on the state
   if (dragging) {
-    fill (50);
+    fill(50);
   } else if (rollover) {
     fill(100);
   } else {
     fill(175, 200);
   }
+
   rect(x, y, w, h);
 }
 
 function mousePressed() {
-  // Did I click on the rectangle?
+  // did I click on the rectangle?
   if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
     dragging = true;
-    // If so, keep track of relative location of click to corner of rectangle
-    offsetX = x-mouseX;
-    offsetY = y-mouseY;
+    // remember where inside the rectangle we clicked,
+    // so it does not jump to the mouse position
+    offsetX = x - mouseX;
+    offsetY = y - mouseY;
   }
 }
 
 function mouseReleased() {
-  // Quit dragging
+  // quit dragging
   dragging = false;
+}
+
+// --- canvas size and fullscreen ---
+// The Fullscreen button in index.html asks the browser to go fullscreen.
+// Whenever the window changes size, fit the canvas to it, and go back
+// to the normal size when fullscreen ends.
+function windowResized() {
+  if (document.fullscreenElement) {
+    resizeCanvas(windowWidth, windowHeight);
+  } else {
+    resizeCanvas(canvasWidth, canvasHeight);
+  }
 }

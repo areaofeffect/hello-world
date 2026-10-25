@@ -1,5 +1,9 @@
+let canvasWidth = 800;
+let canvasHeight = 300;
+
+// where the ball starts: bottom left
 let startPosX = 40;
-let startPosY = 160;
+let startPosY = 260;
 let pxpos = 40;
 let xpos = 40;
 let pypos = 160;
@@ -41,7 +45,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 200);
+  createCanvas(canvasWidth, canvasHeight);
 
   // p5.sound is only loaded on https or localhost (see index.html),
   // so check that it exists before using it
@@ -165,6 +169,10 @@ function drawUI() {
 }
 
 function reset() {
+  // the start position depends on the canvas size
+  startPosX = 40;
+  startPosY = height - 40;
+
   xpos = startPosX;
   ypos = startPosY;
 
@@ -379,4 +387,16 @@ function keyPressed(){
       return;
     }
   }
+}
+// --- canvas size and fullscreen ---
+// The Fullscreen button in index.html asks the browser to go fullscreen.
+// Whenever the window changes size, fit the canvas to it, and go back
+// to the normal size when fullscreen ends.
+function windowResized() {
+  if (document.fullscreenElement) {
+    resizeCanvas(windowWidth, windowHeight);
+  } else {
+    resizeCanvas(canvasWidth, canvasHeight);
+  }
+  reset(); // the course depends on the canvas size, so start over
 }

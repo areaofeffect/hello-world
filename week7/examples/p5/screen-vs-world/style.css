@@ -1,0 +1,76 @@
+/* Shared look for the week 7 examples. Colors match the slides. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e1f1c;
+  color: #e8e8e3;
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* the header above the sketch */
+.bar {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+}
+
+.hint {
+  color: #9a9b94;
+  margin-left: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+nav a {
+  color: #f92672;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: #3a3b36;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4c4d47;
+}
+
+/* p5 creates the canvas; center it under the header */
+canvas {
+  display: block;
+  margin: 8px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* in fullscreen only the canvas is visible */
+:fullscreen .bar {
+  display: none;
+}
+
+:fullscreen canvas {
+  margin: 0;
+  box-shadow: none;
+}

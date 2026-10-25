@@ -2,10 +2,13 @@
 // The player is a class (see week 6) that knows how to move itself,
 // stay inside the canvas, and draw itself.
 
+let canvasWidth = 600;
+let canvasHeight = 400;
+
 let player;
 
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(canvasWidth, canvasHeight);
 
   // create the player object
   player = new GameObject();
@@ -29,8 +32,7 @@ function keyPressed() {
     player.vmom += player.speed;
   }
 
-  return false; // prevent any default behaviour
-  // like the page scrolling when you press the arrows
+  return false; // stop the arrow keys from scrolling the page
 }
 
 class GameObject {
@@ -41,8 +43,8 @@ class GameObject {
     this.hmom = 0; // horizontal momentum
     this.vmom = 0; // vertical momentum
 
-    this.speed = 10;
-    this.size = 25;
+    this.speed = 12;
+    this.size = 40;
   }
 
   update() {
@@ -79,6 +81,19 @@ class GameObject {
 
   render() {
     fill(255, 0, 0);
+    stroke(0);
     rect(this.x, this.y, this.size, this.size);
+  }
+}
+
+// --- canvas size and fullscreen ---
+// The Fullscreen button in index.html asks the browser to go fullscreen.
+// Whenever the window changes size, fit the canvas to it, and go back
+// to the normal size when fullscreen ends.
+function windowResized() {
+  if (document.fullscreenElement) {
+    resizeCanvas(windowWidth, windowHeight);
+  } else {
+    resizeCanvas(canvasWidth, canvasHeight);
   }
 }

@@ -609,11 +609,20 @@ class: inverse, left, top
 
 # Screen space vs world space
 
-So far "where is the mouse" and "where is the object" use the same numbers: pixels from the top left of the canvas.
+The mouse lives in *screen space*: `mouseX` and `mouseY` count pixels from the top left of the canvas. Once you `translate()` or `scale()` the canvas to make a camera, what you draw lives in *world space*. The two only agree while the camera has not moved. To hit test, convert the mouse into world coordinates first.
 
-Once you `translate()` or `rotate()` the canvas, or switch to `WEBGL`, the object lives in a *world* with its own origin while the mouse still lives on the *screen*. To hit test, convert one into the other.
+[screen vs world example](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/p5/screen-vs-world/) ([source](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/screen-vs-world)): drag to pan, scroll to zoom, watch the two hit tests disagree.
 
-.center[![Center-aligned image](images/mouse_to_world.png)]
+```javascript
+// the camera: camX, camY is the world point in the center of the screen
+translate(width / 2, height / 2);
+scale(zoom);
+translate(-camX, -camY);
+
+// the mouse, converted from screen to world (the camera, run backwards)
+let worldX = (mouseX - width / 2) / zoom + camX;
+let worldY = (mouseY - height / 2) / zoom + camY;
+```
 
 ---
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+    <title>Mouse position - Hello World week 7</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -12,6 +12,29 @@
   </head>
 
   <body>
+    <!-- the bar above the sketch: name, what to do, fullscreen button, link to the code -->
+    <header class="bar">
+      <div>
+        <strong>Mouse position</strong>
+        <span class="hint">Move the mouse</span>
+      </div>
+      <nav>
+        <button id="fullscreen-button">Fullscreen</button>
+        <a href="https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/mouse-position">source</a>
+      </nav>
+    </header>
+
+    <!-- p5 adds the <canvas> here, after the header -->
     <script src="sketch.js"></script>
+
+    <script>
+      // Fullscreen button: ask the browser to show this page fullscreen.
+      // The sketch's windowResized() then fits the canvas to the screen.
+      // Press Escape to leave fullscreen again.
+      document.getElementById("fullscreen-button").onclick = function () {
+        document.documentElement.requestFullscreen();
+        this.blur(); // give keyboard focus back to the sketch
+      };
+    </script>
   </body>
 </html>

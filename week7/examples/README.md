@@ -2,7 +2,7 @@
 
 p5.js sketches for the interactivity week, in the order they appear in the slides. Each folder is self-contained: open its `index.html` in a browser (or with Live Server). p5 is vendored in each `libraries/` folder, so nothing needs to be installed.
 
-Every example is also hosted live at [hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/p5/mouse-position/) (same folder names as below). Run `./deploy-slides.sh 7` from the repo root to redeploy after editing.
+Every example has a Fullscreen button, a 600x400 canvas by default, and a `windowResized()` that fits the canvas to the screen. Every example is also hosted live at [hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/p5/mouse-position/) (same folder names as below). Run `./deploy-slides.sh 7` from the repo root to redeploy after editing.
 
 ## Mouse
 
@@ -14,6 +14,7 @@ Every example is also hosted live at [hello-world-week7.s3-website-us-east-1.ama
 | [button-rectangular](p5/button-rectangular) | Is the mouse inside a rectangle? Four comparisons |
 | [button-circular](p5/button-circular) | Is the mouse inside a circle? `dist()` against the radius |
 | [simple-draggable](p5/simple-draggable) | Click and drag an object, keeping the click offset (Dan Shiffman) |
+| [screen-vs-world](p5/screen-vs-world) | A pannable, zoomable world with a button in it. Shows why `mouseX`/`mouseY` must be converted to world coordinates before a hit test |
 
 ## Keyboard
 
