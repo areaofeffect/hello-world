@@ -2,6 +2,8 @@
 
 p5.js sketches for the interactivity week, in the order they appear in the slides. Each folder is self-contained: open its `index.html` in a browser (or with Live Server). p5 is vendored in each `libraries/` folder, so nothing needs to be installed.
 
+Every example is also hosted live at [hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/p5/mouse-position/) (same folder names as below). Run `./deploy-slides.sh 7` from the repo root to redeploy after editing.
+
 ## Mouse
 
 | Example | What it shows |

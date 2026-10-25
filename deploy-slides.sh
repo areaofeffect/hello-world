@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Deploy slides to S3 buckets
+# Deploy slides (and the week's examples/ folder, if any) to S3 buckets
+# Slides go to the bucket root, examples to <bucket>/examples/ so the
+# slides can link to live examples.
 # Usage: ./deploy-slides.sh [week_number]
 # Examples:
 #   ./deploy-slides.sh        # deploy all weeks
@@ -20,7 +22,12 @@ deploy_week() {
 
   if [ -d "$week_dir/slides" ]; then
     echo -e "${BLUE}Deploying $week_dir slides to s3://$bucket_name...${NC}"
-    aws s3 sync "$week_dir/slides/" "s3://$bucket_name" --delete --exclude ".DS_Store"
+    # examples/ lives in the same bucket, so keep --delete away from it
+    aws s3 sync "$week_dir/slides/" "s3://$bucket_name" --delete --exclude ".DS_Store" --exclude "examples/*"
+    if [ -d "$week_dir/examples" ]; then
+      echo -e "${BLUE}Deploying $week_dir examples to s3://$bucket_name/examples/...${NC}"
+      aws s3 sync "$week_dir/examples/" "s3://$bucket_name/examples/" --delete --exclude ".DS_Store"
+    fi
     echo -e "${GREEN}✓ $week_dir deployed successfully${NC}"
     echo ""
   else

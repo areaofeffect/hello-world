@@ -24,7 +24,7 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 
 # Examples
 
-[Week 7 examples](https://github.com/areaofeffect/hello-world/tree/main/week7/examples), in the order they appear in the slides. Each folder opens in a browser with no setup.
+[Week 7 examples](https://github.com/areaofeffect/hello-world/tree/main/week7/examples), in the order they appear in the slides. Each folder opens in a browser with no setup, and every example is hosted live (for instance [mouse-position](http://hello-world-week7.s3-website-us-east-1.amazonaws.com/examples/p5/mouse-position/)); the slides link to the live versions.
 
 <br/>
 

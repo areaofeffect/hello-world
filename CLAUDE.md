@@ -25,6 +25,7 @@ Each `slides/index.html` is a single self-contained page. The slide markdown liv
 - Use single backticks for inline code in slides, never triple. Remark treats ```` ``` ```` as a fence marker, so inline triple backticks swallow every following slide until the next real fence (see commit 96ace33).
 - Slides link to their own slide numbers with absolute URLs like `http://hello-world.areaofeffect.io/week3/slides/#8`. Adding or removing slides shifts these numbers, so check intra-deck links after reordering.
 - Links to example source point to GitHub `https://github.com/areaofeffect/hello-world/blob/main/...`. Keep these in sync when you move or rename example files.
+- Browser examples are also hosted live. `deploy-slides.sh N` syncs `weekN/slides/` to the bucket root and `weekN/examples/` to `<bucket>/examples/`, so a slide can link to `http://hello-world-weekN.s3-website-us-east-1.amazonaws.com/examples/p5/<name>/` (week 7 does this, with a secondary `(source)` link to GitHub). Redeploy after editing an example.
 
 ## Running examples
 
