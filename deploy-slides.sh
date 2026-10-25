@@ -41,8 +41,6 @@ if [ -z "$1" ]; then
   deploy_week "week5and6" "hello-world-week5"
   deploy_week "week6" "hello-world-week6"
   deploy_week "week7" "hello-world-week7"
-  deploy_week "week8" "hello-world-week8"
-  deploy_week "week9" "hello-world-week9"
 
   echo -e "${GREEN}✅ All slides deployed!${NC}"
 else
