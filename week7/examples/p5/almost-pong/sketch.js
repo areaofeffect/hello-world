@@ -6,6 +6,7 @@ var ballYV = 1;
 
 var rectX = 10;
 var rectY = 10;
+var rectH = 75; // paddle height
 
 var lives = 3;
 
@@ -17,8 +18,7 @@ function setup() {
 }
 
 function draw() {
-  rect(300,30,50,50);
-  background(0);  
+  background(0);
   setText();
   setShapes();    
   bounceCheck();
@@ -30,7 +30,8 @@ function increment() {
   ballX += ballXV;  
   ballY += ballYV;
   
-  if(millis() % 1000 == 0) {
+  // every 10 seconds (600 frames at 60fps) the ball speeds up
+  if(frameCount % 600 == 0) {
     ballXV = ballXV * 2;
   }
 }
@@ -46,12 +47,13 @@ function ball(x, y) {
 
 function setShapes() {
   fill(255);
-  rect(rectX, rectY, 20, 75);
+  rect(rectX, rectY, 20, rectH);
   ball(ballX, ballY);
 }
 
 function sliderBounce() {
-  if(rectY < ballY && rectY + 100 > ballY) {
+  // is the ball between the top and bottom of the paddle?
+  if(rectY < ballY && rectY + rectH > ballY) {
     ballXV = ballXV * -1;
     lives += 1;
   }

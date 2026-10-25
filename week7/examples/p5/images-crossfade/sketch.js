@@ -2,8 +2,8 @@ var img;
 var img2;
 
 function preload() {
-  img = loadImage("static/img/sva.jpg");
-  img2 = loadImage("static/img/cat.jpg");
+  img = loadImage("img/sva.jpg");
+  img2 = loadImage("img/cat.jpg");
 }
 
 function setup(){
@@ -12,7 +12,10 @@ function setup(){
 
 function draw(){
   background(200);
-  // background image
+
+  // tint() sticks around between frames, so clear it
+  // before drawing the background image at full opacity
+  noTint();
   image(img2, 0, 0, 200, 200);
 
   // second image

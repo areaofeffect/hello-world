@@ -22,10 +22,9 @@ The modern computer keyboard is a direct descendant of the typewriter. The posit
 
 <br/>
 
-# Week 6
+# Examples
 
-Examples:
-[https://github.com/areaofeffect/hello-world/tree/main/week7/examples](https://github.com/areaofeffect/hello-world/tree/main/week7/examples)
+[Week 7 examples](https://github.com/areaofeffect/hello-world/tree/main/week7/examples), in the order they appear in the slides. Each folder opens in a browser with no setup.
 
 <br/>
 
@@ -47,7 +46,7 @@ The p5 variables mouseX and mouseY (note the capital X and Y) store the x-coordi
 
 ```
 function draw() {
-  println(mouseX + " : " + mouseY);
+  console.log(mouseX + " : " + mouseY);
 }
 ```
 
@@ -72,25 +71,25 @@ The mouse position is most commonly used to control the location of visual eleme
 
 # Mouse Events
 
-Computer mice and other related input devices typically have between one and three buttons; Processing can detect when these buttons are pressed with the mousePressed and mouseButton variables. Used with the button status, the cursor position enables the mouse to perform different actions. For example, a button press when the mouse is over an icon can select it, so the icon can be moved to a different location on screen. The mousePressed variable is true if any mouse button is pressed and false if no mouse button is pressed. The variable mouseButton is `LEFT`, `CENTER`, or `RIGHT` depending on the mouse button most recently pressed. The `mousePressed` variable reverts to false as soon as the button is released, but the `mouseButton` variable retains its value until a different button is pressed. These variables can be used independently or in combination to control the software. Run these programs to see how the software responds to your fingers.
+Computer mice and other related input devices typically have between one and three buttons; p5 can detect when these buttons are pressed with the mouseIsPressed and mouseButton variables. Used with the button status, the cursor position enables the mouse to perform different actions. For example, a button press when the mouse is over an icon can select it, so the icon can be moved to a different location on screen. The mouseIsPressed variable is true if any mouse button is pressed and false if no mouse button is pressed. The variable mouseButton is `LEFT`, `CENTER`, or `RIGHT` depending on the mouse button most recently pressed. The `mouseIsPressed` variable reverts to false as soon as the button is released, but the `mouseButton` variable retains its value until a different button is pressed. These variables can be used independently or in combination to control the software. Run these programs to see how the software responds to your fingers.
 
 <i>The mouse event functions are `mousePressed()`, `mouseReleased()`, `mouseMoved()`, and `mouseDragged()`:</i>
 
+##### mousePressed()
+
+Runs one time when a mouse button is pressed down.
+
 ##### mouseReleased()
 
-Code inside this block is run one time when a mouse button is pressed mouseReleased()
+Runs one time when a mouse button is let go.
 
 ##### mouseMoved()
 
-Code inside this block is run one time when a mouse button is released mouseMoved()
+Runs every time the mouse moves while no button is pressed.
 
 ##### mouseDragged()
 
-Code inside this block is run one time when the mouse is moved mouseDragged()
-
-##### mousePressed()
-
-Code inside this block is run one time when the mouse is moved while a mouse button is pressed
+Runs every time the mouse moves while a button is held down.
 
 # A drawing app
 
@@ -167,7 +166,7 @@ if(distance < 50) {
 
 # Keyboard Events
 
-Processing registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyPressed variable remains true while the key is held down and becomes false only when the key is released.
+p5 registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyIsPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyIsPressed variable remains true while the key is held down and becomes false only when the key is released.
 
 ![images/cat.jpg](slides/images/cat.jpg)
 
@@ -187,13 +186,9 @@ function keyPressed() {
 ##### keyReleased()
 
 ```
-function keyPressed() {
-    if(keyCode == UP_ARROW) {
-        colorValue = 0;
-    } else if (keyCode == DOWN_ARROW) {
-        colorValue = 255;
-    }
-    return 0;
+function keyReleased() {
+    // runs one time when any key is let go
+    colorValue = 127;
 }
 ```
 
@@ -201,7 +196,7 @@ function keyPressed() {
 
 In addition to reading key values for numbers, letters, and symbols. If you're making cross-platform projects, note that the Enter key is commonly used on PCs and UNIX and the Return key is used on Macintosh. Check for both Enter and Return to make sure your program will work for all platforms.
 
-_The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [http://keycode.info/](http://keycode.info/)_
+_The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [https://www.toptal.com/developers/keycode](https://www.toptal.com/developers/keycode)_
 
 ```
 if (keyCode == UP_ARROW) {
@@ -211,11 +206,11 @@ if (keyCode == UP_ARROW) {
 
 ##### key
 
-The key variable stores a single alphanumeric character. Specifically, it holds the most recently pressed key. The key can be displayed on screen with the text() function (p. 150).
+The key variable stores a single alphanumeric character. Specifically, it holds the most recently pressed key. The key can be displayed on screen with the text() function.
 
 `text(key, 33,65); // Display last key pressed.`
 
-The key variable may be used to determine whether a specific key is pressed. The following example uses the expression key=='A' to test if the A key is pressed. The single quotes signify A as the data type char (p. 144). The expression key == "A" will cause an error because the double quotes signify the A as a String, and it's not possible to compare a String with a char. The logical AND symbol, the && operator, is used to connect the expression with the keyPressed variable to ascertain that the key pressed is the uppercase A.
+The key variable may be used to determine whether a specific key is pressed. The following example uses the expression key == 'A' to test if the A key is pressed. In JavaScript single and double quotes both make a string, so key == "A" works too. The logical AND symbol, the && operator, connects the expression with the keyIsPressed variable so the code only runs while a key is actually held down and that key is the uppercase A.
 
 ##### keyIsPressed
 
@@ -240,7 +235,7 @@ if ((keyIsPressed == true) && ((key == 'a') || (key == 'A'))) {
 }
 ```
 
-Because each character has a numeric value as defined by the ASCII table (p. 605), the value of the key variable can be used like any other number to control visual attributes such as the position and color of shape elements. For instance, the ASCII table defines the uppercase A as the number 65, and the digit 1 is defined as 49.
+Because each character has a numeric value as defined by the ASCII table, the value of the key variable can be used like any other number to control visual attributes such as the position and color of shape elements. For instance, the ASCII table defines the uppercase A as the number 65, and the digit 1 is defined as 49.
 
 ##### Simple Drawing app
 
@@ -296,13 +291,11 @@ function touchStarted() {
 You can loop through touches and access each individual one like:
 
 ```
-xpos = touches[0].y
-ypos = touches[0].x
+xpos = touches[0].x
+ypos = touches[0].y
 ```
 
-##### touchX - x position of a touch
-
-##### touchY - y position of a touch
+The old `touchX` and `touchY` variables were removed from p5. Use `touches[0].x` and `touches[0].y`, or just `mouseX` and `mouseY`, which follow the most recent touch.
 
 The system variable touches[] contains an array of the positions of all current touch points, relative to (0, 0) of the canvas, and IDs identifying a unique touch as it moves. Each element in the array is an object with x, y, and id properties.
 
@@ -388,59 +381,50 @@ Additional Tutorials via _ITP Physical Computing_
 
 ---
 
-# [Week 6 Assignment - Programming Interactivity](https://github.com/areaofeffect/hello-world/tree/main/week6)
+# Debugging
 
-<br/>
+The syllabus calls this week "Interactivity and Debugging". The slides have a short debugging section; the short version:
 
-### Part 1. Read and review the following readings and questions from class.
+- **Open the console** (Chrome: `Cmd + Option + J` on Mac, `Ctrl + Shift + J` on Windows) and keep it open. `console.log("label", value)` is the fastest tool you have.
+- **Read the error.** Red text names the file and line. `ReferenceError` is a typo or a scope problem. `TypeError: Cannot read properties of undefined` means an object does not exist yet. A `404` in the Network tab is a wrong `loadImage()` path.
+- **Put your state on screen.** Draw your game state with `text()` every frame, like `displayInfo()` in the [one button golf](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/one-button-golf-like) example.
+- **Slow it down.** `frameRate(5)`, `noLoop()` and `redraw()`, or a `debugger;` line.
+- **Nothing draws?** `background()` wipes anything drawn before it. Check spelling of `setup` and `draw`, and check that `sketch.js` actually loaded.
 
-We discussed JavaScript's lack of strict typing. To further understand how the engine understands types, the typeof operator is helpful.
+---
+
+# Week 7 Assignment: One-button game
+
+Convert a classic arcade game into a one-button game by "automating" (eliminating) interactions that are customarily under control of the player. For example, Space Invaders uses two sets of controls: one to move the player's laser cannon back and forth, and another to fire at descending aliens. It can be changed into a one-button game by making the cannon move back and forth on an automatic schedule.
+
+Reference: [one button golf](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/one-button-golf-like) (press space). If you want a warm-up first, finish [almost pong](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/almost-pong).
+
+### Your game needs
+
+- exactly one input: one key, one mouse button, or one touch
+- a start state, a playing state and a game over state (see application state in the slides)
+- a way to win or lose, and a way to play again
+
+### Turning it in
+
+- A folder in your GitHub repo with `index.html`, `sketch.js` and any images
+- It runs when you open `index.html`
+- A short README: which game you started from, which control you automated, and how to play
+- Due before next class
+
+### Stretch goal
+
+Replace your button with continuously valued data from a single sensor, such as a slider ([createSlider()](https://p5js.org/reference/p5/createSlider/)), the microphone ([p5.AudioIn](https://p5js.org/reference/p5.sound/p5.AudioIn/)), or a knob or photoresistor on an Arduino ([super-serial](https://github.com/brunokruse/super-serial)).
+
+### Helpful reading
 
 - [typeof operator in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
-
-There was a question about collisions of irregular shaped polygons, this module may be useful.
-
-- [2D collision module for P5.js](https://github.com/bmoren/p5.collide2D)
-
-Here is a guide to the basics of using git.
-
+- [2D collision module for p5.js](https://github.com/bmoren/p5.collide2D) for irregular shapes
 - [A simple guide to git](http://rogerdudler.github.io/git-guide/)
-
-There was a question about why a dot is used when we write Classes (objects) in JavaScript. This article may help understanding that syntax.
-
-- [JavaScript Dot Notation](https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d)
-
-Further examples of how to write classes in JavaScript.
-
-- [JavaScript class example Pokémon](https://github.com/areaofeffect/hello-world/blob/main/week5/examples/javascript_class.js)
-- [Jitter Class](../week5and6/examples/p5-jitter)
-
-<br/>
-
-### Part 2. Coding
-
-Choose one of the following programming assignments below. Rember to create a folder for your project and upload to GitHub when you are done. If you need help going through debugging remember to first check online, there is a chance someone else has gotten the same error as you! If you are still stuck ask your classmates, pair-programming or in slack.
-
-##### CODE OPTION 1. Choose an element of interactivity to make a sketch, drawing or game! You can use Keyboard, Mouse, Touch or other methods we discussed in class. If you get stuck for ideas you can try remaking your interactive python game in p5 or review our class notes from week 6.
-
-Remember:
-
-- mouseX, mouseY, and [mouse events](http://week6-hello-world.areaofeffect.io/#simple-drawing)
-- keyboard input (key, keycode)
-- Classes ([jitterbugs](https://gist.github.com/brunokruse/fcd85f3ec8c1da3f2b6759d152360611)) are your friend.
-- loadImage(), image()
-- and more!
-
-<br/>
-
-##### CODE OPTION 2. Take "Almost pong" and make it a real game.
-
-- http://week6-hello-world.areaofeffect.io/#simple-pong
-- add a second player and scores
-- run it in a seperate HTML file with larger game window
-- make your own controls!
-- (advanced) try control the players with potentiometers (or something else!) + arduino
-- (advanced) try controlling the paddles with your phone + rotation!
+- [JavaScript dot notation](https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d)
+- [JavaScript class example Pokémon](http://hello-world-week5.s3-website-us-east-1.amazonaws.com/#23) (week 5 slides)
+- [Jitter class](../week5and6/examples/p5-jitter)
+- [Jitterbugs gist](https://gist.github.com/brunokruse/fcd85f3ec8c1da3f2b6759d152360611)
 
 <br/>
 <br/>

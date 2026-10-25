@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World: Week 1</title>
+    <title>Hello World: Week 7</title>
     <meta charset="utf-8">
 
     <style>
@@ -56,6 +56,9 @@
       .center img {
         width: 100%; /* Keep our Images fitting in the slides */
       }
+      .center-50 img {
+        width: 30%;
+      }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
     </style>
@@ -80,7 +83,7 @@ class: inverse, left, top, large
 - Mouse data and callbacks
 - A simple drawing app
 - Rectangular button
-- Cicular Button
+- Circular Button
 - Handling keyboard inputs
 - Images, Video and Sound interactivity
 - Custom cursor
@@ -105,7 +108,7 @@ class: inverse, left, top, large
 
 ## Programming Interactivity pt3
 
-- Objects and Classses
+- Objects and Classes
 - Game design primer
 - Playtested mechanics and game logic
 - Deliberate controls and game feel
@@ -154,7 +157,7 @@ class: inverse, left, top
 
 # Mouse Events
 
-Computer mice and other related input devices typically have between one and three buttons; Processing can detect when these buttons are pressed with the mousePressed and mouseButton variables. Used with the button status, the cursor position enables the mouse to perform different actions. For example, a button press when the mouse is over an icon can select it, so the icon can be moved to a different location on screen. The mousePressed variable is true if any mouse button is pressed and false if no mouse button is pressed. The variable mouseButton is LEFT, CENTER, or RIGHT depending on the mouse button most recently pressed. The mousePressed variable reverts to false as soon as the button is released, but the mouseButton variable retains its value until a different button is pressed. These variables can be used independently or in combination to control the software. Run these programs to see how the software responds to your mouse (computer) or fingers (mobile).
+Computer mice and other related input devices typically have between one and three buttons; p5 can detect when these buttons are pressed with the mouseIsPressed and mouseButton variables. Used with the button status, the cursor position enables the mouse to perform different actions. For example, a button press when the mouse is over an icon can select it, so the icon can be moved to a different location on screen. The mouseIsPressed variable is true if any mouse button is pressed and false if no mouse button is pressed. The variable mouseButton is LEFT, CENTER, or RIGHT depending on the mouse button most recently pressed. The mouseIsPressed variable reverts to false as soon as the button is released, but the mouseButton variable retains its value until a different button is pressed. These variables can be used independently or in combination to control the software. Run these programs to see how the software responds to your mouse (computer) or fingers (mobile).
 
 ---
 
@@ -164,7 +167,7 @@ class: inverse, left, top, small
 
 The p5 variables mouseX and mouseY (note the capital X and Y) store the x-coordinate and y-coordinate of the cursor relative to the origin in the upper-left corner of the display window. To see the actual values produced while moving the mouse, run this program to print the values to the console:
 
-[position example](../examples/p5/mouse-position/)
+[position example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/mouse-position)
 
 ```javascript
 
@@ -190,7 +193,7 @@ class: inverse, left, top, small
 
 The mouse position is most commonly used to control the location of visual elements on screen. More interesting relations are created when the visual elements relate differently to the mouse values, rather than simply mimicking the current position. Adding and subtracting values from the mouse position creates relationships that remain constant, while multiplying and dividing these values creates changing visual relationships between the mouse position and the elements on the screen. The square below has it's rotation directly mapped to the cursor.
 
-[mapping example](../examples/p5/mouse-mapping/)
+[mapping example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/mouse-mapping)
 
 ```javascript
 function draw() {
@@ -233,7 +236,7 @@ class: inverse, left, top, large
 
 Drag your mouse cursor to draw
 
-[drawing app example](../examples/p5/simple-drawing-app/)
+[drawing app example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/simple-drawing-app)
 
 ```
 function setup() {
@@ -268,9 +271,9 @@ class: inverse, left, top, small
 
 # Rectangular Buttons
 
-[rectangular button example](../examples/p5/button-rectangular/)
+[rectangular button example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/button-rectangular)
 
-[drag and drop example](../examples/p5/simple-draggable)
+[drag and drop example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/simple-draggable)
 
 
 
@@ -305,7 +308,7 @@ class: inverse, left, top
 
 We can calculate the distance from our mouse position to the center of a point. If this value is less than the radius of your object - our mouse cursor is inside.
 
-[circular buttons example](../examples/p5/button-circular/)
+[circular buttons example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/button-circular)
 
 Snippet:
 
@@ -323,7 +326,7 @@ class: inverse, left, top, small
 
 # Handling keyboard inputs
 
-p5 registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyPressed variable remains true while the key is held down and becomes false only when the key is released.
+p5 registers the most recently pressed key and whether a key is currently pressed. The boolean variable keyIsPressed is true if a key is pressed and is false if not. Include this variable in the test of an if structure to allow lines of code to run only if a key is pressed. The keyIsPressed variable remains true while the key is held down and becomes false only when the key is released.
 
 ```javascript
 function setup() {
@@ -345,7 +348,7 @@ class: inverse, left, top, small
 
 In addition to reading key values for numbers, letters, and symbols. If you're making cross-platform projects, note that the Enter key is commonly used on PCs and UNIX and the Return key is used on Macintosh. Check for both Enter and Return to make sure your program will work for all platforms.
 
-*The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [http://keycode.info/](http://keycode.info/)*
+*The variable keyCode is used to detect special keys such as BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW You can also check for custom keys by looking up the keyCode of any key on a site like this: [https://www.toptal.com/developers/keycode](https://www.toptal.com/developers/keycode)*
 
 ```
 if (keyCode == UP_ARROW) {
@@ -411,7 +414,7 @@ class: inverse, left, top, large
 
 # Simple movement
 
-[simple movement example](../examples/p5/keyboard-movement/)
+[simple movement example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/keyboard-movement)
 
 ```javascript
 function keyPressed(){
@@ -444,7 +447,7 @@ class: inverse, left, top, large
 
 # Movement + Easing
 
-[movement + easing example](../examples/p5/keyboard-movement-smoothing/)
+[movement + easing example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/keyboard-movement-smoothing)
 
 ```javascript
 function calculateEasing() {
@@ -462,30 +465,29 @@ class: inverse, left, top, small
 
 # Movement + Gameobject
 
-[movement + game object example](../examples/p5/keyboard-movement-objects/)
+[movement + game object example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/keyboard-movement-objects)
 
 ```javascript
-function gameObject() {
+class GameObject {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+    this.hmom = 0;   // horizontal momentum
+    this.vmom = 0;   // vertical momentum
+    this.speed = 10;
+    this.size = 25;
+  }
 
-  this.x = width / 2;
-  this.y = width / 2;
-
-  this.hmom = 0;
-  this.vmom = 0;
-
-  this.speed = 10;
-  this.size = 25;
-
-  this.update = function() {
+  update() {
     this.move();
     this.render();
   }
 
-  this.move = function() {
+  move() {
     this.x += this.hmom;
     this.y += this.vmom;
 
-    // dampenings
+    // dampening: lose 10% of the momentum every frame
     this.hmom *= 0.9;
     this.vmom *= 0.9;
 
@@ -499,7 +501,7 @@ class: inverse, left, top, large
 
 # Images
 
-[Simple load image example](../examples/p5/images-load/)
+[Simple load image example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/images-load)
 
 ```javascript
 var img;
@@ -523,15 +525,15 @@ class: inverse, left, top, large
 
 # Images
 
-[Simple load image II](../examples/p5/images-cursor/)
+[Simple load image II](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/images-cursor)
 
 ```javascript
 var img;
 var ufo;
 
 function preload() {
-  img = loadImage("/static/img/sva.jpg");
-  ufo = loadImage("/static/img/ufo.png");
+  img = loadImage("img/sva.jpg");
+  ufo = loadImage("img/ufo.png");
 
 }
 
@@ -566,15 +568,15 @@ class: inverse, left, top, large
 
 # Crossfading Images
 
-[crossfading images example](../examples/p5/images-crossfade/)
+[crossfading images example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/images-crossfade)
 
 ```javascript
 var img;
 var img2;
 
 function preload() {
-  img = loadImage("/static/img/sva.jpg");
-  img2 = loadImage("/static/img/cat.jpg");
+  img = loadImage("img/sva.jpg");
+  img2 = loadImage("img/cat.jpg");
 }
 
 function setup(){
@@ -583,10 +585,11 @@ function setup(){
 
 function draw(){
   background(200);
-  // background image
+  // background image, tint() sticks between frames so clear it
+  noTint();
   image(img2, 0, 0, 200, 200);
 
-  // second image
+  // second image, fade it in as the mouse moves right
   var alpha = map(mouseX, 0, width, 0, 255);
   tint(255, alpha);
   image(img, 0, 0, 200, 200);
@@ -598,13 +601,29 @@ class: inverse, left, top, large
 
 # Combining it all
 # Almost pong
-[almost pong example](../examples/p5/almost-pong/)
+[almost pong example](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/almost-pong)
 
 ---
-class: inverse, left, top, large
 
-# Simple 3D
-# p5js + webGL
+class: inverse, left, top
+
+# Screen space vs world space
+
+So far "where is the mouse" and "where is the object" use the same numbers: pixels from the top left of the canvas.
+
+Once you `translate()` or `rotate()` the canvas, or switch to `WEBGL`, the object lives in a *world* with its own origin while the mouse still lives on the *screen*. To hit test, convert one into the other.
+
+.center[![Center-aligned image](images/mouse_to_world.png)]
+
+---
+
+class: inverse, left, top
+
+# Simple 3D: p5js + WEBGL
+
+In WEBGL mode the origin moves to the center of the canvas and +y points up.
+
+.center.center-50[![Center-aligned image](images/webgl_coordinates.svg)]
 
 ```javascript
 function setup(){
@@ -641,7 +660,7 @@ class: inverse, left, top, large
 
 ## Programming Interactivity pt3
 
-- Objects and Classses
+- Objects and Classes
 - Game design primer
 - Playtested mechanics and game logic
 - Deliberate controls and game feel
@@ -685,24 +704,159 @@ class: inverse, left, top, large
 
 class: inverse, left, top
 
-# Week 7 Assignment
+## Programming Interactivity pt4
 
-One button game.
+- Debugging
+  - Open the console
+  - Read the error
+  - Put your state on screen
+  - Slow things down
+  - Nothing draws?
 
-Convert a classic arcade game into a one-button game
-by “automating” (eliminating) interactions that are
-customarily under control of the player. For example,
-Space Invaders uses two sets of controls: one to move
-the player's laser cannon back and forth, and another to
-fire at descending aliens. It can be changed into a one-
-button game by making the cannon move back and forth
-on an automatic schedule.
+---
 
-Modify the problem scope so that your game uses
-continuously valued data from a single sensor, such as a
-slider, knob, photoresistor, or microphone.
+class: inverse, left, top
 
-[one button game](../examples/p5/one-button-golf-like/)
+# Debugging: open the console
+
+Every browser has a developer console. Keep it open while you code.
+
+- Chrome on Mac: `Cmd + Option + J`
+- Chrome on Windows: `Ctrl + Shift + J`
+- Or right click the page, Inspect, then the Console tab
+
+`console.log()` prints anything you give it. Label your values so you know what you are looking at.
+
+```javascript
+function mousePressed() {
+  console.log("pressed at", mouseX, mouseY);
+}
+
+function draw() {
+  // draw() runs 60 times a second, so only log every 60th frame
+  if (frameCount % 60 == 0) {
+    console.log("player", player.x, player.y);
+  }
+}
+```
+
+---
+
+class: inverse, left, top
+
+# Debugging: read the error
+
+Red text in the console is an error. It names the file and the line number. Click it. The three you will see most:
+
+- `ReferenceError: score is not defined`
+  A typo, or a variable declared inside one function and used in another.
+
+- `TypeError: Cannot read properties of undefined`
+  You asked for `player.x` but `player` does not exist yet. Find where it is created.
+
+- `404 (Not Found)` in the Network tab
+  A `loadImage()` path is wrong. Paths are relative to `index.html`, so `loadImage("static/img/cat.jpg")` fails when the file is at `img/cat.jpg`.
+
+---
+
+class: inverse, left, top
+
+# Debugging: put your state on screen
+
+When a game "does nothing", it is usually in a state you did not expect. Draw the state every frame so you can see it. The golf example does this in `displayInfo()`:
+
+```javascript
+function displayInfo() {
+  textSize(10);
+  fill(255);
+  text("launchstate: " + launchstate, 10, 20);
+  text("angle: " + abs(capturedLaunchAngle), 10, 30);
+  text("speed : " + capturedLaunchSpeed, 10, 40);
+}
+```
+
+Hide it behind a `debug` variable (or delete it) when you ship.
+
+---
+
+class: inverse, left, top
+
+# Debugging: slow things down
+
+Sixty frames a second is too fast to watch.
+
+- `frameRate(5);` in `setup()` plays the sketch in slow motion
+- `noLoop();` freezes it, `redraw();` draws one frame, `loop();` resumes
+- `debugger;` on any line pauses the browser there. The Sources tab then shows every variable.
+
+```javascript
+function keyPressed() {
+  if (key == 'p') {
+    noLoop();  // pause
+  }
+  if (key == 'n') {
+    redraw();  // step one frame
+  }
+  if (key == 'o') {
+    loop();    // play
+  }
+}
+```
+
+---
+
+class: inverse, left, top
+
+# Debugging: nothing draws?
+
+- `background()` wipes the whole canvas. Anything drawn before it in `draw()` is gone before you see it.
+- `setup` and `draw` are spelled exactly like that. p5 silently ignores `Draw()`.
+- Is `sketch.js` loaded? Check the `<script>` tag in `index.html` and the Network tab.
+- Is `fill()` the same color as `background()`?
+- `noLoop()` in `setup()` means `draw()` runs once.
+- Still stuck? Comment out everything in `draw()` and add it back one line at a time.
+
+---
+
+class: inverse, left, top
+
+# Week 7 Assignment: One-button game
+
+Convert a classic arcade game into a one-button game by "automating" (eliminating) interactions that are customarily under control of the player. For example, Space Invaders uses two sets of controls: one to move the player's laser cannon back and forth, and another to fire at descending aliens. It can be changed into a one-button game by making the cannon move back and forth on an automatic schedule.
+
+Your game needs:
+
+- exactly one input: one key, one mouse button, or one touch
+- a start state, a playing state and a game over state (see application state)
+- a way to win or lose, and a way to play again
+
+Reference: [one button golf](https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/one-button-golf-like) (press space)
+
+---
+
+class: inverse, left, top
+
+# Week 7 Assignment: turning it in
+
+- A folder in your GitHub repo with `index.html`, `sketch.js` and any images
+- It runs when you open `index.html`
+- A short README: which game you started from, which control you automated, and how to play
+- Due before next class
+
+Stretch goal: replace your button with continuously valued data from a single sensor, such as a slider (`createSlider()`), the microphone (`p5.AudioIn`), or a knob or photoresistor on an Arduino.
+
+---
+
+class: inverse, left, top, large
+
+# Where this goes next
+
+Everything this week was "read a number from a human, map it to the screen". The rest of the semester changes where the number comes from.
+
+- Arduino over serial: [super-serial](https://github.com/brunokruse/super-serial)
+- Microphone: [p5.AudioIn](https://p5js.org/reference/p5.sound/p5.AudioIn/)
+- Webcam and computer vision (week 8)
+- Phone accelerometer: [example](https://editor.p5js.org/Tiri/sketches/yI2_BczF8)
 
 ---
 
