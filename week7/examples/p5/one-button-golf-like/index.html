@@ -9,7 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <!-- p5.sound only works on https or localhost. On plain http it stops
+         p5 from starting at all, so only load it on a secure origin. -->
+    <script>
+      if (window.isSecureContext) {
+        document.write('<script src="libraries/p5.sound.min.js"><\/script>');
+      }
+    </script>
   </head>
 
   <body>

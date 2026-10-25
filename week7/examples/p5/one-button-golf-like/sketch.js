@@ -42,7 +42,12 @@ function preload() {
 
 function setup() {
   createCanvas(600, 200);
-  osc = new p5.Oscillator('sine');
+
+  // p5.sound is only loaded on https or localhost (see index.html),
+  // so check that it exists before using it
+  if (typeof p5.Oscillator !== 'undefined') {
+    osc = new p5.Oscillator('sine');
+  }
   reset();
 }
 
@@ -90,7 +95,7 @@ function draw() {
       // projectile is moving
       hasLaunched = false;
       playing = false;
-      osc.stop();
+      if (osc) osc.stop();
 
       if (win) {
         imageMode(CENTER);
@@ -169,7 +174,7 @@ function reset() {
   distance = 0;
   background(88,137,112);
 
-  osc.stop();
+  if (osc) osc.stop();
   playing = false; 
 
   holeX = random(width/4, width - 200);
@@ -188,8 +193,10 @@ function playOscillator() {
   // starting an oscillator on a user gesture will enable audio
   // in browsers that have a strict autoplay policy.
   // See also: userStartAudio();
-  osc.start();
-  playing = true;
+  if (osc) {
+    osc.start();
+    playing = true;
+  }
 }
 
 function drawHole() {
