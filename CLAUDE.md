@@ -14,8 +14,7 @@ Course materials for "Hello World: The Logic of Interaction" (SVA, Fall 2026, in
   - `examples/`: runnable examples for that week, grouped by language (e.g. `week3/examples/python3/`)
   - `images/`: images used by the README and slides
 - `in_class_python_examples/`, `in_class_c_examples/`: scratch code written live in class
-- `site/`: the old Angular 1 + gulp course site (legacy, not actively maintained)
-- `archive/`: material from past years. Leave it alone unless asked.
+- Past years' material and the old Angular course site were removed from main on Oct 26, 2026. They are still in history at the `pre-archive-cleanup` tag (`git checkout pre-archive-cleanup -- archive/<folder>` brings one back).
 - `quizzes/` is gitignored on purpose (quizzes go into Canvas and stay local)
 
 ## Slides (remark.js)
