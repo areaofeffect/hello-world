@@ -125,17 +125,17 @@ function draw() {
       let hsbValue = map(brightness, 0, 255, 0, 360);
 
       // uncomment line 128 to draw greyscale
-      // drawRetangles(brightness, xpos, ypos, pixelSize);
+      drawRetangles(brightness, xpos, ypos, pixelSize);
 
       // uncomment line 132 tp 138 to draw color
       //draw rectangles that are rainbox
-      push();
-      // hue, saturation, brightness
-      // reduce saturation for pastel colors
-      colorMode(HSB);
-      let hsbColor = color(hsbValue, 100, 100);
-      drawRetangles(hsbColor, xpos, ypos, pixelSize);
-      pop();
+      // push();
+      // // hue, saturation, brightness
+      // // reduce saturation for pastel colors
+      // colorMode(HSB);
+      // let hsbColor = color(hsbValue, 100, 100);
+      // drawRetangles(hsbColor, xpos, ypos, pixelSize);
+      // pop();
 
       // draw images based on the rainbow
       // drawImages(hsbValue, xpos, ypos, pixelSize * 2);

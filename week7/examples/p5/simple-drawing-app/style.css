@@ -74,3 +74,22 @@ canvas {
   margin: 0;
   box-shadow: none;
 }
+
+/* --- touch screens --- */
+
+/* On a phone, a finger dragged across the page scrolls or zooms it.
+   On the canvas we want the finger to draw instead, so turn that off
+   there (index.html also stops the browser's fake mouse click after
+   a tap). Also turn off the long-press magnifier and "Save image" menu. */
+canvas {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* narrow screens: let the header wrap onto two lines */
+.bar {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}

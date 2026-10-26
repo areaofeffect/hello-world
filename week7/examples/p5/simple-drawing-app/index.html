@@ -16,9 +16,10 @@
     <header class="bar">
       <div>
         <strong>Simple drawing app</strong>
-        <span class="hint">Click and drag to draw, any key clears</span>
+        <span class="hint">Drag to draw with the mouse or a finger</span>
       </div>
       <nav>
+        <button id="clear-button">Clear</button>
         <button id="fullscreen-button">Fullscreen</button>
         <a href="https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5/simple-drawing-app">source</a>
       </nav>
@@ -28,13 +29,37 @@
     <script src="sketch.js"></script>
 
     <script>
+      // Clear button: phones have no keyboard, so give them a button.
+      // It calls clearDrawing() in sketch.js.
+      document.getElementById("clear-button").onclick = function () {
+        clearDrawing();
+        this.blur();
+      };
+
       // Fullscreen button: ask the browser to show this page fullscreen.
       // The sketch's windowResized() then fits the canvas to the screen.
       // Press Escape to leave fullscreen again.
-      document.getElementById("fullscreen-button").onclick = function () {
-        document.documentElement.requestFullscreen();
-        this.blur(); // give keyboard focus back to the sketch
-      };
+      // iPhones don't allow fullscreen for web pages, so hide the button there.
+      let fullscreenButton = document.getElementById("fullscreen-button");
+      if (document.documentElement.requestFullscreen) {
+        fullscreenButton.onclick = function () {
+          document.documentElement.requestFullscreen();
+          this.blur(); // give keyboard focus back to the sketch
+        };
+      } else {
+        fullscreenButton.style.display = "none";
+      }
+
+      // Touch: when a finger touches the canvas, stop the browser from
+      // scrolling the page or sending a second, fake mouse click after
+      // the tap. p5 still gets the touch and calls mouseDragged().
+      function stopTouchOnCanvas(event) {
+        if (event.target.tagName === "CANVAS") {
+          event.preventDefault();
+        }
+      }
+      document.addEventListener("touchstart", stopTouchOnCanvas, { passive: false });
+      document.addEventListener("touchmove", stopTouchOnCanvas, { passive: false });
     </script>
   </body>
 </html>

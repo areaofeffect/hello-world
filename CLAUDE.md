@@ -31,6 +31,7 @@ Each `slides/index.html` is a single self-contained page. The slide markdown liv
 - Python: `python3 path/to/file.py`. Some week 3 examples need extra packages (e.g. `deep-deep-forest-rich` needs `pip3 install rich`).
 - C: `gcc hello-world.c -o hello-world && ./hello-world`
 - p5.js / HTML examples: open `index.html` in a browser (or Live Server). Libraries are vendored next to the sketch (e.g. `week3/examples/advanced_assignment/libraries/`).
+- Phone testing: Live Server can serve HTTPS with an mkcert certificate (kept in `.vscode/certs/`, gitignored), because phones only expose tilt/motion sensors to `https://` pages. Setup steps are in `week7/examples/README.md` under "Tilt from your own laptop". The hosted S3 website endpoints are http only, so tilt never works from them.
 
 ## Conventions
 

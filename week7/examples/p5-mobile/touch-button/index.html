@@ -4,15 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+    <title>Touch button - Hello World week 7</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
+    <!-- the bar above the sketch: name, what to do, fullscreen button, link to the code -->
+    <header class="bar">
+      <div>
+        <strong>Touch button</strong>
+        <span class="hint">Tap the button. Try it on your phone too</span>
+      </div>
+      <nav>
+        <button id="fullscreen-button">Fullscreen</button>
+        <a href="https://github.com/areaofeffect/hello-world/tree/main/week7/examples/p5-mobile/touch-button">source</a>
+      </nav>
+    </header>
+
+    <!-- p5 adds the <canvas> here, after the header -->
     <script src="sketch.js"></script>
+
+    <script>
+      // Fullscreen button: ask the browser to show this page fullscreen.
+      // The sketch's windowResized() then fits the canvas to the screen.
+      // Press Escape to leave fullscreen again.
+      // iPhones don't allow fullscreen for web pages, so hide the button there.
+      let fullscreenButton = document.getElementById("fullscreen-button");
+      if (document.documentElement.requestFullscreen) {
+        fullscreenButton.onclick = function () {
+          document.documentElement.requestFullscreen();
+          this.blur(); // give keyboard focus back to the sketch
+        };
+      } else {
+        fullscreenButton.style.display = "none";
+      }
+
+      // Touch: when a finger touches the canvas, stop the browser from
+      // scrolling the page or sending a second, fake mouse click after
+      // the tap. p5 still gets the touch and calls mousePressed().
+      function stopTouchOnCanvas(event) {
+        if (event.target.tagName === "CANVAS") {
+          event.preventDefault();
+        }
+      }
+      document.addEventListener("touchstart", stopTouchOnCanvas, { passive: false });
+      document.addEventListener("touchmove", stopTouchOnCanvas, { passive: false });
+    </script>
   </body>
 </html>
